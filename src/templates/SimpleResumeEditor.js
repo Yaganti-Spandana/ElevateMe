@@ -115,7 +115,7 @@ useEffect(() => {
   education,
   projects,
   certifications,
-  showPreview   // ⭐ IMPORTANT
+  showPreview ,splitIntoPages  // ⭐ IMPORTANT
 ]);
 useEffect(() => {
   const saved = localStorage.getItem("resumeData");

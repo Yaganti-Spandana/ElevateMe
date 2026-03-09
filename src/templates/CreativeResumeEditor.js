@@ -8,7 +8,6 @@ import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
 const A4_HEIGHT_PX = 842; // correct preview height
 const CONTENT_PADDING = 56; // 28 top + 28 bottom
-const USABLE_PAGE_HEIGHT = A4_HEIGHT_PX - CONTENT_PADDING;
 const CreativeResumeEditor = () => {
   const templateId = "creative";
   const template = resumeData[templateId];
@@ -141,7 +140,16 @@ const splitIntoPages = (container) => {
   });
 
   return () => cancelAnimationFrame(raf);
-}, [common, experience, education, projects, certifications,languages,showPreview]);
+}, [
+  common,
+  experience,
+  education,
+  projects,
+  certifications,
+  languages,
+  showPreview,
+  splitIntoPages
+]);
 useEffect(() => {
   const saved = localStorage.getItem("resumeData");
   if (saved) {

@@ -151,7 +151,7 @@ const splitIntoPages = (container) => {
     });
 
     return () => cancelAnimationFrame(raf);
-  }, [common, experience, education, projects, certifications,showPreview]);
+  }, [common, experience, education, projects, certifications,showPreview,splitIntoPages]);
 
   // =========================
   // Load saved resume

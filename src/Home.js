@@ -11,8 +11,6 @@ import experience1 from "./assets/experience1.png";
 import experience2 from "./assets/experience2.png";
 import creative1 from "./assets/creative1.png";
 import creative2 from "./assets/creative2.png";
-import itProjectSample from "./assets/simple1.png";
-import internshipSample from "./assets/simple1.png";
 import SearchResults from "./Navbar/SearchResults";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Navbar/Footer";

@@ -12,7 +12,6 @@ const ExperiencedResumeEditor = () => {
   const template = resumeData[templateId];
 
   const A4_HEIGHT_PX = 842; // correct preview height
-const CONTENT_PADDING = 56; // 28 top + 28 bottom
  const [showPreview, setShowPreview] = useState(false);
 const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 useEffect(() => {
