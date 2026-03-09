@@ -352,7 +352,9 @@ const handleCreatePortfolio = () => {
     experience,
     education,
     projects,
-    certifications
+    certifications,
+    achievements,
+    hobbies
   };
 
   const username = common.name
@@ -612,7 +614,9 @@ style={{marginTop: "2px", width: "90%", padding: "12px,", backgroundColor:  "#1d
 onClick={handleDownload}>
 Download PDF
 </button>
-<button className="download-btn" onClick={handleCreatePortfolio}>
+<button className="download-btn" 
+style={{marginTop: "2px", width: "90%", padding: "12px,", backgroundColor:  "#1d4ed8", color: "white", border: "none", borderRadius: "30px",height:"30px", cursor: "pointer", fontWeight: "600", transition: "0.2s"}}
+onClick={handleCreatePortfolio}>
 Create Portfolio Link
 </button></>
 )}
@@ -671,7 +675,8 @@ onClick={handleDownload}
 >
 Download PDF
 </button>
-<button className="download-btn" onClick={handleCreatePortfolio}>
+<button className="download-btn" onClick={handleCreatePortfolio}
+style={{marginTop: "2px", width: "90%", padding: "12px,", backgroundColor:  "#1d4ed8", color: "white", border: "none", borderRadius: "30px",height:"30px", cursor: "pointer", fontWeight: "600", transition: "0.2s"}}>
 Create Portfolio Link
 </button>
 <button

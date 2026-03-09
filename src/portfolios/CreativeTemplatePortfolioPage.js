@@ -44,6 +44,9 @@ function CreativeTemplatePortfolioPage() {
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("projects")}>Projects</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("experience")}>Experience</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("education")}>Education</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("certifications")}>Certifications</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("achievements")}>Achievements</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("hobbies")}>Hobbies</span>
       </nav>
 
       {/* HERO SECTION */}
@@ -60,7 +63,15 @@ function CreativeTemplatePortfolioPage() {
           background: "#f5f5f5"
         }}
       >
-        <h1 style={{ fontSize: "40px" }}>{data.common.fullName}</h1>
+        <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
+        <h1 style={{ fontSize: "30px" }}>{data.common.title}</h1>
+        <p style={{ maxWidth: "600px", margin: "20px auto" }}>
+          {data.common.contact?.email} |
+{data.common.contact?.phone} |
+{data.common.contact?.linkedin}
+{data.common.portfolio}
+{data.common.address}
+        </p>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
           {data.common.summary}
         </p>
@@ -129,24 +140,47 @@ function CreativeTemplatePortfolioPage() {
 
       {/* EDUCATION */}
       <motion.section
-        id="education"
+        id="certifications"
         initial="hidden"
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
         style={{ padding: "60px 40px", background: "#f5f5f5" }}
       >
-        <h2>Education</h2>
+        <h2>Certifications</h2>
 
-        {data.education?.map((edu, i) => (
+        {data.certifications?.map((edu, i) => (
           <div key={i} style={{ marginBottom: "20px" }}>
-            <h3>{edu.institution}</h3>
-            <p>{edu.degree}</p>
+            <h3>{edu.title}</h3>
+            <p>{edu.issuer}</p>
             <p>{edu.year}</p>
           </div>
         ))}
       </motion.section>
 
+<motion.section
+        id="achievements"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Achievements</h2>
+        <p>{data.achievements.join(", ")}</p>
+      </motion.section>
+
+      <motion.section
+        id="hobbies"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Hobbies</h2>
+        <p>{data.hobbies.join(", ")}</p>
+      </motion.section>
     </div>
   );
 }
