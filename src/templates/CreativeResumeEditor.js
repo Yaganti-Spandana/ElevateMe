@@ -45,8 +45,6 @@ const CreativeResumeEditor = () => {
 
   skills: template.common.skills || [],
   languages: template.common.languages || [],
-  hobbies: template.common.hobbies || [],
-  achievements: template.common.achievements || [],
   
 });
 const [experience, setExperience] = useState([...template.experience || []]);
@@ -54,6 +52,7 @@ const [experience, setExperience] = useState([...template.experience || []]);
   const [projects, setProjects] = useState([...template.projects || []]);
   const [certifications, setCertifications] = useState([...template.certifications || []]);
 const [languages, setLanguages] = useState([...template.common.languages || []]);
+
 const handlePhotoUpload = (e) => {
   const file = e.target.files[0];
   if (!file) return;
@@ -312,16 +311,6 @@ useEffect(() => {
       </section>
     )}
 
-    {common.achievements?.length > 0 && (
-      <section className="section-block5">
-        <h3>Achievements</h3>
-        <ul>
-          {achievements.map((a, i) => (
-            <li key={i}>{a}</li>
-          ))}
-        </ul>
-      </section>
-    )}
 
     {languages?.length > 0 && (
       <section className="section-block5">
@@ -336,12 +325,7 @@ useEffect(() => {
       </section>
     )}
 
-    {common.hobbies?.length > 0 && (
-      <section className="section-block5">
-        <h3>Hobbies</h3>
-        <p>{hobbies.join(", ")}</p>
-      </section>
-    )}
+   
   </>
 );
 
@@ -353,8 +337,6 @@ const handleCreatePortfolio = () => {
     education,
     projects,
     certifications,
-    achievements,
-    hobbies
   };
 
   const username = common.name

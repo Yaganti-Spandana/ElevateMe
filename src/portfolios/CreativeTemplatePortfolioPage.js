@@ -45,8 +45,6 @@ function CreativeTemplatePortfolioPage() {
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("experience")}>Experience</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("education")}>Education</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("certifications")}>Certifications</span>
-        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("achievements")}>Achievements</span>
-        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("hobbies")}>Hobbies</span>
       </nav>
 
       {/* HERO SECTION */}
@@ -113,7 +111,7 @@ function CreativeTemplatePortfolioPage() {
             }}
           >
             <h3>{p.title}</h3>
-            <p>{p.description}</p>
+            <p>{p.desc}</p>
           </motion.div>
         ))}
       </motion.section>
@@ -133,7 +131,7 @@ function CreativeTemplatePortfolioPage() {
           <div key={i} style={{ marginBottom: "20px" }}>
             <h3>{exp.company}</h3>
             <p>{exp.role}</p>
-            <p>{exp.description}</p>
+            <p>{exp.desc}</p>
           </div>
         ))}
       </motion.section>
@@ -158,29 +156,8 @@ function CreativeTemplatePortfolioPage() {
         ))}
       </motion.section>
 
-<motion.section
-        id="achievements"
-        initial="hidden"
-        whileInView="visible"
-        variants={sectionAnimation}
-        transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
-      >
-        <h2>Achievements</h2>
-        <p>{data.achievements.join(", ")}</p>
-      </motion.section>
 
-      <motion.section
-        id="hobbies"
-        initial="hidden"
-        whileInView="visible"
-        variants={sectionAnimation}
-        transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
-      >
-        <h2>Hobbies</h2>
-        <p>{data.hobbies.join(", ")}</p>
-      </motion.section>
+
     </div>
   );
 }
