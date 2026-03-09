@@ -102,83 +102,42 @@ const splitIntoPages = useCallback((container) => {
   // =========================
   // PDF DOWNLOAD
   // =========================
-  const handleDownload = async () => {
-  if (!resumeRef.current) return;
-
-  const resumeClone = resumeRef.current.cloneNode(true);
-
-  // position offscreen
-  resumeClone.style.position = "absolute";
-  resumeClone.style.top = "-9999px";
-  resumeClone.style.left = "0";
-
-  // ⭐ REMOVE BUTTONS FROM CLONE
-  const buttons = resumeClone.querySelectorAll(".download-btn");
-  buttons.forEach(btn => btn.remove());
-
-  document.body.appendChild(resumeClone);
-
-  const canvas = await html2canvas(resumeClone, {
-    scale: 2,
-    useCORS: true,
-    backgroundColor: "#ffffff"
-  });
-
-  const pdf = new jsPDF("p", "mm", "a4");
-
-  const marginLeft = 10;
-  const marginTop = 10;
-  const pageWidth = pdf.internal.pageSize.getWidth();
-  const pageHeight = pdf.internal.pageSize.getHeight();
-
-  const usableWidth = pageWidth - marginLeft * 2;
-  const usableHeight = pageHeight - marginTop;
-
-  const imgWidthPx = canvas.width;
-  const imgHeightPx = canvas.height;
-
-  const pxPerMm = imgWidthPx / usableWidth;
-  const sliceHeightPx = usableHeight * pxPerMm;
-
-  let renderedPx = 0;
-  let pageIndex = 0;
-
-  while (renderedPx < imgHeightPx) {
-
-    const pageCanvas = document.createElement("canvas");
-    pageCanvas.width = imgWidthPx;
-    pageCanvas.height = Math.min(sliceHeightPx, imgHeightPx - renderedPx);
-
-    const ctx = pageCanvas.getContext("2d");
-
-    ctx.drawImage(
-      canvas,
-      0,
-      renderedPx,
-      imgWidthPx,
-      pageCanvas.height,
-      0,
-      0,
-      imgWidthPx,
-      pageCanvas.height
-    );
-
-    const imgData = pageCanvas.toDataURL("image/png");
-
-    if (pageIndex > 0) pdf.addPage();
-
-    const imgHeightMm = (pageCanvas.height * usableWidth) / pageCanvas.width;
-
-    pdf.addImage(imgData, "PNG", marginLeft, marginTop, usableWidth, imgHeightMm);
-
-    renderedPx += pageCanvas.height;
-    pageIndex++;
-  }
-
-  document.body.removeChild(resumeClone);
-
-  pdf.save(`${common.name || "Resume"}_Resume.pdf`);
-};
+   const handleDownload = async () => {
+    if (!resumeRef.current) return;
+  
+    const pages = resumeRef.current.querySelectorAll(".pdf-page1");
+  
+    const pdf = new jsPDF("p", "mm", "a4");
+  
+    for (let i = 0; i < pages.length; i++) {
+  
+      const canvas = await html2canvas(pages[i], {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#ffffff"
+      });
+  
+      const imgData = canvas.toDataURL("image/png");
+  
+      const imgWidth = 210; // A4 width in mm
+      const imgHeight = 297; // A4 height in mm
+  
+      if (i > 0) {
+        pdf.addPage();
+      }
+  
+      pdf.addImage(
+        imgData,
+        "PNG",
+        0,
+        0,
+        imgWidth,
+        imgHeight
+      );
+    }
+  
+    pdf.save(`${common.name || "Resume"}_Resume.pdf`);
+  };
   // =========================
   // HELPERS
   // =========================
