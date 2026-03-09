@@ -316,7 +316,7 @@ useEffect(() => {
       <section className="section-block5">
         <h3>Achievements</h3>
         <ul>
-          {common.achievements.map((a, i) => (
+          {achievements.map((a, i) => (
             <li key={i}>{a}</li>
           ))}
         </ul>
@@ -339,7 +339,7 @@ useEffect(() => {
     {common.hobbies?.length > 0 && (
       <section className="section-block5">
         <h3>Hobbies</h3>
-        <p>{common.hobbies.join(", ")}</p>
+        <p>{hobbies.join(", ")}</p>
       </section>
     )}
   </>
