@@ -65,7 +65,10 @@ function BorderHighlightPortfolioPage() {
           {data.common.summary}
         </p>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
-          {data.common.contact}
+          {common.contact?.email}
+{common.contact?.phone}
+{common.contact?.linkedin}
+{common.contact?.github}
         </p>
       </motion.section>
 
