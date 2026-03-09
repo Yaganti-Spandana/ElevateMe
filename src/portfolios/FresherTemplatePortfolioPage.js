@@ -191,7 +191,7 @@ function FresherTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Achievements</h2>
-        <p>{data.achievements.join(", ")}</p>
+        <p>{data.achievements}</p>
       </motion.section>
       <motion.section
         id="hobbies"
@@ -202,7 +202,7 @@ function FresherTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Hobbies</h2>
-        <p>{data.hobbies.join(", ")}</p>
+        <p>{data.hobbies}</p>
       </motion.section>
       <motion.section
         id="languages"
@@ -213,7 +213,7 @@ function FresherTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Languages</h2>
-        <p>{data.languages.join(", ")}</p>
+        <p>{data.languages}</p>
       </motion.section>
       <motion.section
         id="extraCurriculars"
@@ -224,7 +224,7 @@ function FresherTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>ExtraCurriculars</h2>
-        <p>{data.extraCurriculars.join(", ")}</p>
+        <p>{data.extraCurriculars}</p>
       </motion.section>
 
 
