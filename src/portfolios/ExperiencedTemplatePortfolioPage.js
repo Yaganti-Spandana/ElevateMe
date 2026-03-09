@@ -44,6 +44,10 @@ function ExperiencedTemplatePortfolioPage() {
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("projects")}>Projects</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("experience")}>Experience</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("education")}>Education</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("certifications")}>Certifications</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("achievements")}>Achievements</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("languages")}>Languages</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("interests")}>Interests</span>
       </nav>
 
       {/* HERO SECTION */}
@@ -147,6 +151,53 @@ function ExperiencedTemplatePortfolioPage() {
         ))}
       </motion.section>
 
+      <motion.section
+        id="certifications"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Certifications</h2>
+<p>{data.certifications}</p>
+      </motion.section>
+
+      <motion.section
+        id="achievements"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Achievements</h2>
+<p>{data.achievements}</p>
+      </motion.section>
+
+<motion.section
+        id="languages"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Languages</h2>
+<p>{data.languages}</p>
+      </motion.section>
+
+      <motion.section
+        id="interests"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Interests</h2>
+<p>{data.interests}</p>
+      </motion.section>
     </div>
   );
 }
