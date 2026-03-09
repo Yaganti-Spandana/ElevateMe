@@ -181,25 +181,7 @@ function FresherTemplatePortfolioPage() {
           </div>
         ))}
       </motion.section>
-      <motion.section
-        id="internships"
-        initial="hidden"
-        whileInView="visible"
-        variants={sectionAnimation}
-        transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
-      >
-        <h2>internships</h2>
-
-        {data.internships?.map((edu, i) => (
-          <div key={i} style={{ marginBottom: "20px" }}>
-            <h3>{edu.company}</h3>
-            <p>{edu.role}</p>
-            <p>{edu.duration}</p>
-            <p>{edu.desc}</p>
-          </div>
-        ))}
-      </motion.section>
+      
       <motion.section
         id="achievements"
         initial="hidden"
