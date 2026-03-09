@@ -61,13 +61,14 @@ function BorderHighlightPortfolioPage() {
         }}
       >
         <h1>{data.common?.name || "Your Name"}</h1>
+        <p style={{fontSize:"13px"}}>{data.common?.title || "Title"}</p>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
           {data.common.summary}
         </p>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
-          {data.common.contact?.email}
-{data.common.contact?.phone}
-{data.common.contact?.linkedin}
+          {data.common.contact?.email} |
+{data.common.contact?.phone} |
+{data.common.contact?.linkedin}|
 {data.common.contact?.github}
         </p>
       </motion.section>
@@ -108,7 +109,7 @@ function BorderHighlightPortfolioPage() {
             }}
           >
             <h3>{p.title}</h3>
-            <p>{p.description}</p>
+            <p>{p.desc}</p>
           </motion.div>
         ))}
       </motion.section>
@@ -128,7 +129,8 @@ function BorderHighlightPortfolioPage() {
           <div key={i} style={{ marginBottom: "20px" }}>
             <h3>{exp.company}</h3>
             <p>{exp.role}</p>
-            <p>{exp.description}</p>
+            <p>{exp.desc}</p>
+            <p>{exp.duration}</p>
           </div>
         ))}
       </motion.section>
