@@ -399,6 +399,11 @@ const updateAchievement = createUpdater(setAchievements);
     education,
     projects,
     certifications,
+    internships,
+    achievements,
+    hobbies,
+    languages,
+    extraCurriculars
   };
 
   const username = common.name

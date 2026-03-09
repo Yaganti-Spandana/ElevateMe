@@ -44,6 +44,11 @@ function FresherTemplatePortfolioPage() {
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("projects")}>Projects</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("experience")}>Experience</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("education")}>Education</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("certifications")}>Certifications</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("achievements")}>Achievements</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("hobbies")}>Hobbies</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("languages")}>Languages</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("extraCurriculars")}>ExtraCurriculars</span>
       </nav>
 
       {/* HERO SECTION */}
@@ -132,7 +137,7 @@ function FresherTemplatePortfolioPage() {
           <div key={i} style={{ marginBottom: "20px" }}>
             <h3>{exp.company}</h3>
             <p>{exp.role}</p>
-            <p>{exp.description}</p>
+            <p>{exp.desc}</p>
           </div>
         ))}
       </motion.section>
@@ -157,6 +162,89 @@ function FresherTemplatePortfolioPage() {
           </div>
         ))}
       </motion.section>
+      <motion.section
+        id="certifications"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+      >
+        <h2>Certifications</h2>
+
+        {data.certifications?.map((edu, i) => (
+          <div key={i} style={{ marginBottom: "20px" }}>
+            <h3>{edu.title}</h3>
+            <p>{edu.issuer}</p>
+            <p>{edu.year}</p>
+            <p>{edu.details}</p>
+          </div>
+        ))}
+      </motion.section>
+      <motion.section
+        id="internships"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+      >
+        <h2>internships</h2>
+
+        {data.internships?.map((edu, i) => (
+          <div key={i} style={{ marginBottom: "20px" }}>
+            <h3>{edu.company}</h3>
+            <p>{edu.role}</p>
+            <p>{edu.duration}</p>
+            <p>{edu.desc}</p>
+          </div>
+        ))}
+      </motion.section>
+      <motion.section
+        id="achievements"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Achievements</h2>
+        <p>{data.achievements.join(", ")}</p>
+      </motion.section>
+      <motion.section
+        id="hobbies"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Hobbies</h2>
+        <p>{data.hobbies.join(", ")}</p>
+      </motion.section>
+      <motion.section
+        id="languages"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Languages</h2>
+        <p>{data.languages.join(", ")}</p>
+      </motion.section>
+      <motion.section
+        id="extraCurriculars"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>ExtraCurriculars</h2>
+        <p>{data.extraCurriculars.join(", ")}</p>
+      </motion.section>
+
 
     </div>
   );
