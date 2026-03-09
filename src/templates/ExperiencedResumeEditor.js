@@ -126,7 +126,7 @@ const USABLE_PAGE_HEIGHT =
   achievements,
   languages,
   interests,
-  showPreview
+  showPreview,splitIntoPages
 ]);
 
   // ======================

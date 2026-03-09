@@ -7,7 +7,6 @@ import "../css/CreativeResumeEditor.css";
 import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
 const A4_HEIGHT_PX = 842; // correct preview height
-const CONTENT_PADDING = 56; // 28 top + 28 bottom
 const CreativeResumeEditor = () => {
   const templateId = "creative";
   const template = resumeData[templateId];

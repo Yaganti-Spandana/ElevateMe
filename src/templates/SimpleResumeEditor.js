@@ -7,8 +7,6 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 
 const A4_HEIGHT_PX = 842; // correct preview height
-const CONTENT_PADDING = 56; // 28 top + 28 bottom
-const USABLE_PAGE_HEIGHT = A4_HEIGHT_PX - CONTENT_PADDING;
 
 const SimpleResumeEditor = () => {
   const templateId = "simple";

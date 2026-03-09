@@ -8,8 +8,6 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 
 const A4_HEIGHT_PX = 842; // correct preview height
-const CONTENT_PADDING = 56; // 28 top + 28 bottom
-const USABLE_PAGE_HEIGHT = A4_HEIGHT_PX - CONTENT_PADDING;
 
 const FresherResumeEditor = () => {
   const templateId = "fresher";
@@ -25,8 +23,6 @@ const FresherResumeEditor = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  const [portfolio, setPortfolio] = useState(template.common.portfolio || "");
-const [address, setAddress] = useState(template.common.address || "");
   // -----------------------------
   // Helper functions for array state
   // -----------------------------
@@ -185,7 +181,7 @@ const USABLE_PAGE_HEIGHT =
   hobbies,
   languages,
   extraCurriculars,
-  showPreview 
+  showPreview,splitIntoPages
 ]);
   // -----------------------------
   // PDF Download
@@ -234,10 +230,6 @@ const updateProjects = createUpdater(setProjects);
 const deleteProjects = createDeleter(setProjects);
 const addProjects = createAdder(setProjects, { title: "", desc: "" });
 
-const updateCertifications = createUpdater(setCertifications);
-const deleteCertifications = createDeleter(setCertifications);
-const addCertifications = createAdder(setCertifications, { name: "" });
-const updateAchievement = createUpdater(setAchievements);
   const deleteAchievement = createDeleter(setAchievements);
   const addAchievement = createAdder(setAchievements, "New Achievement");
 
