@@ -1,0 +1,479 @@
+/* ===== GOOGLE FONT ===== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* ===== NAVBAR (GLASS) ===== */
+.navbar {
+  backdrop-filter: blur(14px);
+  background: rgba(37, 99, 235, 0.85);
+  color: white;
+  padding: 18px 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* ===== DARK TOGGLE ===== */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 28px 20px;
+}
+
+/* ===== TEMPLATE GRID ===== */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+/* ===== TEMPLATE CARD (GLASS) ===== */
+.template-card {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 18px;
+  padding: 28px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .template-card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.template-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 60px rgba(37, 99, 235, 0.25);
+}
+
+.template-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* ===============================
+   TEMPLATE GALLERY PREVIEW
+================================ */
+
+.template-preview-box {
+  height: 260px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 8px;
+}
+/* ===== BUILDER LAYOUT ===== */
+.builder-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* ===== FORM ===== */
+.form-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .form-section {
+  background: rgba(30, 41, 59, 0.85);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 14px;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== PREVIEW ===== */
+
+
+body.dark .preview-section {
+  background: rgba(30, 41, 59, 0.9);
+}
+
+#resume-preview {
+  background: white;
+  padding: 28px;
+  min-height: 300px;
+}
+
+/* ===== BUTTON ===== */
+.primary-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-bottom: 16px;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 28px;
+  color: #94a3b8;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .builder-layout {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== ROOT ===== */
+.nurse-pro-root {
+  width: 794px;
+  min-height: 1123px;
+  margin: auto;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1e293b;
+}
+
+/* ===== SIDEBAR ===== */
+.nurse-pro-sidebar {
+  background: linear-gradient(180deg, #1e40af, #1e3a8a);
+  color: white;
+  padding: 24px;
+}
+
+.nurse-side-section {
+  margin-top: 22px;
+}
+
+.nurse-side-section h3 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 4px;
+}
+
+/* ===== PHOTO ===== */
+.nurse-pro-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.nurse-pro-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.nurse-pro-photo.placeholder {
+  background: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MAIN ===== */
+.nurse-pro-main {
+  padding: 32px;
+}
+
+.nurse-pro-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nurse-pro-header h2 {
+  font-size: 16px;
+  color: #2563eb;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* MICROSOFT STYLE PREVIEW CARD */
+/* ============================= */
+
+.preview-card {
+  width: 100%;
+  max-width: 720px;
+  height: 600px;
+  background: #f3f4f6;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+/* responsive scaler */
+.preview-scaler {
+  transform: scale(0.85);
+  transform-origin: top center;
+}
+
+.download-bar {
+  margin-top: 16px;
+  text-align: center;
+}
+/* large screens */
+@media (min-width: 1400px) {
+  .preview-scaler {
+    transform: scale(0.85);
+  }
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+  .preview-scaler {
+    transform: scale(0.65);
+  }
+}
+
+/* mobile */
+@media (max-width: 640px) {
+  .preview-scaler {
+    transform: scale(0.5);
+  }
+}
+
+/* ===== SECTIONS ===== */
+.nurse-pro-section {
+  margin-top: 26px;
+}
+
+.nurse-pro-section h3 {
+  font-size: 14px;
+  color: #2563eb;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 4px;
+}
+
+/* ===== SKILL BARS ===== */
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-bar span {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.skill-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  width: 85%;
+  height: 100%;
+  background: #60a5fa;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-item {
+  display: flex;
+  gap: 10px;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+/* ===============================
+   🔥 PDF RENDER FIXES
+   =============================== */
+
+/* ensure resume is never scaled internally */
+#resume {
+  width: 794px;
+  min-height: 1123px;
+  margin: 0 auto;
+  background: white;
+}
+
+/* prevent text compression */
+.cp-header,
+.cp-section,
+.cp-exp-card,
+.nurse-pro-root {
+  transform: none !important;
+}
+
+/* ===============================
+   🔥 PRINT PERFECT SETTINGS
+   =============================== */
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  #resume {
+    width: 210mm;
+    min-height: auto;
+    padding: 14mm;
+    box-shadow: none;
+  }
+}
+
+.editable-text {
+  direction: ltr !important;
+  unicode-bidi: plaintext !important;
+  text-align: left !important;
+}
+
+/* EditableImage.css or global CSS */
+
+.editable-image-wrap {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.image-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+}
+
+.image-inside-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image inside circle */
+}
+
+.placeholder {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+
+.camera-overlay {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.camera-overlay:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

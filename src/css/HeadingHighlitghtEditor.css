@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); 
+.app-container { display: flex; flex-direction: column; min-height: 100vh;font-family: 'Roboto',sans-serif; } 
+body{
+  font-family: 'Roboto',sans-serif;
+}
+/* ===== MAIN LAYOUT ===== */ 
+.editor-container { 
+  display: flex; 
+  gap: 24px; 
+  padding: 24px; 
+  height: auto !important;
+  font-family:'Roboto',sans-serif;
+  box-sizing: border-box; 
+  margin: 20px 0; 
+  background: #f3f4f6;
+  overflow: auto; } 
+  /* ================= LEFT — EDITOR ================= */ 
+  .editor-sidebar { flex: 0.7; background: #b2c2d6 !important; padding: 24px; border-radius: 14px; overflow-y: auto;  height: 450px !important; min-width: 0; color: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.25); } 
+  /* headings */ .editor-sidebar h2, .editor-sidebar h3 { font-weight: 600; color: #ffffff; margin-bottom: 5px; } 
+  /* inputs */ .editor-sidebar input, .editor-sidebar textarea { width: 90%; margin-bottom: 12px; padding: 10px; border-radius: 8px; border: 1px solid #fff; font-size: 14px;background: #b2c2d6 !important;color: #fff; outline: none; } 
+  .skillsfield{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; 
+  }
+  .dynamic-field1{
+    margin-bottom: 18px; 
+    padding: 0px; 
+    background: #f9fafb; 
+    border: 1px solid #e5e7eb; 
+    border-radius: 10px; 
+    display: flex; 
+    width: 100%; 
+    gap: 8px;
+    align-items: center;
+  }
+  .input1{
+    width: 120px !important; 
+    margin-bottom: 0px !important; 
+    padding: 5px !important; 
+    border-radius: 8px; 
+    border: 1px solid #fff; 
+    font-size: 5px; 
+    background: #1f2937; 
+    color: #fff; 
+    outline: none; 
+    height: 15px;
+  }
+  .delete-btn1{
+    margin: 0px 40px; 
+    width: 50px; 
+    padding: 0px 3px; 
+    background: #ef4444; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 13px; 
+    font-weight: 600; 
+    height: 20px; 
+  }
+     .delete-btn1:hover { 
+      background: #dc2626; 
+  }
+  .editor-sidebar input::placeholder, .editor-sidebar textarea::placeholder { color: #9ca3af; } 
+  /* textarea control */ .editor-sidebar textarea { min-height: 80px; resize: vertical; line-height: 1.4; } 
+  /* download button */ .editor-sidebar .download-btn { margin-top: 18px; width: 100%; padding: 12px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; transition: 0.2s; } 
+  .editor-sidebar .download-btn:hover { transform: translateY(-1px); } 
+  /* add button */ .add { background: linear-gradient(135deg, #16a34a, #15803d); border-radius: 8px; color: #ffffff; height: 34px; padding: 0 12px; border: none; cursor: pointer; font-weight: 600; margin-bottom: 20px; } 
+  /* delete button */ .delete-btn { margin-top: 8px; width: 100px; padding: 8px; background: #ef4444; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; height: 32px; } .delete-btn:hover { background: #dc2626; } 
+  /* ===== DYNAMIC FIELD CARD ===== */ 
+  .dynamic-field { margin-bottom: 18px; padding: 14px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; display: flex; flex-direction: column; gap: 8px; } 
+  .field-grid { display: flex; flex-direction: column; gap: 10px; } .inp { width: 100%; } 
+  /* ================= RIGHT — PREVIEW ================= */ /* ===== PREVIEW WRAPPER ===== */ 
+  .editor-preview-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 500px !important;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 0px 0;
+}
+    /* ===== PAGE CONTAINER ===== */ 
+    .resume-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;   /* ⭐ clean professional spacing */
+}
+    /* ===== REAL A4 PAGE ===== */ 
+  .resume-content {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.45;
+  color: #111827;
+}
+
+
+      @media screen { .resume-content { column-width: auto; /* single page */ } } 
+      /* ===== SECTION BLOCK (VERY IMPORTANT) ===== */ 
+      .section-block1 { 
+        break-inside: avoid; 
+        page-break-inside: avoid; 
+        margin-bottom: 0px; 
+      } 
+      .section-block12 { 
+        break-inside: avoid; 
+        page-break-inside: avoid; 
+        margin-bottom: 0px; 
+        border-bottom:0.5px solid indianred ;
+      } 
+      /* ===== EACH ITEM SAFE ===== */ 
+      .pdf-section { break-inside: avoid; page-break-inside: avoid; margin-bottom: 12px; font-size: 13px; } 
+      .pdf-section1 { break-inside: avoid; page-break-inside: avoid; margin-top: -15px; font-size: 13px;
+      display: flex; } 
+      .pdf-section12 { break-inside: avoid; page-break-inside: avoid; margin-bottom: 12px; font-size: 13px; 
+      border-bottom: 0.5px solid indianred;} 
+      .pdf-section13 { break-inside: avoid; page-break-inside: avoid; margin-bottom: 12px; font-size: 12px; } 
+      .skill-gap{
+        margin-left: 30px;
+        margin-bottom: 10px;
+      }
+      .pdf-section1 p{
+        margin-top: 2px;
+      }
+      /* headings */ 
+      .heading1 { 
+        font-size: 30px; 
+        font-weight: 700; 
+        font-family: 'Inter',sans-serif;
+        color:black;
+        margin-bottom: -10px;
+        text-align: center;
+      } 
+      .subheading1 { 
+        font-size: 15px; 
+        color: #374151; 
+        font-family: 'Inter',sans-serif;
+        margin-bottom: -10px;
+        text-align: center;
+      } 
+      .section-heading1 { 
+        font-size: 18px; 
+        font-weight: 600; 
+        height: 20px;
+        margin-top: 0px; 
+        padding-bottom: 3px; 
+        font-family: 'Poppins',sans-serif;
+        background-color:indianred !important;
+        text-align: center;
+      } 
+      .con{
+        display: flex;
+        margin:-20px 0px;
+        text-align: center;
+      }
+      .contact1 p{
+        margin-top: 16px;
+        font-family: 'Poppins',sans-serif;
+        margin-left: 10px;
+      }
+      
+      /* 🔥 PREVENT TEXT OVERFLOW */ 
+      .editor-preview, .editor-preview * { word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; } 
+      
+      .sum, .summary { 
+        font-size: 13.5px; 
+        margin-bottom: 18px; 
+        text-align: justify; 
+        white-space: pre-wrap; 
+        font-family: 'Roboto',sans-serif;
+      } 
+      /* ===== CONTACT ===== */ 
+      .contact1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(10.5px, 2.5vw, 12px);
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.35;
+  margin: 6px 0 16px;
+  word-break: break-word;
+  padding: 10px 0px;
+}
+      
+      .pdf-section { margin-bottom: 12px; font-size: 13px; break-inside: avoid; page-break-inside: avoid; } 
+      .pdf-section p { margin-top: 4px; white-space: pre-wrap; font-family: 'Roboto',sans-serif;} 
+      /* ===== SKILLS ===== */ 
+      .editor-preview .skills-text { 
+        font-size: 11px; 
+        margin-bottom: 6px; 
+        white-space: pre-wrap; 
+        font-family: 'Roboto',sans-serif;
+      } 
+
+      .ed2{
+        display: flex;
+      }
+      .deg2{
+        font-size: 15px;
+      }
+      .ins2{
+        margin-left: 4px;
+      }
+      .year2{
+        margin-left: 4px;
+        border-bottom: 0.5px solid indianred;
+      }
+      .ed3{
+        display: flex;
+        font-size: 13px;
+      }
+      .deg3{
+        width:40%;
+        text-align: center;
+        font-family: 'Inter',sans-serif;
+      }
+      .ins3{
+        width:30%;
+        text-align: center;
+        margin-left: 4px;
+        font-family: 'Inter',sans-serif;
+      }
+      .year3{
+        width:30%;
+        text-align: center;
+        margin-left: 4px;
+        font-family: 'Inter',sans-serif;
+       
+      }
+      /* ===== MULTI PAGE ===== */ 
+      .editor-preview.page-break { margin-bottom: 24px; page-break-after: always; break-after: page; } 
+      /* ===== SMALL CARD ===== */ 
+      .editor-card { background: #ffffff; border-radius: 12px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); } 
+      .editor-input { border-radius: 8px; border: 1px solid #e5e7eb; } 
+      /* ===== HIDDEN MEASURE ===== */ 
+      .resume-measure {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+  width: 595px;
+}
+      /* prevent text overflow */ 
+      .summary { word-break: break-word; overflow-wrap: anywhere; font-family: 'Roboto',sans-serif;} ;
+      .section-heading1 .skills-text{
+        word-break: break-word; 
+        overflow-wrap: anywhere; 
+        font-family: 'Poppins',sans-serif;
+        font-size: 10px;
+      
+      }
+      /* ===== FLOW CONTAINER ===== */ 
+      .resume-flow {
+  width: 595px;
+  margin: 0 auto;
+  column-width: auto;
+} 
+      /* ===== EACH PAGE ===== */ .resume-flow::before, .resume-flow::after { content: ""; } 
+      /* ===== PAGE BREAK CONTROL ===== */ 
+      
+.section-block{
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.header-block1{
+    break-inside: avoid;
+  page-break-inside: avoid;
+  background-color: indianred;
+}
+      /* ===== TRUE PAGE VISUAL ===== */ .resume-pages { position: relative; padding: 0; } 
+      /* ⭐⭐ THIS CREATES REAL PAGE MARGINS ⭐⭐ */ 
+      .resume-pages::before {
+  display: none;
+}
+.header-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 18px;
+}
+
+
+ 
+
+.section-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 18px;
+}
+
+.pdf-section {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+.editor-sidebar input,
+.editor-sidebar textarea {
+  width: 90%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: #1f2937;
+  color: #fff;
+}
+
+.add {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: #fff;
+}
+
+.pdf-page1 {
+  width: 595px;
+  min-height: 842px;   /* ✅ REAL A4 */
+  background: #fff;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24px;   /* smaller clean gap */
+  margin-top: 24px;
+}
+
+/* Force role, company, duration in a single row */
+.ed1 {
+  display: flex;
+  flex-direction: row;   /* horizontal layout */
+  flex-wrap: nowrap;     /* prevent wrapping */
+  align-items: center;   /* vertical alignment */
+  justify-content: flex-start;
+  gap: 8px;              /* spacing between fields */
+}
+
+/* Adjust individual widths if needed */
+.deg1 {
+  flex: 2;               /* Role takes 2 parts */
+  font-weight: 600;
+}
+
+.ins1 {
+  flex: 2;               /* Company takes 2 parts */
+  font-weight: 500;
+}
+
+.year1 {
+  flex: 1;               /* Duration takes 1 part */
+  text-align: right;     /* optional: align to right */
+}
+/* ================= MOBILE VIEW ================= */
+
+@media (max-width:768px){
+
+/* MAIN LAYOUT */
+.editor-container{
+flex-direction:column;
+height:auto;
+padding:10px;
+gap:16px;
+}
+
+/* EDITOR SIDEBAR */
+.editor-sidebar{
+width:100%;
+height:auto;
+max-height:none;
+padding:16px;
+border-radius:10px;
+}
+
+/* SKILLS GRID */
+.skillsfield{
+grid-template-columns: repeat(2,1fr);
+}
+
+/* INPUT FIX */
+.input1{
+width:100px !important;
+font-size:10px;
+height:22px;
+}
+
+/* DELETE BUTTON */
+.delete-btn1{
+margin:5px auto;
+}
+
+/* PREVIEW WRAPPER */
+.editor-preview-wrapper{
+width:100%;
+overflow-x:auto;
+overflow-y:auto;
+justify-content:flex-start;
+align-items:flex-start;
+padding:10px 0;
+}
+
+/* PAGE CONTAINER */
+.resume-pages{
+align-items:flex-start;
+min-width:595px; /* keeps A4 layout */
+}
+
+/* PDF PAGE */
+.pdf-page1{
+width:595px;
+min-height:842px;
+margin-bottom:14px;
+}
+
+/* TEXT SIZE ADJUST */
+/* ===== HEADER ===== */
+
+
+
+
+
+}
