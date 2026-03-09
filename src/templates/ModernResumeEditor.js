@@ -88,40 +88,45 @@ const splitIntoPages = useCallback((container) => {
     container.querySelectorAll(".modern-right .side-section")
   );
 
-  const pages = [];
-  let currentPage = [];
-  let currentHeight = 0;
+  const split = (sections) => {
+    const pages = [];
+    let current = [];
+    let height = 0;
 
-  sections.forEach((section) => {
-    const height = Math.ceil(section.offsetHeight);
+    sections.forEach((section) => {
+      const h = Math.ceil(section.offsetHeight);
 
-    if (height >= USABLE_PAGE_HEIGHT) {
-      if (currentPage.length) {
-        pages.push([...currentPage]);
-        currentPage = [];
-        currentHeight = 0;
+      if (height + h > USABLE_PAGE_HEIGHT) {
+        pages.push([...current]);
+        current = [];
+        height = 0;
       }
 
-      pages.push([section]);
-      return;
-    }
+      current.push(section);
+      height += h;
+    });
 
-    if (currentHeight + height > USABLE_PAGE_HEIGHT) {
-      pages.push([...currentPage]);
-      currentPage = [];
-      currentHeight = 0;
-    }
+    if (current.length) pages.push(current);
 
-    currentPage.push(section);
-    currentHeight += height;
-  });
+    return pages;
+  };
 
-  if (currentPage.length) pages.push(currentPage);
-  if (!pages.length && sections.length) pages.push(sections);
+  const leftPages = split(leftSections);
+  const rightPages = split(rightSections);
 
-  return pages;
+  const totalPages = Math.max(leftPages.length, rightPages.length);
+
+  const finalPages = [];
+
+  for (let i = 0; i < totalPages; i++) {
+    finalPages.push([
+      ...(leftPages[i] || []),
+      ...(rightPages[i] || [])
+    ]);
+  }
+
+  return finalPages;
 }, [USABLE_PAGE_HEIGHT]);
-
 
   // =========================
   // Photo upload
