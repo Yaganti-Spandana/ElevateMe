@@ -44,6 +44,8 @@ function ModernTemplatePortfolioPage() {
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("projects")}>Projects</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("experience")}>Experience</span>
         <span style={{ cursor: "pointer" }} onClick={() => scrollTo("education")}>Education</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("languages")}>Languages</span>
+        <span style={{ cursor: "pointer" }} onClick={() => scrollTo("tools")}>Tools</span>
       </nav>
 
       {/* HERO SECTION */}
@@ -60,9 +62,17 @@ function ModernTemplatePortfolioPage() {
           background: "#f5f5f5"
         }}
       >
-        <h1 style={{ fontSize: "40px" }}>{data.common.fullName}</h1>
+        <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
+        <p style={{fontSize:"13px"}}>{data.common?.title || "Title"}</p>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
           {data.common.summary}
+        </p>
+
+        <p style={{ maxWidth: "600px", margin: "20px auto" }}>
+          {data.common.contact?.email} |
+{data.common.contact?.phone} |
+{data.common.contact?.linkedin}|
+{data.common.contact?.address}
         </p>
       </motion.section>
 
@@ -77,6 +87,31 @@ function ModernTemplatePortfolioPage() {
       >
         <h2>Skills</h2>
         <p>{data.common.skills.join(", ")}</p>
+
+      </motion.section>
+      <motion.section
+        id="languages"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Skills</h2>
+        <p>{data.common.languages.join(", ")}</p>
+
+      </motion.section>
+      <motion.section
+        id="tools"
+        initial="hidden"
+        whileInView="visible"
+        variants={sectionAnimation}
+        transition={{ duration: 0.6 }}
+        style={{ padding: "60px 40px" }}
+      >
+        <h2>Skills</h2>
+        <p>{data.common.tools.join(", ")}</p>
+
       </motion.section>
 
       {/* PROJECTS */}
@@ -102,7 +137,7 @@ function ModernTemplatePortfolioPage() {
             }}
           >
             <h3>{p.title}</h3>
-            <p>{p.description}</p>
+            <p>{p.desc}</p>
           </motion.div>
         ))}
       </motion.section>
@@ -122,7 +157,8 @@ function ModernTemplatePortfolioPage() {
           <div key={i} style={{ marginBottom: "20px" }}>
             <h3>{exp.company}</h3>
             <p>{exp.role}</p>
-            <p>{exp.description}</p>
+            <p>{exp.desc}</p>
+            <p>{exp.highlights}</p>
           </div>
         ))}
       </motion.section>

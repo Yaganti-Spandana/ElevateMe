@@ -60,7 +60,7 @@ function SimpleTemplatePortfolioPage() {
           background: "#f5f5f5"
         }}
       >
-        <h1 style={{ fontSize: "40px" }}>{data.common.fullName}</h1>
+        <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
           {data.common.summary}
         </p>
