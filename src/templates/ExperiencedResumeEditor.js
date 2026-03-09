@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect,useCallback } from "react";
 import resumeData from "../components/ResumeData";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
@@ -57,20 +57,20 @@ const SAFE_BUFFER = 40;    // ⭐ increased for safety
 
 const USABLE_PAGE_HEIGHT =
   A4_HEIGHT_PX - PAGE_PADDING - SAFE_BUFFER;
-  const splitIntoPages = (container) => {
+ const splitIntoPages = useCallback((container) => {
+  if (!container) return [];
 
-    const sections = Array.from(
-      container.querySelectorAll(".header-block3, .section-block")
-    );
+  const sections = Array.from(
+    container.querySelectorAll(".header-block, .section-block")
+  );
 
-     const pages = [];
+  const pages = [];
   let currentPage = [];
   let currentHeight = 0;
 
   sections.forEach((section) => {
     const height = Math.ceil(section.offsetHeight);
 
-    // 🔴 If single section taller than page
     if (height >= USABLE_PAGE_HEIGHT) {
       if (currentPage.length) {
         pages.push([...currentPage]);
@@ -82,8 +82,7 @@ const USABLE_PAGE_HEIGHT =
       return;
     }
 
-    // 🟢 SMART OVERFLOW CHECK
-    if (currentHeight + height > USABLE_PAGE_HEIGHT){
+    if (currentHeight + height > USABLE_PAGE_HEIGHT) {
       pages.push([...currentPage]);
       currentPage = [];
       currentHeight = 0;
@@ -93,17 +92,11 @@ const USABLE_PAGE_HEIGHT =
     currentHeight += height;
   });
 
-  if (currentPage.length) {
-    pages.push(currentPage);
-  }
-
-  // safety fallback
-  if (!pages.length && sections.length) {
-    pages.push(sections);
-  }
+  if (currentPage.length) pages.push(currentPage);
+  if (!pages.length && sections.length) pages.push(sections);
 
   return pages;
-};
+}, [USABLE_PAGE_HEIGHT]);
 
   useEffect(() => {
 

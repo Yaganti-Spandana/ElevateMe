@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo, useEffect } from "react";
+import React, { useState, useRef, useMemo, useEffect ,useCallback} from "react";
 import resumeData from "../components/ResumeData";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
@@ -77,56 +77,46 @@ const ModernResumeEditor = () => {
   const SAFE_BUFFER = 40;    // extra safety
   const USABLE_PAGE_HEIGHT = A4_HEIGHT_PX - PAGE_PADDING - SAFE_BUFFER;
 
-const splitIntoPages = (container) => {
+const splitIntoPages = useCallback((container) => {
   if (!container) return [];
 
-  const leftSections = Array.from(
-    container.querySelectorAll(".modern-left .section-block")
+  const sections = Array.from(
+    container.querySelectorAll(".header-block, .section-block")
   );
 
-  const rightSections = Array.from(
-    container.querySelectorAll(".modern-right .side-section")
-  );
+  const pages = [];
+  let currentPage = [];
+  let currentHeight = 0;
 
-  const split = (sections) => {
-    const pages = [];
-    let current = [];
-    let height = 0;
+  sections.forEach((section) => {
+    const height = Math.ceil(section.offsetHeight);
 
-    sections.forEach((section) => {
-      const h = Math.ceil(section.offsetHeight);
-
-      if (height + h > USABLE_PAGE_HEIGHT) {
-        pages.push([...current]);
-        current = [];
-        height = 0;
+    if (height >= USABLE_PAGE_HEIGHT) {
+      if (currentPage.length) {
+        pages.push([...currentPage]);
+        currentPage = [];
+        currentHeight = 0;
       }
 
-      current.push(section);
-      height += h;
-    });
+      pages.push([section]);
+      return;
+    }
 
-    if (current.length) pages.push(current);
+    if (currentHeight + height > USABLE_PAGE_HEIGHT) {
+      pages.push([...currentPage]);
+      currentPage = [];
+      currentHeight = 0;
+    }
 
-    return pages;
-  };
+    currentPage.push(section);
+    currentHeight += height;
+  });
 
-  const leftPages = split(leftSections);
-  const rightPages = split(rightSections);
+  if (currentPage.length) pages.push(currentPage);
+  if (!pages.length && sections.length) pages.push(sections);
 
-  const totalPages = Math.max(leftPages.length, rightPages.length);
-
-  const finalPages = [];
-
-  for (let i = 0; i < totalPages; i++) {
-    finalPages.push([
-      ...(leftPages[i] || []),
-      ...(rightPages[i] || [])
-    ]);
-  }
-
-  return finalPages;
-};
+  return pages;
+}, [USABLE_PAGE_HEIGHT]);
 
   // =========================
   // Photo upload
