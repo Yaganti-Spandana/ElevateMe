@@ -57,12 +57,11 @@ const SAFE_BUFFER = 40;    // ⭐ increased for safety
 
 const USABLE_PAGE_HEIGHT =
   A4_HEIGHT_PX - PAGE_PADDING - SAFE_BUFFER;
- const splitIntoPages = useCallback((container) => {
-  if (!container) return [];
+  const splitIntoPages = useCallback((container) => {
 
-  const sections = Array.from(
-    container.querySelectorAll(".header-block, .section-block")
-  );
+    const sections = Array.from(
+      container.querySelectorAll(".header-block3, .section-block")
+    );
 
   const pages = [];
   let currentPage = [];

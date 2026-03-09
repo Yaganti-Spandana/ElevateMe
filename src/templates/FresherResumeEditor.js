@@ -118,10 +118,10 @@ const USABLE_PAGE_HEIGHT =
   if (!container) return [];
 
   const sections = Array.from(
-    container.querySelectorAll(".header-block, .section-block")
+    container.querySelectorAll(".header-block4, .section-block4")
   );
 
-  const pages = [];
+   const pages = [];
   let currentPage = [];
   let currentHeight = 0;
 

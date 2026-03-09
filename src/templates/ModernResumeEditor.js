@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo, useEffect ,useCallback} from "react";
+import React, { useState, useRef, useMemo, useEffect,useCallback } from "react";
 import resumeData from "../components/ResumeData";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
@@ -80,8 +80,12 @@ const ModernResumeEditor = () => {
 const splitIntoPages = useCallback((container) => {
   if (!container) return [];
 
-  const sections = Array.from(
-    container.querySelectorAll(".header-block, .section-block")
+  const leftSections = Array.from(
+    container.querySelectorAll(".modern-left .section-block")
+  );
+
+  const rightSections = Array.from(
+    container.querySelectorAll(".modern-right .side-section")
   );
 
   const pages = [];
@@ -117,6 +121,7 @@ const splitIntoPages = useCallback((container) => {
 
   return pages;
 }, [USABLE_PAGE_HEIGHT]);
+
 
   // =========================
   // Photo upload

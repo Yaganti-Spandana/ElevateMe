@@ -51,10 +51,10 @@ const splitIntoPages = useCallback((container) => {
   if (!container) return [];
 
   const sections = Array.from(
-    container.querySelectorAll(".header-block, .section-block")
+    container.querySelectorAll(".header-block1, .section-block1,.section-block12")
   );
 
-  const pages = [];
+ const pages = [];
   let currentPage = [];
   let currentHeight = 0;
 
@@ -87,7 +87,6 @@ const splitIntoPages = useCallback((container) => {
 
   return pages;
 }, [USABLE_PAGE_HEIGHT]);
-
  useEffect(() => {
   if (!measureRef.current) return;
 
