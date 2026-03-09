@@ -60,7 +60,16 @@ function FresherTemplatePortfolioPage() {
           background: "#f5f5f5"
         }}
       >
-        <h1 style={{ fontSize: "40px" }}>{data.common.fullName}</h1>
+        <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
+        <h1 style={{ fontSize: "30px" }}>{data.common.title}</h1>
+        <h3 style={{ fontSize: "20px" }}>{data.common.portfolio}</h3>
+        <h1 style={{ fontSize: "20px" }}>{data.common.address}</h1>
+        <p style={{ maxWidth: "600px", margin: "20px auto" }}>
+          {data.common.contact?.email} |
+{data.common.contact?.phone} |
+{data.common.contact?.linkedin}|
+{data.common.contact?.github}
+        </p>
         <p style={{ maxWidth: "600px", margin: "20px auto" }}>
           {data.common.summary}
         </p>
@@ -102,7 +111,8 @@ function FresherTemplatePortfolioPage() {
             }}
           >
             <h3>{p.title}</h3>
-            <p>{p.description}</p>
+            <p>{p.desc}</p>
+            <p>{p.link}</p>
           </motion.div>
         ))}
       </motion.section>
@@ -143,6 +153,7 @@ function FresherTemplatePortfolioPage() {
             <h3>{edu.institution}</h3>
             <p>{edu.degree}</p>
             <p>{edu.year}</p>
+            <p>{edu.grade}</p>
           </div>
         ))}
       </motion.section>

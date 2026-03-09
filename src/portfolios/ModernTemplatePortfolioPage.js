@@ -97,7 +97,7 @@ function ModernTemplatePortfolioPage() {
         transition={{ duration: 0.6 }}
         style={{ padding: "60px 40px" }}
       >
-        <h2>Skills</h2>
+        <h2>Languages</h2>
         <p>{data.common.languages.join(", ")}</p>
 
       </motion.section>
@@ -109,7 +109,7 @@ function ModernTemplatePortfolioPage() {
         transition={{ duration: 0.6 }}
         style={{ padding: "60px 40px" }}
       >
-        <h2>Skills</h2>
+        <h2>Tools</h2>
         <p>{data.common.tools.join(", ")}</p>
 
       </motion.section>

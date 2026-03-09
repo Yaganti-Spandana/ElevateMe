@@ -554,7 +554,10 @@ onClick={handleDownload}
 >
 Download PDF
 </button>
-<button className="download-btn" onClick={handleCreatePortfolio}>
+<button className="download-btn" 
+onClick={handleCreatePortfolio}
+style={{marginTop: "2px", width: "100%", padding: "12px,", backgroundColor:  "#1d4ed8", color: "white", border: "none", borderRadius: "30px",height:"30px", cursor: "pointer", fontWeight: "600", transition: "0.2s"}}
+>
 Create Portfolio Link
 </button>
 <button
