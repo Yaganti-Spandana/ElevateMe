@@ -126,7 +126,7 @@ function ExperiencedTemplatePortfolioPage() {
           <div key={i} style={{ marginBottom: "20px" }}>
             <h3>{exp.company}</h3>
             <p>{exp.role}</p>
-            <p>{exp.description}</p>
+            <p>{exp.desc}</p>
           </div>
         ))}
       </motion.section>
@@ -160,7 +160,7 @@ function ExperiencedTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Certifications</h2>
-<p>{data.certifications}</p>
+<p>{data.certifications?.join(", ")}</p>
       </motion.section>
 
       <motion.section
@@ -172,7 +172,7 @@ function ExperiencedTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Achievements</h2>
-<p>{data.achievements}</p>
+<p>{data.achievements?.join(", ")}</p>
       </motion.section>
 
 <motion.section
@@ -184,7 +184,7 @@ function ExperiencedTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Languages</h2>
-<p>{data.languages}</p>
+<p>{data.languages?.join(", ")}</p>
       </motion.section>
 
       <motion.section
@@ -196,7 +196,7 @@ function ExperiencedTemplatePortfolioPage() {
         style={{ padding: "60px 40px" }}
       >
         <h2>Interests</h2>
-<p>{data.interests}</p>
+<p>{data.interests?.join(", ")}</p>
       </motion.section>
     </div>
   );
