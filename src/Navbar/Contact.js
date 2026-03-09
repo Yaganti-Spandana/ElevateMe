@@ -6,37 +6,33 @@ import Navbar from "./Navbar";
 const Contact = () => {
 
   const sendEmail = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // honeypot bot check
-    if (e.target.website.value) return;
+  if (e.target.website.value) return;
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
+  const formData = {
+    name: e.target.name.value,
+    email: e.target.email.value,
+    message: e.target.message.value,
+  };
 
-    try {
-      await emailjs.send(
+  try {
+
+    await emailjs.send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       formData,
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     );
 
-      if (data.ok) {
-        alert("Message sent successfully!");
-        e.target.reset();
-      } else {
-        alert("Failed to send message.");
-      }
+    alert("Message sent successfully!");
+    e.target.reset();
 
-    } catch (err) {
-      alert("Error sending message.");
-      console.error(err);
-    }
-  };
+  } catch (error) {
+    alert("Failed to send message.");
+    console.error(error);
+  }
+};
 
   return (
     <>
