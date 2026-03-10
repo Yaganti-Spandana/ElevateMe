@@ -171,8 +171,8 @@ const [slideIndex, setSlideIndex] = useState(0);
             className="temp"
           >
             Use This Template
-          </div><p>{tpl.id} template</p>
-        </div>
+          </div>
+        </div><p>{tpl.id} template</p>
       </div>
     );
   })}
