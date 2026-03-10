@@ -28,7 +28,7 @@ const ExperiencedResumeEditor = () => {
 
   const templateId = "experienced";
   const template = resumeData[templateId];
-
+useGA();
   const A4_HEIGHT_PX = 842; // correct preview height
  const [showPreview, setShowPreview] = useState(false);
 const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

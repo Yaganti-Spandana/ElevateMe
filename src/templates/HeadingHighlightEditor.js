@@ -29,6 +29,7 @@ const BorderHighlightEditor = () => {
   const template = resumeData[templateId];
   const [showPreview, setShowPreview] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useGA();
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
