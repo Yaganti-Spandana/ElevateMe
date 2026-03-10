@@ -165,14 +165,14 @@ const [slideIndex, setSlideIndex] = useState(0);
       <div key={tpl.id} className="grid-card">
         <div className="template-image">
           <img src={currentImage} alt={tpl.name} />
-
+          <p>{tpl.id} template</p>
           <div
             onClick={() => navigate(`/editor/${tpl.id}`)}
             className="temp"
           >
             Use This Template
           </div>
-        </div><p>{tpl.id} template</p>
+        </div>
       </div>
     );
   })}
