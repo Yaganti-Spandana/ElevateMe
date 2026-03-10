@@ -6,9 +6,25 @@ import "../css/ModernResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import '../css/ModernResumeEditor.css'
-
+import ReactGA from 'react-ga4';
 const A4_HEIGHT_PX = 842; // A4 height in px
+const useGA = () => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
 
+    const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
+    if (!GA_MEASUREMENT_ID) {
+      console.warn("GA_MEASUREMENT_ID is not defined");
+      return;
+    }
+
+    ReactGA.initialize(GA_MEASUREMENT_ID);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+  }, []);
+};
 const ModernResumeEditor = () => {
   const templateId = "modern";
   const template = resumeData[templateId];
@@ -214,6 +230,12 @@ useEffect(() => {
     }
   
     pdf.save(`${common.name || "Resume"}_Resume.pdf`);
+
+    ReactGA.event({
+        category: "Resume",
+        action: "Download PDF",
+        label: `${common.name || "Unknown"}_Resume.pdf`
+      });
   };
   // =========================
   // Helpers
@@ -366,6 +388,11 @@ localStorage.setItem(
 );
 
 window.open(`/portfolio/modern/${portfolioId}`, "_blank");
+ReactGA.event({
+    category: "Portfolio",
+    action: "Create Portfolio",
+    label: portfolioId
+  });
 };
   // =========================
   // Render

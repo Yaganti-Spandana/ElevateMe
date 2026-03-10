@@ -7,7 +7,25 @@ import "../css/FresherResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 
+import ReactGA from 'react-ga4';
 const A4_HEIGHT_PX = 842; // correct preview height
+const useGA = () => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
+    if (!GA_MEASUREMENT_ID) {
+      console.warn("GA_MEASUREMENT_ID is not defined");
+      return;
+    }
+
+    ReactGA.initialize(GA_MEASUREMENT_ID);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+  }, []);
+};
 
 const FresherResumeEditor = () => {
   const templateId = "fresher";
@@ -205,6 +223,12 @@ const USABLE_PAGE_HEIGHT =
   }
 
   pdf.save(`${common.name || "Resume"}_Resume.pdf`);
+
+  ReactGA.event({
+      category: "Resume",
+      action: "Download PDF",
+      label: `${common.name || "Unknown"}_Resume.pdf`
+    });
 };
 
   // -----------------------------
@@ -419,6 +443,11 @@ localStorage.setItem(
 );
 
 window.open(`/portfolio/fresher/${portfolioId}`, "_blank");
+ReactGA.event({
+    category: "Portfolio",
+    action: "Create Portfolio",
+    label: portfolioId
+  });
 };
 
   return (
