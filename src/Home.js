@@ -129,7 +129,7 @@ const [slideIndex, setSlideIndex] = useState(0);
         transform: `translateX(-${slideIndex * cardWidth}px)`
       }}
     >
-      {loopTemplates.map((tpl, index) => (
+      {loopTemplates.map((tpl, index) => (<>
         <div key={index} className="carousel-card">
           <div className="template-image">
             <img src={tpl.images[0]} alt={tpl.name} />
@@ -141,8 +141,8 @@ const [slideIndex, setSlideIndex] = useState(0);
               Use Template
             </div>
           </div>
-          <p>{tpl.id} template</p>
         </div>
+        <p>{tpl.id} template</p></>
       ))}
     </div>
   </div>
