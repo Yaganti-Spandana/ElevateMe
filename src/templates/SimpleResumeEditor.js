@@ -17,7 +17,6 @@ const useGA = () => {
       return;
     }
 
-    console.log("Initializing GA:", GA_MEASUREMENT_ID);
     ReactGA.initialize(GA_MEASUREMENT_ID);
     ReactGA.send({
       hitType: "pageview",
