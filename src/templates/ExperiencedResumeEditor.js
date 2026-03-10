@@ -6,7 +6,6 @@ import "../css/ExperiencedResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
-const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
