@@ -24,8 +24,13 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID); // Replace with your GA Measurement ID
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+  const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
+  if (GA_MEASUREMENT_ID) {
+    ReactGA.initialize(GA_MEASUREMENT_ID);
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+  } else {
+    console.warn("GA_MEASUREMENT_ID is not defined");
+  }
 }, []);
   const [common, setCommon] = useState({ ...template.common,
     contact: template.common.contact || {
