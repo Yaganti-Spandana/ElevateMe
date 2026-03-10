@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-
+import useGA from "./useGA";
 // Import all editors
 import SimpleResumeEditor from "./templates/SimpleResumeEditor";
 import FresherResumeEditor from "./templates/FresherResumeEditor";
@@ -21,8 +21,10 @@ import ExperiencedTemplatePortfolioPage from "./portfolios/ExperiencedTemplatePo
 import CreativeTemplatePortfolioPage from "./portfolios/CreativeTemplatePortfolioPage";
 
 function App() {
+  useGA();
   return (
     <>
+    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
