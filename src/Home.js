@@ -135,7 +135,7 @@ const [slideIndex, setSlideIndex] = useState(0);
             <img src={tpl.images[0]} alt={tpl.name} />
 
             <div
-              className="temp"
+              className="temp1"
               onClick={() => navigate(`/editor/${tpl.id}`)}
             >
               Use Template
