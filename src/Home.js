@@ -141,6 +141,7 @@ const [slideIndex, setSlideIndex] = useState(0);
               Use Template
             </div>
           </div>
+          <p>{tpl.id} template</p>
         </div>
       ))}
     </div>
