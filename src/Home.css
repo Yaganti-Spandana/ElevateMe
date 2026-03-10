@@ -97,7 +97,7 @@ html, body, #root {
   cursor: pointer;
   width:150px;
   height:24px;
-  margin:3px auto;
+  margin:auto;
 
   display:flex;
   align-items:center;
