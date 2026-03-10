@@ -109,7 +109,7 @@ const [slideIndex, setSlideIndex] = useState(0);
           onChange={(e)=>setSearch(e.target.value)}
         />
       </div>
-      <h1 className="home-title1">Total available {search ? filteredTemplates.length : templates.length} Templates 
+      <h1 className="home-title1">Total Templates Available: {search ? filteredTemplates.length : templates.length}. More templates will be added soon.
 </h1>
 
       {/* Canva Style Results */}
