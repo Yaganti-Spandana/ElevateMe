@@ -36,6 +36,7 @@ html, body, #root {
   color:rgb(26, 116, 206);
   font-family: cursive;
   text-align: center;
+  font-size: 13px !important;
 }
 
 
