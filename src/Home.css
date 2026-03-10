@@ -52,12 +52,16 @@ html, body, #root {
 
 .grid-card {
   width: 180px;
-  height: 300px;
+  height: 330px;
   background: #b2c2d6;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 12px rgb(220, 220, 223);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid-card p{
+  font-size: 12px;
+  color: rgb(26, 116, 206);
 }
 
 .grid-card:hover {
