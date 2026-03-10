@@ -10,7 +10,7 @@ const About = () => {
 
       <div className="about-container">
 
-        <h1 className="about-title">About Our Resume Builder</h1>
+        <h1 className="about-title">About Our @ElevateMe</h1>
 
         <p className="about-description">
           Our @ElevateMe helps users create professional resumes quickly
