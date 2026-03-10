@@ -9,15 +9,15 @@ import ReactGA from 'react-ga4';
 const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
-    // Only run on client
     if (typeof window === "undefined") return;
 
-    ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+    const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
     if (!GA_MEASUREMENT_ID) {
       console.warn("GA_MEASUREMENT_ID is not defined");
       return;
     }
 
+    console.log("Initializing GA:", GA_MEASUREMENT_ID);
     ReactGA.initialize(GA_MEASUREMENT_ID);
     ReactGA.send({
       hitType: "pageview",
