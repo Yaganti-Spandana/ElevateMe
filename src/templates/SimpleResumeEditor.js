@@ -22,6 +22,11 @@ useEffect(() => {
   window.addEventListener("resize", handleResize);
   return () => window.removeEventListener("resize", handleResize);
 }, []);
+
+useEffect(() => {
+  ReactGA.initialize("G-XXXXXXXXXX"); // Replace with your GA Measurement ID
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+}, []);
   const [common, setCommon] = useState({ ...template.common,
     contact: template.common.contact || {
     email: "",
@@ -157,6 +162,12 @@ useEffect(() => {
     }
   
     pdf.save(`${common.name || "Resume"}_Resume.pdf`);
+
+    ReactGA.event({
+    category: "Resume",
+    action: "Download PDF",
+    label: `${common.name || "Unknown"}_Resume.pdf`
+  });
   };
   // =========================
   // HELPERS
@@ -285,6 +296,12 @@ localStorage.setItem(
 );
 
 window.open(`/portfolio/simple/${portfolioId}`, "_blank");
+
+ReactGA.event({
+    category: "Portfolio",
+    action: "Create Portfolio",
+    label: portfolioId
+  });
 };
   // =========================
   // JSX
