@@ -52,7 +52,7 @@ html, body, #root {
 
 .grid-card {
   width: 180px;
-  height: 230px;
+  height: 300px;
   background: #b2c2d6;
   border-radius: 10px;
   overflow: hidden;
