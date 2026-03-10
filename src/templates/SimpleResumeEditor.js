@@ -7,10 +7,28 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
 const A4_HEIGHT_PX = 842; // correct preview height
+const useGA = () => {
+  useEffect(() => {
+    // Only run on client
+    if (typeof window === "undefined") return;
 
+    const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
+    if (!GA_MEASUREMENT_ID) {
+      console.warn("GA_MEASUREMENT_ID is not defined");
+      return;
+    }
+
+    ReactGA.initialize(GA_MEASUREMENT_ID);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+  }, []);
+};
 const SimpleResumeEditor = () => {
   const templateId = "simple";
   const template = resumeData[templateId];
+  useGA();
   const [showPreview, setShowPreview] = useState(false);
 const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -23,15 +41,7 @@ useEffect(() => {
   return () => window.removeEventListener("resize", handleResize);
 }, []);
 
-useEffect(() => {
-  const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
-  if (GA_MEASUREMENT_ID) {
-    ReactGA.initialize(GA_MEASUREMENT_ID);
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
-  } else {
-    console.warn("GA_MEASUREMENT_ID is not defined");
-  }
-}, []);
+
   const [common, setCommon] = useState({ ...template.common,
     contact: template.common.contact || {
     email: "",
