@@ -24,7 +24,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  ReactGA.initialize(process.env.GA_MEASUREMENT_ID); // Replace with your GA Measurement ID
+  ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID); // Replace with your GA Measurement ID
   ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
 }, []);
   const [common, setCommon] = useState({ ...template.common,
