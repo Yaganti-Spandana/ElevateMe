@@ -161,11 +161,7 @@ const splitIntoPages = useCallback((container) => {
         label: `${common.name || "Unknown"}_Resume.pdf`
       });
 
-      ReactGA.event({
-          category: "Portfolio",
-          action: "Create Portfolio",
-          label: portfolioId
-        });
+     
   };
   // =========================
   // HELPERS
