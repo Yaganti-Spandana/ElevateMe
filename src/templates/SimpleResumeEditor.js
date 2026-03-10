@@ -5,7 +5,7 @@ import jsPDF from "jspdf";
 import "../css/SimpleResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
-
+import ReactGA from 'react-ga';
 const A4_HEIGHT_PX = 842; // correct preview height
 
 const SimpleResumeEditor = () => {
@@ -24,7 +24,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  ReactGA.initialize("G-XXXXXXXXXX"); // Replace with your GA Measurement ID
+  ReactGA.initialize(process.env.GA_MEASUREMENT_ID); // Replace with your GA Measurement ID
   ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
 }, []);
   const [common, setCommon] = useState({ ...template.common,
