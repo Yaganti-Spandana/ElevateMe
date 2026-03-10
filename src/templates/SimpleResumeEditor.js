@@ -12,7 +12,7 @@ const useGA = () => {
     // Only run on client
     if (typeof window === "undefined") return;
 
-    const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
+    ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
     if (!GA_MEASUREMENT_ID) {
       console.warn("GA_MEASUREMENT_ID is not defined");
       return;
