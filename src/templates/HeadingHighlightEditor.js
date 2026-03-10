@@ -290,6 +290,11 @@ localStorage.setItem(
 );
 
 window.open(`/portfolio/border/${portfolioId}`, "_blank");
+ReactGA.event({
+    category: "Portfolio",
+    action: "Create Portfolio",
+    label: portfolioId
+  });
 };
   // =========================
   // JSX
