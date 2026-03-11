@@ -1,0 +1,280 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.editor-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  height: auto !important;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 20px 0;
+  background: #f3f4f6;overflow: auto;
+}
+
+/* ================= LEFT — EDITOR ================= */
+.editor-sidebar {
+  flex: 0.7;
+  background: #b2c2d6 !important;
+  padding: 24px;
+  border-radius: 14px;
+  overflow-y: auto;
+   height: 450px !important;
+  min-width: 0;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* headings */
+.editor-sidebar h2,
+.editor-sidebar h3 {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+/* inputs */
+.editor-sidebar input,
+.editor-sidebar textarea {
+  width: 90%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  font-size: 14px;
+  background: #b2c2d6 !important;
+  color: #fff;
+  outline: none;
+}
+
+.editor-sidebar input::placeholder,
+.editor-sidebar textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* textarea control */
+.editor-sidebar textarea {
+  min-height: 80px;
+  resize: vertical;
+  line-height: 1.4;
+}
+
+/* download button */
+.editor-sidebar .download-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.editor-sidebar .download-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* add button */
+.add {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  border-radius: 8px;
+  color: #ffffff;
+  height: 34px;
+  padding: 0 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* delete button */
+.delete-btn {
+  margin-top: 8px;
+  width: 100px;
+  padding: 8px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 32px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== DYNAMIC FIELD CARD ===== */
+.dynamic-field {
+  margin-bottom: 18px;
+  padding: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inp {
+  width: 100%;
+}
+
+
+/* ===== PREVIEW WRAPPER ===== */
+.modern-preview-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 500px !important;
+}
+
+/* ===== A4 PAGE ===== */
+.modern-page {
+  width: 595px;
+  min-height: 842px; /* keep this */
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+  display: flex; /* optional */
+  flex-direction: column;
+}
+/* ===== GRID ===== */
+.modern-grid6 {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+/* ===== LEFT SIDEBAR ===== */
+.modern-left6 {
+  background: #9d8432;
+  color: black;
+  padding: 28px 10px;
+  font-family: 'Roboto', sans-serif;
+ height: 783px; 
+  width: 250px;
+  border-radius: 30px;
+}
+.exp{
+  display: flex !important;
+}
+.exp strong{
+  width:200px;
+}
+.side-section6 h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  border-bottom: 1px dotted #9d8432;
+  margin-top: 20px;
+}
+.side-section6 p{
+  font-size: 10px;
+}
+
+/* ===== PHOTO ===== */
+.photo-circle6 {
+  width: 120px;
+  height: 120px;
+  border-radius: 20%;
+  overflow: hidden;
+  border: 3px solid #9d8432;
+  flex-shrink: 0;
+  margin-left: 150px;
+}
+
+.photo-circle6 img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  margin-left: -7px;
+  margin-top: -7px;
+}
+
+.photo-placeholder6 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #9d8432;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== RIGHT ===== */
+.modern-right6 {
+  padding: 5px 0px 5px 30px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color:#9d8432;
+}
+.flex-black{
+    display:block !important;
+}
+
+.modern-name6 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.modern-title6{
+    margin-top: 15px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif
+}
+
+.section-title6 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  border-bottom: 2px dotted black;
+  margin-top: 10px;
+}
+
+.body-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.duration6 {
+  font-size: 12px;
+  color: black;
+}
+
+.pdf-page6 {
+  width: 595px;
+  min-height: 842px;   /* ✅ REAL A4 */
+  background: #000000;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+}
+
+@media (max-width:768px){
+
+    .pdf-page6 {
+width: 595px;
+min-height: 842px;
+background: #000000;
+position: relative;
+box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+border-radius: 6px;
+margin: 0;
+margin-bottom: 24PX;
+}
+}

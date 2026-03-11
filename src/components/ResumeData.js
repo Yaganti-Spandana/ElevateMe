@@ -581,20 +581,71 @@ creative: {
     "Sketching and Visual Storytelling"
   ]
 },
-itproject: {
-    common: { name: "David Kim", email: "david@example.com", phone: "5559876543" },
-    projects: [
-      { title: "AI Chatbot", desc: "Developed a chatbot using Python and NLP.", tech: "Python, NLTK" }
+  Black_and_Gold: {
+  common: {
+    name: "Mariana Anderson",
+    title: "Marketing Manager",
+    summary:
+  "Results-driven Marketing Manager with 5+ years of experience leading high-impact digital marketing initiatives and brand growth strategies. Proven track record of increasing customer engagement, optimizing campaign performance, and driving revenue through data-driven decision making. Adept at managing cross-functional teams, executing multi-channel campaigns, and leveraging analytics tools to identify growth opportunities. ",
+
+    photo: "",
+
+    contact: {
+      email: "hello@reallygreatsite.com",
+      phone: "123-456-7890",
+      linkedin: "linkedin.com/in/mariana",
+      address: "Any City, Any Country",
+    },
+
+    skills: ["UI/UX", "Visual Design", "Wireframes", "Storyboards"],
+    languages: ["English", "Spanish"],
+    tools: ["Figma", "VS Code", "Git"],
+  },
+
+  experience: [
+  {
+    role: "Marketing Manager",
+    company: "Ginyard International",
+    duration: "2022 – Present",
+    location: "New York, USA",
+    desc:
+      "Spearheaded end-to-end marketing strategies across digital, social media, and paid advertising channels. Led a high-performing team to execute data-driven campaigns that significantly improved brand visibility, customer acquisition, and conversion rates.",
+
+    highlights: [
+      "Boosted website traffic by 42% through SEO and content optimization strategies",
+      "Increased lead conversion rate by 28% via targeted marketing funnels",
+      "Managed $250K annual advertising budget with improved ROI",
+      "Launched 5+ multi-channel campaigns reaching over 1M users",
     ],
-    skills: ["Python", "JavaScript", "React", "Node.js"]
   },
-  internship: {
-    common: { name: "Emily Brown", email: "emily@example.com", phone: "5553219876" },
-    education: [{ degree: "B.Tech IT", institution: "LMN University", year: "2023" }],
-    projects: [{ title: "Web App", desc: "Created a simple e-commerce web app." }],
-    skills: ["HTML", "CSS", "JavaScript", "React"]
-  },
+
  
-};
+],
+
+  projects: [
+    {
+      title: "Brand Campaign",
+      desc: "Executed multi-channel brand campaign.",
+    },
+    {
+      title: "Product Campaign",
+      desc: "Executed multi-channel brand campaign.",
+    },
+    {
+      title: "Brand Campaign",
+      desc: "Executed multi-channel brand campaign.",
+    },
+    
+  ],
+
+  education: [
+    {
+      degree: "Bachelor of Business Management",
+      institution: "Borcelle University",
+      year: "2021",
+    },
+  ],
+},
+}
 
 export default resumeData;

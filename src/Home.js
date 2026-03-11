@@ -11,6 +11,7 @@ import experience1 from "./assets/experience1.png";
 import experience2 from "./assets/experience2.png";
 import creative1 from "./assets/creative1.png";
 import creative2 from "./assets/creative2.png";
+import black_gold from "./assets/black&gold.png";
 import SearchResults from "./Navbar/SearchResults";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Navbar/Footer";
@@ -32,6 +33,7 @@ const templates = [
   { id: "fresher", name: "Fresher Resume", images: [fresher1, fresher2], },
   { id: "experienced", name: "Experienced Resume", images: [experience1, experience2], },
   { id: "creative", name: "Creative Resume", images: [creative1, creative2], },
+  { id: "Black_and_Gold", name: "Black and Gold Modern Resume", images: [black_gold] },
 ];
 
 
