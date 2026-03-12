@@ -30,8 +30,8 @@ function BorderHighlightPortfolioPage() {
         style={{
           position: "sticky",
           top: 0,
-          background: "#111",
-          color: "white",
+          background: "black",
+          color: "indianred",
           display: "flex",
           justifyContent: "center",
           gap: "30px",
@@ -57,7 +57,7 @@ function BorderHighlightPortfolioPage() {
         style={{
           padding: "80px 40px",
           textAlign: "center",
-          background: "#f5f5f5"
+          background: "indianred",color:"black"
         }}
       >
         <h1>{data.common?.name || "Your Name"}</h1>
@@ -80,7 +80,7 @@ function BorderHighlightPortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "indianred",color:"black" }}
       >
         <h2>Skills</h2>
         <p>{data.common.skills.join(", ")}</p>
@@ -93,7 +93,7 @@ function BorderHighlightPortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px", background: "indianred",color:"black" }}
       >
         <h2>Projects</h2>
 
@@ -121,7 +121,7 @@ function BorderHighlightPortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "indianred",color:"black" }}
       >
         <h2>Experience</h2>
 
@@ -142,7 +142,7 @@ function BorderHighlightPortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "indianred",color:"black" }}
       >
         <h2>Education</h2>
 

@@ -2,16 +2,26 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import simpleSample1 from "./assets/simple1.png";
 import simpleSample2 from "./assets/simple2.png";
+import simpleportfolio from "./videos/simple.mp4";
 import border1 from "./assets/border1.png";
 import border2 from "./assets/border2.png";
+import borderportfolio from "./videos/border_highlight.mp4"
 import modernSample from "./assets/modern.png";
+import modernportfolio from "./videos/modern.mp4"
 import fresher1 from "./assets/fresher1.png";
 import fresher2 from "./assets/fresher2.png";
+import fresherportfolio from "./videos/fresher.mp4";
 import experience1 from "./assets/experience1.png";
 import experience2 from "./assets/experience2.png";
+import experiencedportfolio from "./videos/experienced.mp4"
 import creative1 from "./assets/creative1.png";
 import creative2 from "./assets/creative2.png";
+import creativeportfolio from "./videos/creative.mp4"
 import black_gold from "./assets/black&gold.png";
+import blackgoldportfolio from "./videos/blackgold.mp4"
+import green_yellow1 from "./assets/green&yellow1.png";
+import green_yellow2 from "./assets/green&yellow2.png";
+import greenyellowportfolio from "./videos/greenyellow.mp4"
 import SearchResults from "./Navbar/SearchResults";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Navbar/Footer";
@@ -22,18 +32,26 @@ const templates = [
     id: "simple",
     name: "Simple Resume",
     images: [simpleSample1, simpleSample2], // ⭐ two images here
+    video: simpleportfolio
   },
   {
     id: "border_highlight",
     name: "Border Hightlighted Resume",
     images: [border1, border2], // ⭐ two images here
+    video: borderportfolio
   },
   
-  { id: "modern", name: "Modern Resume", images: [modernSample] },
-  { id: "fresher", name: "Fresher Resume", images: [fresher1, fresher2], },
-  { id: "experienced", name: "Experienced Resume", images: [experience1, experience2], },
-  { id: "creative", name: "Creative Resume", images: [creative1, creative2], },
-  { id: "Black_and_Gold", name: "Black and Gold Modern Resume", images: [black_gold] },
+  { id: "modern", name: "Modern Resume", images: [modernSample],video:modernportfolio },
+  { id: "fresher", name: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
+  { id: "experienced", name: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
+  { id: "creative", name: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
+  { id: "Black_and_Gold", name: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
+  {
+    id: "green_and_yellow",
+    name: "Green and Yellow Experienced Template",
+    images: [green_yellow1, green_yellow2], // ⭐ two images here
+    video: greenyellowportfolio
+  },
 ];
 
 
@@ -135,7 +153,6 @@ const [slideIndex, setSlideIndex] = useState(0);
         <div key={index} className="carousel-card">
           <div className="template-image">
             <img src={tpl.images[0]} alt={tpl.name} />
-
             <div
               className="temp1"
               onClick={() => navigate(`/editor/${tpl.id}`)}
@@ -160,24 +177,51 @@ const [slideIndex, setSlideIndex] = useState(0);
 
     <div className="templates-grid">
   {templates.map((tpl) => {
-    const currentIndex = imageIndex[tpl.id] ?? 0;
-    const currentImage = tpl.images[currentIndex];
+  const currentIndex = imageIndex[tpl.id] ?? 0;
+  const currentImage = tpl.images[currentIndex];
 
-    return (<div>
-      <div key={tpl.id} className="grid-card">
-        <div className="template-image">
-          <img src={currentImage} alt={tpl.name} />
-          <p>{tpl.id} template</p>
-          
+  return (
+    <div key={tpl.id}>
+      <div className="grid-card">
+
+        <div className="preview-container">
+
+          {/* Image */}
+          <img
+            src={currentImage}
+            alt={tpl.name}
+            className="preview-image"
+          />
+
+          {/* Video */}
+          {tpl.video && (
+  <video
+    className="preview-video"
+    muted
+    loop
+    playsInline
+    onMouseEnter={(e) => e.target.play()}
+    onMouseLeave={(e) => e.target.pause()}
+  >
+    <source src={tpl.video} type="video/mp4" />
+  </video>
+)}
+
         </div>
-      </div><div
-            onClick={() => navigate(`/editor/${tpl.id}`)}
-            className="temp"
-          >
-            Use This Template
-          </div></div>
-    );
-  })}
+
+        <p>{tpl.name}</p>
+
+      </div>
+
+      <div
+        onClick={() => navigate(`/editor/${tpl.id}`)}
+        className="temp"
+      >
+        Use This Template
+      </div>
+    </div>
+  );
+})}
 </div>
   </div>
 </main>

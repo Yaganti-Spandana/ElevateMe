@@ -30,8 +30,8 @@ function CreativeTemplatePortfolioPage() {
         style={{
           position: "sticky",
           top: 0,
-          background: "#111",
-          color: "white",
+          background: "#fff",
+          color: "#f59e0b",
           display: "flex",
           justifyContent: "center",
           gap: "30px",
@@ -58,7 +58,7 @@ function CreativeTemplatePortfolioPage() {
         style={{
           padding: "80px 40px",
           textAlign: "center",
-          background: "#f5f5f5"
+          background: "#f59e0b",color:"#fff"
         }}
       >
         <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
@@ -82,7 +82,7 @@ function CreativeTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#f59e0b",color:"#fff" }}
       >
         <h2>Skills</h2>
         <p>{data.common.skills.join(", ")}</p>
@@ -95,7 +95,7 @@ function CreativeTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "#f59e0b",color:"#fff" }}
       >
         <h2>Projects</h2>
 
@@ -123,7 +123,7 @@ function CreativeTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#f59e0b",color:"#fff" }}
       >
         <h2>Experience</h2>
 
@@ -137,13 +137,32 @@ function CreativeTemplatePortfolioPage() {
       </motion.section>
 
       {/* EDUCATION */}
+            <motion.section
+              id="education"
+              initial="hidden"
+              whileInView="visible"
+              variants={sectionAnimation}
+              transition={{ duration: 0.6 }}
+              style={{ padding: "60px 40px",background: "#f59e0b",color:"#fff" }}
+            >
+              <h2>Education</h2>
+      
+              {data.education?.map((edu, i) => (
+                <div key={i} style={{ marginBottom: "20px" }}>
+                  <h3>{edu.institution}</h3>
+                  <p>{edu.degree}</p>
+                  <p>{edu.year}</p>
+                </div>
+              ))}
+            </motion.section>
+      {/* EDUCATION */}
       <motion.section
         id="certifications"
         initial="hidden"
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "#f59e0b",color:"#fff" }}
       >
         <h2>Certifications</h2>
 

@@ -646,6 +646,92 @@ creative: {
     },
   ],
 },
+green_and_yellow: {
+  common: {
+    name: "THARUN KAMAN",
+    title: "Full Stack Web Developer",
+
+    summary:
+      "Results-driven Full Stack Developer with 4+ years of experience designing, developing, and deploying scalable web applications using React, Django, and modern JavaScript frameworks. ",
+
+    contact: {
+      email: "frce75@gmail.com",
+      phone: "+91 684406490178",
+      linkedin: "linkedin.com/in/devad",
+      github: "github.com/devad",
+    },
+
+    skills: [
+      "JavaScript (ES6+)",
+      "React.js",
+      "Django",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "MongoDB",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+    ],
+  },
+
+  experience: [
+    {
+      role: "Senior Frontend Developer",
+      company: "ABC Technologies",
+      duration: "Jan 2022 – Present",
+      desc:
+        "Led development of enterprise-scale React applications serving 50K+ monthly users. Improved page load speed by 35% through code splitting and lazy loading. Collaborated with UX teams to redesign core dashboards, increasing user engagement by 28%. Mentored 3 junior developers and enforced best practices for reusable component architecture.",
+    },
+    {
+      role: "Frontend Developer",
+      company: "XYZ Solutions",
+      duration: "Jun 2020 – Dec 2021",
+      desc:
+        "Built responsive and cross-browser compatible web interfaces using React and modern CSS. Reduced UI defects by 40% by introducing component testing with Jest. Integrated REST APIs and improved data fetching efficiency. Worked closely with backend teams in an agile sprint environment.",
+    },
+  ],
+
+  projects: [
+    {
+      title: "Enterprise E-Commerce Platform",
+      desc:
+        "Designed and developed a scalable full-stack e-commerce application using React, Django REST Framework, and MySQL. Implemented secure authentication, product search, cart management, and Stripe payment integration. Optimized performance to handle high concurrent traffic.",
+    },
+    {
+      title: "Real-Time Task Management System",
+      desc:
+        "Built a collaborative productivity platform with drag-and-drop Kanban boards using React and Firebase. Implemented real-time updates, role-based access control, and notification system to improve team workflow efficiency.",
+    },
+    {
+      title: "Portfolio Website",
+      desc:
+        "Developed a fully responsive personal portfolio showcasing projects and technical skills. Implemented modern UI animations, SEO optimization, and performance tuning for fast load times.",
+    },
+  ],
+
+  education: [
+    {
+      degree: "Bachelor of Science in Computer Science",
+      institution: "XYZ University",
+      year: "2016 – 2020",
+    },
+    {
+      degree: "Intermediate (MPC)",
+      institution: "Sri Chaitanya Junior College",
+      year: "2014 – 2016",
+    },
+  ],
+
+  certifications: [
+    { name: "AWS Certified Cloud Practitioner" },
+    { name: "Meta Front-End Developer Professional Certificate" },
+    { name: "Google Associate Cloud Engineer (Training)" },
+    { name: "Responsive Web Design Certification – freeCodeCamp" },
+    { name: "JavaScript Algorithms and Data Structures – freeCodeCamp" },
+  ],
+},
 }
 
 export default resumeData;

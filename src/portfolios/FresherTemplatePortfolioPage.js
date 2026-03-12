@@ -30,8 +30,8 @@ function FresherTemplatePortfolioPage() {
         style={{
           position: "sticky",
           top: 0,
-          background: "#111",
-          color: "white",
+          background: "rgb(63, 5, 5)",
+          color: "#dc9d9d",
           display: "flex",
           justifyContent: "center",
           gap: "30px",
@@ -62,7 +62,7 @@ function FresherTemplatePortfolioPage() {
         style={{
           padding: "80px 40px",
           textAlign: "center",
-          background: "#f5f5f5"
+          background: "#dc9d9d",color:"rgb(63, 5, 5)"
         }}
       >
         <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
@@ -87,7 +87,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Skills</h2>
         <p>{data.common.skills.join(", ")}</p>
@@ -100,7 +100,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Projects</h2>
 
@@ -129,7 +129,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Experience</h2>
 
@@ -149,7 +149,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Education</h2>
 
@@ -168,7 +168,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px", background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Certifications</h2>
 
@@ -188,7 +188,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Achievements</h2>
         <p>{data.achievements}</p>
@@ -199,7 +199,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Hobbies</h2>
         <p>{data.hobbies}</p>
@@ -210,7 +210,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>Languages</h2>
         <p>{data.languages}</p>
@@ -221,7 +221,7 @@ function FresherTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#dc9d9d",color:"rgb(63, 5, 5)" }}
       >
         <h2>ExtraCurriculars</h2>
         <p>{data.extraCurriculars}</p>

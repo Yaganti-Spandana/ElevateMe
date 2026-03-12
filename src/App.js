@@ -21,6 +21,8 @@ import ExperiencedTemplatePortfolioPage from "./portfolios/ExperiencedTemplatePo
 import CreativeTemplatePortfolioPage from "./portfolios/CreativeTemplatePortfolioPage";
 import BlackGoldResumeEditor from "./templates/Black_&_GoldResumeEditor";
 import BlackGoldResumefolioPage from "./portfolios/Black_&_GoldPortfolioPage";
+import GreenYellowPortfolioPage from "./portfolios/Green_&_YellowPortfolioPage";
+import GreenYellowResumeEditor from "./templates/Green_&_YellowResumeEditor";
 
 function App() {
   useGA();
@@ -41,6 +43,7 @@ function App() {
 <Route path="/portfolio/experienced/:username" element={<ExperiencedTemplatePortfolioPage/>} />
 <Route path="/portfolio/creative/:username" element={<CreativeTemplatePortfolioPage/>} />
 <Route path="/portfolio/Black_and_Gold/:username" element={<BlackGoldResumefolioPage/>} />
+<Route path="/portfolio/green_and_yellow/:username" element={<GreenYellowPortfolioPage/>} />
         <Route path="/editor/simple" element={<SimpleResumeEditor />} />
         <Route path="/editor/border_highlight" element={<BorderHighlightEditor />} />
         <Route path="/editor/fresher" element={<FresherResumeEditor />} />
@@ -48,6 +51,7 @@ function App() {
         <Route path="/editor/experienced" element={<ExperiencedResumeEditor />} />
         <Route path="/editor/creative" element={<CreativeResumeEditor />} />
         <Route path="/editor/Black_and_Gold" element={<BlackGoldResumeEditor/>} />
+        <Route path="/editor/green_and_yellow" element={<GreenYellowResumeEditor/>} />
       </Routes>
     </Router></>
   );

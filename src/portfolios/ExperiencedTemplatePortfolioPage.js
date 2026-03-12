@@ -30,8 +30,8 @@ function ExperiencedTemplatePortfolioPage() {
         style={{
           position: "sticky",
           top: 0,
-          background: "#111",
-          color: "white",
+          background: "#fff",
+          color: "#d8cc1d",
           display: "flex",
           justifyContent: "center",
           gap: "30px",
@@ -61,7 +61,7 @@ function ExperiencedTemplatePortfolioPage() {
         style={{
           padding: "80px 40px",
           textAlign: "center",
-          background: "#f5f5f5"
+          background: "#d8cc1d",color:"#fff"
         }}
       >
         <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
@@ -77,7 +77,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Skills</h2>
 <p>{data.skills?.join(", ")}</p>
@@ -90,7 +90,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Projects</h2>
 
@@ -118,7 +118,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Experience</h2>
 
@@ -138,7 +138,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff"}}
       >
         <h2>Education</h2>
 
@@ -157,7 +157,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Certifications</h2>
 <p>{data.certifications?.join(", ")}</p>
@@ -169,7 +169,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Achievements</h2>
 <p>{data.achievements?.join(", ")}</p>
@@ -181,7 +181,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Languages</h2>
 <p>{data.languages?.join(", ")}</p>
@@ -193,7 +193,7 @@ function ExperiencedTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "#d8cc1d",color:"#fff" }}
       >
         <h2>Interests</h2>
 <p>{data.interests?.join(", ")}</p>

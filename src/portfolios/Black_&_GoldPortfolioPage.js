@@ -30,8 +30,8 @@ function BlackGoldResumefolioPage() {
         style={{
           position: "sticky",
           top: 0,
-          background: "#111",
-          color: "white",
+          background: "#9d8432",
+          color: "black",
           display: "flex",
           justifyContent: "center",
           gap: "30px",
@@ -59,7 +59,7 @@ function BlackGoldResumefolioPage() {
         style={{
           padding: "80px 40px",
           textAlign: "center",
-          background: "#f5f5f5"
+          background: "black",color:"#9d8432"
         }}
       >
         <h1 style={{ fontSize: "40px" }}>{data.common.name}</h1>
@@ -83,7 +83,7 @@ function BlackGoldResumefolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "black",color:"#9d8432" }}
       >
         <h2>Skills</h2>
         <p>{data.common.skills.join(", ")}</p>
@@ -95,7 +95,7 @@ function BlackGoldResumefolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "black",color:"#9d8432" }}
       >
         <h2>Languages</h2>
         <p>{data.common.languages.join(", ")}</p>
@@ -107,7 +107,7 @@ function BlackGoldResumefolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "black",color:"#9d8432" }}
       >
         <h2>Tools</h2>
         <p>{data.common.tools.join(", ")}</p>
@@ -121,7 +121,7 @@ function BlackGoldResumefolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px", background: "black",color:"#9d8432" }}
       >
         <h2>Projects</h2>
 
@@ -149,7 +149,7 @@ function BlackGoldResumefolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px",background: "black",color:"#9d8432" }}
       >
         <h2>Experience</h2>
 
@@ -170,7 +170,7 @@ function BlackGoldResumefolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px", background: "#f5f5f5" }}
+        style={{ padding: "60px 40px",background: "black",color:"#9d8432" }}
       >
         <h2>Education</h2>
 
