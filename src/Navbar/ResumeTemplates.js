@@ -1,35 +1,32 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import simpleSample1 from "./images/simple1.png";
-import simpleSample2 from "./images/simple2.png";
-import simpleportfolio from "./videos/simple.mp4";
-import border1 from "./images/border1.png";
-import border2 from "./images/border2.png";
-import borderportfolio from "./videos/border_highlight.mp4"
-import modernSample from "./images/modern.png";
-import modernportfolio from "./videos/modern.mp4"
-import fresher1 from "./images/fresher1.png";
-import fresher2 from "./images/fresher2.png";
-import fresherportfolio from "./videos/fresher.mp4";
-import experience1 from "./images/experience1.png";
-import experience2 from "./images/experience2.png";
-import experiencedportfolio from "./videos/experienced.mp4"
-import creative1 from "./images/creative1.png";
-import creative2 from "./images/creative2.png";
-import creativeportfolio from "./videos/creative.mp4"
-import black_gold from "./images/black&gold.png";
-import blackgoldportfolio from "./videos/blackgold.mp4"
-import green_yellow1 from "./images/green&yellow1.png";
-import green_yellow2 from "./images/green&yellow2.png";
-import greenyellowportfolio from "./videos/greenyellow.mp4"
-import invitation1 from "./images/invitation1.png";
-import birthday_invitation1 from "./images/birthday_invitation1.png";
-import engagement_invitation1 from "./images/engagement_invitation1.png";
-import SearchResults from "./Navbar/SearchResults";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Navbar/Footer";
+import simpleSample1 from "../images/simple1.png";
+import simpleSample2 from "../images/simple2.png";
+import simpleportfolio from "../videos/simple.mp4";
+import border1 from "../images/border1.png";
+import border2 from "../images/border2.png";
+import borderportfolio from "../videos/border_highlight.mp4"
+import modernSample from "../images/modern.png";
+import modernportfolio from "../videos/modern.mp4"
+import fresher1 from "../images/fresher1.png";
+import fresher2 from "../images/fresher2.png";
+import fresherportfolio from "../videos/fresher.mp4";
+import experience1 from "../images/experience1.png";
+import experience2 from "../images/experience2.png";
+import experiencedportfolio from "../videos/experienced.mp4"
+import creative1 from "../images/creative1.png";
+import creative2 from "../images/creative2.png";
+import creativeportfolio from "../videos/creative.mp4"
+import black_gold from "../images/black&gold.png";
+import blackgoldportfolio from "../videos/blackgold.mp4"
+import green_yellow1 from "../images/green&yellow1.png";
+import green_yellow2 from "../images/green&yellow2.png";
+import greenyellowportfolio from "../videos/greenyellow.mp4"
+import SearchResults from "../Navbar/SearchResults";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Navbar/Footer";
 
-import "./Home.css";
+import "../Home.css";
 const templates = [
   {
     id: "simple",
@@ -55,26 +52,12 @@ const templates = [
     images: [green_yellow1, green_yellow2], // ⭐ two images here
     video: greenyellowportfolio
   },
-  {
-    id: "wedding1",
-    name: "Wedding Invitation",
-    images: [invitation1], 
-  },
-  {
-    id: "birthday1",
-    name: "Birthday Invitation",
-    images: [birthday_invitation1], 
-  },
-  {
-    id: "engagement1",
-    name: "Engagement Invitation",
-    images: [engagement_invitation1], 
-  },
+  
 ];
 
 
 
-const Home = () => {
+const ResumeTemplates = () => {
   const navigate = useNavigate();
   const [imageIndex, setImageIndex] = useState({});
   const [search, setSearch] = useState("");
@@ -158,37 +141,7 @@ const [slideIndex, setSlideIndex] = useState(0);
       )}
     <div className="carousel-wrapper">
 
-  <button className="arrow left" onClick={moveLeft}>
-    ❮
-  </button>
-
-  <div className="carousel-window">
-    <div
-      className="templates-row"
-      style={{
-        transform: `translateX(-${slideIndex * cardWidth}px)`
-      }}
-    >
-      {loopTemplates.map((tpl, index) => (
-        <div key={index} className="carousel-card">
-          <div className="template-image">
-            <img src={tpl.images[0]} alt={tpl.name} />
-            <div
-              className="temp1"
-              onClick={() => navigate(`/editor/${tpl.id}`)}
-            >
-              Use Template
-            </div>
-          </div>
-        </div>
-        
-      ))}
-    </div>
-  </div>
-
-  <button className="arrow right" onClick={moveRight}>
-    ❯
-  </button>
+  
 
 </div>
     <main className="page-content">
@@ -258,62 +211,10 @@ const [slideIndex, setSlideIndex] = useState(0);
     </button>
   </div>
 )}
-<main className="about-page">
 
-      <div className="about-container">
-
-        <h1 className="about-title">About Our @ElevateMe</h1>
-
-        <p className="about-description">
-          @ElevateMe is a creative platform that helps users 
-          design professional resumes and beautiful invitation 
-          cards using modern and customizable templates. 
-          Our goal is to make designing simple, fast, and 
-          accessible for everyone, whether you are preparing 
-          for a job application or creating invitations for special occasions.
-        </p>
-
-        <div className="about-sections">
-
-          <div className="about-card">
-            <h2>Our Mission</h2>
-            <p>
-              Our mission is to simplify the design process by 
-              providing easy-to-use tools and elegant templates 
-              that allow users to create professional resumes and 
-              attractive invitation cards without needing advanced design skills.
-            </p>
-          </div>
-
-          <div className="about-card">
-            <h2>What We Offer</h2>
-            <ul> <li>Multiple modern resume templates</li> 
-            <li>Beautiful wedding and event invitation templates</li> 
-            <li>Simple drag-and-edit interface</li> 
-            <li>Clean and professional layouts</li> 
-            <li>Fast and easy design creation</li> 
-            <li>User-friendly experience</li> </ul>
-          </div>
-
-          <div className="about-card">
-            <h2>Who Can Use It?</h2>
-            <p>
-              Students, fresh graduates, professionals, and anyone planning 
-              special events can use @ElevateMe to create polished resumes 
-              and stylish invitations that leave a lasting impression.
-
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </main>
-    
     <Footer />
   </div>
 );
 };
 
-export default Home;
+export default ResumeTemplates;

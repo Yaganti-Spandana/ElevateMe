@@ -23,6 +23,11 @@ import BlackGoldResumeEditor from "./templates/Black_&_GoldResumeEditor";
 import BlackGoldResumefolioPage from "./portfolios/Black_&_GoldPortfolioPage";
 import GreenYellowPortfolioPage from "./portfolios/Green_&_YellowPortfolioPage";
 import GreenYellowResumeEditor from "./templates/Green_&_YellowResumeEditor";
+import InvitationEditor from "./invitations/InvitationEditor";
+import BirthdayInvitationEditor from "./invitations/BirthdayInvitationEditor";
+import EngagementInvitationEditor from "./invitations/EngagemntInvitationEditor";
+import ResumeTemplates from "./Navbar/ResumeTemplates";
+import Invitations from "./Navbar/Invitations";
 
 function App() {
   useGA();
@@ -36,6 +41,9 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/privacy" element={<PrivacyPolicy/>} />
         <Route path="/terms" element={<Terms/>} />
+        <Route path="/resumetemplates" element={<ResumeTemplates/>} />
+        <Route path="/invitations" element={<Invitations/>} />
+        
         <Route path="/portfolio/simple/:username" element={<SimpleTemplatePortfolioPage/>} />
 <Route path="/portfolio/border/:username" element={<BorderHighlightPortfolioPage/>} />
 <Route path="/portfolio/modern/:username" element={<ModernTemplatePortfolioPage/>} />
@@ -52,8 +60,12 @@ function App() {
         <Route path="/editor/creative" element={<CreativeResumeEditor />} />
         <Route path="/editor/Black_and_Gold" element={<BlackGoldResumeEditor/>} />
         <Route path="/editor/green_and_yellow" element={<GreenYellowResumeEditor/>} />
+        <Route path="/editor/wedding1" element={<InvitationEditor/>} />
+        <Route path="/editor/birthday1" element={<BirthdayInvitationEditor/>} />
+        <Route path="/editor/engagement1" element={<EngagementInvitationEditor/>} />
       </Routes>
-    </Router></>
+    </Router>
+    </>
   );
 }
 
