@@ -59,8 +59,6 @@ const filteredTemplates = templates.filter((tpl)=>
 const [hoveredId, setHoveredId] = useState(null);
 const [slideIndex, setSlideIndex] = useState(0);
 
-  // duplicate templates for infinite scroll
-  const loopTemplates = [...templates, ...templates];
 
   // auto move every 1.5s
   useEffect(() => {

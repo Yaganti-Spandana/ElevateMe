@@ -87,10 +87,6 @@ const filteredTemplates = templates.filter((tpl)=>
 const [hoveredId, setHoveredId] = useState(null);
 const [slideIndex, setSlideIndex] = useState(0);
 
-  const cardWidth = 200;
-
-  // duplicate templates for infinite scroll
-  const loopTemplates = [...templates, ...templates];
 
   // auto move every 1.5s
   useEffect(() => {
@@ -109,14 +105,7 @@ const [slideIndex, setSlideIndex] = useState(0);
     });
   };
 
-  const moveLeft = () => {
-    setSlideIndex((prev) => {
-      if (prev === 0) {
-        return templates.length - 1;
-      }
-      return prev - 1;
-    });
-  };
+  
   return (
   <div className="page-wrapper">
     <Navbar />

@@ -352,7 +352,7 @@ key={s}
 src={s}
 width="50"
 style={{cursor:"pointer",margin:5}}
-onClick={()=>addSticker(s)}
+onClick={()=>addSticker(s)}  alt=""
 />
 ))}
 
