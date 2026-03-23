@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import invitation1 from "../images/invitation1.png";
 import birthday_invitation1 from "../images/birthday_invitation1.png";
 import engagement_invitation1 from "../images/engagement_invitation1.png";
+import kittyparty1 from "../images/kittyparty1.png";
+import haldi_invitation1 from "../images/haldi_invitation1.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -23,6 +25,16 @@ const templates = [
     id: "engagement1",
     name: "Engagement Invitation",
     images: [engagement_invitation1], 
+  },
+  {
+    id: "kittyparty1",
+    name: "Kitty Party Invitation",
+    images: [kittyparty1], 
+  },
+  {
+    id: "haldi1",
+    name: "Haldi Invitation",
+    images: [haldi_invitation1], 
   },
   
 ];

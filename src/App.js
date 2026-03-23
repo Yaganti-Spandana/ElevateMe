@@ -28,6 +28,8 @@ import BirthdayInvitationEditor from "./invitations/BirthdayInvitationEditor";
 import EngagementInvitationEditor from "./invitations/EngagemntInvitationEditor";
 import ResumeTemplates from "./Navbar/ResumeTemplates";
 import Invitations from "./Navbar/Invitations";
+import KittypartyInvitationEditor from "./invitations/kittypartyInvitationEditor";
+import HaldiInvitationEditor from "./invitations/HaldiInvitationEditor";
 
 function App() {
   useGA();
@@ -63,6 +65,8 @@ function App() {
         <Route path="/editor/wedding1" element={<InvitationEditor/>} />
         <Route path="/editor/birthday1" element={<BirthdayInvitationEditor/>} />
         <Route path="/editor/engagement1" element={<EngagementInvitationEditor/>} />
+        <Route path="/editor/kittyparty1" element={<KittypartyInvitationEditor/>} />
+        <Route path="/editor/haldi1" element={<HaldiInvitationEditor/>} />
       </Routes>
     </Router>
     </>
