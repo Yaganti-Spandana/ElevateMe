@@ -1,0 +1,43 @@
+.pdf-pagecareer {
+  width: 595px;
+  min-height: 842px;   /* ✅ REAL A4 */
+  background: #d7af93;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+}
+.resume-contentcareer {
+  width: 100%;
+  padding: 28px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.45;
+  background: #d7af93;
+  color: #201202;
+}
+.headingcareer{
+    font-size: 20px !important; 
+        font-weight: 700; 
+        font-family: 'Inter',sans-serif;
+        color: #111827;
+        text-align: center;
+}
+.subheadingcareer{
+  font-size: 12px;
+  text-align: center;
+}
+.section-headingcareer{
+  font-size: 18px; 
+        font-weight: 600; 
+        margin-top: 22px; 
+        border-bottom: 5px double #201202; 
+        padding-bottom: 3px; 
+        font-family: 'Inter',sans-serif;
+}
+.skill-gapcareer{
+  margin-top: 20px;
+}
+.listcareer{
+  list-style:decimal;
+}

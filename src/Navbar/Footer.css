@@ -1,24 +1,25 @@
-/* src/components/Footer.css */
 .footer {
-  background-color: #b2c2d6;
-  color: rgb(4, 33, 91);
-  text-align: center;
-  padding: 20px 10px;
-  font-family: Arial, sans-serif;
-  margin-top: 0px;
   width: 100%;
-}
+  padding: 20px 10px;
+  text-align: center;
 
-.footer-links {
-  margin-top: 5px;
+  /* glass effect */
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+
+  border-top: 1px solid rgba(255,255,255,0.2);
+
+  color: #e6f0ff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-links a {
-  color: #9c0d0d;
+  color: #025971;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 8px;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
+  color: white;
 }

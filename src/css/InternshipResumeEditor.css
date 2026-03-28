@@ -1,0 +1,75 @@
+.headingintern { 
+        font-size: 25px; 
+        font-weight: 700; 
+        font-family: 'Montserrat', sans-serif;
+        color:black;
+        text-align: center;
+      } 
+.subheadingintern { 
+    font-size: 12px; 
+    color: #374151; 
+    font-family: 'Inter',sans-serif;
+    } 
+    .name{
+        margin-left: 100px;
+    }
+.header-blockintern{
+  display: flex;
+}
+.contactintern{
+    font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.35;
+  margin: 0px;
+  word-break: break-word;
+  width:200px;
+}
+.section-headingintern { 
+        font-size: 16px; 
+        font-weight: 600; 
+        margin-top: 22px; 
+        border-bottom: 3px dotted #23242689; 
+        padding-bottom: 3px; 
+        font-family: 'Lato', sans-serif;
+
+      } 
+.pdf-sectionintern { 
+    break-inside: avoid; 
+    page-break-inside: avoid; 
+    margin-bottom: 12px; 
+    font-size: 12px; 
+    
+} 
+.pdf-sectionintern { 
+    margin-bottom: 12px; 
+    font-size: 13px; 
+    break-inside: avoid; 
+    page-break-inside: avoid; } 
+.pdf-sectionintern p { 
+    margin-top: 4px; 
+    white-space: pre-wrap; 
+    font-family: 'Poppins', sans-serif;
+} 
+.skills-textintern{
+        word-break: break-word; 
+        overflow-wrap: anywhere; 
+        font-family: 'Roboto',sans-serif;
+        font-size: 13px;
+      
+      }
+.ins1intern{
+        width:20%;
+        text-align:left;
+        font-family: 'Inter',sans-serif;
+      }
+.pdf-pageintern {
+  width: 595px;
+  min-height: 842px;   /* ✅ REAL A4 */
+  background: #a2b7d6;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+}

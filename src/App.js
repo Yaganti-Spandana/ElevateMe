@@ -30,6 +30,15 @@ import ResumeTemplates from "./Navbar/ResumeTemplates";
 import Invitations from "./Navbar/Invitations";
 import KittypartyInvitationEditor from "./invitations/kittypartyInvitationEditor";
 import HaldiInvitationEditor from "./invitations/HaldiInvitationEditor";
+import NamingCeremonyInvitationEditor from "./invitations/NamingCeremonyInvitationEditor";
+import GruhapraveshamInvitationEditor from "./invitations/GruhapraveshamInvitationEditor";
+import DiwaliInvitationEditor from "./invitations/DiwaliInvitationEditor";
+import ProductlaunchInvitationEditor from "./invitations/ProductlaunchInvitationEditor";
+import MusiceventInvitationEditor from "./invitations/MusiceventInvitationEditor";
+import InternshipResumeEditor from "./templates/InternshipResumeEditor";
+import InternshipPortfolioPage from "./portfolios/InternshipPortfolioPage";
+import CareerChangeResumeEditor from "./templates/CareerChangeResumeEditor";
+import CareerChangePortfolioPage from "./portfolios/CareerChangePortfolioPage";
 
 function App() {
   useGA();
@@ -54,6 +63,11 @@ function App() {
 <Route path="/portfolio/creative/:username" element={<CreativeTemplatePortfolioPage/>} />
 <Route path="/portfolio/Black_and_Gold/:username" element={<BlackGoldResumefolioPage/>} />
 <Route path="/portfolio/green_and_yellow/:username" element={<GreenYellowPortfolioPage/>} />
+<Route path="/portfolio/internship/:username" element={<InternshipPortfolioPage/>} />
+<Route path="/portfolio/career/:username" element={<CareerChangePortfolioPage/>} />
+
+
+
         <Route path="/editor/simple" element={<SimpleResumeEditor />} />
         <Route path="/editor/border_highlight" element={<BorderHighlightEditor />} />
         <Route path="/editor/fresher" element={<FresherResumeEditor />} />
@@ -62,11 +76,21 @@ function App() {
         <Route path="/editor/creative" element={<CreativeResumeEditor />} />
         <Route path="/editor/Black_and_Gold" element={<BlackGoldResumeEditor/>} />
         <Route path="/editor/green_and_yellow" element={<GreenYellowResumeEditor/>} />
+        <Route path="/editor/internship" element={<InternshipResumeEditor/>} />
+        <Route path="/editor/career" element={<CareerChangeResumeEditor/>} />
+
+
+
         <Route path="/editor/wedding1" element={<InvitationEditor/>} />
         <Route path="/editor/birthday1" element={<BirthdayInvitationEditor/>} />
         <Route path="/editor/engagement1" element={<EngagementInvitationEditor/>} />
         <Route path="/editor/kittyparty1" element={<KittypartyInvitationEditor/>} />
         <Route path="/editor/haldi1" element={<HaldiInvitationEditor/>} />
+        <Route path="/editor/namingceremony1" element={<NamingCeremonyInvitationEditor/>} />
+        <Route path="/editor/gruhapravesham1" element={<GruhapraveshamInvitationEditor/>} />
+        <Route path="/editor/diwali1" element={<DiwaliInvitationEditor/>} />
+        <Route path="/editor/productlaunch1" element={<ProductlaunchInvitationEditor/>} />
+        <Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
       </Routes>
     </Router>
     </>

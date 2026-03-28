@@ -5,36 +5,76 @@ import birthday_invitation1 from "../images/birthday_invitation1.png";
 import engagement_invitation1 from "../images/engagement_invitation1.png";
 import kittyparty1 from "../images/kittyparty1.png";
 import haldi_invitation1 from "../images/haldi_invitation1.png";
+import namingceremony_invitation1 from "../images/namingceremony_invitation1.png";
+import gruha_pravesham1 from "../images/gruha_pravesham1.png";
+import diwali_invitation1 from "../images/diwali_invitation1.png";
+import productlaunch_invitation1 from "../images/productlaunch_invitation1.png";
+import musicevent_invitation1 from "../images/musicevent_invitation1.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 
 import "../Home.css";
 const templates = [
-  {
+ {
     id: "wedding1",
     name: "Wedding Invitation",
+    dname: "Wedding Invitation",
     images: [invitation1], 
   },
   {
     id: "birthday1",
     name: "Birthday Invitation",
+    dname: "Birthday Invitation",
     images: [birthday_invitation1], 
   },
   {
     id: "engagement1",
     name: "Engagement Invitation",
+    dname: "Engagement Invitation",
     images: [engagement_invitation1], 
   },
   {
     id: "kittyparty1",
     name: "Kitty Party Invitation",
+    dname: "Kitty Party Invitation",
     images: [kittyparty1], 
+  },
+  {
+    id: "gruhapravesham1",
+    name: "Gruhapravesham Invitation",
+    dname: "Gruhapravesham House Warming Invitation",
+    images: [gruha_pravesham1], 
   },
   {
     id: "haldi1",
     name: "Haldi Invitation",
+    dname: "Haldi Invitation",
     images: [haldi_invitation1], 
+  },
+  {
+    id: "namingceremony1",
+    name: "Naming Ceremony Invitation",
+    dname: "Lord Krishna Naming Ceremony Invitation",
+    images: [namingceremony_invitation1], 
+  },
+  {
+    id: "diwali1",
+    name: "Diwali Invitation",
+    dname: "Diwali Invitation",
+    images: [diwali_invitation1], 
+  },
+  {
+    id: "productlaunch1",
+    name: "Product Launch Invitation",
+    dname: "Product Launch Invitation",
+    images: [productlaunch_invitation1], 
+  },
+  {
+    id: "musicevent1",
+    name: "Music Event Invitation",
+    dname: "Music Event Invitation",
+    images: [musicevent_invitation1], 
   },
   
 ];
@@ -47,7 +87,7 @@ const Invitations = () => {
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(10);
 const filteredTemplates = templates.filter((tpl)=>
-    tpl.name.toLowerCase().includes(search.toLowerCase())
+    tpl.dname.toLowerCase().includes(search.toLowerCase())
   );
   useEffect(() => {
   const interval = setInterval(() => {
@@ -118,10 +158,10 @@ const [slideIndex, setSlideIndex] = useState(0);
 
 </div>
     <main className="page-content">
-  <div className="home-container">
-    <h1 className="home-title">Choose Your Template</h1>
+  <div className="home-container1">
+    <h1 className="home-title4">Choose Your Template</h1>
 
-    <div className="templates-grid">
+    <div className="templates-grid4">
   {templates.slice(0, visibleCount).map((tpl) => {
   const currentIndex = imageIndex[tpl.id] ?? 0;
   const currentImage = tpl.images[currentIndex];
@@ -184,7 +224,7 @@ const [slideIndex, setSlideIndex] = useState(0);
     </button>
   </div>
 )}
-
+<div style={{ marginTop: "60px" }} />
     <Footer />
   </div>
 );

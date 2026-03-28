@@ -22,6 +22,12 @@ import blackgoldportfolio from "../videos/blackgold.mp4"
 import green_yellow1 from "../images/green&yellow1.png";
 import green_yellow2 from "../images/green&yellow2.png";
 import greenyellowportfolio from "../videos/greenyellow.mp4"
+import internship1 from "../images/internship1.png";
+import internship2 from "../images/internship2.png";
+import internshipportfolio from "../videos/internship.mp4";
+import career1 from "../images/career1.png";
+import career2 from "../images/career2.png";
+import careerportfolio from "../videos/career.mp4"
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -31,26 +37,43 @@ const templates = [
   {
     id: "simple",
     name: "Simple Resume",
+    dname: "Simple Resume",
     images: [simpleSample1, simpleSample2], // ⭐ two images here
     video: simpleportfolio
   },
   {
     id: "border_highlight",
     name: "Border Hightlighted Resume",
+    dname: "Border Hightlighted Resume",
     images: [border1, border2], // ⭐ two images here
     video: borderportfolio
   },
   
-  { id: "modern", name: "Modern Resume", images: [modernSample],video:modernportfolio },
-  { id: "fresher", name: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
-  { id: "experienced", name: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
-  { id: "creative", name: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
-  { id: "Black_and_Gold", name: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
+  { id: "modern", name: "Modern Resume",dname: "Modern Resume", images: [modernSample],video:modernportfolio },
+  { id: "fresher",name: "Fresher Resume", dname: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
+  { id: "experienced", name: "Experienced Resume",dname: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
+  {
+    id: "career",
+    name: "Career Change Resume",
+    dname: "Career Change Resume",
+    images: [career1, career2], // ⭐ two images here
+    video: careerportfolio
+  },
+  { id: "creative",name: "Creative Resume", dname: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
+  { id: "Black_and_Gold",name: "Black and Gold Modern Resume", dname: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
   {
     id: "green_and_yellow",
     name: "Green and Yellow Experienced Template",
+    dname: "Green and Yellow Experienced Template",
     images: [green_yellow1, green_yellow2], // ⭐ two images here
     video: greenyellowportfolio
+  },
+  {
+    id: "internship",
+    name: "Internship Resume",
+    dname: "Internship Resume",
+    images: [internship1, internship2], // ⭐ two images here
+    video: internshipportfolio
   },
   
 ];
@@ -63,7 +86,7 @@ const ResumeTemplates = () => {
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(10);
 const filteredTemplates = templates.filter((tpl)=>
-    tpl.name.toLowerCase().includes(search.toLowerCase())
+    tpl.dname.toLowerCase().includes(search.toLowerCase())
   );
   useEffect(() => {
   const interval = setInterval(() => {
@@ -134,10 +157,10 @@ const [slideIndex, setSlideIndex] = useState(0);
 
 </div>
     <main className="page-content">
-  <div className="home-container">
-    <h1 className="home-title">Choose Your Template</h1>
+  <div className="home-container1">
+    <h1 className="home-title4">Choose Your Template</h1>
 
-    <div className="templates-grid">
+    <div className="templates-grid4">
   {templates.slice(0, visibleCount).map((tpl) => {
   const currentIndex = imageIndex[tpl.id] ?? 0;
   const currentImage = tpl.images[currentIndex];
@@ -200,7 +223,7 @@ const [slideIndex, setSlideIndex] = useState(0);
     </button>
   </div>
 )}
-
+<div style={{ marginTop: "60px" }} />
     <Footer />
   </div>
 );

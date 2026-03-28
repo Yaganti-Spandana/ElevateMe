@@ -57,7 +57,9 @@ const About = () => {
 
       </div>
 
-    </main><Footer/></>
+    </main>
+    <div style={{ marginTop: "60px" }} />
+    <Footer/></>
   );
 };
 

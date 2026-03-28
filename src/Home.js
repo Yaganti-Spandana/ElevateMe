@@ -27,7 +27,19 @@ import birthday_invitation1 from "./images/birthday_invitation1.png";
 import engagement_invitation1 from "./images/engagement_invitation1.png";
 import kittyparty1 from "./images/kittyparty1.png";
 import haldi_invitation1 from "./images/haldi_invitation1.png";
+import namingceremony_invitation1 from "./images/namingceremony_invitation1.png";
+import gruha_pravesham1 from "./images/gruha_pravesham1.png";
+import diwali_invitation1 from "./images/diwali_invitation1.png";
+import productlaunch_invitation1 from "./images/productlaunch_invitation1.png";
+import internship1 from "./images/internship1.png";
+import internship2 from "./images/internship2.png";
+import internshipportfolio from "./videos/internship.mp4"
+import musicevent_invitation1 from "./images/musicevent_invitation1.png";
+import career1 from "./images/career1.png";
+import career2 from "./images/career2.png";
+import careerportfolio from "./videos/career.mp4"
 import SearchResults from "./Navbar/SearchResults";
+import resume_teplate from "./videos/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Navbar/Footer";
 
@@ -36,63 +48,127 @@ const templates = [
   {
     id: "simple",
     name: "Simple Resume",
+    dname: "Simple Resume",
     images: [simpleSample1, simpleSample2], // ⭐ two images here
     video: simpleportfolio
   },
   {
-    id: "border_highlight",
-    name: "Border Hightlighted Resume",
-    images: [border1, border2], // ⭐ two images here
-    video: borderportfolio
-  },
-  
-  { id: "modern", name: "Modern Resume", images: [modernSample],video:modernportfolio },
-  { id: "fresher", name: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
-  { id: "experienced", name: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
-  { id: "creative", name: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
-  { id: "Black_and_Gold", name: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
-  {
-    id: "green_and_yellow",
-    name: "Green and Yellow Experienced Template",
-    images: [green_yellow1, green_yellow2], // ⭐ two images here
-    video: greenyellowportfolio
-  },
-  {
     id: "wedding1",
     name: "Wedding Invitation",
+    dname: "Wedding Invitation",
     images: [invitation1], 
   },
+  { id: "Black_and_Gold",name: "Black and Gold Modern Resume", dname: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
+  
   {
     id: "birthday1",
     name: "Birthday Invitation",
+    dname: "Birthday Invitation",
     images: [birthday_invitation1], 
   },
   {
     id: "engagement1",
     name: "Engagement Invitation",
+    dname: "Engagement Invitation",
     images: [engagement_invitation1], 
   },
-  {
+  
+  { id: "modern", name: "Modern Resume",dname: "Modern Resume", images: [modernSample],video:modernportfolio },
+{
     id: "kittyparty1",
     name: "Kitty Party Invitation",
+    dname: "Kitty Party Invitation",
     images: [kittyparty1], 
   },
+  { id: "fresher",name: "Fresher Resume", dname: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
+  { id: "experienced", name: "Experienced Resume",dname: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
+  {
+    id: "gruhapravesham1",
+    name: "Gruhapravesham Invitation",
+    dname: "Gruhapravesham House Warming Invitation",
+    images: [gruha_pravesham1], 
+  },
+
+  {
+    id: "career",
+    name: "Career Change Resume",
+    dname: "Career Change Resume",
+    images: [career1, career2], // ⭐ two images here
+    video: careerportfolio
+  },
+  {
+    id: "diwali1",
+    name: "Diwali Invitation",
+    dname: "Diwali Invitation",
+    images: [diwali_invitation1], 
+  },
+  
+  
   {
     id: "haldi1",
     name: "Haldi Invitation",
+    dname: "Haldi Invitation",
     images: [haldi_invitation1], 
   },
+  {
+    id: "green_and_yellow",
+    name: "Green and Yellow Experienced Template",
+    dname: "Green and Yellow Experienced Template",
+    images: [green_yellow1, green_yellow2], // ⭐ two images here
+    video: greenyellowportfolio
+  },
+  {
+    id: "namingceremony1",
+    name: "Naming Ceremony Invitation",
+    dname: "Lord Krishna Naming Ceremony Invitation",
+    images: [namingceremony_invitation1], 
+  },
+  {
+    id: "border_highlight",
+    name: "Border Hightlighted Resume",
+    dname: "Border Hightlighted Resume",
+    images: [border1, border2], // ⭐ two images here
+    video: borderportfolio
+  },
+  {
+    id: "productlaunch1",
+    name: "Product Launch Invitation",
+    dname: "Product Launch Invitation",
+    images: [productlaunch_invitation1], 
+  },
+
+  {
+    id: "internship",
+    name: "Internship Resume",
+    dname: "Internship Resume",
+    images: [internship1, internship2], // ⭐ two images here
+    video: internshipportfolio
+  },
+
+  {
+    id: "musicevent1",
+    name: "Music Event Invitation",
+    dname: "Music Event Invitation",
+    images: [musicevent_invitation1], 
+  },
+  { id: "creative",name: "Creative Resume", dname: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
+  
 ];
 
+const getRandomTemplates = (arr, count) => {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
 
+const randomTemplates = getRandomTemplates(templates, 3);
 
 const Home = () => {
   const navigate = useNavigate();
   const [imageIndex, setImageIndex] = useState({});
   const [search, setSearch] = useState("");
-  const [visibleCount, setVisibleCount] = useState(10);
+  const [visibleCount, setVisibleCount] = useState(12);
 const filteredTemplates = templates.filter((tpl)=>
-    tpl.name.toLowerCase().includes(search.toLowerCase())
+    tpl.dname.toLowerCase().includes(search.toLowerCase())
   );
   useEffect(() => {
   const interval = setInterval(() => {
@@ -116,11 +192,6 @@ const filteredTemplates = templates.filter((tpl)=>
 const [hoveredId, setHoveredId] = useState(null);
 const [slideIndex, setSlideIndex] = useState(0);
 
-  const cardWidth = 200;
-
-  // duplicate templates for infinite scroll
-  const loopTemplates = [...templates, ...templates];
-
   // auto move every 1.5s
   useEffect(() => {
   const interval = setInterval(() => {
@@ -135,15 +206,6 @@ const [slideIndex, setSlideIndex] = useState(0);
         return 0;
       }
       return prev + 1;
-    });
-  };
-
-  const moveLeft = () => {
-    setSlideIndex((prev) => {
-      if (prev === 0) {
-        return templates.length - 1;
-      }
-      return prev - 1;
     });
   };
   return (
@@ -168,44 +230,46 @@ const [slideIndex, setSlideIndex] = useState(0);
       {search && (
         <SearchResults results={filteredTemplates}/>
       )}
-    <div className="carousel-wrapper">
+    <section className="hero-section">
 
-  <button className="arrow left" onClick={moveLeft}>
-    ❮
-  </button>
+  <div className="hero-content">
 
-  <div className="carousel-window">
-    <div
-      className="templates-row"
-      style={{
-        transform: `translateX(-${slideIndex * cardWidth}px)`
-      }}
-    >
-      {loopTemplates.map((tpl, index) => (
-        <div key={index} className="carousel-card">
-          <div className="template-image">
-            <img src={tpl.images[0]} alt={tpl.name} />
-            <div
-              className="temp1"
-              onClick={() => navigate(`/editor/${tpl.id}`)}
-            >
-              Use Template
-            </div>
-          </div>
-        </div>
-        
-      ))}
+    {/* LEFT TEXT */}
+    <div className="hero-text">
+      <h1>Create Stunning Resumes & Invitations</h1>
+      <p>
+        Design professional templates in minutes with modern,
+        customizable layouts.
+      </p>
+
+      <button 
+        className="hero-btn"
+        onClick={() => window.scrollTo({ top: 500, behavior: "smooth" })}
+      >
+        Get Started
+      </button>
     </div>
+
+    {/* RIGHT VIDEO */}
+    <div className="hero-video">
+      <video 
+        src={resume_teplate}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+    </div>
+
   </div>
 
-  <button className="arrow right" onClick={moveRight}>
-    ❯
-  </button>
-
-</div>
+</section>
     <main className="page-content">
   <div className="home-container">
-    <h1 className="home-title">Choose Your Template</h1>
+    <h1 className="home-title">✨ Choose Your Perfect Template</h1>
+<p className="home-subtitle">
+  Professionally designed templates ready to customize instantly.
+</p>
 
     <div className="templates-grid">
   {templates.slice(0, visibleCount).map((tpl) => {
@@ -216,36 +280,30 @@ const [slideIndex, setSlideIndex] = useState(0);
     <div key={tpl.id}>
       <div className="grid-card">
 
-        <div className={`preview-container ${tpl.video ? "has-video" : ""}`}
-  onMouseEnter={() => {
-    if (tpl.video) setHoveredId(tpl.id);
-  }}
-  onMouseLeave={() => setHoveredId(null)}
->
-
-  {tpl.video && hoveredId === tpl.id ? (
-    <video
-      className="preview-video"
-      autoPlay
-      muted
-      loop
-      playsInline
+  <div className="card-image-wrapper">
+    <div
+      className={`preview-container 
+        ${tpl.video ? "has-video" : ""} 
+        ${tpl.id.includes("invitation") || tpl.id.includes("haldi") || tpl.id.includes("naming") ? "invitation" : ""}
+      `}
+      onMouseEnter={() => tpl.video && setHoveredId(tpl.id)}
+      onMouseLeave={() => setHoveredId(null)}
     >
-      <source src={tpl.video} type="video/mp4" />
-    </video>
-  ) : (
-    <img
-      src={currentImage}
-      alt={tpl.name}
-      className="preview-image"
-    />
-  )}
+      {tpl.video && hoveredId === tpl.id ? (
+        <video className="preview-video" autoPlay muted loop playsInline>
+          <source src={tpl.video} type="video/mp4" />
+        </video>
+      ) : (
+        <img src={currentImage} alt={tpl.name} className="preview-image" />
+      )}
+    </div>
+  </div>
+
+  <div className="card-content">
+    <p className="card-title">{tpl.name}</p>
+  </div>
 
 </div>
-
-        <p>{tpl.name}</p>
-
-      </div>
 
       <div
         onClick={() => navigate(`/editor/${tpl.id}`)}
@@ -270,59 +328,83 @@ const [slideIndex, setSlideIndex] = useState(0);
     </button>
   </div>
 )}
-<main className="about-page">
+<section className="why-section">
 
-      <div className="about-container">
+  <h2 className="why-title">Why Choose @ElevateMe</h2>
 
-        <h1 className="about-title">About Our @ElevateMe</h1>
+  <div className="why-grid">
 
-        <p className="about-description">
-          @ElevateMe is a creative platform that helps users 
-          design professional resumes and beautiful invitation 
-          cards using modern and customizable templates. 
-          Our goal is to make designing simple, fast, and 
-          accessible for everyone, whether you are preparing 
-          for a job application or creating invitations for special occasions.
-        </p>
+    <div className="why-card">
+      <h3>⚡ Fast & Easy</h3>
+      <p>Create resumes and invitations in minutes.</p>
+    </div>
 
-        <div className="about-sections">
+    <div className="why-card">
+      <h3>🎨 Modern Designs</h3>
+      <p>Professionally crafted templates for every need.</p>
+    </div>
 
-          <div className="about-card">
-            <h2>Our Mission</h2>
-            <p>
-              Our mission is to simplify the design process by 
-              providing easy-to-use tools and elegant templates 
-              that allow users to create professional resumes and 
-              attractive invitation cards without needing advanced design skills.
-            </p>
-          </div>
+    <div className="why-card">
+      <h3>📱 User Friendly</h3>
+      <p>Simple interface with no design skills required.</p>
+    </div>
 
-          <div className="about-card">
-            <h2>What We Offer</h2>
-            <ul> <li>Multiple modern resume templates</li> 
-            <li>Beautiful wedding and event invitation templates</li> 
-            <li>Simple drag-and-edit interface</li> 
-            <li>Clean and professional layouts</li> 
-            <li>Fast and easy design creation</li> 
-            <li>User-friendly experience</li> </ul>
-          </div>
+    <div className="why-card">
+      <h3>🚀 Instant Download</h3>
+      <p>Get your design ready instantly.</p>
+    </div>
 
-          <div className="about-card">
-            <h2>Who Can Use It?</h2>
-            <p>
-              Students, fresh graduates, professionals, and anyone planning 
-              special events can use @ElevateMe to create polished resumes 
-              and stylish invitations that leave a lasting impression.
+  </div>
 
-            </p>
-          </div>
+</section>
 
-        </div>
+<section className="demo-section">
 
-      </div>
+  <h1 className="demo-title">See It In Action</h1>
 
-    </main>
-    
+  <div className="demo-video-box">
+    <video 
+      src={resume_teplate} 
+      autoPlay 
+      muted 
+      loop 
+      playsInline 
+    />
+  </div>
+
+</section>
+
+<section className="popular-section">
+
+  <h1 className="popular-title">🔥 Popular Templates</h1>
+
+  <div className="popular-grid">
+  {randomTemplates.map((tpl) => (
+    <div 
+      key={tpl.id} 
+      className="popular-card"
+      onClick={() => navigate(`/editor/${tpl.id}`)}
+    >
+      <img src={tpl.images[0]} alt={tpl.name} />
+      <p>{tpl.name}</p>
+    </div>
+  ))}
+</div>
+
+</section>
+
+<section className="cta-section">
+
+  <h1>Start Creating Your Design Today</h1>
+  <p>Choose a template and build something amazing.</p>
+
+  <button onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>
+    Explore Templates
+  </button>
+
+</section>
+
+    <div style={{ marginTop: "60px" }} />
     <Footer />
   </div>
 );
