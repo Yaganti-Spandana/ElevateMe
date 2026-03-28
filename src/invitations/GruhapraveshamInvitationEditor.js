@@ -95,7 +95,7 @@ export default function GruhapraveshamInvitationEditor() {
   const stageRef = useRef();
   const transformerRef = useRef();
 
-  const [template, setTemplate] = useState(gruhapraveshamInvitationData);
+  const [template] = useState(gruhapraveshamInvitationData);
 const [elements, setElements] = useState(gruhapraveshamInvitationData.elements);
   const [selectedId, setSelectedId] = useState(null);
 
