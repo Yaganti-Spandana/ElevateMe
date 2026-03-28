@@ -346,7 +346,8 @@ body{
 }
 
 .grid-card {
-  width: 240px;
+  width: 100%;        /* ✅ instead of 240px */
+  max-width: 260px;   /* optional */
   border-radius: 18px;
 
   background: rgba(255, 255, 255, 0.08);
