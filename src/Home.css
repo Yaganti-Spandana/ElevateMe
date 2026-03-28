@@ -187,24 +187,6 @@ body{
 }
 
 
-.popular-card {
-  padding: 12px;
-  width: 250px;
-  border-radius: 18px;
-
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(18px);
-
-  border: 1px solid rgba(255, 255, 255, 0.2);
-
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-
-  transition: all 0.3s ease;
-  cursor: pointer;
-
-  display: flex;
-  flex-direction: column;
-}
 
 
 /* IMAGE */
