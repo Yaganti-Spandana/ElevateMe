@@ -333,16 +333,17 @@ body{
 
 .templates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25.7px; 
-  justify-items: center;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 per row */
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
 }
 .templates-grid4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25.7px;  
-  justify-items: center;
-  margin-top: 0px !important;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 per row */
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .grid-card {
