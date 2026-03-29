@@ -853,6 +853,10 @@ margin-bottom:25px;
 grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
 gap:20px;
 }
+.templates-grid4{
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:20px;
+}
 
 .grid-card{
 width:150px;
@@ -900,6 +904,10 @@ font-size:22px;
 }
 
 .templates-grid{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+.templates-grid4{
 grid-template-columns:repeat(2,1fr);
 gap:15px;
 }
