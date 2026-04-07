@@ -31,63 +31,107 @@ import careerportfolio from "../videos/career.mp4"
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
-
+import './ResumeTemplates.css'
 import "../Home.css";
 const templates = [
   {
     id: "simple",
     name: "Simple Resume",
     dname: "Simple Resume",
-    images: [simpleSample1, simpleSample2], // ⭐ two images here
+    category: "Basic",
+    images: [simpleSample1, simpleSample2],
     video: simpleportfolio
   },
   {
     id: "border_highlight",
-    name: "Border Hightlighted Resume",
-    dname: "Border Hightlighted Resume",
-    images: [border1, border2], // ⭐ two images here
+    name: "Border Highlighted Resume",
+    dname: "Border Highlighted Resume",
+    category: "Basic",
+    images: [border1, border2],
     video: borderportfolio
   },
-  
-  { id: "modern", name: "Modern Resume",dname: "Modern Resume", images: [modernSample],video:modernportfolio },
-  { id: "fresher",name: "Fresher Resume", dname: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
-  { id: "experienced", name: "Experienced Resume",dname: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
+  {
+    id: "modern",
+    name: "Modern Resume",
+    dname: "Modern Resume",
+    category: "Professional",
+    images: [modernSample],
+    video: modernportfolio
+  },
+  {
+    id: "fresher",
+    name: "Fresher Resume",
+    dname: "Fresher Resume",
+    category: "Fresher",
+    images: [fresher1, fresher2],
+    video: fresherportfolio
+  },
+  {
+    id: "experienced",
+    name: "Experienced Resume",
+    dname: "Experienced Resume",
+    category: "Experienced",
+    images: [experience1, experience2],
+    video: experiencedportfolio
+  },
   {
     id: "career",
     name: "Career Change Resume",
     dname: "Career Change Resume",
-    images: [career1, career2], // ⭐ two images here
+    category: "Professional",
+    images: [career1, career2],
     video: careerportfolio
   },
-  { id: "creative",name: "Creative Resume", dname: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
-  { id: "Black_and_Gold",name: "Black and Gold Modern Resume", dname: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
+  {
+    id: "creative",
+    name: "Creative Resume",
+    dname: "Creative Resume",
+    category: "Creative",
+    images: [creative1, creative2],
+    video: creativeportfolio
+  },
+  {
+    id: "Black_and_Gold",
+    name: "Black and Gold Modern Resume",
+    dname: "Black and Gold Modern Resume",
+    category: "Premium",
+    images: [black_gold],
+    video: blackgoldportfolio
+  },
   {
     id: "green_and_yellow",
     name: "Green and Yellow Experienced Template",
     dname: "Green and Yellow Experienced Template",
-    images: [green_yellow1, green_yellow2], // ⭐ two images here
+    category: "Experienced",
+    images: [green_yellow1, green_yellow2],
     video: greenyellowportfolio
   },
   {
     id: "internship",
     name: "Internship Resume",
     dname: "Internship Resume",
-    images: [internship1, internship2], // ⭐ two images here
+    category: "Fresher",
+    images: [internship1, internship2],
     video: internshipportfolio
-  },
-  
+  }
 ];
 
 
 
 const ResumeTemplates = () => {
+  const categories = ["All", "Basic", "Professional", "Fresher", "Experienced", "Creative", "Premium"];
+  const [category, setCategory] = useState("All");
+
   const navigate = useNavigate();
   const [imageIndex, setImageIndex] = useState({});
   const [search, setSearch] = useState("");
-  const [visibleCount, setVisibleCount] = useState(10);
-const filteredTemplates = templates.filter((tpl)=>
-    tpl.dname.toLowerCase().includes(search.toLowerCase())
-  );
+  const [visibleCount, setVisibleCount] = useState(12);
+const filteredTemplates = templates.filter((tpl) => {
+  const matchesSearch = tpl.dname.toLowerCase().includes(search.toLowerCase());
+  const matchesCategory = category === "All" || tpl.category === category;
+
+  return matchesSearch && matchesCategory;
+});
   useEffect(() => {
   const interval = setInterval(() => {
     setImageIndex((prev) => {
@@ -132,18 +176,31 @@ const [slideIndex, setSlideIndex] = useState(0);
   return (
   <div className="page-wrapper">
     <Navbar />
-    <div className="search-bar-container">
+<div className="filters-bar">
+
+  <input
+    type="text"
+    placeholder="Search resume templates..."
+    className="template-search"
+    value={search}
+    onChange={(e)=>setSearch(e.target.value)}
+  />
+
+  <div className="category-dropdown">
+    <select
+      value={category}
+      onChange={(e) => setCategory(e.target.value)}
+      className="category-select"
+    >
+      {categories.map((cat) => (
+        <option key={cat} value={cat}>
+          {cat}
+        </option>
+      ))}
+    </select>
+  </div>
+
 </div>
-{/* SEARCH BAR */}
-      <div className="search-bar-container">
-        <input
-          type="text"
-          placeholder="Search resume templates..."
-          className="template-search"
-          value={search}
-          onChange={(e)=>setSearch(e.target.value)}
-        />
-      </div>
       <h1 className="home-title1">Available:{search ? filteredTemplates.length : templates.length} templates. More will be added soon.
 </h1>
 
@@ -161,7 +218,7 @@ const [slideIndex, setSlideIndex] = useState(0);
     <h1 className="home-title4">Choose Your Template</h1>
 
     <div className="templates-grid4">
-  {templates.slice(0, visibleCount).map((tpl) => {
+  {filteredTemplates.slice(0, visibleCount).map((tpl) => {
   const currentIndex = imageIndex[tpl.id] ?? 0;
   const currentImage = tpl.images[currentIndex];
 
@@ -217,7 +274,7 @@ const [slideIndex, setSlideIndex] = useState(0);
   <div className="load-more-container">
     <button
       className="load-more-btn"
-      onClick={() => setVisibleCount((prev) => prev + 10)}
+      onClick={() => setVisibleCount((prev) => prev + 12)}
     >
       Load More Templates
     </button>

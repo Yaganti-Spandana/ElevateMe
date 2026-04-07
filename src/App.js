@@ -39,6 +39,10 @@ import InternshipResumeEditor from "./templates/InternshipResumeEditor";
 import InternshipPortfolioPage from "./portfolios/InternshipPortfolioPage";
 import CareerChangeResumeEditor from "./templates/CareerChangeResumeEditor";
 import CareerChangePortfolioPage from "./portfolios/CareerChangePortfolioPage";
+import WeddingInvitationEditor from "./invitations/WeddingInvitationEditor";
+import MickyMouseInvitationEditor from "./invitations/MickyMouseInvitationEditor";
+import CollageInvitationEditor from "./invitations/CollageInvitationEditor";
+import UnicornInvitationEditor from "./invitations/UnicornInvitationEditor";
 
 function App() {
   useGA();
@@ -83,6 +87,9 @@ function App() {
 
         <Route path="/editor/wedding1" element={<InvitationEditor/>} />
         <Route path="/editor/birthday1" element={<BirthdayInvitationEditor/>} />
+        <Route path="/editor/mickymousebirthday" element={<MickyMouseInvitationEditor/>} />
+        <Route path="/editor/collagebirthday" element={<CollageInvitationEditor/>} />
+        <Route path="/editor/unicornbirthday" element={<UnicornInvitationEditor/>} />
         <Route path="/editor/engagement1" element={<EngagementInvitationEditor/>} />
         <Route path="/editor/kittyparty1" element={<KittypartyInvitationEditor/>} />
         <Route path="/editor/haldi1" element={<HaldiInvitationEditor/>} />
@@ -91,6 +98,7 @@ function App() {
         <Route path="/editor/diwali1" element={<DiwaliInvitationEditor/>} />
         <Route path="/editor/productlaunch1" element={<ProductlaunchInvitationEditor/>} />
         <Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
+        <Route path="/editor/wedding2" element={<WeddingInvitationEditor/>} />
       </Routes>
     </Router>
     </>

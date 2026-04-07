@@ -24,6 +24,9 @@ import green_yellow2 from "./images/green&yellow2.png";
 import greenyellowportfolio from "./videos/greenyellow.mp4"
 import invitation1 from "./images/invitation1.png";
 import birthday_invitation1 from "./images/birthday_invitation1.png";
+import micky_mouse_birthday from "./images/micky_mouse_birthday.png";
+import collage_invitation from "./images/collage_invitation.png";
+import unicorn_invitation from "./images/unicorn_invitation.png";
 import engagement_invitation1 from "./images/engagement_invitation1.png";
 import kittyparty1 from "./images/kittyparty1.png";
 import haldi_invitation1 from "./images/haldi_invitation1.png";
@@ -37,7 +40,8 @@ import internshipportfolio from "./videos/internship.mp4"
 import musicevent_invitation1 from "./images/musicevent_invitation1.png";
 import career1 from "./images/career1.png";
 import career2 from "./images/career2.png";
-import careerportfolio from "./videos/career.mp4"
+import careerportfolio from "./videos/career.mp4";
+import wedding_invitation1 from "./images/wedding_invitation1.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./videos/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
@@ -152,6 +156,30 @@ const templates = [
     images: [musicevent_invitation1], 
   },
   { id: "creative",name: "Creative Resume", dname: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
+  {
+    id: "wedding2",
+    name: "Wedding Invitation",
+    dname: "Venkateswara swamy theme Wedding Invitation",
+    images: [wedding_invitation1], 
+  },
+  {
+    id: "mickymousebirthday",
+    name: "Birthday Invitation",
+    dname: "Micky Mouse Theme Birthday Invitation",
+    images: [micky_mouse_birthday], 
+  },
+  {
+    id: "collagebirthday",
+    name: "Birthday Invitation",
+    dname: "Photo Collage Birthday Invitation",
+    images: [collage_invitation], 
+  },
+  {
+    id: "unicornbirthday",
+    name: "Birthday Invitation",
+    dname: "Unicorn Theme Birthday Invitation",
+    images: [unicorn_invitation], 
+  },
   
 ];
 
@@ -322,7 +350,7 @@ const [slideIndex, setSlideIndex] = useState(0);
   <div className="load-more-container">
     <button
       className="load-more-btn"
-      onClick={() => setVisibleCount((prev) => prev + 10)}
+      onClick={() => setVisibleCount((prev) => prev + 12)}
     >
       Load More Templates
     </button>

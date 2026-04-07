@@ -812,6 +812,106 @@ padding-bottom:10px;
 .load-more-btn:hover{
   background:rgb(26, 116, 206);
 }
+/* ================= CATEGORY DROPDOWN (GLASS STYLE) ================= */
+/* ================= FILTER BAR (SEARCH + DROPDOWN) ================= */
+
+.filters-bar {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  /* glass container */
+  padding: 12px 16px;
+}
+.category-dropdown {
+  margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+  .filters-bar {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .template-search {
+    width: 100%;
+  }
+
+  .category-select {
+    width: 100%;
+  }
+}
+
+/* SELECT BOX */
+
+.category-select {
+  width: 150px;
+  padding: 0px 18px;
+
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.25);
+
+  /* GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+
+  outline: none;
+  cursor: pointer;
+
+  /* DEPTH */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+  transition: all 0.3s ease;
+
+  /* REMOVE DEFAULT ARROW (optional) */
+  appearance: none;
+}
+
+/* CUSTOM DROPDOWN ARROW */
+.category-dropdown {
+  position: relative;
+}
+
+.category-dropdown::after {
+  content: "⌄";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.7);
+  pointer-events: none;
+  font-size: 16px;
+}
+
+/* HOVER EFFECT */
+.category-select:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.03);
+}
+
+/* FOCUS GLOW (MATCH SEARCH BAR) */
+.category-select:focus {
+  border: 1px solid rgba(0, 198, 255, 0.7);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* DROPDOWN OPTIONS (limited styling support) */
+.category-select option {
+  color: #000;
+  background: #fff;
+}
 
 @media (max-width:1024px){
 
