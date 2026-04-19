@@ -25,6 +25,9 @@ import greenyellowportfolio from "./videos/greenyellow.mp4"
 import invitation1 from "./images/invitation1.png";
 import birthday_invitation1 from "./images/birthday_invitation1.png";
 import micky_mouse_birthday from "./images/micky_mouse_birthday.png";
+import collegefest1 from "./images/collegefest1.png";
+import collegefest2 from "./images/collegefest2.png";
+import collegefest3 from "./images/collegefest3.png";
 import collage_invitation from "./images/collage_invitation.png";
 import unicorn_invitation from "./images/unicorn_invitation.png";
 import engagement_invitation1 from "./images/engagement_invitation1.png";
@@ -179,6 +182,12 @@ const templates = [
     name: "Birthday Invitation",
     dname: "Unicorn Theme Birthday Invitation",
     images: [unicorn_invitation], 
+  },
+  {
+    id: "collegefest",
+    name: "College Fest Invitation",
+    dname: "College Fest Invitation",
+    images: [collegefest1,collegefest2,collegefest3], 
   },
   
 ];

@@ -14,6 +14,9 @@ import diwali_invitation1 from "../images/diwali_invitation1.png";
 import productlaunch_invitation1 from "../images/productlaunch_invitation1.png";
 import musicevent_invitation1 from "../images/musicevent_invitation1.png";
 import wedding_invitation1 from "../images/wedding_invitation1.png";
+import collegefest1 from "../images/collegefest1.png";
+import collegefest2 from "../images/collegefest2.png";
+import collegefest3 from "../images/collegefest3.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -117,6 +120,13 @@ const templates = [
     dname: "Unicorn Theme Birthday Invitation",
     category: "Birthday",
     images: [unicorn_invitation], 
+  },
+  {
+    id: "collegefest",
+    name: "College Fest Invitation",
+    dname: "College Fest Invitation",
+    images: [collegefest1,collegefest2,collegefest3], 
+    category: "Event",
   },
 ];
 
