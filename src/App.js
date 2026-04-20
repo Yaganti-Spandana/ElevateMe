@@ -44,6 +44,7 @@ import MickyMouseInvitationEditor from "./invitations/MickyMouseInvitationEditor
 import UnicornInvitationEditor from "./invitations/UnicornInvitationEditor";
 import CollegefestInvitationEditor from "./invitations/CollegefestInvitationEditor";
 import CollageInvitationEditor from "./invitations/CollageInvitationEditor";
+import CricketsportsInvitationEditor from "./invitations/CricketsportsInvitationEditor";
 
 function App() {
   useGA();
@@ -101,6 +102,7 @@ function App() {
         <Route path="/editor/productlaunch1" element={<ProductlaunchInvitationEditor/>} />
         <Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
         <Route path="/editor/wedding2" element={<WeddingInvitationEditor/>} />
+        <Route path="/editor/cricketsports" element={<CricketsportsInvitationEditor/>} />
       </Routes>
     </Router>
     </>

@@ -45,6 +45,7 @@ import career1 from "./images/career1.png";
 import career2 from "./images/career2.png";
 import careerportfolio from "./videos/career.mp4";
 import wedding_invitation1 from "./images/wedding_invitation1.png";
+import cricketsports_invitation from "./images/cricketsports_invitation.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./videos/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
@@ -189,7 +190,12 @@ const templates = [
     dname: "College Fest Invitation",
     images: [collegefest1,collegefest2,collegefest3], 
   },
-  
+  {
+    id: "cricketsports",
+    name: "Cricket Sports Invitation",
+    dname: "Cricket Sports Invitation",
+    images: [cricketsports_invitation], 
+  },
 ];
 
 const getRandomTemplates = (arr, count) => {

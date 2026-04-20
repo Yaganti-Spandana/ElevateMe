@@ -17,6 +17,7 @@ import wedding_invitation1 from "../images/wedding_invitation1.png";
 import collegefest1 from "../images/collegefest1.png";
 import collegefest2 from "../images/collegefest2.png";
 import collegefest3 from "../images/collegefest3.png";
+import cricketsports_invitation from "../images/cricketsports_invitation.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -128,6 +129,13 @@ const templates = [
     images: [collegefest1,collegefest2,collegefest3], 
     category: "Event",
   },
+  {
+    id: "cricketsports",
+    name: "Cricket Sports Invitation",
+    dname: "Cricket Sports Invitation",
+    images: [cricketsports_invitation], 
+    category: "Sports",
+  },
 ];
 
 
@@ -143,7 +151,8 @@ const Invitations = () => {
   "Family",
   "Festival",
   "Corporate",
-  "Event"
+  "Event",
+  "Sports"
 ];
   const [category, setCategory] = useState("All");
   const navigate = useNavigate();
