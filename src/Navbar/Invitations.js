@@ -18,6 +18,9 @@ import collegefest1 from "../images/collegefest1.png";
 import collegefest2 from "../images/collegefest2.png";
 import collegefest3 from "../images/collegefest3.png";
 import cricketsports_invitation from "../images/cricketsports_invitation.png";
+import seminar_invitation from "../images/seminar_invitation.png";
+import graduation_invitation from "../images/graduation_invitation.png";
+import jobfair_invitation from "../images/jobfair_invitation.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -135,6 +138,27 @@ const templates = [
     dname: "Cricket Sports Invitation",
     images: [cricketsports_invitation], 
     category: "Sports",
+  },
+  {
+    id: "seminar",
+    name: "Seminar Invitation",
+    dname: "Seminar Invitation",
+    images: [seminar_invitation], 
+    category: "Corporate",
+  },
+  {
+    id: "graduation",
+    name: "Graduation Invitation",
+    dname: "Graduation Invitation",
+    images: [graduation_invitation], 
+    category: "Event",
+  },
+  {
+    id: "jobfair",
+    name: "Job Fair Invitation",
+    dname: "Job Fair Invitation",
+    images: [jobfair_invitation], 
+    category: "Corporate",
   },
 ];
 

@@ -45,6 +45,9 @@ import UnicornInvitationEditor from "./invitations/UnicornInvitationEditor";
 import CollegefestInvitationEditor from "./invitations/CollegefestInvitationEditor";
 import CollageInvitationEditor from "./invitations/CollageInvitationEditor";
 import CricketsportsInvitationEditor from "./invitations/CricketsportsInvitationEditor";
+import SeminarInvitationEditor from "./invitations/SeminarInvitationEditor";
+import GraduationInvitationEditor from "./invitations/GraduationInvitationEditor";
+import JobfairInvitationEditor from "./invitations/JobfairInvitationEditor";
 
 function App() {
   useGA();
@@ -103,6 +106,9 @@ function App() {
         <Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
         <Route path="/editor/wedding2" element={<WeddingInvitationEditor/>} />
         <Route path="/editor/cricketsports" element={<CricketsportsInvitationEditor/>} />
+        <Route path="/editor/seminar" element={<SeminarInvitationEditor/>} />
+        <Route path="/editor/graduation" element={<GraduationInvitationEditor/>} />
+        <Route path="/editor/jobfair" element={<JobfairInvitationEditor/>} />
       </Routes>
     </Router>
     </>

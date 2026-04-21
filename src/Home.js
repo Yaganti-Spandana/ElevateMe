@@ -46,6 +46,9 @@ import career2 from "./images/career2.png";
 import careerportfolio from "./videos/career.mp4";
 import wedding_invitation1 from "./images/wedding_invitation1.png";
 import cricketsports_invitation from "./images/cricketsports_invitation.png";
+import seminar_invitation from "./images/seminar_invitation.png";
+import graduation_invitation from "./images/graduation_invitation.png";
+import jobfair_invitation from "./images/jobfair_invitation.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./videos/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
@@ -195,6 +198,24 @@ const templates = [
     name: "Cricket Sports Invitation",
     dname: "Cricket Sports Invitation",
     images: [cricketsports_invitation], 
+  },
+  {
+    id: "seminar",
+    name: "Seminar Invitation",
+    dname: "Seminar Invitation",
+    images: [seminar_invitation], 
+  },
+  {
+    id: "graduation",
+    name: "Graduation Invitation",
+    dname: "Graduation Invitation",
+    images: [graduation_invitation], 
+  },
+  {
+    id: "jobfair",
+    name: "Job Fair Invitation",
+    dname: "Job Fair Invitation",
+    images: [jobfair_invitation], 
   },
 ];
 
