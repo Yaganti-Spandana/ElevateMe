@@ -293,7 +293,7 @@ background-color: #2563eb !important;
 .pdf-export .no-print{
 display:none !important;
 }
-@media (max-width:950px){
+@media (max-width:1000px){
 .app-container{
   height: auto !important;
 }

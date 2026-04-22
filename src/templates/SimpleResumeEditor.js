@@ -30,7 +30,6 @@ const SimpleResumeEditor = () => {
   useGA();
   const [showPreview, setShowPreview] = useState(false);
 const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-const [setScale] = useState(1);
 useEffect(() => {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
@@ -39,23 +38,6 @@ useEffect(() => {
   window.addEventListener("resize", handleResize);
   return () => window.removeEventListener("resize", handleResize);
 }, []);
-useEffect(() => {
-  const updateScale = () => {
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth < 768) {
-      setScale(screenWidth / 620); // mobile fit
-    } else if (screenWidth < 1020) {
-      setScale(0.8); // tablet
-    } else {
-      setScale(1); // desktop
-    }
-  };
-
-  updateScale();
-  window.addEventListener("resize", updateScale);
-  return () => window.removeEventListener("resize", updateScale);
-}, [setScale]);
 
   const [common, setCommon] = useState({ ...template.common,
     contact: template.common.contact || {

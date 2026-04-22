@@ -56,24 +56,6 @@ const BorderHighlightEditor = () => {
   const resumeRef = useRef(null);
   const measureRef = useRef(null);
   const [pages, setPages] = useState([]);
-const [setScale] = useState(1);
-useEffect(() => {
-  const updateScale = () => {
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth < 768) {
-      setScale(screenWidth / 620); // mobile fit
-    } else if (screenWidth < 1020) {
-      setScale(0.8); // tablet
-    } else {
-      setScale(1); // desktop
-    }
-  };
-
-  updateScale();
-  window.addEventListener("resize", updateScale);
-  return () => window.removeEventListener("resize", updateScale);
-}, [setScale]);
   // =========================
   // PAGE SPLIT
   // =========================
