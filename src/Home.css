@@ -914,7 +914,9 @@ padding-bottom:10px;
 }
 
 @media (max-width:1024px){
-
+.temp{
+  margin-left: 5px;
+}
 .home-title{
 font-size:30px;
 }
