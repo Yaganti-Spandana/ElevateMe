@@ -293,9 +293,15 @@ background-color: #2563eb !important;
 .pdf-export .no-print{
 display:none !important;
 }
-
+@media (max-width:1024px){
+.app-container{
+  height: auto !important;
+}
+}
 @media (max-width:768px){
-
+.app-container{
+  height: auto !important;
+}
 .editor-container{
 flex-direction:column;
 height:auto !important;

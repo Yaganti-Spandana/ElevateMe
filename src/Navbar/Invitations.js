@@ -304,8 +304,8 @@ const [slideIndex, setSlideIndex] = useState(0);
   const currentImage = tpl.images[currentIndex];
 
   return (
-    <div key={tpl.id}>
-      <div className="grid-card">
+    <div key={tpl.id} onClick={() => navigate(`/editor/${tpl.id}`)}>
+      <div className="grid-card" onClick={() => navigate(`/editor/${tpl.id}`)}>
 
         <div className={`preview-container ${tpl.video ? "has-video" : ""}`}
   onMouseEnter={() => {
@@ -339,7 +339,6 @@ const [slideIndex, setSlideIndex] = useState(0);
       </div>
 
       <div
-        onClick={() => navigate(`/editor/${tpl.id}`)}
         className="temp"
       >
         Use This Template
