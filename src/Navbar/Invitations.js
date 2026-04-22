@@ -21,6 +21,10 @@ import cricketsports_invitation from "../images/cricketsports_invitation.png";
 import seminar_invitation from "../images/seminar_invitation.png";
 import graduation_invitation from "../images/graduation_invitation.png";
 import jobfair_invitation from "../images/jobfair_invitation.png";
+import culturalfestival_invitation from "../images/culturalfestival_invitation.png";
+import sankranti1 from "../images/sankranti1.png";
+import sankranti2 from "../images/sankranti2.png";
+import cradle_invitation from "../images/cradle_invitation.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -31,98 +35,98 @@ const templates = [
     id: "wedding1",
     name: "Wedding Invitation",
     dname: "Wedding Invitation",
-    category: "Wedding",
+    category: "Wedding & Pre-Wedding",
     images: [invitation1],
   },
   {
     id: "birthday1",
     name: "Birthday Invitation",
     dname: "Birthday Invitation",
-    category: "Birthday",
+    category: "Personal Celebrations",
     images: [birthday_invitation1],
   },
   {
     id: "engagement1",
     name: "Engagement Invitation",
     dname: "Engagement Invitation",
-    category: "Wedding",
+    category: "Wedding & Pre-Wedding",
     images: [engagement_invitation1],
   },
   {
     id: "kittyparty1",
     name: "Kitty Party Invitation",
     dname: "Kitty Party Invitation",
-    category: "Party",
+    category: "Personal Celebrations",
     images: [kittyparty1],
   },
   {
     id: "gruhapravesham1",
     name: "Gruhapravesham Invitation",
     dname: "Gruhapravesham House Warming Invitation",
-    category: "House",
+    category: "Personal Celebrations",
     images: [gruha_pravesham1],
   },
   {
     id: "haldi1",
     name: "Haldi Invitation",
     dname: "Haldi Invitation",
-    category: "Wedding",
+    category: "Wedding & Pre-Wedding",
     images: [haldi_invitation1],
   },
   {
     id: "namingceremony1",
     name: "Naming Ceremony Invitation",
     dname: "Lord Krishna Naming Ceremony Invitation",
-    category: "Family",
+    category: "Baby & Family",
     images: [namingceremony_invitation1],
   },
   {
     id: "diwali1",
     name: "Diwali Invitation",
     dname: "Diwali Invitation",
-    category: "Festival",
+    category: "Festivals & Religious",
     images: [diwali_invitation1],
   },
   {
     id: "productlaunch1",
     name: "Product Launch Invitation",
     dname: "Product Launch Invitation",
-    category: "Corporate",
+    category: "Corporate & Professional",
     images: [productlaunch_invitation1],
   },
   {
     id: "musicevent1",
     name: "Music Event Invitation",
     dname: "Music Event Invitation",
-    category: "Event",
+    category: "Entertainment & Public Events",
     images: [musicevent_invitation1],
   },
   {
     id: "wedding2",
     name: "Wedding Invitation",
     dname: "Venkateswara swamy theme Wedding Invitation",
-    category:"Wedding",
+    category:"Wedding & Pre-Wedding",
     images: [wedding_invitation1], 
   },
   {
     id: "mickymousebirthday",
     name: "Birthday Invitation",
     dname: "Micky Mouse Theme Birthday Invitation",
-    category: "Birthday",
+    category: "Personal Celebrations",
     images: [micky_mouse_birthday], 
   },
   {
     id: "collagebirthday",
     name: "Birthday Invitation",
     dname: "Photo Collage Birthday Invitation",
-    category: "Birthday",
+    category: "Personal Celebrations",
     images: [collage_invitation], 
   },
   {
     id: "unicornbirthday",
     name: "Birthday Invitation",
     dname: "Unicorn Theme Birthday Invitation",
-    category: "Birthday",
+    category: "Personal Celebrations",
     images: [unicorn_invitation], 
   },
   {
@@ -130,35 +134,56 @@ const templates = [
     name: "College Fest Invitation",
     dname: "College Fest Invitation",
     images: [collegefest1,collegefest2,collegefest3], 
-    category: "Event",
+    category: "Education & Student Events",
   },
   {
     id: "cricketsports",
     name: "Cricket Sports Invitation",
     dname: "Cricket Sports Invitation",
     images: [cricketsports_invitation], 
-    category: "Sports",
+    category: "Entertainment & Public Events",
   },
   {
     id: "seminar",
     name: "Seminar Invitation",
     dname: "Seminar Invitation",
     images: [seminar_invitation], 
-    category: "Corporate",
+    category: "Corporate & Professional",
   },
   {
     id: "graduation",
     name: "Graduation Invitation",
     dname: "Graduation Invitation",
     images: [graduation_invitation], 
-    category: "Event",
+    category: "Education & Student Events",
   },
   {
     id: "jobfair",
     name: "Job Fair Invitation",
     dname: "Job Fair Invitation",
     images: [jobfair_invitation], 
-    category: "Corporate",
+    category: "Corporate & Professional",
+  },
+  {
+    id: "culturalfestival",
+    name: "Cultural Festival Invitation",
+    dname: "Cultural Festival Invitation",
+    images: [culturalfestival_invitation], 
+    category: "Entertainment & Public Events",
+  },
+  {
+    id: "sankranti1",
+    name: "Sankranti/Pongal Invitation",
+    dname: "Sankranti/Pongal Invitation",
+    images: [sankranti1,sankranti2], 
+    category: "Festivals & Religious",
+  },
+  {
+    id: "cradle",
+    name: "Cradle Ceremony Invitation",
+    dname: "Cradle Ceremony Invitation",
+    images: [cradle_invitation], 
+    category: "Baby & Family",
   },
 ];
 
@@ -168,15 +193,14 @@ const templates = [
 const Invitations = () => {
   const categories = [
   "All",
-  "Wedding",
-  "Birthday",
-  "Party",
-  "House",
-  "Family",
-  "Festival",
-  "Corporate",
-  "Event",
-  "Sports"
+  "Personal Celebrations",
+  "Wedding & Pre-Wedding",
+  "Education & Student Events",
+  "Corporate & Professional",
+  "Entertainment & Public Events",
+  "Festivals & Religious",
+  "Baby & Family",
+  "Trending / Modern",
 ];
   const [category, setCategory] = useState("All");
   const navigate = useNavigate();

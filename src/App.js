@@ -48,6 +48,9 @@ import CricketsportsInvitationEditor from "./invitations/CricketsportsInvitation
 import SeminarInvitationEditor from "./invitations/SeminarInvitationEditor";
 import GraduationInvitationEditor from "./invitations/GraduationInvitationEditor";
 import JobfairInvitationEditor from "./invitations/JobfairInvitationEditor";
+import CulturalfestivalInvitationEditor from "./invitations/CulturalfestivalInvitationEditor";
+import SankrantiInvitationEditor from "./invitations/SankrantiInvitationEditor";
+import CradleInvitationEditor from "./invitations/CradleInvitationEditor";
 
 function App() {
   useGA();
@@ -102,6 +105,7 @@ function App() {
         <Route path="/editor/namingceremony1" element={<NamingCeremonyInvitationEditor/>} />
         <Route path="/editor/gruhapravesham1" element={<GruhapraveshamInvitationEditor/>} />
         <Route path="/editor/diwali1" element={<DiwaliInvitationEditor/>} />
+        <Route path="/editor/sankranti1" element={<SankrantiInvitationEditor/>} />
         <Route path="/editor/productlaunch1" element={<ProductlaunchInvitationEditor/>} />
         <Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
         <Route path="/editor/wedding2" element={<WeddingInvitationEditor/>} />
@@ -109,6 +113,8 @@ function App() {
         <Route path="/editor/seminar" element={<SeminarInvitationEditor/>} />
         <Route path="/editor/graduation" element={<GraduationInvitationEditor/>} />
         <Route path="/editor/jobfair" element={<JobfairInvitationEditor/>} />
+        <Route path="/editor/culturalfestival" element={<CulturalfestivalInvitationEditor/>} />
+        <Route path="/editor/cradle" element={<CradleInvitationEditor/>} />
       </Routes>
     </Router>
     </>

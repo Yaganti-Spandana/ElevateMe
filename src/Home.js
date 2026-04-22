@@ -49,6 +49,10 @@ import cricketsports_invitation from "./images/cricketsports_invitation.png";
 import seminar_invitation from "./images/seminar_invitation.png";
 import graduation_invitation from "./images/graduation_invitation.png";
 import jobfair_invitation from "./images/jobfair_invitation.png";
+import culturalfestival_invitation from "./images/culturalfestival_invitation.png";
+import sankranti1 from "./images/sankranti1.png";
+import sankranti2 from "./images/sankranti2.png";
+import cradle_invitation from "./images/cradle_invitation.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./videos/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
@@ -216,6 +220,24 @@ const templates = [
     name: "Job Fair Invitation",
     dname: "Job Fair Invitation",
     images: [jobfair_invitation], 
+  },
+  {
+    id: "culturalfestival",
+    name: "Cultural Festival Invitation",
+    dname: "Cultural Festival Invitation",
+    images: [culturalfestival_invitation], 
+  },
+  {
+    id: "sankranti1",
+    name: "Sankranti/Pongal Invitation",
+    dname: "Sankranti/Pongal Invitation",
+    images: [sankranti1,sankranti2], 
+  },
+  {
+    id: "cradle",
+    name: "Cradle Ceremony Invitation",
+    dname: "Cradle Ceremony Invitation",
+    images: [cradle_invitation], 
   },
 ];
 
