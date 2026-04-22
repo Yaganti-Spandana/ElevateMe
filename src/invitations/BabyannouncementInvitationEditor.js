@@ -3,7 +3,7 @@ import { Stage, Layer, Text, Image, Transformer, Rect } from "react-konva";
 import useImage from "use-image";
 import jsPDF from "jspdf";
 import "./Invitation.css";
-import ProductlaunchInvitationData from "../data/productlaunchInvitationData";
+import babyannouncementInvitationElements from "../data/babyannouncementInvitationData";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 
@@ -32,7 +32,7 @@ const stickers = [
   "https://cdn-icons-png.flaticon.com/512/869/869636.png"
 ];
 
-function BackgroundImage({ element, size }) {
+function BackgroundImage({ element }) {
   const [image] = useImage(element.src);
 
   return (
@@ -40,9 +40,9 @@ function BackgroundImage({ element, size }) {
       image={image}
       x={0}
       y={0}
-      width={size.width}
-      height={size.height}
-      listening={false}
+      width={595}
+      height={842}
+      listening={false} // ❌ cannot select
     />
   );
 }
@@ -90,13 +90,12 @@ function ImageElement({ element, onSelect, onChange }) {
   );
 }
 
-export default function ProductlaunchInvitationEditor() {
+export default function BabyannouncementInvitationEditor() {
 
   const stageRef = useRef();
   const transformerRef = useRef();
 
-  const [template] = useState(ProductlaunchInvitationData);
-const [elements, setElements] = useState(ProductlaunchInvitationData.elements);
+  const [elements, setElements] = useState(babyannouncementInvitationElements);
   const [selectedId, setSelectedId] = useState(null);
 
   const [font, setFont] = useState("Arial");
@@ -113,21 +112,6 @@ const [elements, setElements] = useState(ProductlaunchInvitationData.elements);
     setElements(newElements);
     setRedoStack([]);
   };
-  useEffect(() => {
-    const stage = stageRef.current;
-    const transformer = transformerRef.current;
-
-    if (!transformer) return;
-
-    if (!selectedId) {
-      transformer.nodes([]);
-      return;
-    }
-
-    const selectedNode = stage.findOne(`#node-${selectedId}`);
-    if (selectedNode) transformer.nodes([selectedNode]);
-
-  }, [selectedId]);
 
   const addText = () => {
     const newEl = {
@@ -217,57 +201,54 @@ const [elements, setElements] = useState(ProductlaunchInvitationData.elements);
     setRedoStack(r => r.slice(1));
   };
 
-  const editText=()=>{
+  const editText = () => {
+    const el = elements.find(e => e.id === selectedId);
+    if (!el || el.type !== "text") return;
 
-const el=elements.find(e=>e.id===selectedId);
+    const textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
 
-if(!el || el.type!=="text")return;
+    textarea.value = el.text;
+    textarea.style.position = "absolute";
+    textarea.style.top = el.y + "px";
+    textarea.style.left = el.x + "px";
 
-const textarea=document.createElement("textarea");
+    textarea.focus();
 
-document.body.appendChild(textarea);
-
-textarea.value=el.text;
-textarea.style.position="absolute";
-textarea.style.top=el.y+"px";
-textarea.style.left=el.x+"px";
-textarea.style.fontSize=el.fontSize+"px";
-
-textarea.focus();
-
-textarea.onblur=()=>{
-
-updateElement(el.id,{
-...el,
-text:textarea.value
-});
-
-document.body.removeChild(textarea);
-};
-};
+    textarea.onblur = () => {
+      updateElement(el.id, { ...el, text: textarea.value });
+      document.body.removeChild(textarea);
+    };
+  };
 
   const downloadPDF = () => {
-  const dataURL = stageRef.current.toDataURL({ pixelRatio: 2 });
+    const dataURL = stageRef.current.toDataURL({ pixelRatio: 2 });
 
-  const pdf = new jsPDF({
-    orientation: template.size.width > template.size.height ? "landscape" : "portrait",
-    unit: "px",
-    format: [template.size.width, template.size.height]
-  });
+    const pdf = new jsPDF({
+      orientation: "portrait",
+      unit: "px",
+      format: [595, 842]
+    });
 
-  pdf.addImage(
-    dataURL,
-    "PNG",
-    0,
-    0,
-    template.size.width,
-    template.size.height
-  );
+    pdf.addImage(dataURL, "PNG", 0, 0, 595, 842);
+    pdf.save("Baby Announcement Event Invitation.pdf");
+  };
 
-  pdf.save("invitation.pdf");
-};
+  useEffect(() => {
+    const stage = stageRef.current;
+    const transformer = transformerRef.current;
 
-  
+    if (!transformer) return;
+
+    if (!selectedId) {
+      transformer.nodes([]);
+      return;
+    }
+
+    const selectedNode = stage.findOne(`#node-${selectedId}`);
+    if (selectedNode) transformer.nodes([selectedNode]);
+
+  }, [selectedId]);
 
   return (
     <>
@@ -316,8 +297,8 @@ document.body.removeChild(textarea);
   <div
     style={{
       position: "absolute",
-      top: toolbarPos.y+300,
-      left: toolbarPos.x+400,
+      top: toolbarPos.y,
+      left: toolbarPos.x,
       background: "#1a74ce",
       padding: "6px 10px",
       borderRadius: 6,
@@ -333,8 +314,8 @@ document.body.removeChild(textarea);
 )}
         {/* STAGE */}
         <Stage
-  width={template.size.width}
-  height={template.size.height}
+  width={595}
+  height={842}
   ref={stageRef}
   onMouseDown={(e) => {
     const clickedOnEmpty = e.target === e.target.getStage();
@@ -349,13 +330,9 @@ document.body.removeChild(textarea);
 
             {/* BACKGROUND */}
             {elements.find(el => el.type === "background") ? (
-              <BackgroundImage element={elements.find(el => el.type === "background")} size={template.size}/>
+              <BackgroundImage element={elements.find(el => el.type === "background")} />
             ) : (
-              <Rect 
-  width={template.size.width} 
-  height={template.size.height} 
-  fill={bgColor} 
-/>
+              <Rect width={595} height={842} fill={bgColor} />
             )}
 
             {/* ELEMENTS */}

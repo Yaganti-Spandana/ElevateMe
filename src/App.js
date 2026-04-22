@@ -51,6 +51,7 @@ import JobfairInvitationEditor from "./invitations/JobfairInvitationEditor";
 import CulturalfestivalInvitationEditor from "./invitations/CulturalfestivalInvitationEditor";
 import SankrantiInvitationEditor from "./invitations/SankrantiInvitationEditor";
 import CradleInvitationEditor from "./invitations/CradleInvitationEditor";
+import BabyannouncementInvitationEditor from "./invitations/BabyannouncementInvitationEditor";
 
 function App() {
   useGA();
@@ -115,6 +116,7 @@ function App() {
         <Route path="/editor/jobfair" element={<JobfairInvitationEditor/>} />
         <Route path="/editor/culturalfestival" element={<CulturalfestivalInvitationEditor/>} />
         <Route path="/editor/cradle" element={<CradleInvitationEditor/>} />
+        <Route path="/editor/babyannouncement" element={<BabyannouncementInvitationEditor/>} />
       </Routes>
     </Router>
     </>

@@ -52,7 +52,8 @@ import jobfair_invitation from "./images/jobfair_invitation.png";
 import culturalfestival_invitation from "./images/culturalfestival_invitation.png";
 import sankranti1 from "./images/sankranti1.png";
 import sankranti2 from "./images/sankranti2.png";
-import cradle_invitation from "./images/cradle_invitation.png";
+import cradle_invitation from "./images/cradle_invitation.png";  
+import babyannouncement_invitation from "./images/babyannouncement_invitation.png"; 
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./videos/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
@@ -239,6 +240,12 @@ const templates = [
     dname: "Cradle Ceremony Invitation",
     images: [cradle_invitation], 
   },
+  {
+    id: "babyannouncement",
+    name: "Baby Announcement Event Invitation",
+    dname: "Baby Announcement Event Invitation",
+    images: [babyannouncement_invitation], 
+  },
 ];
 
 const getRandomTemplates = (arr, count) => {
@@ -382,7 +389,6 @@ const [slideIndex, setSlideIndex] = useState(0);
         <img src={currentImage} alt={tpl.name} className="preview-image" />
       )}
     </div>
-  
 
   <div className="card-content">
     <p className="card-title">{tpl.name}</p>

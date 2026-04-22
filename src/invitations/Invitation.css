@@ -30,6 +30,22 @@
   position: relative;
 }
 
+.editor-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* 🔥 THIS IS THE MAIN FIX */
+.stage-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+/* optional */
+.stage-wrapper canvas {
+  display: block;
+}
+
 .element-box button{
   position: absolute;
   top: -10px;

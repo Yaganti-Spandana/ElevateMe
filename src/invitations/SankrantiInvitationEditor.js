@@ -184,25 +184,34 @@ export default function SankrantiInvitationEditor() {
   };
 
   // ---------------- EDIT / COPY / DELETE ----------------
-  const editText = () => {
-    const el = elements.find(e => e.id === selectedId);
-    if (!el || el.type !== "text") return;
+  const editText=()=>{
 
-    const textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
+const el=elements.find(e=>e.id===selectedId);
 
-    textarea.value = el.text;
-    textarea.style.position = "absolute";
-    textarea.style.top = el.y + "px";
-    textarea.style.left = el.x + "px";
+if(!el || el.type!=="text")return;
 
-    textarea.focus();
+const textarea=document.createElement("textarea");
 
-    textarea.onblur = () => {
-      updateElement(el.id, { ...el, text: textarea.value });
-      document.body.removeChild(textarea);
-    };
-  };
+document.body.appendChild(textarea);
+
+textarea.value=el.text;
+textarea.style.position="absolute";
+textarea.style.top=el.y+"px";
+textarea.style.left=el.x+200+"px";
+textarea.style.fontSize=el.fontSize+"px";
+
+textarea.focus();
+
+textarea.onblur=()=>{
+
+updateElement(el.id,{
+...el,
+text:textarea.value
+});
+
+document.body.removeChild(textarea);
+};
+};
 
   const deleteElement = () => {
     const updated = slidesData.map((slide, i) =>
@@ -417,16 +426,16 @@ export default function SankrantiInvitationEditor() {
       {selectedId && (
         <div
           style={{
-            position: "absolute",
-            top: toolbarPos.y,
-            left: toolbarPos.x,
-            background: "#1a74ce",
-            padding: "6px",
-            borderRadius: 6,
-            display: "flex",
-            gap: 6,
-            zIndex: 1000
-          }}
+      position: "absolute",
+      top: toolbarPos.y+200,
+      left: toolbarPos.x+150,
+      background: "#1a74ce",
+      padding: "6px 10px",
+      borderRadius: 6,
+      display: "flex",
+      gap: 6,
+      zIndex: 1000
+    }}
         >
           <button onClick={editText}>Edit</button>
           <button onClick={duplicateElement}>Copy</button>

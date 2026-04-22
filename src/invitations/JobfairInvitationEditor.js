@@ -297,8 +297,8 @@ export default function JobfairInvitationEditor() {
   <div
     style={{
       position: "absolute",
-      top: toolbarPos.y,
-      left: toolbarPos.x,
+      top: toolbarPos.y=300,
+      left: toolbarPos.x+400,
       background: "#1a74ce",
       padding: "6px 10px",
       borderRadius: 6,
@@ -337,52 +337,80 @@ export default function JobfairInvitationEditor() {
 
             {/* ELEMENTS */}
             {elements.map(el => {
-              if (el.type === "background") return null;
-
-              if (el.type === "text") {
-                return (
-                  <Text
-                    key={el.id}
-                    id={`node-${el.id}`}
-                    {...el}
-                    draggable
-                    onClick={(e) => {
-  setSelectedId(el.id);
-
-  const pos = e.target.getAbsolutePosition();
-
-  setToolbarPos({
-    x: pos.x + 200,
-    y: pos.y + 50
-  });
-}}
-                    onDragEnd={(e) => updateElement(el.id, { ...el, x: e.target.x(), y: e.target.y() })}
-                  />
-                );
-              }
-
-              if (el.type === "image") {
-                return (
-                  <ImageElement
-                    key={el.id}
-                    element={el}
-                    onSelect={(e) => {
-  setSelectedId(el.id);
-
-  const pos = e.target.getAbsolutePosition();
-
-  setToolbarPos({
-    x: pos.x + 200,
-    y: pos.y + 50
-  });
-}}
-                    onChange={(newAttrs) => updateElement(el.id, newAttrs)}
-                  />
-                );
-              }
-
-              return null;
-            })}
+                                      if (el.type === "text") {
+                                        return (
+                                          <Text
+                                            key={el.id}
+                                            id={`node-${el.id}`}
+                                            text={el.text}
+                                            x={el.x}
+                                            y={el.y}
+                                            fontSize={el.fontSize}
+                                            fontFamily={el.fontFamily}
+                                            fill={el.fill}
+                                            width={el.width}   // ✅ important
+                                            draggable
+                                    
+                                            onClick={(e) => {
+                                              setSelectedId(el.id);
+                                            }}
+                                    
+                                            onDragEnd={(e) => {
+                                              updateElement(el.id, {
+                                                ...el,
+                                                x: e.target.x(),
+                                                y: e.target.y()
+                                              });
+                                            }}
+                                    
+                                            // ✅ PUT IT HERE (inside map, where el exists)
+                                            onTransformEnd={(e) => {
+                                              const node = e.target;
+                                    
+                                              const scaleX = node.scaleX();
+                                              const scaleY = node.scaleY();
+                                    
+                                              node.scaleX(1);
+                                              node.scaleY(1);
+                                    
+                                              updateElement(el.id, {
+                                                ...el,
+                                                x: node.x(),
+                                                y: node.y(),
+                                                width: Math.max(50, node.width() * scaleX),
+                                                fontSize: Math.max(10, el.fontSize * scaleY)
+                                              });
+                                            }}
+                                          />
+                                        );
+                                      }
+                                      if(el.type==="image"){
+                        
+                        return(
+                        
+                        <ImageElement
+                        key={el.id}
+                        element={el}
+                        isSelected={el.id===selectedId}
+                        onSelect={(e)=>{
+                        
+                        setSelectedId(el.id);
+                        
+                        const pos=e.target.getAbsolutePosition();
+                        
+                        setToolbarPos({
+                        x:pos.x,
+                        y:pos.y-40
+                        });
+                        }}
+                        
+                        onChange={(newAttrs)=>updateElement(el.id,newAttrs)}
+                        />
+                        );
+                        }
+                                    
+                                      return null;
+                                    })}
 
             <Transformer ref={transformerRef} />
 
