@@ -30,7 +30,6 @@ const SimpleResumeEditor = () => {
   useGA();
   const [showPreview, setShowPreview] = useState(false);
 const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-const [scale, setScale] = useState(1);
 useEffect(() => {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);

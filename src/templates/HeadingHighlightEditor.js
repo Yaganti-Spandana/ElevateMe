@@ -56,7 +56,6 @@ const BorderHighlightEditor = () => {
   const resumeRef = useRef(null);
   const measureRef = useRef(null);
   const [pages, setPages] = useState([]);
-const [scale, setScale] = useState(1);
 useEffect(() => {
   const updateScale = () => {
     const screenWidth = window.innerWidth;
