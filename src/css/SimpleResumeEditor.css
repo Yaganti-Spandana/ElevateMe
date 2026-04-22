@@ -15,7 +15,7 @@ body{
   background: #f3f4f6;
   overflow: auto; } 
   /* ================= LEFT — EDITOR ================= */ 
-  .editor-sidebar { flex: 0.7; background: #b2c2d6 !important; padding: 24px; border-radius: 14px; overflow-y: auto; height: 450px !important; min-width: 0; color: rgb(26, 116, 206) !important ; box-shadow: 0 10px 30px rgba(0,0,0,0.25); } 
+  .editor-sidebar { flex: 0.1; background: #b2c2d6 !important; padding: 24px; border-radius: 14px; overflow-y: auto; height: 450px !important; min-width: 0; color: rgb(26, 116, 206) !important ; box-shadow: 0 10px 30px rgba(0,0,0,0.25); } 
   /* headings */ .editor-sidebar h2, .editor-sidebar h3 { font-weight: 600; color: rgb(26, 116, 206) !important ; margin-bottom: 5px; } 
   /* inputs */ .editor-sidebar input, .editor-sidebar textarea { width: 90%; margin-bottom: 12px; padding: 10px; border-radius: 8px; border: 1px solid #fff; font-size: 14px;background: #b2c2d6 !important; color: black !important; outline: none; } 
   .skillsfield{
@@ -73,7 +73,7 @@ body{
   .field-grid { display: flex; flex-direction: column; gap: 10px; } .inp { width: 100%; } 
   /* ================= RIGHT — PREVIEW ================= */ /* ===== PREVIEW WRAPPER ===== */ 
   .editor-preview-wrapper {
-  flex: 1;
+  flex: 1.7;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -257,7 +257,7 @@ body{
 
 .editor-sidebar input,
 .editor-sidebar textarea {
-  width: 90%;
+  width: 100%;
   margin-bottom: 12px;
   padding: 10px;
   border-radius: 8px;
@@ -293,7 +293,7 @@ background-color: #2563eb !important;
 .pdf-export .no-print{
 display:none !important;
 }
-@media (max-width:1024px){
+@media (max-width:950px){
 .app-container{
   height: auto !important;
 }
@@ -304,6 +304,9 @@ width:100% !important;
 }
 .editor-preview-wrapper{
 transform:none;
+}
+.editor-sidebar input{
+  width: 100% !important;
 }
 
 .editor-sidebar{

@@ -72,22 +72,21 @@ body{
   .dynamic-field { margin-bottom: 18px; padding: 14px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; display: flex; flex-direction: column; gap: 8px; } 
   .field-grid { display: flex; flex-direction: column; gap: 10px; } .inp { width: 100%; } 
   /* ================= RIGHT — PREVIEW ================= */ /* ===== PREVIEW WRAPPER ===== */ 
-  .editor-preview-wrapper {
+ .editor-preview-wrapper {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 500px !important;
-  overflow-y: auto;
-  overflow-x: auto;
-  padding: 0px 0;
+  height: auto;              /* ✅ allow full height */
+  overflow: visible;         /* ✅ show full content */
 }
     /* ===== PAGE CONTAINER ===== */ 
     .resume-pages {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;   /* ⭐ clean professional spacing */
+  gap: 20px;
+  width: 100%;
 }
     /* ===== REAL A4 PAGE ===== */ 
   .resume-content {

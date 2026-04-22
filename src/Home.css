@@ -110,10 +110,22 @@ body{
 }
 
 @media (max-width: 1024px) {
-  .popular-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
+  .why-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  gap: 50px !important;
+  max-width: 950px !important;
+  margin: auto;
+}
+.popular-card {
+  padding: 5px !important;}
 }
 
 .why-card:hover,
@@ -334,14 +346,14 @@ body{
 .templates-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* ✅ 4 per row */
-  gap: 25px;
+  gap: 40px;
   max-width: 1200px;
   margin: auto;
 }
 .templates-grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* ✅ 4 per row */
-  gap: 25px;
+  gap: 35px;
   max-width: 1200px;
   margin: auto;
 }
@@ -353,6 +365,7 @@ body{
 
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px);
+  padding: 10px 10px 0px 10px !important;
 
   border: 1px solid rgba(255,255,255,0.15);
 
@@ -378,7 +391,7 @@ body{
 }
 
 .card-content {
-  padding: 8px 12px 12px;
+  padding: 8px 12px 0px;
 }
 
 .card-title {
@@ -807,6 +820,7 @@ padding-bottom:10px;
   color:white;
   cursor:pointer;
   transition:0.3s;
+  margin-top: 0px !important;
 }
 
 .load-more-btn:hover{
@@ -915,7 +929,7 @@ padding-bottom:10px;
 
 @media (max-width:1024px){
 .temp{
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .home-title{
 font-size:30px;
@@ -928,7 +942,7 @@ width:650px;
 .grid-card,
 .carousel-card{
 width:160px;
-height:210px;
+height:250px;
 
 }
 
@@ -962,7 +976,7 @@ gap:20px;
 
 .grid-card{
 width:150px;
-height:200px;
+height:250px;
 }
 
 /* CAROUSEL */
@@ -1016,7 +1030,7 @@ gap:15px;
 
 .grid-card{
 width:130px;
-height:180px;
+height:220px;
 }
 
 .carousel-window{
@@ -1041,7 +1055,17 @@ padding:10px 14px;
 width:120px;
 height:22px;
 font-size:11px;
-margin-left: 5px;
+margin-left: 15px;
 }
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+  gap: 50px !important;
+  max-width: 950px !important;
+  margin: auto;
+}
+.popular-card {
+  padding: 5px !important;}
+
 
 }

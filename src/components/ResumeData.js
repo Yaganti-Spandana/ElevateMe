@@ -348,8 +348,7 @@ experienced: {
 
     skills: [
       "HTML5", "CSS3", "JavaScript (ES6+)", "React.js",
-      "Redux", "Bootstrap", "Tailwind CSS", "Responsive Design",
-      "REST APIs", "Git & GitHub"
+      "Redux", "Bootstrap", "Tailwind CSS"
     ],
 
     summary:

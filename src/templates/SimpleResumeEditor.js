@@ -30,7 +30,7 @@ const SimpleResumeEditor = () => {
   useGA();
   const [showPreview, setShowPreview] = useState(false);
 const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
+const [scale, setScale] = useState(1);
 useEffect(() => {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
@@ -39,7 +39,23 @@ useEffect(() => {
   window.addEventListener("resize", handleResize);
   return () => window.removeEventListener("resize", handleResize);
 }, []);
+useEffect(() => {
+  const updateScale = () => {
+    const screenWidth = window.innerWidth;
 
+    if (screenWidth < 768) {
+      setScale(screenWidth / 620); // mobile fit
+    } else if (screenWidth < 1020) {
+      setScale(0.8); // tablet
+    } else {
+      setScale(1); // desktop
+    }
+  };
+
+  updateScale();
+  window.addEventListener("resize", updateScale);
+  return () => window.removeEventListener("resize", updateScale);
+}, []);
 
   const [common, setCommon] = useState({ ...template.common,
     contact: template.common.contact || {
@@ -513,7 +529,11 @@ Create Portfolio Link
 
 {/* preview pages */}
 
-<div className="resume-pages" ref={resumeRef}>
+<div
+  className="resume-pages"
+  ref={resumeRef}
+  
+>
 
 {pages.length === 0 ? (
 <div style={{padding:"20px"}}>Loading preview...</div>

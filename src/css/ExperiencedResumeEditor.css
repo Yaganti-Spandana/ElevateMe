@@ -152,6 +152,56 @@ background-color: #2563eb !important;
 .pdf-export .no-print{
 display:none !important;
 }
+@media (max-width:950px){
+.app-container{
+  height: auto !important;
+}
+.experienced-editor-container{
+flex-direction:column;
+height:auto !important;
+width:100% !important;
+}
+.experienced-editor-preview{
+transform:none;
+}
+
+.editor-sidebar{
+width:90%;
+height:700px !important;
+}
+
+.experienced-editor-preview {
+flex: 1;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+height: auto;
+overflow-x: auto;
+overflow-y: auto;
+padding: 10px;
+}
+.pdf-page2  {
+width: 595px;
+min-height: 842px;
+background: #fff;
+position: relative;
+box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+border-radius: 6px;
+margin: 0;
+margin-bottom: 24PX;
+}
+.resume-pages {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 14px;
+min-width: 595px;
+}
+.download-btn no-print{
+display:block;
+background-color: #2563eb !important;
+}
+}
 
 @media (max-width:768px){
 

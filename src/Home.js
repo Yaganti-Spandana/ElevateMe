@@ -366,7 +366,6 @@ const [slideIndex, setSlideIndex] = useState(0);
     <div key={tpl.id} onClick={() => navigate(`/editor/${tpl.id}`)}>
       <div className="grid-card">
 
-  <div className="card-image-wrapper">
     <div
       className={`preview-container 
         ${tpl.video ? "has-video" : ""} 
@@ -383,7 +382,7 @@ const [slideIndex, setSlideIndex] = useState(0);
         <img src={currentImage} alt={tpl.name} className="preview-image" />
       )}
     </div>
-  </div>
+  
 
   <div className="card-content">
     <p className="card-title">{tpl.name}</p>
