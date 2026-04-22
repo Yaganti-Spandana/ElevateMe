@@ -55,7 +55,7 @@ useEffect(() => {
   updateScale();
   window.addEventListener("resize", updateScale);
   return () => window.removeEventListener("resize", updateScale);
-}, []);
+}, [setScale]);
 
   const [common, setCommon] = useState({ ...template.common,
     contact: template.common.contact || {

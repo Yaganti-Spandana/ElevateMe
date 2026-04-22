@@ -73,7 +73,7 @@ useEffect(() => {
   updateScale();
   window.addEventListener("resize", updateScale);
   return () => window.removeEventListener("resize", updateScale);
-}, []);
+}, [setScale]);
   // =========================
   // PAGE SPLIT
   // =========================
