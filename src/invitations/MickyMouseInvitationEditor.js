@@ -31,6 +31,47 @@ const stickers = [
   "https://cdn-icons-png.flaticon.com/512/4320/4320371.png",
   "https://cdn-icons-png.flaticon.com/512/869/869636.png"
 ];
+function TextElement({ element, onSelect, onChange }) {
+  return (
+    <Text
+      id={`node-${element.id}`}
+      text={element.text}
+      x={element.x}
+      y={element.y}
+      fontSize={element.fontSize}
+      fontFamily={element.fontFamily}
+      fill={element.fill}
+      width={element.width}
+      draggable
+      onClick={onSelect}
+      onTap={onSelect}
+      onDragEnd={(e) => {
+        onChange({
+          ...element,
+          x: e.target.x(),
+          y: e.target.y(),
+        });
+      }}
+      onTransformEnd={(e) => {
+        const node = e.target;
+
+        const scaleX = node.scaleX();
+        const scaleY = node.scaleY();
+
+        node.scaleX(1);
+        node.scaleY(1);
+
+        onChange({
+          ...element,
+          x: node.x(),
+          y: node.y(),
+          width: Math.max(50, node.width() * scaleX),
+          fontSize: Math.max(10, element.fontSize * scaleY),
+        });
+      }}
+    />
+  );
+}
 
 function BackgroundImage({ element }) {
   const [image] = useImage(element.src);
@@ -306,8 +347,8 @@ document.body.removeChild(textarea);
   <div
     style={{
       position: "absolute",
-      top: toolbarPos.y+300,
-      left: toolbarPos.x+400,
+      top: toolbarPos.y+100,
+      left: toolbarPos.x+100,
       background: "#1a74ce",
       padding: "6px 10px",
       borderRadius: 6,
@@ -348,49 +389,23 @@ document.body.removeChild(textarea);
             {elements.map(el => {
                                       if (el.type === "text") {
                                         return (
-                                          <Text
-                                            key={el.id}
-                                            id={`node-${el.id}`}
-                                            text={el.text}
-                                            x={el.x}
-                                            y={el.y}
-                                            fontSize={el.fontSize}
-                                            fontFamily={el.fontFamily}
-                                            fill={el.fill}
-                                            width={el.width}   // ✅ important
-                                            draggable
-                                    
-                                            onClick={(e) => {
-                                              setSelectedId(el.id);
-                                            }}
-                                    
-                                            onDragEnd={(e) => {
-                                              updateElement(el.id, {
-                                                ...el,
-                                                x: e.target.x(),
-                                                y: e.target.y()
-                                              });
-                                            }}
-                                    
-                                            // ✅ PUT IT HERE (inside map, where el exists)
-                                            onTransformEnd={(e) => {
-                                              const node = e.target;
-                                    
-                                              const scaleX = node.scaleX();
-                                              const scaleY = node.scaleY();
-                                    
-                                              node.scaleX(1);
-                                              node.scaleY(1);
-                                    
-                                              updateElement(el.id, {
-                                                ...el,
-                                                x: node.x(),
-                                                y: node.y(),
-                                                width: Math.max(50, node.width() * scaleX),
-                                                fontSize: Math.max(10, el.fontSize * scaleY)
-                                              });
-                                            }}
-                                          />
+   <TextElement
+  key={el.id}
+  element={el}
+  onSelect={(e) => {
+    setSelectedId(el.id);
+
+    const stage = stageRef.current;
+    const stageBox = stage.container().getBoundingClientRect();
+    const pos = e.target.getAbsolutePosition();
+
+    setToolbarPos({
+      x: stageBox.left + pos.x,
+      y: stageBox.top + pos.y - 40,
+    });
+  }}
+  onChange={(newAttrs) => updateElement(el.id, newAttrs)}
+/>
                                         );
                                       }
                                       if(el.type==="image"){
