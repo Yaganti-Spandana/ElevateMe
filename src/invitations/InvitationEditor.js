@@ -428,6 +428,8 @@ return(
 key={el.id}
 id={`node-${el.id}`}
 text={el.text}
+x={el.x}
+y={el.y}
 fontSize={el.fontSize}
 fontFamily={el.fontFamily}
 fill={el.fill}
