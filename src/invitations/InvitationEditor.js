@@ -62,6 +62,49 @@ const stickers = [
 
 ];
 
+
+function TextElement({ element, onSelect, onChange }) {
+  return (
+    <Text
+      id={`node-${element.id}`}
+      text={element.text}
+      x={element.x}
+      y={element.y}
+      fontSize={element.fontSize}
+      fontFamily={element.fontFamily}
+      fill={element.fill}
+      width={element.width}
+      draggable
+      onClick={onSelect}
+      onTap={onSelect}
+      onDragEnd={(e) => {
+        onChange({
+          ...element,
+          x: e.target.x(),
+          y: e.target.y(),
+        });
+      }}
+      onTransformEnd={(e) => {
+        const node = e.target;
+
+        const scaleX = node.scaleX();
+        const scaleY = node.scaleY();
+
+        node.scaleX(1);
+        node.scaleY(1);
+
+        onChange({
+          ...element,
+          x: node.x(),
+          y: node.y(),
+          width: Math.max(50, node.width() * scaleX),
+          fontSize: Math.max(10, element.fontSize * scaleY),
+        });
+      }}
+    />
+  );
+}
+
 function ImageElement({ element,onSelect, onChange }) {
 
 const [image] = useImage(element.src);
@@ -424,57 +467,22 @@ if(el.type==="text"){
 
 return(
 
-<Text
-key={el.id}
-id={`node-${el.id}`}
-text={el.text}
-x={el.x}
-y={el.y}
-fontSize={el.fontSize}
-fontFamily={el.fontFamily}
-fill={el.fill}
-width={el.width}
-draggable
+<TextElement
+  key={el.id}
+  element={el}
+  onSelect={(e) => {
+    setSelectedId(el.id);
 
-onClick={(e)=>{
+    const stage = stageRef.current;
+    const stageBox = stage.container().getBoundingClientRect();
+    const pos = e.target.getAbsolutePosition();
 
-setSelectedId(el.id);
-
-const pos=e.target.getAbsolutePosition();
-
-setToolbarPos({
-x:pos.x,
-y:pos.y-40
-});
-}}
-
-onDragEnd={(e)=>{
-
-updateElement(el.id,{
-...el,
-x:e.target.x(),
-y:e.target.y()
-});
-}}
-
-onTransformEnd={(e)=>{
-
-const node=e.target;
-
-const scaleX=node.scaleX();
-const scaleY=node.scaleY();
-
-node.scaleX(1);
-node.scaleY(1);
-
-updateElement(el.id,{
-...el,
-x:node.x(),
-y:node.y(),
-width:node.width()*scaleX,
-fontSize:el.fontSize*scaleY
-});
-}}
+    setToolbarPos({
+      x: stageBox.left + pos.x,
+      y: stageBox.top + pos.y - 40,
+    });
+  }}
+  onChange={(newAttrs) => updateElement(el.id, newAttrs)}
 />
 );
 }
