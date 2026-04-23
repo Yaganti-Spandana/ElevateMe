@@ -440,11 +440,14 @@ onClick={(e)=>{
 
 setSelectedId(el.id);
 
-const pos=e.target.getAbsolutePosition();
+const stage = stageRef.current;
+const stageBox = stage.container().getBoundingClientRect();
+
+const pos = e.target.getAbsolutePosition();
 
 setToolbarPos({
-x:pos.x,
-y:pos.y-40
+  x: stageBox.left + pos.x,
+  y: stageBox.top + pos.y - 40
 });
 }}
 
@@ -490,7 +493,15 @@ onSelect={(e)=>{
 
 setSelectedId(el.id);
 
-const pos=e.target.getAbsolutePosition();
+const stage = stageRef.current;
+const stageBox = stage.container().getBoundingClientRect();
+
+const pos = e.target.getAbsolutePosition();
+
+setToolbarPos({
+  x: stageBox.left + pos.x,
+  y: stageBox.top + pos.y - 40
+});
 
 setToolbarPos({
 x:pos.x,
