@@ -311,7 +311,7 @@ return(
 <>
 <Navbar/>
 
-<div className="editor-container">
+<div className="invitation-editor-container">
 
 <div className="invitation-editor-sidebar">
 <div style={{width:250,padding:10}}>
