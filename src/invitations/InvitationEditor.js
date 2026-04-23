@@ -368,8 +368,8 @@ onClick={()=>addSticker(s)}  alt=""
 <div
 style={{
 position:"absolute",
-top:toolbarPos.y,
-left:toolbarPos.x,
+top:toolbarPos.y+100,
+left:toolbarPos.x+300,
 background:"rgb(26, 116, 206)",
 border:"1px solid #ddd",
 borderRadius:6,
@@ -440,14 +440,11 @@ onClick={(e)=>{
 
 setSelectedId(el.id);
 
-const stage = stageRef.current;
-const stageBox = stage.container().getBoundingClientRect();
-
-const pos = e.target.getAbsolutePosition();
+const pos=e.target.getAbsolutePosition();
 
 setToolbarPos({
-  x: stageBox.left + pos.x,
-  y: stageBox.top + pos.y - 40
+x:pos.x,
+y:pos.y-40
 });
 }}
 
