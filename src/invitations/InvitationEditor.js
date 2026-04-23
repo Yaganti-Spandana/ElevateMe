@@ -507,14 +507,20 @@ return null;
 })}
 
 <Transformer
-ref={transformerRef}
-rotateEnabled
-enabledAnchors={[
-"top-left",
-"top-right",
-"bottom-left",
-"bottom-right"
-]}
+  ref={transformerRef}
+  rotateEnabled
+  enabledAnchors={[
+    "top-left",
+    "top-right",
+    "bottom-left",
+    "bottom-right"
+  ]}
+  boundBoxFunc={(oldBox, newBox) => {
+    if (newBox.width < 50 || newBox.height < 20) {
+      return oldBox;
+    }
+    return newBox;
+  }}
 />
 
 </Layer>
