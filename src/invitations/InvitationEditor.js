@@ -428,6 +428,8 @@ return(
 key={el.id}
 id={`node-${el.id}`}
 text={el.text}
+x={el.x}
+y={el.y}
 fontSize={el.fontSize}
 fontFamily={el.fontFamily}
 fill={el.fill}
@@ -438,14 +440,11 @@ onClick={(e)=>{
 
 setSelectedId(el.id);
 
-const stage = stageRef.current;
-const stageBox = stage.container().getBoundingClientRect();
-
-const pos = e.target.getAbsolutePosition();
+const pos=e.target.getAbsolutePosition();
 
 setToolbarPos({
-  x: stageBox.left + pos.x,
-  y: stageBox.top + pos.y - 40
+x:pos.x,
+y:pos.y-40
 });
 }}
 
@@ -458,22 +457,23 @@ y:e.target.y()
 });
 }}
 
-onTransformEnd={(e) => {
-  const node = e.target;
+onTransformEnd={(e)=>{
 
-  const scaleX = node.scaleX();
-  const scaleY = node.scaleY();
+const node=e.target;
 
-  node.scaleX(1);
-  node.scaleY(1);
+const scaleX=node.scaleX();
+const scaleY=node.scaleY();
 
-  updateElement(el.id, {
-    ...el,
-    x: node.x(),
-    y: node.y(),
-    width: Math.max(50, node.width() * scaleX),
-    fontSize: Math.max(10, el.fontSize * scaleY),
-  });
+node.scaleX(1);
+node.scaleY(1);
+
+updateElement(el.id,{
+...el,
+x:node.x(),
+y:node.y(),
+width:node.width()*scaleX,
+fontSize:el.fontSize*scaleY
+});
 }}
 />
 );
@@ -491,14 +491,11 @@ onSelect={(e)=>{
 
 setSelectedId(el.id);
 
-const stage = stageRef.current;
-const stageBox = stage.container().getBoundingClientRect();
-
-const pos = e.target.getAbsolutePosition();
+const pos=e.target.getAbsolutePosition();
 
 setToolbarPos({
-  x: stageBox.left + pos.x,
-  y: stageBox.top + pos.y - 40
+x:pos.x,
+y:pos.y-40
 });
 }}
 
@@ -511,20 +508,14 @@ return null;
 })}
 
 <Transformer
-  ref={transformerRef}
-  rotateEnabled
-  enabledAnchors={[
-    "top-left",
-    "top-right",
-    "bottom-left",
-    "bottom-right"
-  ]}
-  boundBoxFunc={(oldBox, newBox) => {
-    if (newBox.width < 50 || newBox.height < 20) {
-      return oldBox;
-    }
-    return newBox;
-  }}
+ref={transformerRef}
+rotateEnabled
+enabledAnchors={[
+"top-left",
+"top-right",
+"bottom-left",
+"bottom-right"
+]}
 />
 
 </Layer>
