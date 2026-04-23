@@ -410,7 +410,7 @@ onClick={()=>addSticker(s)}  alt=""
 style={{
 position:"absolute",
 top:toolbarPos.y+100,
-left:toolbarPos.x+300,
+left:toolbarPos.x+100,
 background:"rgb(26, 116, 206)",
 border:"1px solid #ddd",
 borderRadius:6,
