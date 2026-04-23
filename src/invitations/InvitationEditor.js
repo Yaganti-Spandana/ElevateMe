@@ -457,23 +457,22 @@ y:e.target.y()
 });
 }}
 
-onTransformEnd={(e)=>{
+onTransformEnd={(e) => {
+  const node = e.target;
 
-const node=e.target;
+  const scaleX = node.scaleX();
+  const scaleY = node.scaleY();
 
-const scaleX=node.scaleX();
-const scaleY=node.scaleY();
+  node.scaleX(1);
+  node.scaleY(1);
 
-node.scaleX(1);
-node.scaleY(1);
-
-updateElement(el.id,{
-...el,
-x:node.x(),
-y:node.y(),
-width:node.width()*scaleX,
-fontSize:el.fontSize*scaleY
-});
+  updateElement(el.id, {
+    ...el,
+    x: node.x(),
+    y: node.y(),
+    width: Math.max(50, node.width() * scaleX),
+    fontSize: Math.max(10, el.fontSize * scaleY),
+  });
 }}
 />
 );
