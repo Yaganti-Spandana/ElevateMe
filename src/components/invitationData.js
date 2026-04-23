@@ -1,6 +1,6 @@
-import invitation_border1 from "../images/invitation_border1.png";
-import om from "../images/om.png";
-import venkateswara_swami from "../images/venkateswara_swami.png";
+import invitation_border1 from "../images/wedding/invitation_border1.png";
+import om from "../images/wedding/om.png";
+import venkateswara_swami from "../images/wedding/venkateswara_swami.png";
 import '../invitations/Invitation.css'
 const invitationElements = [
 {

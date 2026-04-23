@@ -1,5 +1,5 @@
-import micky_mouse_background from "../images/micky_mouse_background.png";
-import micky_mouse_logo from "../images/micky_mouse_logo.png";
+import micky_mouse_background from "../images/micky_mouse/micky_mouse_background.png";
+import micky_mouse_logo from "../images/micky_mouse/micky_mouse_logo.png";
 import '../invitations/Invitation.css'
 
 const mickymouseInvitationElements = [

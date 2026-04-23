@@ -1,7 +1,7 @@
-import bg from "../images/college_fest_background.png";
-import logo from "../images/college_fest_logo.png";
-import stageImg from "../images/stageImg.png";      // 🔥 add stage image
-import djImg from "../images/djImage.png";            // 🔥 add DJ image
+import bg from "../images/college_fest/college_fest_background.png";
+import logo from "../images/college_fest/college_fest_logo.png";
+import stageImg from "../images/college_fest/stageImg.png";      // 🔥 add stage image
+import djImg from "../images/college_fest/djImage.png";            // 🔥 add DJ image
 
 export const slides = [
 

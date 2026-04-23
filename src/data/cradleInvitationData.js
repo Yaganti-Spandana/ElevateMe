@@ -1,6 +1,6 @@
-import cradle_logo from "../images/cradle_logo.png";
-import cradle_logo1 from "../images/cradle_logo1.png";
-import cradle_logo2 from "../images/cradle_logo2.png";
+import cradle_logo from "../images/cradle_ceremony/cradle_logo.png";
+import cradle_logo1 from "../images/cradle_ceremony/cradle_logo1.png";
+import cradle_logo2 from "../images/cradle_ceremony/cradle_logo2.png";
 import '../invitations/Invitation.css'
 
 const cradleInvitationElements = {

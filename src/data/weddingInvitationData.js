@@ -1,4 +1,4 @@
-import wedding_logo from "../images/wedding_logo.png";
+import wedding_logo from "../images/wedding1/wedding_logo.png";
 import '../invitations/Invitation.css'
 
 const weddingInvitationElements = [

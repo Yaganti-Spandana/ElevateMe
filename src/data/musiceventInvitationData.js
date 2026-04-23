@@ -1,4 +1,4 @@
-import music_bg from "../images/musicevent_logo.png";
+import music_bg from "../images/music_event/musicevent_logo.png";
 import '../invitations/Invitation.css'
 
 const musicInvitationElements = [

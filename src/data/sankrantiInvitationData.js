@@ -1,5 +1,5 @@
-import bg1 from "../images/sankranti_bg1.png";
-import bg2 from "../images/sankranti_bg2.png";
+import bg1 from "../images/sankranti/sankranti_bg1.png";
+import bg2 from "../images/sankranti/sankranti_bg2.png";
 
 export const sankrantislides = [
 

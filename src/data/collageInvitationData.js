@@ -1,5 +1,5 @@
-import collage_background from "../images/collage_background.png";
-import collage_logo from "../images/collage_logo.png";
+import collage_background from "../images/collage/collage_background.png";
+import collage_logo from "../images/collage/collage_logo.png";
 import '../invitations/Invitation.css'
 
 const collageInvitationElements = {

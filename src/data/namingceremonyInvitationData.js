@@ -1,4 +1,4 @@
-import krishna_bg from "../images/naming_ceremony1.png";
+import krishna_bg from "../images/naming_ceremony/naming_ceremony1.png";
 import '../invitations/Invitation.css'
 
 const namingceremonyInvitationElements = [

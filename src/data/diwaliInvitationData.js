@@ -1,4 +1,4 @@
-import diwali_logo from "../images/diwali_logo.png";
+import diwali_logo from "../images/diwali/diwali_logo.png";
 import '../invitations/Invitation.css'
 
 const diwaliInvitationElements = [

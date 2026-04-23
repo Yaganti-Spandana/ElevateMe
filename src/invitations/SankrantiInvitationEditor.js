@@ -4,7 +4,7 @@ import useImage from "use-image";
 import { sankrantislides } from "../data/sankrantiInvitationData";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
-import bg from "../images/sankranti_bg.png";
+import bg from "../images/sankranti/sankranti_bg.png";
 const fonts = [
   "Great Vibes","Playfair Display","Cinzel","Dancing Script","Cormorant Garamond",
   "Libre Baskerville","Merriweather","Lora","Crimson Text","EB Garamond",

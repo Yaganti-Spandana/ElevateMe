@@ -1,6 +1,6 @@
-import invitation_border1 from "../images/engagement_invitation_border1.png";
-import invitation_border2 from "../images/engagement_invitation_border2.png";
-import venkateswara_swami from "../images/engagement_logo.png";
+import invitation_border1 from "../images/engagement/engagement_invitation_border1.png";
+import invitation_border2 from "../images/engagement/engagement_invitation_border2.png";
+import venkateswara_swami from "../images/engagement/engagement_logo.png";
 import '../invitations/Invitation.css'
 
 const engagementInvitationElements = [

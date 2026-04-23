@@ -4,7 +4,7 @@ import useImage from "use-image";
 import { slides } from "../data/collegefestInvitationData";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
-import bg from "../images/college_fest_background.png";
+import bg from "../images/college_fest/college_fest_background.png";
 const fonts = [
   "Great Vibes","Playfair Display","Cinzel","Dancing Script","Cormorant Garamond",
   "Libre Baskerville","Merriweather","Lora","Crimson Text","EB Garamond",

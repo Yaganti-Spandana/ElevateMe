@@ -1,7 +1,7 @@
-import unicorn_background from "../images/unicorn_background.png";
-import unicorn_logo1 from "../images/unicorn_logo1.png";
-import unicorn_logo2 from "../images/unicorn_logo2.png";
-import unicorn_logo3 from "../images/unicorn_logo3.png";
+import unicorn_background from "../images/unicorn/unicorn_background.png";
+import unicorn_logo1 from "../images/unicorn/unicorn_logo1.png";
+import unicorn_logo2 from "../images/unicorn/unicorn_logo2.png";
+import unicorn_logo3 from "../images/unicorn/unicorn_logo3.png";
 import '../invitations/Invitation.css'
 
 const unicornInvitationElements = [

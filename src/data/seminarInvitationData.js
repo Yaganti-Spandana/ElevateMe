@@ -1,4 +1,4 @@
-import seminar1 from "../images/seminar1.png";
+import seminar1 from "../images/seminar/seminar1.png";
 import '../invitations/Invitation.css'
 
 const seminarInvitationElements = [

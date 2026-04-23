@@ -1,4 +1,4 @@
-import jobfair1 from "../images/jobfair1.png";
+import jobfair1 from "../images/job_fair/jobfair1.png";
 import '../invitations/Invitation.css'
 
 const jobfairInvitationElements = [

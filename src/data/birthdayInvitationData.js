@@ -1,5 +1,5 @@
-import invitation_border1 from "../images/birthday_invitation_border1.png";
-import birthdaycake1 from "../images/birthdaycake1.png";
+import invitation_border1 from "../images/birthday/birthday_invitation_border1.png";
+import birthdaycake1 from "../images/birthday/birthdaycake1.png";
 import '../invitations/Invitation.css'
 
 const birthdayInvitationElements = [

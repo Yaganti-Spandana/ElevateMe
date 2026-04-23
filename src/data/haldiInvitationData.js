@@ -1,4 +1,4 @@
-import haldi_logo from "../images/haldi_logo.png";
+import haldi_logo from "../images/haldi/haldi_logo.png";
 import '../invitations/Invitation.css'
 
 const haldiInvitationElements = [

@@ -1,7 +1,7 @@
-import babyannounement_background from "../images/babyannounement_background.png";
-import babyannouncement_logo1 from "../images/babyannouncement_logo1.png";
-import babyannouncement_logo2 from "../images/babyannouncement_logo2.png";
-import babyannouncement_logo3 from "../images/babyannouncement_logo3.png";
+import babyannounement_background from "../images/baby_announcement/babyannounement_background.png";
+import babyannouncement_logo1 from "../images/baby_announcement/babyannouncement_logo1.png";
+import babyannouncement_logo2 from "../images/baby_announcement/babyannouncement_logo2.png";
+import babyannouncement_logo3 from "../images/baby_announcement/babyannouncement_logo3.png";
 import '../invitations/Invitation.css'
 
 const babyannouncementInvitationElements = [

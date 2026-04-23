@@ -1,4 +1,4 @@
-import kitty_logo from "../images/kitty_logo.png";
+import kitty_logo from "../images/kitty_party/kitty_logo.png";
 import '../invitations/Invitation.css'
 
 const kittyPartyInvitationElements = [

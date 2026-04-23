@@ -1,4 +1,4 @@
-import gruhapravesham_logo from "../images/gruhapravesham_logo.png";
+import gruhapravesham_logo from "../images/gruhapravesham/gruhapravesham_logo.png";
 import '../invitations/Invitation.css'
 
 const gruhapraveshamInvitationElements = {

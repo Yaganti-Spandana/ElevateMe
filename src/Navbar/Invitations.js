@@ -1,31 +1,33 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import invitation1 from "../images/invitation1.png";
-import birthday_invitation1 from "../images/birthday_invitation1.png";
-import micky_mouse_birthday from "../images/micky_mouse_birthday.png";
-import collage_invitation from "../images/collage_invitation.png";
-import unicorn_invitation from "../images/unicorn_invitation.png";
-import engagement_invitation1 from "../images/engagement_invitation1.png";
-import kittyparty1 from "../images/kittyparty1.png";
-import haldi_invitation1 from "../images/haldi_invitation1.png";
-import namingceremony_invitation1 from "../images/namingceremony_invitation1.png";
-import gruha_pravesham1 from "../images/gruha_pravesham1.png";
-import diwali_invitation1 from "../images/diwali_invitation1.png";
-import productlaunch_invitation1 from "../images/productlaunch_invitation1.png";
-import musicevent_invitation1 from "../images/musicevent_invitation1.png";
-import wedding_invitation1 from "../images/wedding_invitation1.png";
-import collegefest1 from "../images/collegefest1.png";
-import collegefest2 from "../images/collegefest2.png";
-import collegefest3 from "../images/collegefest3.png";
-import cricketsports_invitation from "../images/cricketsports_invitation.png";
-import seminar_invitation from "../images/seminar_invitation.png";
-import graduation_invitation from "../images/graduation_invitation.png";
-import jobfair_invitation from "../images/jobfair_invitation.png";
-import culturalfestival_invitation from "../images/culturalfestival_invitation.png";
-import sankranti1 from "../images/sankranti1.png";
-import sankranti2 from "../images/sankranti2.png";
-import cradle_invitation from "../images/cradle_invitation.png";
-import babyannouncement_invitation from "../images/babyannouncement_invitation.png"; 
+import invitation1 from "../images/wedding/invitation1.png";
+import birthday_invitation1 from "../images/birthday/birthday_invitation1.png";
+import micky_mouse_birthday from "../images/micky_mouse/micky_mouse_birthday.png";
+import collage_invitation from "../images/collage/collage_invitation.png";
+import unicorn_invitation from "../images/unicorn/unicorn_invitation.png";
+import engagement_invitation1 from "../images/engagement/engagement_invitation1.png";
+import kittyparty1 from "../images/kitty_party/kittyparty1.png";
+import haldi_invitation1 from "../images/haldi/haldi_invitation1.png";
+import namingceremony_invitation1 from "../images/naming_ceremony/namingceremony_invitation1.png";
+import gruha_pravesham1 from "../images/gruhapravesham/gruha_pravesham1.png";
+import diwali_invitation1 from "../images/diwali/diwali_invitation1.png";
+import productlaunch_invitation1 from "../images/product_lauch/productlaunch_invitation1.png";
+import musicevent_invitation1 from "../images/music_event/musicevent_invitation1.png";
+import wedding_invitation1 from "../images/wedding1/wedding_invitation1.png";
+import collegefest1 from "../images/college_fest/collegefest1.png";
+import collegefest2 from "../images/college_fest/collegefest2.png";
+import collegefest3 from "../images/college_fest/collegefest3.png";
+import cricketsports_invitation from "../images/cricket_sports/cricketsports_invitation.png";
+import seminar_invitation from "../images/seminar/seminar_invitation.png";
+import graduation_invitation from "../images/graduation/graduation_invitation.png";
+import jobfair_invitation from "../images/job_fair/jobfair_invitation.png";
+import culturalfestival_invitation from "../images/cultural_festival/culturalfestival_invitation.png";
+import sankranti1 from "../images/sankranti/sankranti1.png";
+import sankranti2 from "../images/sankranti/sankranti2.png";
+import cradle_invitation from "../images/cradle_ceremony/cradle_invitation.png";
+import babyannouncement_invitation from "../images/baby_announcement/babyannouncement_invitation.png"; 
+import farewell_invitation1 from "../images/farewell/farewell_invitation1.png"; 
+import farewell_invitation2 from "../images/farewell/farewell_invitation2.png"; 
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -192,6 +194,13 @@ const templates = [
     dname: "Baby Announcement Event Invitation",
     images: [babyannouncement_invitation], 
     categories: ["Baby & Family"],
+  },
+  {
+    id: "farewell",
+    name: "Farewell Invitation",
+    dname: "Farewell Invitation",
+    images: [farewell_invitation1,farewell_invitation2],
+    categories: ["Education & Student Events","Trending / Modern"]
   },
 ];
 

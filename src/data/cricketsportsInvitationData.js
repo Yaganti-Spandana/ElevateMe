@@ -1,4 +1,4 @@
-import cricketsports1 from "../images/cricketsports1.png";
+import cricketsports1 from "../images/cricket_sports/cricketsports1.png";
 import '../invitations/Invitation.css'
 
 const cricketsportsInvitationElements = [

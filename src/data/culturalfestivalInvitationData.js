@@ -1,4 +1,4 @@
-import culturalfestival1 from "../images/culturalfestival1.png";
+import culturalfestival1 from "../images/cultural_festival/culturalfestival1.png";
 import '../invitations/Invitation.css'
 
 const culturalfestivalInvitationElements = {

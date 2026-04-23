@@ -1,4 +1,4 @@
-import graduation1 from "../images/graduation1.png";
+import graduation1 from "../images/graduation/graduation1.png";
 import '../invitations/Invitation.css'
 
 const graduationInvitationElements = {

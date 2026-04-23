@@ -1,4 +1,4 @@
-import productlaunch_logo from "../images/productlaunch_logo.png";
+import productlaunch_logo from "../images/product_lauch/productlaunch_logo.png";
 import '../invitations/Invitation.css'
 
 const productLaunchInvitationElements = {
