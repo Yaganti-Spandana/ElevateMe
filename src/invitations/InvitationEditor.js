@@ -502,11 +502,6 @@ setToolbarPos({
   x: stageBox.left + pos.x,
   y: stageBox.top + pos.y - 40
 });
-
-setToolbarPos({
-x:pos.x,
-y:pos.y-40
-});
 }}
 
 onChange={(newAttrs)=>updateElement(el.id,newAttrs)}
