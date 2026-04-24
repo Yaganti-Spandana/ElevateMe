@@ -55,7 +55,17 @@ import sankranti2 from "./images/sankranti/sankranti2.png";
 import cradle_invitation from "./images/cradle_ceremony/cradle_invitation.png";  
 import babyannouncement_invitation from "./images/baby_announcement/babyannouncement_invitation.png"; 
 import farewell_invitation1 from "./images/farewell/farewell_invitation1.png"; 
-import farewell_invitation2 from "./images/farewell/farewell_invitation2.png"; 
+import farewell_invitation2 from "./images/farewell/farewell_invitation2.png";
+import techfest_invitation from "./images/techfest/techfest_invitation.png"; 
+import officeparty_invitation1 from "./images/officeparty/officeparty_invitation1.png"; 
+import officeparty_invitation2 from "./images/officeparty/officeparty_invitation2.png";
+import fashionshow_invitation1 from "./images/fashionshow/fashionshow_invitation1.png"; 
+import fashionshow_invitation2 from "./images/fashionshow/fashionshow_invitation2.png";
+import christmas_invitation from "./images/christmas/christmas_invitation.png";
+import ugadi_invitation1 from "./images/ugadi/ugadi_invitation1.png"; 
+import ugadi_invitation2 from "./images/ugadi/ugadi_invitation2.png";
+import firstbirthday_invitation1 from "./images/firstbirthday/firstbirthday_invitation1.png"; 
+import firstbirthday_invitation2 from "./images/firstbirthday/firstbirthday_invitation2.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import Navbar from "./Navbar/Navbar";
@@ -115,13 +125,11 @@ const templates = [
     video: careerportfolio
   },
   {
-    id: "diwali1",
-    name: "Diwali Invitation",
-    dname: "Diwali Invitation",
-    images: [diwali_invitation1], 
+    id: "ugadi",
+    name: "Ugadi Invitation",
+    dname: "Ugadi Invitation",
+    images: [ugadi_invitation1,ugadi_invitation2], 
   },
-  
-  
   {
     id: "haldi1",
     name: "Haldi Invitation",
@@ -136,10 +144,10 @@ const templates = [
     video: greenyellowportfolio
   },
   {
-    id: "namingceremony1",
-    name: "Naming Ceremony Invitation",
-    dname: "Lord Krishna Naming Ceremony Invitation",
-    images: [namingceremony_invitation1], 
+    id: "babyannouncement",
+    name: "Baby Announcement Event Invitation",
+    dname: "Baby Announcement Event Invitation",
+    images: [babyannouncement_invitation], 
   },
   {
     id: "border_highlight",
@@ -162,12 +170,11 @@ const templates = [
     images: [internship1, internship2], // ⭐ two images here
     video: internshipportfolio
   },
-
-  {
-    id: "musicevent1",
-    name: "Music Event Invitation",
-    dname: "Music Event Invitation",
-    images: [musicevent_invitation1], 
+{
+    id: "culturalfestival",
+    name: "Cultural Festival Invitation",
+    dname: "Cultural Festival Invitation",
+    images: [culturalfestival_invitation], 
   },
   { id: "creative",name: "Creative Resume", dname: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
   {
@@ -225,10 +232,10 @@ const templates = [
     images: [jobfair_invitation], 
   },
   {
-    id: "culturalfestival",
-    name: "Cultural Festival Invitation",
-    dname: "Cultural Festival Invitation",
-    images: [culturalfestival_invitation], 
+    id: "musicevent1",
+    name: "Music Event Invitation",
+    dname: "Music Event Invitation",
+    images: [musicevent_invitation1], 
   },
   {
     id: "sankranti1",
@@ -237,22 +244,58 @@ const templates = [
     images: [sankranti1,sankranti2], 
   },
   {
+    id: "techfest",
+    name: "Tech Fest Invitation",
+    dname: "Tech Fest Invitation",
+    images: [techfest_invitation], 
+  },
+  {
     id: "cradle",
     name: "Cradle Ceremony Invitation",
     dname: "Cradle Ceremony Invitation",
     images: [cradle_invitation], 
   },
   {
-    id: "babyannouncement",
-    name: "Baby Announcement Event Invitation",
-    dname: "Baby Announcement Event Invitation",
-    images: [babyannouncement_invitation], 
+    id: "namingceremony1",
+    name: "Naming Ceremony Invitation",
+    dname: "Lord Krishna Naming Ceremony Invitation",
+    images: [namingceremony_invitation1], 
   },
   {
     id: "farewell",
     name: "Farewell Invitation",
     dname: "Farewell Invitation",
     images: [farewell_invitation1,farewell_invitation2], 
+  },
+  {
+    id: "officeparty",
+    name: "Office Party Invitation",
+    dname: "Office Party Invitation",
+    images: [officeparty_invitation1,officeparty_invitation2], 
+  },
+  {
+    id: "fashionshow",
+    name: "Fashion Show Invitation",
+    dname: "Fashion Show Invitation",
+    images: [fashionshow_invitation1,fashionshow_invitation2], 
+  },
+  {
+    id: "christmas",
+    name: "Christmas Invitation",
+    dname: "Christmas Invitation",
+    images: [christmas_invitation], 
+  },
+  {
+    id: "diwali1",
+    name: "Diwali Invitation",
+    dname: "Diwali Invitation",
+    images: [diwali_invitation1], 
+  },
+  {
+    id: "firstbirthday",
+    name: "First Birthday Invitation",
+    dname: "First Birthday Invitation",
+    images: [firstbirthday_invitation1,firstbirthday_invitation2], 
   },
 ];
 
