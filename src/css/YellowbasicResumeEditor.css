@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); 
+
+.yellowbasic_pdf-page {
+  width: 595px;
+  min-height: 842px;   /* ✅ REAL A4 */
+  background: #bba546;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+  border: 2px solid rgb(22, 65, 118);
+}
+.yellowbasic_heading { 
+        font-size: 35px; 
+        font-weight: 700; 
+        font-family: 'Inter',sans-serif;
+        color:rgb(22, 65, 118);
+        text-align: center;
+      }
+.yellowbasic_subheading { 
+        font-size: 20px; 
+        color:rgb(22, 65, 118);
+        text-align: center; 
+        font-family: 'Inter',sans-serif;
+        margin-top: -20px !important;
+      } 
+.yellowbasic_section-block{
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 10px;
+  border: 1px solid rgb(22, 65, 118);
+  color: rgb(22, 65, 118);
+  text-align: center;
+}
+.yellowbasic_contact {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(10.5px, 2.5vw, 12px);
+  font-weight: 500;
+  border: 1px solid rgb(22, 65, 118);
+  color: rgb(22, 65, 118);
+  text-align: center;
+  line-height: 1.35;
+  margin: 6px 0 16px;
+  word-break: break-word;
+}
+.yellowbasic_section-heading { 
+        font-size: 20px; 
+        font-weight: 600; 
+        margin-top: 0px; 
+        border-bottom: 1px solid rgb(22, 65, 118); 
+        padding-bottom: 3px; 
+        font-family: 'Inter',sans-serif;
+      } 
+
+.yellowbasic_skills-text { 
+        font-size: 11px; 
+        margin-bottom: 6px; 
+        white-space: pre-wrap; 
+        font-family: 'Roboto',sans-serif;
+        word-break: break-word; 
+        overflow-wrap: anywhere; 
+        font-family: 'Roboto',sans-serif;
+        font-size: 15px;
+      } 
+
+@media (max-width:1000px){
+.yellowbasic_pdf-page {
+width: 595px;
+min-height: 842px;
+background: #bba546;
+position: relative;
+box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+border-radius: 6px;
+margin: 0;
+margin-bottom: 24PX;
+}
+
+}
+
+@media (max-width:768px){
+.yellowbasic_pdf-page {
+width: 595px;
+min-height: 842px;
+background: #bba546;
+position: relative;
+box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+border-radius: 6px;
+margin: 0;
+margin-bottom: 24PX;
+}
+
+}

@@ -6,6 +6,9 @@ import simpleportfolio from "../images/simple_resume_template/simple.mp4";
 import twosidedsimple_invitation1 from "../images/twosidedsimple_resume_template/twosidedsimple_invitation1.png";
 import twosidedsimple_invitation2 from "../images/twosidedsimple_resume_template/twosidedsimple_invitation2.png";
 import twosidedsimple_portfolio from "../images/twosidedsimple_resume_template/twosidedsimple_portfolio.mp4";
+import yellowbasic1 from "../images/yellowbasic_resume_template/yellowbasic1.png";
+import yellowbasic2 from "../images/yellowbasic_resume_template/yellowbasic2.png";
+import yellowbasic_portfolio from "../images/yellowbasic_resume_template/yellowbasic_portfolio.mp4";
 import border1 from "../images/headinghighlight_resume_template/border1.png";
 import border2 from "../images/headinghighlight_resume_template/border2.png";
 import borderportfolio from "../images/headinghighlight_resume_template/border_highlight.mp4"
@@ -123,6 +126,14 @@ const templates = [
     dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
     images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
     video: twosidedsimple_portfolio,
+    category: "Basic",
+  },
+  {
+    id: "yellowbasic",
+    name: "Yellow Basic Resume",
+    dname: "Yellow and Blue Basic Resume",
+    images: [yellowbasic1, yellowbasic2], // ⭐ two images here
+    video: yellowbasic_portfolio,
     category: "Basic",
   },
 ];

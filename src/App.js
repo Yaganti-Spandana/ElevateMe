@@ -61,6 +61,8 @@ import UgadiInvitationEditor from "./invitations/UgadiInvitationEditor";
 import FirstbirthdayInvitationEditor from "./invitations/FirstbirthdayInvitationEditor";
 import TwosidedResumeEditor from "./templates/TwosidedResumeEditor";
 import TwosidedsimpleTemplatePortfolioPage from "./portfolios/TwosidedsimplePortfolioPage";
+import YellowbasicResumeEditor from "./templates/YellowbasicResumeEditor";
+import YellowbasicPortfolioPage from "./portfolios/YellowbasicPortfolioPage";
 
 function App() {
   useGA();
@@ -88,11 +90,13 @@ function App() {
 <Route path="/portfolio/green_and_yellow/:username" element={<GreenYellowPortfolioPage/>} />
 <Route path="/portfolio/internship/:username" element={<InternshipPortfolioPage/>} />
 <Route path="/portfolio/career/:username" element={<CareerChangePortfolioPage/>} />
+<Route path="/portfolio/yellowbasic/:username" element={<YellowbasicPortfolioPage/>} />
 
 
 
         <Route path="/editor/simple" element={<SimpleResumeEditor />} />
         <Route path="/editor/twosidedsimple" element={<TwosidedResumeEditor/>} />
+        <Route path="/editor/yellowbasic" element={<YellowbasicResumeEditor/>} />
         <Route path="/editor/border_highlight" element={<BorderHighlightEditor />} />
         <Route path="/editor/fresher" element={<FresherResumeEditor />} />
         <Route path="/editor/modern" element={<ModernResumeEditor />} />
