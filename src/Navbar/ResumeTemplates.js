@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import simpleSample1 from "../images/simple_resume_template/simple1.png";
 import simpleSample2 from "../images/simple_resume_template/simple2.png";
 import simpleportfolio from "../images/simple_resume_template/simple.mp4";
+import twosidedsimple_invitation1 from "../images/twosidedsimple_resume_template/twosidedsimple_invitation1.png";
+import twosidedsimple_invitation2 from "../images/twosidedsimple_resume_template/twosidedsimple_invitation2.png";
+import twosidedsimple_portfolio from "../images/twosidedsimple_resume_template/twosidedsimple_portfolio.mp4";
 import border1 from "../images/headinghighlight_resume_template/border1.png";
 import border2 from "../images/headinghighlight_resume_template/border2.png";
 import borderportfolio from "../images/headinghighlight_resume_template/border_highlight.mp4"
@@ -113,7 +116,15 @@ const templates = [
     category: "Fresher",
     images: [internship1, internship2],
     video: internshipportfolio
-  }
+  },
+  {
+    id: "twosidedsimple",
+    name: "Maroon Full Stack Web Developer Resume",
+    dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
+    images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
+    video: twosidedsimple_portfolio,
+    category: "Basic",
+  },
 ];
 
 
@@ -201,7 +212,7 @@ const [slideIndex, setSlideIndex] = useState(0);
   </div>
 
 </div>
-      <h1 className="home-title1">Available:{search ? filteredTemplates.length : templates.length} templates. More will be added soon.
+      <h1 className="home-title1">Available:{filteredTemplates.length} templates. More will be added soon.
 </h1>
 
       {/* Canva Style Results */}

@@ -59,6 +59,8 @@ import FashionshowInvitationEditor from "./invitations/FashionshowInvitationEdit
 import ChristmasInvitationEditor from "./invitations/ChristmasInvitationEditor";
 import UgadiInvitationEditor from "./invitations/UgadiInvitationEditor";
 import FirstbirthdayInvitationEditor from "./invitations/FirstbirthdayInvitationEditor";
+import TwosidedResumeEditor from "./templates/TwosidedResumeEditor";
+import TwosidedsimpleTemplatePortfolioPage from "./portfolios/TwosidedsimplePortfolioPage";
 
 function App() {
   useGA();
@@ -76,6 +78,7 @@ function App() {
         <Route path="/invitations" element={<Invitations/>} />
         
         <Route path="/portfolio/simple/:username" element={<SimpleTemplatePortfolioPage/>} />
+        <Route path="/portfolio/twosidedsimple/:username" element={<TwosidedsimpleTemplatePortfolioPage/>} />
 <Route path="/portfolio/border/:username" element={<BorderHighlightPortfolioPage/>} />
 <Route path="/portfolio/modern/:username" element={<ModernTemplatePortfolioPage/>} />
 <Route path="/portfolio/fresher/:username" element={<FresherTemplatePortfolioPage/>} />
@@ -89,6 +92,7 @@ function App() {
 
 
         <Route path="/editor/simple" element={<SimpleResumeEditor />} />
+        <Route path="/editor/twosidedsimple" element={<TwosidedResumeEditor/>} />
         <Route path="/editor/border_highlight" element={<BorderHighlightEditor />} />
         <Route path="/editor/fresher" element={<FresherResumeEditor />} />
         <Route path="/editor/modern" element={<ModernResumeEditor />} />
