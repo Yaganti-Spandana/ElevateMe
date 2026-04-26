@@ -50,6 +50,9 @@ import musicevent_invitation1 from "./images/music_event/musicevent_invitation1.
 import career1 from "./images/careerchange_resume_template/career1.png";
 import career2 from "./images/careerchange_resume_template/career2.png";
 import careerportfolio from "./images/careerchange_resume_template/career.mp4";
+import atsprofessional1 from "./images/atsprofessional_resume_template/atsprofessional1.png";
+import atsprofessional2 from "./images/atsprofessional_resume_template/atsprofessional2.png";
+import atsprofessional_portfolio from "./images/atsprofessional_resume_template/atsprofessional_portfolio.mp4";
 import wedding_invitation1 from "./images/wedding1/wedding_invitation1.png";
 import cricketsports_invitation from "./images/cricket_sports/cricketsports_invitation.png";
 import seminar_invitation from "./images/seminar/seminar_invitation.png";
@@ -209,6 +212,13 @@ const templates = [
     name: "Birthday Invitation",
     dname: "Micky Mouse Theme Birthday Invitation",
     images: [micky_mouse_birthday], 
+  },
+  {
+    id: "atsprofessional",
+    name: "Ats Professional Resume",
+    dname: "Ats Professional Change Resume",
+    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
+    video: atsprofessional_portfolio
   },
   {
     id: "collagebirthday",

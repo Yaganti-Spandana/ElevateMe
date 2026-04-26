@@ -1159,6 +1159,116 @@ careerProfile: {
     "English (Professional)",
     "Hindi (Native)"
   ]
+},
+atsprofessional: {
+  common: {
+    name: "Rahul Verma",
+    title: "Aspiring Technology Professional | Full Stack Developer | Problem Solver",
+
+    summary:
+      "Detail-oriented and adaptable professional transitioning into the technology sector with hands-on experience in developing web applications and solving real-world challenges. Strong foundation in analytical thinking, system design, and user-focused development. Proven ability to quickly learn new tools, collaborate effectively, and deliver efficient solutions. Seeking an opportunity to leverage transferable skills and contribute to impactful technology-driven projects.",
+
+    contact: {
+      email: "rahul.verma.tech@gmail.com",
+      phone: "+91 9876xxxxxx",
+      linkedin: "linkedin.com/in/rahul-verma-tech",
+      github: "github.com/rahulverma-dev",
+    },
+
+    skills: [
+      "Analytical Thinking & Problem Solving",
+      "Full Stack Web Development",
+      "JavaScript (ES6+), React.js",
+      "Node.js & Express.js",
+      "Database Management (MySQL, MongoDB)",
+      "REST API Integration",
+      "Responsive UI/UX Design",
+      "Debugging & Optimization",
+      "Version Control (Git & GitHub)",
+      "Agile Workflow & Team Collaboration",
+      "Adaptability & Continuous Learning"
+    ],
+  },
+
+  // 🎓 EDUCATION
+  education: [
+    {
+      degree: "Bachelor of Technology in Computer Science",
+      institution: "SRM Institute of Science and Technology",
+      year: "2021 – 2025"
+    },
+    {
+      degree: "Intermediate",
+      institution: "Sri Chaitanya Junior College",
+      year: "2019 – 2021"
+    }
+  ],
+
+  // 💼 EXPERIENCE
+  experience: [
+    {
+      role: "Technical Project Contributor",
+      company: "Self-Driven Projects",
+      duration: "2023 – Present",
+      desc:
+        "Independently designed and developed multiple web applications focusing on real-world problem solving. Strengthened skills in system design, debugging, and delivering scalable solutions while managing end-to-end development cycles."
+    },
+    {
+      role: "Web Development Intern",
+      company: "NextGen Softwares",
+      duration: "2024",
+      desc:
+        "Worked on developing responsive interfaces and integrating backend APIs. Improved application usability and collaborated with team members in a fast-paced development environment."
+    }
+  ],
+
+  // 🚀 PROJECTS
+  projects: [
+    {
+      title: "Online Shopping Platform",
+      desc:
+        "Developed a full-featured e-commerce application with authentication, product management, and optimized performance, simulating real-world business workflows.",
+      tech: "React, Node.js, MongoDB"
+    },
+    {
+      title: "Task & Productivity Manager",
+      desc:
+        "Built a task tracking system to enhance productivity and organization, demonstrating efficient workflow design and user-centric development.",
+      tech: "JavaScript, HTML, CSS"
+    },
+    {
+      title: "Real-Time Data Applications",
+      desc:
+        "Created applications integrating third-party APIs to display dynamic data, showcasing strong data handling and API integration skills.",
+      tech: "JavaScript, REST APIs"
+    }
+  ],
+
+  // 📜 CERTIFICATIONS
+  certifications: [
+    {
+      name: "Full Stack Web Development",
+      issuer: "Udemy"
+    },
+    {
+      name: "JavaScript Algorithms & Data Structures",
+      issuer: "freeCodeCamp"
+    }
+  ],
+
+  // 🏆 ACHIEVEMENTS
+  achievements: [
+    "Solved 400+ coding problems across multiple platforms",
+    "Built and deployed several independent web applications",
+    "Recognized for strong problem-solving and debugging skills",
+    "Quickly adapts to new tools and technologies"
+  ],
+
+  // 🌐 LANGUAGES
+  languages: [
+    "English (Professional)",
+    "Hindi (Native)"
+  ]
 }
 }
 

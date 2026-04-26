@@ -385,7 +385,7 @@ ReactGA.event({
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           {/* Sidebar editor content */}
-          <h2>Black and Gold Resume Editor</h2>
+          <h2>Two sided Basic Resume Editor</h2>
 
           {/* Photo */}
           <h3>Profile Photo</h3>

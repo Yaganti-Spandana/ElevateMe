@@ -324,7 +324,7 @@ ReactGA.event({
       <div className="editor-container">
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
-          <h2>yellowbasic Resume Editor</h2>
+          <h2>Yellow  Basic Resume Editor</h2>
 
           <label>Full Name</label>
           <input

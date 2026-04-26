@@ -33,7 +33,10 @@ import internship2 from "../images/internship_resume_template/internship2.png";
 import internshipportfolio from "../images/internship_resume_template/internship.mp4";
 import career1 from "../images/careerchange_resume_template/career1.png";
 import career2 from "../images/careerchange_resume_template/career2.png";
-import careerportfolio from "../images/careerchange_resume_template/career.mp4"
+import careerportfolio from "../images/careerchange_resume_template/career.mp4";
+import atsprofessional1 from "../images/atsprofessional_resume_template/atsprofessional1.png";
+import atsprofessional2 from "../images/atsprofessional_resume_template/atsprofessional2.png";
+import atsprofessional_portfolio from "../images/atsprofessional_resume_template/atsprofessional_portfolio.mp4";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -135,6 +138,14 @@ const templates = [
     images: [yellowbasic1, yellowbasic2], // ⭐ two images here
     video: yellowbasic_portfolio,
     category: "Basic",
+  },
+  {
+    id: "atsprofessional",
+    name: "Ats Professional Resume",
+    dname: "Ats Professional Change Resume",
+    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
+    video: atsprofessional_portfolio,
+    category: "Professional",
   },
 ];
 
