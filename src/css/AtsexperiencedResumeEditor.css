@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+.atsexperienced_pdf-page {
+  width: 595px;
+  min-height: 842px;   /* ✅ REAL A4 */
+  background: #f0efe9;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+}
+.atsexperienced_resume-content {
+  width: 100%;
+  padding: 28px;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+  line-height: 1.45;
+  background: #f0efe9;
+  color: #201202;
+}
+.atsexperienced_contact {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(10.5px, 2.5vw, 12px);
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.35;
+  margin: 30px 0px 15px 40px;
+  word-break: break-word;
+  width: 60%;
+}
+.atsexperienced_name{
+  margin-left: -30px;
+  padding: 20px 0px;
+  height: 100px;
+}
+.atsexperienced_section-block{
+  break-inside: avoid;
+  page-break-inside: avoid;
+   margin-bottom: -20px;
+}
+.atsexperienced_headingcareer{
+    font-size: 20px !important; 
+        font-weight: 700; 
+        font-family: 'Inter',sans-serif;
+        color: #111827;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align:left;
+}
+.atsexperienced_subheadingcareer{
+  font-size: 15px;
+  margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+}
+
+.atsexperienced_section-headingcareer {
+  font-size: 16px; 
+  font-weight: 600; 
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0px;
+  text-align: center;
+
+  display: inline-block;   /* 🔥 key */
+  border-bottom: 1px solid #111827;
+}
+.atsexperienced_summary { 
+        font-size: 10px; 
+        margin-bottom: 10px; 
+        text-align: justify; 
+        white-space: pre-wrap; 
+        font-family: 'Roboto',sans-serif;
+        word-break: break-word; 
+        overflow-wrap: anywhere; 
+        font-family: 'Roboto',sans-serif;
+      } 

@@ -67,6 +67,8 @@ import AtsprofessionalResumeEditor from "./templates/AtsprofessionalResumeEditor
 import AtsprofessionalPortfolioPage from "./portfolios/AtsprofessionalPortfolioPage";
 import AtsfresherResumeEditor from "./templates/AtsfresherResumeEditor";
 import AtsfresherPortfolioPage from "./portfolios/AtsfresherPortfolioPage";
+import AtsexperiencedResumeEditor from "./templates/AtsexperiencedResumeEditor";
+import AtsexperiencedPortfolioPage from "./portfolios/AtsexperiencedPortfolioPage";
 
 function App() {
   useGA();
@@ -97,6 +99,7 @@ function App() {
 <Route path="/portfolio/yellowbasic/:username" element={<YellowbasicPortfolioPage/>} />
 <Route path="/portfolio/atsprofessional/:username" element={<AtsprofessionalPortfolioPage/>} />
 <Route path="/portfolio/atsfresher/:username" element={<AtsfresherPortfolioPage/>} />
+<Route path="/portfolio/atsexperienced/:username" element={<AtsexperiencedPortfolioPage/>} />
 
 
 
@@ -114,6 +117,7 @@ function App() {
         <Route path="/editor/career" element={<CareerChangeResumeEditor/>} />
         <Route path="/editor/atsprofessional" element={<AtsprofessionalResumeEditor/>} />
         <Route path="/editor/atsfresher" element={<AtsfresherResumeEditor/>} />
+        <Route path="/editor/atsexperienced" element={<AtsexperiencedResumeEditor/>} />
 
 
 

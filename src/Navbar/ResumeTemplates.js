@@ -39,7 +39,10 @@ import atsprofessional2 from "../images/atsprofessional_resume_template/atsprofe
 import atsprofessional_portfolio from "../images/atsprofessional_resume_template/atsprofessional_portfolio.mp4";
 import atsfresher_resume_template1 from "../images/atsfresher_resume_template/atsfresher_resume_template1.png";
 import atsfresher_resume_template2 from "../images/atsfresher_resume_template/atsfresher_resume_template2.png";
-import atsfresher_portfolio from "../images/atsfresher_resume_template/atsfresher_portfolio.mp4"
+import atsfresher_portfolio from "../images/atsfresher_resume_template/atsfresher_portfolio.mp4";
+import atsexperienced_resume_template1 from "../images/atsexperienced_resume_template/atsexperienced_resume_template1.png";
+import atsexperienced_resume_template2 from "../images/atsexperienced_resume_template/atsexperienced_resume_template2.png";
+import atsexperienced_portfolio from "../images/atsexperienced_resume_template/atsexperienced_portfolio.mp4"
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -157,6 +160,14 @@ const templates = [
     images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
     video: atsfresher_portfolio,
     category: "Fresher",
+  },
+  {
+    id: "atsexperienced",
+    name: "Ats Friendly Experienced Resume",
+    dname: "Ats Friendly Experienced Resume",
+    images: [atsexperienced_resume_template1, atsexperienced_resume_template2], // ⭐ two images here
+    video: atsexperienced_portfolio,
+    category: "Experienced",
   },
 ];
 

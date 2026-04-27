@@ -521,6 +521,96 @@ experienced: {
     "Learning new JavaScript frameworks"
   ]
 },
+atsexperienced: {
+  
+  common: {
+    name: "Rahul Sharma",
+    title: "Software Engineer",
+    contact: {
+    email: "rahul.sharma.dev@gmail.com",
+    phone: "+91 9876xxxxxx",
+    linkedin: "linkedin.com/in/rahul-sharma-dev",
+    github: "github.com/rahulsharma-dev",
+    portfolio: "rahulsharma.dev",
+    address: "Hyderabad, India",},
+    summary:
+      "Full Stack Developer with 3+ years of experience building scalable web applications using React, Node.js, and MongoDB. Experienced in designing responsive UI, developing REST APIs, and optimizing application performance. Passionate about clean code, reusable components, and delivering high-quality user experiences.",
+
+  skills: [
+    "React",
+    "JavaScript (ES6+)",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "HTML5",
+    "CSS3",
+    "Git & GitHub",
+    "REST APIs",
+    "Responsive Web Design"
+  ],},
+
+  education: [
+    {
+      degree: "B.Tech in Computer Science",
+      institution: "Jawaharlal Nehru Technological University (JNTU)",
+      year: "2017 – 2021",
+      grade: "8.4 / 10",
+      details:
+        "Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Operating Systems, Web Development."
+    },
+    {
+      degree: "Intermediate",
+      institution: "Sri Chaitanya",
+      year: "2015 – 2017",
+      grade: "8.4 / 10",
+      details:
+        "Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Operating Systems, Web Development."
+    }
+  ],
+projects: [
+    {
+      title: "Resume Builder Web Application",
+      technologies: ["React", "HTML5", "CSS3", "JavaScript", "Netlify"],
+      link: "github.com/rahulsharma/resume-builder",
+      desc:
+        "Developed a dynamic resume builder with customizable templates, real-time preview, and PDF download functionality. Implemented form-based editing and responsive UI for seamless user experience."
+    },
+  ],
+  certifications: [
+  "AWS Certified Cloud Practitioner",
+    "Google Data Analytics Professional Certificate",
+    "Meta Front-End Developer Professional Certificate"
+  
+],
+  experience: [
+    {
+      role: "Software Engineer",
+      company: "Tech Solutions Pvt Ltd",
+      location: "Hyderabad, India",
+      duration: "Jan 2023 – Present",
+      desc:
+        "Developed scalable React-based applications serving 10k+ users. Implemented reusable UI components and optimized performance using lazy loading and code splitting. Collaborated with backend teams to integrate REST APIs and improved application speed by 30%. Participated in code reviews and Agile sprint planning."
+    },
+  ],
+  achievements: [
+    "Employee of the Month – Tech Solutions Pvt Ltd (Aug 2023)",
+    "Top 5 Finalist – National Level Coding Hackathon (2020)",
+    "Successfully delivered 3 major client projects before deadlines."
+  ],
+
+  languages: [
+    "English (Professional)",
+    "Hindi (Fluent)",
+    "Telugu (Native)"
+  ],
+
+  interests: [
+    "Open Source Contributions",
+    "Technical Blogging on Web Development",
+    "UI/UX Design and Modern Web Interfaces",
+    "Learning new JavaScript frameworks"
+  ]
+},
   atsfresher: {
   common: {
     name: "Alice Smith",

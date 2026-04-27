@@ -22,7 +22,10 @@ import atsfresher_resume_template2 from "./images/atsfresher_resume_template/ats
 import atsfresher_portfolio from "./images/atsfresher_resume_template/atsfresher_portfolio.mp4"
 import experience1 from "./images/experienced_resume_template/experience1.png";
 import experience2 from "./images/experienced_resume_template/experience2.png";
-import experiencedportfolio from "./images/experienced_resume_template/experienced.mp4"
+import experiencedportfolio from "./images/experienced_resume_template/experienced.mp4";
+import atsexperienced_resume_template1 from "./images/atsexperienced_resume_template/atsexperienced_resume_template1.png";
+import atsexperienced_resume_template2 from "./images/atsexperienced_resume_template/atsexperienced_resume_template2.png";
+import atsexperienced_portfolio from "./images/atsexperienced_resume_template/atsexperienced_portfolio.mp4"
 import creative1 from "./images/creative_resume_template/creative1.png";
 import creative2 from "./images/creative_resume_template/creative2.png";
 import creativeportfolio from "./images/creative_resume_template/creative.mp4"
@@ -247,6 +250,13 @@ const templates = [
     name: "College Fest Invitation",
     dname: "College Fest Invitation",
     images: [collegefest1,collegefest2,collegefest3], 
+  },
+  {
+    id: "atsexperienced",
+    name: "Ats Friendly Experienced Resume",
+    dname: "Ats Friendly Experienced Resume",
+    images: [atsexperienced_resume_template1, atsexperienced_resume_template2], // ⭐ two images here
+    video: atsexperienced_portfolio
   },
   {
     id: "cricketsports",
