@@ -37,6 +37,9 @@ import careerportfolio from "../images/careerchange_resume_template/career.mp4";
 import atsprofessional1 from "../images/atsprofessional_resume_template/atsprofessional1.png";
 import atsprofessional2 from "../images/atsprofessional_resume_template/atsprofessional2.png";
 import atsprofessional_portfolio from "../images/atsprofessional_resume_template/atsprofessional_portfolio.mp4";
+import atsfresher_resume_template1 from "../images/atsfresher_resume_template/atsfresher_resume_template1.png";
+import atsfresher_resume_template2 from "../images/atsfresher_resume_template/atsfresher_resume_template2.png";
+import atsfresher_portfolio from "../images/atsfresher_resume_template/atsfresher_portfolio.mp4"
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -146,6 +149,14 @@ const templates = [
     images: [atsprofessional1, atsprofessional2], // ⭐ two images here
     video: atsprofessional_portfolio,
     category: "Professional",
+  },
+  {
+    id: "atsfresher",
+    name: "Ats Fresher Resume",
+    dname: "Ats Fresher Resume",
+    images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
+    video: atsfresher_portfolio,
+    category: "Fresher",
   },
 ];
 

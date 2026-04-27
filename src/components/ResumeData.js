@@ -521,6 +521,115 @@ experienced: {
     "Learning new JavaScript frameworks"
   ]
 },
+  atsfresher: {
+  common: {
+    name: "Alice Smith",
+    title: "Front-End Developer ",
+    contact: {
+      email: "alice.smith983njnhhh@email.com",
+      phone: "+1 (111) 222-xxxx",
+      linkedin: "linkedin.com/in/alicesmith",
+      github: "github.com/alicesmith",
+      portfolio: "www.alicesmith.dev",
+    address: "123 Main Street, New York, NY, USA",
+    },
+
+    skills: [
+      "HTML5", "CSS3", "JavaScript (ES6+)", "React.js",
+      "Redux", "Bootstrap", "Tailwind CSS"
+    ],
+
+    summary:
+      "Motivated and detail-oriented Computer Science graduate with a strong foundation in front-end web development and modern JavaScript frameworks. Experienced in building responsive and user-friendly web applications using React, HTML5, CSS3, and REST APIs. ",
+
+    photo: "",
+  },
+
+  education: [
+    {
+      degree: "Bachelor of Science in Computer Science",
+      institution: "ABC University",
+      year: "2020 – 2024",
+      grade: "CGPA: 8.5 / 10",
+      coursework: [
+        "Data Structures & Algorithms",
+        "Database Management Systems",
+        "Operating Systems",
+        "Computer Networks",
+        "Software Engineering",
+        "Object-Oriented Programming",
+        "Web Technologies",
+        "Artificial Intelligence Fundamentals"
+      ]
+    }
+  ],
+
+  projects: [
+    {
+      title: "Personal Portfolio Website",
+      desc:
+        "Designed and developed a fully responsive personal portfolio website to showcase projects, technical skills, and achievements. Implemented reusable React components, responsive layouts, and smooth navigation to improve user experience. Deployed the project using Netlify with continuous integration from GitHub.",
+      link: "https://alicesmith.dev",
+      technologies: ["React", "HTML5", "CSS3", "JavaScript", "Netlify"]
+    },
+  ],
+
+  certifications: [
+    {
+      title: "Front-End Web Development Specialization",
+      issuer: "Coursera",
+      year: "2023",
+      details:
+        "Covered modern front-end development including HTML5, CSS3, JavaScript, responsive design, and accessibility best practices."
+    },
+    {
+      title: "JavaScript Algorithms and Data Structures",
+      issuer: "freeCodeCamp",
+      year: "2022",
+      details:
+        "Completed 300+ coding challenges covering algorithms, recursion, data structures, and problem solving."
+    },
+    {
+      title: "React Developer Certification",
+      issuer: "Meta / Coursera",
+      year: "2023",
+      details:
+        "Learned component architecture, hooks, state management, and building scalable React applications."
+    }
+  ],
+
+  internships: [
+    {
+      company: "XYZ Tech Solutions",
+      role: "Web Development Intern",
+      duration: "June 2023 – August 2023",
+      desc:
+        "Worked with the front-end team to develop responsive UI components for a company dashboard application. Implemented reusable components using React and improved page load performance by optimizing CSS and JavaScript assets. Collaborated with designers and backend developers using Agile development practices."
+    }
+  ],
+
+  achievements: [
+    "Secured 2nd place among 120+ participants in ABC University Hackathon 2022 for developing a collaborative productivity tool.",
+    "Awarded Dean's List recognition for academic excellence in 2021 and 2022.",
+    
+  ],
+
+  hobbies: [
+    "Reading technology blogs and staying updated with new web development trends",
+    "Playing chess and solving logic puzzles",
+  ],
+
+  languages: [
+    "English (Fluent)",
+    "Spanish (Intermediate)"
+  ],
+
+  extraCurriculars: [
+    "Active member of the University Coding Club where I participated in weekly coding contests and collaborative project development.",
+    "Volunteered as a mentor at a local coding bootcamp helping beginners learn HTML, CSS, and JavaScript fundamentals.",
+    "Organized technical workshops and seminars related to web development and open-source contribution."
+  ]
+},
   fresher: {
   common: {
     name: "Alice Smith",

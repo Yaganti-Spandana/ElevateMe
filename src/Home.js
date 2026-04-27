@@ -17,6 +17,9 @@ import modernportfolio from "./images/modern_resume_template/modern.mp4"
 import fresher1 from "./images/fresher_resume_template/fresher1.png";
 import fresher2 from "./images/fresher_resume_template/fresher2.png";
 import fresherportfolio from "./images/fresher_resume_template/fresher.mp4";
+import atsfresher_resume_template1 from "./images/atsfresher_resume_template/atsfresher_resume_template1.png";
+import atsfresher_resume_template2 from "./images/atsfresher_resume_template/atsfresher_resume_template2.png";
+import atsfresher_portfolio from "./images/atsfresher_resume_template/atsfresher_portfolio.mp4"
 import experience1 from "./images/experienced_resume_template/experience1.png";
 import experience2 from "./images/experienced_resume_template/experience2.png";
 import experiencedportfolio from "./images/experienced_resume_template/experienced.mp4"
@@ -225,6 +228,13 @@ const templates = [
     name: "Birthday Invitation",
     dname: "Photo Collage Birthday Invitation",
     images: [collage_invitation], 
+  },
+  {
+    id: "atsfresher",
+    name: "Ats Fresher Resume",
+    dname: "Ats Fresher Resume",
+    images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
+    video: atsfresher_portfolio
   },
   {
     id: "unicornbirthday",
