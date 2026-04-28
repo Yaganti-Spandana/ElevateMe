@@ -42,7 +42,10 @@ import atsfresher_resume_template2 from "../images/atsfresher_resume_template/at
 import atsfresher_portfolio from "../images/atsfresher_resume_template/atsfresher_portfolio.mp4";
 import atsexperienced_resume_template1 from "../images/atsexperienced_resume_template/atsexperienced_resume_template1.png";
 import atsexperienced_resume_template2 from "../images/atsexperienced_resume_template/atsexperienced_resume_template2.png";
-import atsexperienced_portfolio from "../images/atsexperienced_resume_template/atsexperienced_portfolio.mp4"
+import atsexperienced_portfolio from "../images/atsexperienced_resume_template/atsexperienced_portfolio.mp4";
+import headinghighlightprofessional1 from "../images/headinghighlightprofessional_resume_template/headinghighlightprofessional1.png";
+import headinghighlightprofessional2 from "../images/headinghighlightprofessional_resume_template/headinghighlightprofessional2.png";
+import headinghighlightprofessional_portfolio from "../images/headinghighlightprofessional_resume_template/headinghighlightprofessional_portfolio.mp4"
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -51,16 +54,64 @@ import "../Home.css";
 const templates = [
   {
     id: "simple",
-    name: "Simple Resume",
-    dname: "Simple Resume",
+    name: "Basic Resume",
+    dname: "Basic Resume",
     category: "Basic",
     images: [simpleSample1, simpleSample2],
     video: simpleportfolio
   },
   {
+    id: "atsprofessional",
+    name: "Ats Professional Resume",
+    dname: "Ats Professional Change Resume",
+    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
+    video: atsprofessional_portfolio,
+    category: "Professional",
+  },
+  {
+    id: "atsfresher",
+    name: "Ats Fresher Resume",
+    dname: "Ats Fresher Resume",
+    images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
+    video: atsfresher_portfolio,
+    category: "Fresher",
+  },
+  {
+    id: "atsexperienced",
+    name: "Ats Friendly Experienced Resume",
+    dname: "Ats Friendly Experienced Resume",
+    images: [atsexperienced_resume_template1, atsexperienced_resume_template2], // ⭐ two images here
+    video: atsexperienced_portfolio,
+    category: "Experienced",
+  },
+   {
+    id: "twosidedsimple",
+    name: "Maroon Full Stack Web Developer Resume",
+    dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
+    images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
+    video: twosidedsimple_portfolio,
+    category: "Basic",
+  },
+  {
+    id: "headinghighlightprofessional",
+    name: "Heading Highlight Professional Resume",
+    dname: "Heading Highlight Professional Resume",
+    images: [headinghighlightprofessional1, headinghighlightprofessional2], // ⭐ two images here
+    video: headinghighlightprofessional_portfolio,
+    category: "Professional",
+  },
+  {
+    id: "Black_and_Gold",
+    name: "Black and Gold Modern Resume",
+    dname: "Black and Gold Modern Resume",
+    category: "Premium",
+    images: [black_gold],
+    video: blackgoldportfolio
+  },
+  {
     id: "border_highlight",
-    name: "Border Highlighted Resume",
-    dname: "Border Highlighted Resume",
+    name: "Heading Highlighted Resume",
+    dname: "Heading Highlighted Resume",
     category: "Basic",
     images: [border1, border2],
     video: borderportfolio
@@ -106,14 +157,6 @@ const templates = [
     video: creativeportfolio
   },
   {
-    id: "Black_and_Gold",
-    name: "Black and Gold Modern Resume",
-    dname: "Black and Gold Modern Resume",
-    category: "Premium",
-    images: [black_gold],
-    video: blackgoldportfolio
-  },
-  {
     id: "green_and_yellow",
     name: "Green and Yellow Experienced Template",
     dname: "Green and Yellow Experienced Template",
@@ -130,44 +173,12 @@ const templates = [
     video: internshipportfolio
   },
   {
-    id: "twosidedsimple",
-    name: "Maroon Full Stack Web Developer Resume",
-    dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
-    images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
-    video: twosidedsimple_portfolio,
-    category: "Basic",
-  },
-  {
     id: "yellowbasic",
     name: "Yellow Basic Resume",
     dname: "Yellow and Blue Basic Resume",
     images: [yellowbasic1, yellowbasic2], // ⭐ two images here
     video: yellowbasic_portfolio,
     category: "Basic",
-  },
-  {
-    id: "atsprofessional",
-    name: "Ats Professional Resume",
-    dname: "Ats Professional Change Resume",
-    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
-    video: atsprofessional_portfolio,
-    category: "Professional",
-  },
-  {
-    id: "atsfresher",
-    name: "Ats Fresher Resume",
-    dname: "Ats Fresher Resume",
-    images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
-    video: atsfresher_portfolio,
-    category: "Fresher",
-  },
-  {
-    id: "atsexperienced",
-    name: "Ats Friendly Experienced Resume",
-    dname: "Ats Friendly Experienced Resume",
-    images: [atsexperienced_resume_template1, atsexperienced_resume_template2], // ⭐ two images here
-    video: atsexperienced_portfolio,
-    category: "Experienced",
   },
 ];
 

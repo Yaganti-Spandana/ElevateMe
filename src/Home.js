@@ -59,6 +59,9 @@ import careerportfolio from "./images/careerchange_resume_template/career.mp4";
 import atsprofessional1 from "./images/atsprofessional_resume_template/atsprofessional1.png";
 import atsprofessional2 from "./images/atsprofessional_resume_template/atsprofessional2.png";
 import atsprofessional_portfolio from "./images/atsprofessional_resume_template/atsprofessional_portfolio.mp4";
+import headinghighlightprofessional1 from "./images/headinghighlightprofessional_resume_template/headinghighlightprofessional1.png";
+import headinghighlightprofessional2 from "./images/headinghighlightprofessional_resume_template/headinghighlightprofessional2.png";
+import headinghighlightprofessional_portfolio from "./images/headinghighlightprofessional_resume_template/headinghighlightprofessional_portfolio.mp4"
 import wedding_invitation1 from "./images/wedding1/wedding_invitation1.png";
 import cricketsports_invitation from "./images/cricket_sports/cricketsports_invitation.png";
 import seminar_invitation from "./images/seminar/seminar_invitation.png";
@@ -96,141 +99,10 @@ const templates = [
     video: simpleportfolio
   },
   {
-    id: "wedding1",
-    name: "Wedding Invitation",
-    dname: "Wedding Invitation",
-    images: [invitation1], 
-  },
-  { id: "Black_and_Gold",name: "Black and Gold Modern Resume", dname: "Black and Gold Modern Resume", images: [black_gold],video: blackgoldportfolio },
-  
-  {
-    id: "birthday1",
-    name: "Birthday Invitation",
-    dname: "Birthday Invitation",
-    images: [birthday_invitation1], 
-  },
-  {
-    id: "engagement1",
-    name: "Engagement Invitation",
-    dname: "Engagement Invitation",
-    images: [engagement_invitation1], 
-  },
-  
-  { id: "modern", name: "Modern Resume",dname: "Modern Resume", images: [modernSample],video:modernportfolio },
-{
-    id: "kittyparty1",
-    name: "Kitty Party Invitation",
-    dname: "Kitty Party Invitation",
-    images: [kittyparty1], 
-  },
-  { id: "fresher",name: "Fresher Resume", dname: "Fresher Resume", images: [fresher1, fresher2],video: fresherportfolio },
-  { id: "experienced", name: "Experienced Resume",dname: "Experienced Resume", images: [experience1, experience2],video: experiencedportfolio },
-  {
-    id: "gruhapravesham1",
-    name: "Gruhapravesham Invitation",
-    dname: "Gruhapravesham House Warming Invitation",
-    images: [gruha_pravesham1], 
-  },
-
-  {
-    id: "career",
-    name: "Career Change Resume",
-    dname: "Career Change Resume",
-    images: [career1, career2], // ⭐ two images here
-    video: careerportfolio
-  },
-  {
-    id: "ugadi",
-    name: "Ugadi Invitation",
-    dname: "Ugadi Invitation",
-    images: [ugadi_invitation1,ugadi_invitation2], 
-  },
-  {
-    id: "haldi1",
-    name: "Haldi Invitation",
-    dname: "Haldi Invitation",
-    images: [haldi_invitation1], 
-  },
-  {
-    id: "green_and_yellow",
-    name: "Green and Yellow Experienced Template",
-    dname: "Green and Yellow Experienced Template",
-    images: [green_yellow1, green_yellow2], // ⭐ two images here
-    video: greenyellowportfolio
-  },
-  {
-    id: "babyannouncement",
-    name: "Baby Announcement Event Invitation",
-    dname: "Baby Announcement Event Invitation",
-    images: [babyannouncement_invitation], 
-  },
-  {
-    id: "border_highlight",
-    name: "Border Hightlighted Resume",
-    dname: "Border Hightlighted Resume",
-    images: [border1, border2], // ⭐ two images here
-    video: borderportfolio
-  },
-  {
-    id: "productlaunch1",
-    name: "Product Launch Invitation",
-    dname: "Product Launch Invitation",
-    images: [productlaunch_invitation1], 
-  },
-
-  {
-    id: "internship",
-    name: "Internship Resume",
-    dname: "Internship Resume",
-    images: [internship1, internship2], // ⭐ two images here
-    video: internshipportfolio
-  },
-{
-    id: "culturalfestival",
-    name: "Cultural Festival Invitation",
-    dname: "Cultural Festival Invitation",
-    images: [culturalfestival_invitation], 
-  },
-  { id: "creative",name: "Creative Resume", dname: "Creative Resume", images: [creative1, creative2],video: creativeportfolio },
-  {
-    id: "twosidedsimple",
-    name: "Maroon Full Stack Web Developer Resume",
-    dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
-    images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
-    video: twosidedsimple_portfolio
-  },
-  
-  {
-    id: "wedding2",
-    name: "Wedding Invitation",
-    dname: "Venkateswara swamy theme Wedding Invitation",
-    images: [wedding_invitation1], 
-  },
-  {
-    id: "yellowbasic",
-    name: "Yellow Basic Resume",
-    dname: "Yellow Basic Resume",
-    images: [yellowbasic1, yellowbasic2], // ⭐ two images here
-    video: yellowbasic_portfolio
-  },
-  {
-    id: "mickymousebirthday",
-    name: "Birthday Invitation",
-    dname: "Micky Mouse Theme Birthday Invitation",
-    images: [micky_mouse_birthday], 
-  },
-  {
-    id: "atsprofessional",
-    name: "Ats Professional Resume",
-    dname: "Ats Professional Change Resume",
-    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
-    video: atsprofessional_portfolio
-  },
-  {
-    id: "collagebirthday",
-    name: "Birthday Invitation",
-    dname: "Photo Collage Birthday Invitation",
-    images: [collage_invitation], 
+    id: "techfest",
+    name: "Tech Fest Invitation",
+    dname: "Tech Fest Invitation",
+    images: [techfest_invitation], 
   },
   {
     id: "atsfresher",
@@ -240,16 +112,29 @@ const templates = [
     video: atsfresher_portfolio
   },
   {
-    id: "unicornbirthday",
-    name: "Birthday Invitation",
-    dname: "Unicorn Theme Birthday Invitation",
-    images: [unicorn_invitation], 
+    id: "culturalfestival",
+    name: "Cultural Festival Invitation",
+    dname: "Cultural Festival Invitation",
+    images: [culturalfestival_invitation], 
   },
   {
-    id: "collegefest",
-    name: "College Fest Invitation",
-    dname: "College Fest Invitation",
-    images: [collegefest1,collegefest2,collegefest3], 
+    id: "ugadi",
+    name: "Ugadi Invitation",
+    dname: "Ugadi Invitation",
+    images: [ugadi_invitation1,ugadi_invitation2], 
+  },
+  {
+    id: "atsprofessional",
+    name: "Ats Professional Resume",
+    dname: "Ats Professional Change Resume",
+    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
+    video: atsprofessional_portfolio
+  },
+  {
+    id: "sankranti1",
+    name: "Sankranti/Pongal Invitation",
+    dname: "Sankranti/Pongal Invitation",
+    images: [sankranti1,sankranti2], 
   },
   {
     id: "atsexperienced",
@@ -259,10 +144,43 @@ const templates = [
     video: atsexperienced_portfolio
   },
   {
+    id: "twosidedsimple",
+    name: "Maroon Full Stack Web Developer Resume",
+    dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
+    images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
+    video: twosidedsimple_portfolio
+  },
+  {
+    id: "collegefest",
+    name: "College Fest Invitation",
+    dname: "College Fest Invitation",
+    images: [collegefest1,collegefest2,collegefest3], 
+  },
+  {
+    id: "headinghighlightprofessional",
+    name: "Heading Highlight Professional Resume",
+    dname: "Heading Highlight Professional Resume",
+    images: [headinghighlightprofessional1, headinghighlightprofessional2], // ⭐ two images here
+    video: headinghighlightprofessional_portfolio
+  },
+  {
+    id: "fashionshow",
+    name: "Fashion Show Invitation",
+    dname: "Fashion Show Invitation",
+    images: [fashionshow_invitation1,fashionshow_invitation2], 
+  },
+  {
     id: "cricketsports",
     name: "Cricket Sports Invitation",
     dname: "Cricket Sports Invitation",
     images: [cricketsports_invitation], 
+  },
+   { 
+    id: "Black_and_Gold",
+    name: "Black and Gold Modern Resume", 
+    dname: "Black and Gold Modern Resume", 
+    images: [black_gold],
+    video: blackgoldportfolio 
   },
   {
     id: "seminar",
@@ -271,16 +189,133 @@ const templates = [
     images: [seminar_invitation], 
   },
   {
+    id: "border_highlight",
+    name: "Border Hightlighted Resume",
+    dname: "Border Hightlighted Resume",
+    images: [border1, border2], // ⭐ two images here
+    video: borderportfolio
+  },
+  {
     id: "graduation",
     name: "Graduation Invitation",
     dname: "Graduation Invitation",
     images: [graduation_invitation], 
   },
   {
+    id: "internship",
+    name: "Internship Resume",
+    dname: "Internship Resume",
+    images: [internship1, internship2], // ⭐ two images here
+    video: internshipportfolio
+  },
+  {
+    id: "babyannouncement",
+    name: "Baby Announcement Event Invitation",
+    dname: "Baby Announcement Event Invitation",
+    images: [babyannouncement_invitation], 
+  },
+  { 
+    id: "creative",
+    name: "Creative Resume", 
+    dname: "Creative Resume", 
+    images: [creative1, creative2],
+    video: creativeportfolio 
+  },
+  { 
+    id: "experienced", 
+    name: "Experienced Resume",
+    dname: "Experienced Resume", 
+    images: [experience1, experience2],
+    video: experiencedportfolio 
+  },
+  {
+    id: "kittyparty1",
+    name: "Kitty Party Invitation",
+    dname: "Kitty Party Invitation",
+    images: [kittyparty1], 
+  },
+  {
+    id: "yellowbasic",
+    name: "Yellow Basic Resume",
+    dname: "Yellow Basic Resume",
+    images: [yellowbasic1, yellowbasic2], // ⭐ two images here
+    video: yellowbasic_portfolio
+  },
+  {
+    id: "cradle",
+    name: "Cradle Ceremony Invitation",
+    dname: "Cradle Ceremony Invitation",
+    images: [cradle_invitation], 
+  },
+  {
+    id: "career",
+    name: "Career Change Resume",
+    dname: "Career Change Resume",
+    images: [career1, career2], // ⭐ two images here
+    video: careerportfolio
+  },
+  {
+    id: "officeparty",
+    name: "Office Party Invitation",
+    dname: "Office Party Invitation",
+    images: [officeparty_invitation1,officeparty_invitation2], 
+  },
+  { 
+    id: "modern", 
+    name: "Modern Resume",
+    dname: "Modern Resume", 
+    images: [modernSample],
+    video:modernportfolio 
+  },
+  {
+    id: "firstbirthday",
+    name: "First Birthday Invitation",
+    dname: "First Birthday Invitation",
+    images: [firstbirthday_invitation1,firstbirthday_invitation2], 
+  },
+  {
     id: "jobfair",
     name: "Job Fair Invitation",
     dname: "Job Fair Invitation",
     images: [jobfair_invitation], 
+  },
+  { 
+    id: "fresher",
+    name: "Fresher Resume", 
+    dname: "Fresher Resume", 
+    images: [fresher1, fresher2],
+    video: fresherportfolio 
+  },
+  {
+    id: "christmas",
+    name: "Christmas Invitation",
+    dname: "Christmas Invitation",
+    images: [christmas_invitation], 
+  },
+  {
+    id: "green_and_yellow",
+    name: "Green and Yellow Experienced Template",
+    dname: "Green and Yellow Experienced Template",
+    images: [green_yellow1, green_yellow2], // ⭐ two images here
+    video: greenyellowportfolio
+  },
+  {
+    id: "birthday1",
+    name: "Birthday Invitation",
+    dname: "Birthday Invitation",
+    images: [birthday_invitation1], 
+  },
+  {
+    id: "productlaunch1",
+    name: "Product Launch Invitation",
+    dname: "Product Launch Invitation",
+    images: [productlaunch_invitation1], 
+  },
+  {
+    id: "engagement1",
+    name: "Engagement Invitation",
+    dname: "Engagement Invitation",
+    images: [engagement_invitation1], 
   },
   {
     id: "musicevent1",
@@ -289,22 +324,22 @@ const templates = [
     images: [musicevent_invitation1], 
   },
   {
-    id: "sankranti1",
-    name: "Sankranti/Pongal Invitation",
-    dname: "Sankranti/Pongal Invitation",
-    images: [sankranti1,sankranti2], 
+    id: "gruhapravesham1",
+    name: "Gruhapravesham Invitation",
+    dname: "Gruhapravesham House Warming Invitation",
+    images: [gruha_pravesham1], 
   },
   {
-    id: "techfest",
-    name: "Tech Fest Invitation",
-    dname: "Tech Fest Invitation",
-    images: [techfest_invitation], 
+    id: "wedding1",
+    name: "Wedding Invitation",
+    dname: "Wedding Invitation",
+    images: [invitation1], 
   },
   {
-    id: "cradle",
-    name: "Cradle Ceremony Invitation",
-    dname: "Cradle Ceremony Invitation",
-    images: [cradle_invitation], 
+    id: "mickymousebirthday",
+    name: "Birthday Invitation",
+    dname: "Micky Mouse Theme Birthday Invitation",
+    images: [micky_mouse_birthday], 
   },
   {
     id: "namingceremony1",
@@ -319,22 +354,22 @@ const templates = [
     images: [farewell_invitation1,farewell_invitation2], 
   },
   {
-    id: "officeparty",
-    name: "Office Party Invitation",
-    dname: "Office Party Invitation",
-    images: [officeparty_invitation1,officeparty_invitation2], 
+    id: "collagebirthday",
+    name: "Birthday Invitation",
+    dname: "Photo Collage Birthday Invitation",
+    images: [collage_invitation], 
   },
   {
-    id: "fashionshow",
-    name: "Fashion Show Invitation",
-    dname: "Fashion Show Invitation",
-    images: [fashionshow_invitation1,fashionshow_invitation2], 
+    id: "wedding2",
+    name: "Wedding Invitation",
+    dname: "Venkateswara swamy theme Wedding Invitation",
+    images: [wedding_invitation1], 
   },
   {
-    id: "christmas",
-    name: "Christmas Invitation",
-    dname: "Christmas Invitation",
-    images: [christmas_invitation], 
+    id: "haldi1",
+    name: "Haldi Invitation",
+    dname: "Haldi Invitation",
+    images: [haldi_invitation1], 
   },
   {
     id: "diwali1",
@@ -343,10 +378,10 @@ const templates = [
     images: [diwali_invitation1], 
   },
   {
-    id: "firstbirthday",
-    name: "First Birthday Invitation",
-    dname: "First Birthday Invitation",
-    images: [firstbirthday_invitation1,firstbirthday_invitation2], 
+    id: "unicornbirthday",
+    name: "Birthday Invitation",
+    dname: "Unicorn Theme Birthday Invitation",
+    images: [unicorn_invitation], 
   },
 ];
 
