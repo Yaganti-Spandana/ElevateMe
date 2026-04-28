@@ -1,0 +1,67 @@
+.headinghighlightfresher_header-block{
+    break-inside: avoid;
+  page-break-inside: avoid;
+  border-radius: 20px;
+  background-color: rgb(94, 10, 49);
+  text-align: center;
+  color: rgb(249, 252, 252);
+  margin-top: -40PX;
+  margin-bottom: -10px;
+  display: flex;
+  padding: 0px;
+}
+
+.headinghighlightfresher_photo-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  overflow: hidden;
+  border: 3px solid rgb(249, 252, 252);
+  flex-shrink: 0;
+  margin:20px 20px;
+}
+.headinghighlightfresher_photo-circle img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+.headinghighlightfresher_photo-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  background-image: url("/src/images/headinghighlightfresher_resume_template/headinghighlightfresher1.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #121010;
+}
+
+.headinghighlightfresher_contact{
+    margin:0px 0px;
+}
+
+.headinghighlightfresher_section-heading1 { 
+        font-size: 17px; 
+        font-weight: 600; 
+        height: 13px;
+        padding: 10px; 
+        color: rgb(249, 252, 252);
+        background-color:rgb(94, 10, 49);
+        border-radius: 10px;
+  word-break: break-word; 
+        overflow-wrap: anywhere; 
+        font-family: 'Inter',sans-serif;
+      } 
+.headinghighlightfresher_summary { 
+        font-size: 12px; 
+        margin-bottom: 10px; 
+        margin-top: -10px;
+        text-align: justify; 
+        white-space: pre-wrap; 
+        font-family: 'Roboto',sans-serif;
+      } 
+      .headinghighlightfresher_skill-gapcareer{
+        font-size: 11px;
+      }

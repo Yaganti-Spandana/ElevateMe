@@ -71,6 +71,8 @@ import AtsexperiencedResumeEditor from "./templates/AtsexperiencedResumeEditor";
 import AtsexperiencedPortfolioPage from "./portfolios/AtsexperiencedPortfolioPage";
 import HeadinghighlightprofessionalResumeEditor from "./templates/HeadinghighlightprofessionalResumeEditor";
 import HeadinghighlightprofessionalPortfolioPage from "./portfolios/HeadinghighlightprofessionalPortfolioPage";
+import HeadinghighlightfresherresumeEditor from "./templates/HeadinghighlightfresherResumeEditor";
+import HeadinghighlightfresherPortfolioPage from "./portfolios/HeadinghighlightfresherPortfolioPage";
 
 function App() {
   useGA();
@@ -79,16 +81,40 @@ function App() {
     
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/privacy" element={<PrivacyPolicy/>} />
-        <Route path="/terms" element={<Terms/>} />
-        <Route path="/resumetemplates" element={<ResumeTemplates/>} />
-        <Route path="/invitations" element={<Invitations/>} />
-        
-        <Route path="/portfolio/simple/:username" element={<SimpleTemplatePortfolioPage/>} />
-        <Route path="/portfolio/twosidedsimple/:username" element={<TwosidedsimpleTemplatePortfolioPage/>} />
+<Route path="/" element={<Home />} />
+<Route path="/about" element={<About/>} />
+<Route path="/contact" element={<Contact/>} />
+<Route path="/privacy" element={<PrivacyPolicy/>} />
+<Route path="/terms" element={<Terms/>} />
+<Route path="/resumetemplates" element={<ResumeTemplates/>} />
+<Route path="/invitations" element={<Invitations/>} />
+
+
+
+
+<Route path="/editor/simple" element={<SimpleResumeEditor />} />
+<Route path="/editor/twosidedsimple" element={<TwosidedResumeEditor/>} />
+<Route path="/editor/yellowbasic" element={<YellowbasicResumeEditor/>} />
+<Route path="/editor/border_highlight" element={<BorderHighlightEditor />} />
+<Route path="/editor/fresher" element={<FresherResumeEditor />} />
+<Route path="/editor/modern" element={<ModernResumeEditor />} />
+<Route path="/editor/experienced" element={<ExperiencedResumeEditor />} />
+<Route path="/editor/creative" element={<CreativeResumeEditor />} />
+<Route path="/editor/Black_and_Gold" element={<BlackGoldResumeEditor/>} />
+<Route path="/editor/green_and_yellow" element={<GreenYellowResumeEditor/>} />
+<Route path="/editor/internship" element={<InternshipResumeEditor/>} />
+<Route path="/editor/career" element={<CareerChangeResumeEditor/>} />
+<Route path="/editor/atsprofessional" element={<AtsprofessionalResumeEditor/>} />
+<Route path="/editor/atsfresher" element={<AtsfresherResumeEditor/>} />
+<Route path="/editor/atsexperienced" element={<AtsexperiencedResumeEditor/>} />
+<Route path="/editor/headinghighlightprofessional" element={<HeadinghighlightprofessionalResumeEditor/>} />
+<Route path="/editor/headinghighlightfresher" element={<HeadinghighlightfresherresumeEditor/>} />
+
+
+
+
+<Route path="/portfolio/simple/:username" element={<SimpleTemplatePortfolioPage/>} />
+<Route path="/portfolio/twosidedsimple/:username" element={<TwosidedsimpleTemplatePortfolioPage/>} />
 <Route path="/portfolio/border/:username" element={<BorderHighlightPortfolioPage/>} />
 <Route path="/portfolio/modern/:username" element={<ModernTemplatePortfolioPage/>} />
 <Route path="/portfolio/fresher/:username" element={<FresherTemplatePortfolioPage/>} />
@@ -103,58 +129,40 @@ function App() {
 <Route path="/portfolio/atsfresher/:username" element={<AtsfresherPortfolioPage/>} />
 <Route path="/portfolio/atsexperienced/:username" element={<AtsexperiencedPortfolioPage/>} />
 <Route path="/portfolio/headinghighlightprofessional/:username" element={<HeadinghighlightprofessionalPortfolioPage/>} />
+<Route path="/portfolio/headinghighlightfresher/:username" element={<HeadinghighlightfresherPortfolioPage/>} />
 
 
 
-        <Route path="/editor/simple" element={<SimpleResumeEditor />} />
-        <Route path="/editor/twosidedsimple" element={<TwosidedResumeEditor/>} />
-        <Route path="/editor/yellowbasic" element={<YellowbasicResumeEditor/>} />
-        <Route path="/editor/border_highlight" element={<BorderHighlightEditor />} />
-        <Route path="/editor/fresher" element={<FresherResumeEditor />} />
-        <Route path="/editor/modern" element={<ModernResumeEditor />} />
-        <Route path="/editor/experienced" element={<ExperiencedResumeEditor />} />
-        <Route path="/editor/creative" element={<CreativeResumeEditor />} />
-        <Route path="/editor/Black_and_Gold" element={<BlackGoldResumeEditor/>} />
-        <Route path="/editor/green_and_yellow" element={<GreenYellowResumeEditor/>} />
-        <Route path="/editor/internship" element={<InternshipResumeEditor/>} />
-        <Route path="/editor/career" element={<CareerChangeResumeEditor/>} />
-        <Route path="/editor/atsprofessional" element={<AtsprofessionalResumeEditor/>} />
-        <Route path="/editor/atsfresher" element={<AtsfresherResumeEditor/>} />
-        <Route path="/editor/atsexperienced" element={<AtsexperiencedResumeEditor/>} />
-        <Route path="/editor/headinghighlightprofessional" element={<HeadinghighlightprofessionalResumeEditor/>} />
-
-
-
-        <Route path="/editor/wedding1" element={<InvitationEditor/>} />
-        <Route path="/editor/birthday1" element={<BirthdayInvitationEditor/>} />
-        <Route path="/editor/mickymousebirthday" element={<MickyMouseInvitationEditor/>} />
-        <Route path="/editor/collegefest" element={<CollegefestInvitationEditor/>} />
-        <Route path="/editor/collagebirthday" element={<CollageInvitationEditor/>} />
-        <Route path="/editor/unicornbirthday" element={<UnicornInvitationEditor/>} />
-        <Route path="/editor/engagement1" element={<EngagementInvitationEditor/>} />
-        <Route path="/editor/kittyparty1" element={<KittypartyInvitationEditor/>} />
-        <Route path="/editor/haldi1" element={<HaldiInvitationEditor/>} />
-        <Route path="/editor/namingceremony1" element={<NamingCeremonyInvitationEditor/>} />
-        <Route path="/editor/gruhapravesham1" element={<GruhapraveshamInvitationEditor/>} />
-        <Route path="/editor/diwali1" element={<DiwaliInvitationEditor/>} />
-        <Route path="/editor/sankranti1" element={<SankrantiInvitationEditor/>} />
-        <Route path="/editor/productlaunch1" element={<ProductlaunchInvitationEditor/>} />
-        <Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
-        <Route path="/editor/wedding2" element={<WeddingInvitationEditor/>} />
-        <Route path="/editor/cricketsports" element={<CricketsportsInvitationEditor/>} />
-        <Route path="/editor/seminar" element={<SeminarInvitationEditor/>} />
-        <Route path="/editor/graduation" element={<GraduationInvitationEditor/>} />
-        <Route path="/editor/jobfair" element={<JobfairInvitationEditor/>} />
-        <Route path="/editor/culturalfestival" element={<CulturalfestivalInvitationEditor/>} />
-        <Route path="/editor/cradle" element={<CradleInvitationEditor/>} />
-        <Route path="/editor/babyannouncement" element={<BabyannouncementInvitationEditor/>} />
-        <Route path="/editor/farewell" element={<FarewellInvitationEditor/>} />
-        <Route path="/editor/techfest" element={<TechfesteventInvitationEditor/>} />
-        <Route path="/editor/officeparty" element={<OfficepartyInvitationEditor/>} />
-        <Route path="/editor/fashionshow" element={<FashionshowInvitationEditor/>} />
-        <Route path="/editor/christmas" element={<ChristmasInvitationEditor/>} />
-        <Route path="/editor/ugadi" element={<UgadiInvitationEditor/>} />
-        <Route path="/editor/firstbirthday" element={<FirstbirthdayInvitationEditor/>} />
+<Route path="/editor/wedding1" element={<InvitationEditor/>} />
+<Route path="/editor/birthday1" element={<BirthdayInvitationEditor/>} />
+<Route path="/editor/mickymousebirthday" element={<MickyMouseInvitationEditor/>} />
+<Route path="/editor/collegefest" element={<CollegefestInvitationEditor/>} />
+<Route path="/editor/collagebirthday" element={<CollageInvitationEditor/>} />
+<Route path="/editor/unicornbirthday" element={<UnicornInvitationEditor/>} />
+<Route path="/editor/engagement1" element={<EngagementInvitationEditor/>} />
+<Route path="/editor/kittyparty1" element={<KittypartyInvitationEditor/>} />
+<Route path="/editor/haldi1" element={<HaldiInvitationEditor/>} />
+<Route path="/editor/namingceremony1" element={<NamingCeremonyInvitationEditor/>} />
+<Route path="/editor/gruhapravesham1" element={<GruhapraveshamInvitationEditor/>} />
+<Route path="/editor/diwali1" element={<DiwaliInvitationEditor/>} />
+<Route path="/editor/sankranti1" element={<SankrantiInvitationEditor/>} />
+<Route path="/editor/productlaunch1" element={<ProductlaunchInvitationEditor/>} />
+<Route path="/editor/musicevent1" element={<MusiceventInvitationEditor/>} />
+<Route path="/editor/wedding2" element={<WeddingInvitationEditor/>} />
+<Route path="/editor/cricketsports" element={<CricketsportsInvitationEditor/>} />
+<Route path="/editor/seminar" element={<SeminarInvitationEditor/>} />
+<Route path="/editor/graduation" element={<GraduationInvitationEditor/>} />
+<Route path="/editor/jobfair" element={<JobfairInvitationEditor/>} />
+<Route path="/editor/culturalfestival" element={<CulturalfestivalInvitationEditor/>} />
+<Route path="/editor/cradle" element={<CradleInvitationEditor/>} />
+<Route path="/editor/babyannouncement" element={<BabyannouncementInvitationEditor/>} />
+<Route path="/editor/farewell" element={<FarewellInvitationEditor/>} />
+<Route path="/editor/techfest" element={<TechfesteventInvitationEditor/>} />
+<Route path="/editor/officeparty" element={<OfficepartyInvitationEditor/>} />
+<Route path="/editor/fashionshow" element={<FashionshowInvitationEditor/>} />
+<Route path="/editor/christmas" element={<ChristmasInvitationEditor/>} />
+<Route path="/editor/ugadi" element={<UgadiInvitationEditor/>} />
+<Route path="/editor/firstbirthday" element={<FirstbirthdayInvitationEditor/>} />
       </Routes>
     </Router>
     </>

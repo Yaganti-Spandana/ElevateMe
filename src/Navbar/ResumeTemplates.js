@@ -17,6 +17,10 @@ import modernportfolio from "../images/modern_resume_template/modern.mp4"
 import fresher1 from "../images/fresher_resume_template/fresher1.png";
 import fresher2 from "../images/fresher_resume_template/fresher2.png";
 import fresherportfolio from "../images/fresher_resume_template/fresher.mp4";
+import headinghighlightfresher1 from "../images/headinghighlightfresher_resume_template/headinghighlightfresher_resume_template1.png";
+import headinghighlightfresher2 from "../images/headinghighlightfresher_resume_template/headinghighlightfresher_resume_template2.png";
+import headinghighlightfresher3 from "../images/headinghighlightfresher_resume_template/headinghighlightfresher_resume_template3.png";
+import headinghighlightfresher_portfolio from "../images/headinghighlightfresher_resume_template/headinghighlightfresher_portfolio.mp4";
 import experience1 from "../images/experienced_resume_template/experience1.png";
 import experience2 from "../images/experienced_resume_template/experience2.png";
 import experiencedportfolio from "../images/experienced_resume_template/experienced.mp4"
@@ -99,6 +103,14 @@ const templates = [
     images: [headinghighlightprofessional1, headinghighlightprofessional2], // ⭐ two images here
     video: headinghighlightprofessional_portfolio,
     category: "Professional",
+  },
+  {
+    id: "headinghighlightfresher",
+    name: "Heading Highlight Fresher Resume",
+    dname: "Heading Highlight Fresher Resume",
+    images: [headinghighlightfresher1, headinghighlightfresher2,headinghighlightfresher3], // ⭐ two images here
+    video: headinghighlightfresher_portfolio,
+    category: "Fresher",
   },
   {
     id: "Black_and_Gold",

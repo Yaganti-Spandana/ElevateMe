@@ -19,7 +19,11 @@ import fresher2 from "./images/fresher_resume_template/fresher2.png";
 import fresherportfolio from "./images/fresher_resume_template/fresher.mp4";
 import atsfresher_resume_template1 from "./images/atsfresher_resume_template/atsfresher_resume_template1.png";
 import atsfresher_resume_template2 from "./images/atsfresher_resume_template/atsfresher_resume_template2.png";
-import atsfresher_portfolio from "./images/atsfresher_resume_template/atsfresher_portfolio.mp4"
+import atsfresher_portfolio from "./images/atsfresher_resume_template/atsfresher_portfolio.mp4";
+import headinghighlightfresher1 from "./images/headinghighlightfresher_resume_template/headinghighlightfresher_resume_template1.png";
+import headinghighlightfresher2 from "./images/headinghighlightfresher_resume_template/headinghighlightfresher_resume_template2.png";
+import headinghighlightfresher3 from "./images/headinghighlightfresher_resume_template/headinghighlightfresher_resume_template3.png";
+import headinghighlightfresher_portfolio from "./images/headinghighlightfresher_resume_template/headinghighlightfresher_portfolio.mp4";
 import experience1 from "./images/experienced_resume_template/experience1.png";
 import experience2 from "./images/experienced_resume_template/experience2.png";
 import experiencedportfolio from "./images/experienced_resume_template/experienced.mp4";
@@ -175,7 +179,20 @@ const templates = [
     dname: "Cricket Sports Invitation",
     images: [cricketsports_invitation], 
   },
-   { 
+  {
+    id: "headinghighlightfresher",
+    name: "Heading Highlight Fresher Resume",
+    dname: "Heading Highlight Fresher Resume",
+    images: [headinghighlightfresher1, headinghighlightfresher2,headinghighlightfresher3], // ⭐ two images here
+    video: headinghighlightfresher_portfolio
+  },
+  {
+    id: "seminar",
+    name: "Seminar Invitation",
+    dname: "Seminar Invitation",
+    images: [seminar_invitation], 
+  },
+  { 
     id: "Black_and_Gold",
     name: "Black and Gold Modern Resume", 
     dname: "Black and Gold Modern Resume", 
@@ -183,10 +200,10 @@ const templates = [
     video: blackgoldportfolio 
   },
   {
-    id: "seminar",
-    name: "Seminar Invitation",
-    dname: "Seminar Invitation",
-    images: [seminar_invitation], 
+    id: "graduation",
+    name: "Graduation Invitation",
+    dname: "Graduation Invitation",
+    images: [graduation_invitation], 
   },
   {
     id: "border_highlight",
@@ -196,10 +213,10 @@ const templates = [
     video: borderportfolio
   },
   {
-    id: "graduation",
-    name: "Graduation Invitation",
-    dname: "Graduation Invitation",
-    images: [graduation_invitation], 
+    id: "babyannouncement",
+    name: "Baby Announcement Event Invitation",
+    dname: "Baby Announcement Event Invitation",
+    images: [babyannouncement_invitation], 
   },
   {
     id: "internship",
@@ -207,19 +224,6 @@ const templates = [
     dname: "Internship Resume",
     images: [internship1, internship2], // ⭐ two images here
     video: internshipportfolio
-  },
-  {
-    id: "babyannouncement",
-    name: "Baby Announcement Event Invitation",
-    dname: "Baby Announcement Event Invitation",
-    images: [babyannouncement_invitation], 
-  },
-  { 
-    id: "creative",
-    name: "Creative Resume", 
-    dname: "Creative Resume", 
-    images: [creative1, creative2],
-    video: creativeportfolio 
   },
   { 
     id: "experienced", 
@@ -304,6 +308,13 @@ const templates = [
     name: "Birthday Invitation",
     dname: "Birthday Invitation",
     images: [birthday_invitation1], 
+  },
+  { 
+    id: "creative",
+    name: "Creative Resume", 
+    dname: "Creative Resume", 
+    images: [creative1, creative2],
+    video: creativeportfolio 
   },
   {
     id: "productlaunch1",
