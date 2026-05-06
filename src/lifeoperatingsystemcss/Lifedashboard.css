@@ -113,7 +113,6 @@
 .dashboard_row {
   display: flex;
   gap: 16px;
-  margin-bottom: 16px;
 }
 
 /* CARD */
@@ -337,6 +336,6 @@ width:90%;
 height:700px !important;
 }
 .lifedashboard_pdf-page {
-  margin-left: 450px;
+  margin-left: 500px;
 }
 }
