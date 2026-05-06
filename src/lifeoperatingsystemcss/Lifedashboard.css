@@ -310,10 +310,11 @@
   visibility: visible;
 }
 @media (max-width:1000px){
-  .lifedashboard_pdf-page {
-    margin: 0 auto;
-    transform: scale(0.9);
-    transform-origin: top center;
+  .lifedashboard_pdf-page{
+    width: 800px;
+    height: 540px;
+    transform: none !important;
+    margin: 0;
   }
 .dashboard_app-container{
   height: auto !important;
@@ -324,33 +325,18 @@ height:auto !important;
 width:100% !important;
 }
 .lifedashboard_editor-preview-wrapper{
-transform:none;
-flex: 1;
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-height: auto;
-overflow-x: auto;
-overflow-y: auto;
-padding: 10px;
-}
+    flex: 1.7;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 20px;
+  }
 .dashboard_editor-sidebar{
 width:90%;
 height:700px !important;
 }
 }
 @media (max-width:768px){
-  .lifedashboard_editor-preview-wrapper{
-transform:none;
-flex: 1;
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-height: auto;
-overflow-x: auto;
-overflow-y: auto;
-padding: 10px;
-}
 .dashboard_app-container{
   height: auto !important;
 }
