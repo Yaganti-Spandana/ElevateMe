@@ -309,6 +309,9 @@
   visibility: visible;
 }
 @media (max-width:1000px){
+  .lifedashboard_pdf-page {
+  margin-left: 530px;
+}
 .dashboard_app-container{
   height: auto !important;
 }
