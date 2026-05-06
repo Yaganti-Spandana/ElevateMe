@@ -310,8 +310,10 @@
 }
 @media (max-width:1000px){
   .lifedashboard_pdf-page {
-  margin-left: 530px;
-}
+    margin: 0 auto;
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
 .dashboard_app-container{
   height: auto !important;
 }
