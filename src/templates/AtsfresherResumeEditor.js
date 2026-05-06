@@ -6,6 +6,8 @@ import "../css/AtsfresherResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
@@ -415,7 +417,7 @@ const handleCreatePortfolio = () => {
   return (
     <><Navbar />
     <div className="app-container">
-      <div className="editor-container">
+      <div className="editor-container"><div>
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           <h2 style={{fontSize:"18px"}}>Ats Friendly Fresher Resume Editor</h2>
@@ -792,6 +794,220 @@ Create Portfolio Link
 )}
 
         </div>)}
+        {(!isMobile || !showPreview) && (
+  <>
+    <div className="template-info-section">
+      <h2>About This Resume Template</h2>
+
+      <div className="template-info-grid">
+
+        <div className="info-card">
+          <h3>Template Name</h3>
+          <p>ATS Friendly Fresher Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Created By</h3>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <img
+              src={menuIcon}
+              alt="creator"
+              style={{ height: "50px", width: "50px" }}
+            />
+            <p>@ElevateMe</p>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Author</h3>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              marginTop: "10px"
+            }}
+          >
+            <img
+              src={menuIcon1}
+              alt="author"
+              style={{
+                height: "50px",
+                width: "50px",
+                borderRadius: "20px"
+              }}
+            />
+
+            <a
+              href="https://yaganti-spandana.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "rgb(26, 116, 206)" }}
+            >
+              SPANDANA YAGANTI
+            </a>
+          </div>
+
+          <p style={{ marginTop: "10px" }}>
+            Designed specially for freshers, students, and internship seekers.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Version</h3>
+          <p>Version 1.0</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Language</h3>
+          <p>English</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Category</h3>
+          <p>Fresher / Student / Entry-Level</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Best For</h3>
+          <p>
+            Campus Placements, Internships, Entry-Level Jobs,
+            Graduate Applications
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Design Style</h3>
+          <p>Modern, Minimal, Clean, Professional</p>
+        </div>
+
+        <div className="info-card">
+          <h3>ATS Friendly</h3>
+          <p>Yes ✓ Optimized for Applicant Tracking Systems</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Photo Support</h3>
+          <p>Profile photo upload available</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Sections Included</h3>
+          <p>
+            Profile, Contact, Summary, Skills, Education,
+            Projects, Certifications, Internships,
+            Achievements, Hobbies, Languages,
+            Extra Curricular Activities
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Page Format</h3>
+          <p>A4 • Single Page / Multi Page Support</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Download Format</h3>
+          <p>PDF Export Available</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Customization</h3>
+          <p>
+            Edit all sections, upload photo,
+            add projects, skills, certifications
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Ideal Roles</h3>
+          <p>
+            Software Engineer, Web Developer,
+            Data Analyst, Marketing,
+            Design, Business Analyst
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Create a personal portfolio website instantly
+            from your resume data.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Features</h3>
+          <p>
+            Showcase projects, education,
+            internships, certifications,
+            and achievements online.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Share Portfolio</h3>
+          <p>
+            Generate a unique shareable portfolio link
+            for recruiters and companies.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio URL</h3>
+          <p>Auto-generated personalized portfolio link</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Recruiter Benefits</h3>
+          <p>
+            Recruiters can view candidate projects,
+            technical skills, internships,
+            and academic background in one place.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Compatibility</h3>
+          <p>
+            Mobile Friendly • Desktop Friendly • Shareable Anywhere
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Resume Strength</h3>
+          <p>
+            Perfect for candidates with no full-time experience.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Skill Highlighting</h3>
+          <p>
+            Highlights technical skills, coursework,
+            internships, and academic projects.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Last Updated</h3>
+          <p>May 2026</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Tags</h3>
+          <p>
+            Fresher Resume, ATS Resume,
+            Internship Resume, Campus Placement,
+            Student Resume
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </>
+)}</div>
         {(!isMobile || (isMobile && showPreview)) && (
 <div className="editor-preview-wrapper">
 {/* hidden measure */}

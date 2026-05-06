@@ -1,0 +1,81 @@
+.lifedecisionmaking2_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/decisionmaking2_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+  margin-left: 150px;
+}
+.decision2_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+}
+.decision2_card {
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 150px;
+  padding: 10px;
+}
+.decision2_factors_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  margin-top: 80px;
+  padding: 10px;
+
+}
+.decision2_pros_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  margin-left: 210px;
+  padding: 10px;
+}
+.decision2_decision_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+  margin-top: 80px;
+  padding: 10px;
+
+}
+.decision2_nextstep_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  padding: 10px;
+}
+.decision2-grid{
+    display:flex;
+  gap: 0px;
+}
+.decision2-box {
+  background: white;
+  border-radius: 8px;
+  color: #8b1b3b;
+}
+@media (max-width:768px){
+.lifedecisionmaking2_pdf-page {
+  margin-left: 500px;
+}
+}

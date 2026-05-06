@@ -6,6 +6,8 @@ import "../css/Green_&_YellowResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
@@ -323,10 +325,10 @@ ReactGA.event({
   return (
     <><Navbar />
     <div className="app-container">
-      <div className="editor-container">
+      <div className="editor-container"><div>
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
-          <h2>Simple Resume Editor</h2>
+          <h2>Experienced Resume Editor</h2>
 
           <label>Full Name</label>
           <input
@@ -502,6 +504,174 @@ Create Portfolio Link
 )}
 
         </div>)}
+        {(!isMobile || !showPreview) && (
+        <>
+  <div className="template-info-section">
+    <h2>About This Resume Template</h2>
+
+    <div className="template-info-grid">
+
+      <div className="info-card">
+        <h3>Template Name</h3>
+        <p>Green & Yellow Professional Resume</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Created By</h3>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <img
+            src={menuIcon}
+            alt="logo"
+            style={{ height: "50px", width: "50px" }}
+          />
+          <p>@ElevateMe</p>
+        </div>
+      </div>
+
+      <div className="info-card">
+        <h3>Template Author</h3>
+        <p>Designed by</p>
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            marginTop: "10px",
+          }}
+        >
+          <img
+            src={menuIcon1}
+            alt="author"
+            style={{
+              height: "50px",
+              width: "50px",
+              borderRadius: "50%",
+            }}
+          />
+
+          <a
+            href="https://yaganti-spandana.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgb(26,116,206)" }}
+          >
+            SPANDANA YAGANTI
+          </a>
+        </div>
+      </div>
+
+      <div className="info-card">
+        <h3>Version</h3>
+        <p>Version 1.0</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Template Language</h3>
+        <p>English</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Category</h3>
+        <p>Experienced / Professional Resume</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Best For</h3>
+        <p>
+          Mid-Level Professionals, Senior Roles, Corporate Applications
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Design Style</h3>
+        <p>Modern, Bold, Corporate</p>
+      </div>
+
+      <div className="info-card">
+        <h3>ATS Friendly</h3>
+        <p>Yes ✓ Optimized for Recruiter Systems</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Sections Included</h3>
+        <p>
+          Contact, Summary, Skills, Experience, Education, Projects,
+          Certifications
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Page Format</h3>
+        <p>A4 • One Page / Multi Page Support</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Download Format</h3>
+        <p>PDF Export Available</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Customization</h3>
+        <p>Edit content, add sections, export PDF, create portfolio</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Ideal Roles</h3>
+        <p>
+          Software Engineer, Product Manager, Data Analyst, Team Lead
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Portfolio Builder</h3>
+        <p>
+          Create a personal portfolio website instantly from resume data.
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Portfolio Features</h3>
+        <p>
+          Showcase skills, experience, projects, education and certifications.
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Share Portfolio</h3>
+        <p>
+          Generate a unique shareable portfolio link for recruiters.
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Recruiter Benefits</h3>
+        <p>
+          Recruiters can view your professional journey in one place.
+        </p>
+      </div>
+
+      <div className="info-card">
+        <h3>Compatibility</h3>
+        <p>Mobile Friendly • Desktop Friendly • Shareable Anywhere</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Last Updated</h3>
+        <p>May 2026</p>
+      </div>
+
+      <div className="info-card">
+        <h3>Tags</h3>
+        <p>
+          Professional Resume, Corporate Resume, ATS Resume, Experience Resume
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  </>)}</div>
         {(!isMobile || (isMobile && showPreview)) && (
 <div className="editor-preview-wrapper">
 {/* hidden measure */}

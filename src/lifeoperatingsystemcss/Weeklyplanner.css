@@ -1,0 +1,255 @@
+.weekly_app-container { display: flex; flex-direction: column; min-height: 100vh;font-family: 'Roboto',sans-serif; } 
+.weekly_editor-container { 
+  display: flex; 
+  gap: 24px; 
+  padding: 24px; 
+  height: auto !important;
+  font-family:'Poppins', sans-serif; 
+  box-sizing: border-box; 
+  margin: 20px 0; 
+  background: #f3f4f6;
+  overflow: auto; } 
+  .weekly_editor-sidebar { flex: 0.8; background: #b2c2d6 !important; 
+    padding: 24px; 
+    border-radius: 14px; 
+    overflow-y: auto; 
+    height: 450px !important; 
+    min-width: 0; 
+    color: rgb(26, 116, 206) !important ; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25); 
+  } 
+.weekly_editor-sidebar h2, .weekly_editor-sidebar h3 { 
+  font-weight: 600; 
+  color: rgb(26, 116, 206) !important ; 
+  margin-bottom: 5px; 
+} 
+ .weekly_editor-sidebar input, .weekly_editor-sidebar textarea { 
+  width: 90%; 
+  margin-bottom: 12px; 
+  padding: 10px; 
+  border-radius: 8px; 
+  border: 1px solid #fff; 
+  font-size: 14px;
+  background: #b2c2d6 !important; 
+  color: black !important; 
+  outline: none; 
+} 
+.lifeweeklyplanner_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/weeklyplanner_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+  margin-left: 120px;
+  color: black;
+}
+.weekly_resume-content {
+  width: 100%;
+  padding: 28px;
+  box-sizing: border-box;
+}
+@media screen { .weekly_resume-content { column-width: auto; /* single page */ } } 
+.weekly_header{
+  font-size: 15px;
+  margin-top: 90px;
+  margin-left: 70px;
+}
+/* MAIN */
+.planner {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.tag {
+  background: #3b82f6;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* GRID */
+.weeklyplanner_grid {
+  display: flex;
+  margin-top: 10px;
+}
+.weeklyplanner_priorities_card {
+  background: rgb(83, 15, 102);
+  padding: 50px 15px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 70px;
+}
+.weeklyplanner_schedule_card {
+  background: rgb(83, 15, 102);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 70px;
+  margin-left: 10px;
+}
+.weeklyplanner_habit_card {
+  background: rgb(83, 15, 102);
+  padding: 50px 15px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 70px;
+  margin-top: 0px;
+}
+.weeklyplanner_reflection_card {
+  background: rgb(83, 15, 102);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 70px;
+  margin-left: 10px;
+  width:300px
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+td input {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+/* EDITOR */
+.habit-editor {
+  margin-bottom: 12px;
+}
+
+.habit-days-editor {
+  display: flex;
+  gap: 6px;
+  margin: 6px 0;
+}
+
+.habit-days-editor .dot {
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  background: #ddd;
+}
+.weeklyplannerdate-card{
+    color: rgb(83, 15, 102);
+    margin-left: 50px;
+}
+
+.habit-days-editor .dot.active {
+  background: #3c7844;
+  color: #fff;
+}
+.dynamic-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.schedule-editor-row {
+  margin-bottom: 12px;
+}
+
+.schedule-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0px;
+  margin: 6px 0;
+}
+/* PREVIEW */
+.habit-tracker {
+  margin-top: 10px;
+}
+
+.habit-days {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.habit-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.habit-row p {
+  width: 80px;
+  font-size: 11px;
+}
+
+.dots {
+  display: flex;
+  gap: 18px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.dot.active {
+  background: #3c7844;
+}
+.habit_div{
+    margin-left: 20px;
+}
+
+@media (max-width:1000px){
+.weekly_app-container{
+  height: auto !important;
+}
+.weekly_editor-container{
+flex-direction:column;
+height:auto !important;
+width:100% !important;
+}
+.weekly_editor-sidebar{
+width:90%;
+height:700px !important;
+}
+}
+@media (max-width:768px){
+.weekly_app-container{
+  height: auto !important;
+}
+.weekly_editor-container{
+flex-direction:column;
+height:auto !important;
+width:100% !important;
+}
+.weekly_editor-sidebar{
+width:90%;
+height:700px !important;
+}
+.lifeweeklyplanner_pdf-page {
+  margin-left: 500px;
+}
+}

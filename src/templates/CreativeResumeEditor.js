@@ -7,6 +7,8 @@ import "../css/CreativeResumeEditor.css";
 import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
@@ -249,20 +251,20 @@ useEffect(() => {
   )}
 </div>
 
-      <h1>{common.name}</h1>
+      <h1 className="creative_h1">{common.name}</h1>
       <h2>{common.title}</h2></div>
       <div className="creative">
-      {common.tagline && <p className="tagline">{common.tagline}</p>}
+      {common.tagline && <p className="tagline" style={{margin:"10px 20px 0px 70px"}}>{common.tagline}</p>}
 
-      <p>
+      <p style={{margin:"0px 70px"}}>
         {common.contact?.email} <br></br>{common.contact?.phone} <br></br>
         {common.contact?.linkedin}
       </p>
 
-      {common.portfolio && <p>{common.portfolio}</p>}
-      {common.address && <p>{common.address}</p>}
+      {common.portfolio && <p style={{margin:"0px 70px"}}>{common.portfolio}</p>}
+      {common.address && <p style={{margin:"0px 70px"}}>{common.address}</p>}
 
-      <p>
+      <p style={{margin:"0px 70px"}}>
         {common.social?.behance} <br></br> {common.social?.dribbble}<br></br> {common.social?.medium}
       </p></div></div>
     </header>
@@ -270,7 +272,7 @@ useEffect(() => {
     {common.summary && (
       <section className="section-block5">
         <h3>Professional Summary</h3>
-        <p>{common.summary}</p>
+        <p style={{fontSize:"12px"}}>{common.summary}</p>
       </section>
     )}
 
@@ -316,7 +318,7 @@ useEffect(() => {
         {projects.map((proj, idx) => (
           <div key={idx}>
             <strong>{proj.title}</strong>
-            <p>{proj.desc}</p>
+            <p style={{fontSize:"12px"}}>{proj.desc}</p>
           </div>
         ))}
       </section>
@@ -386,9 +388,10 @@ ReactGA.event({
 };
   return (
     <><Navbar/>
-    <div className="creative-editor-container">
-      {(!isMobile || !showPreview) && (
-      <div className="creative-editor-sidebar">
+    <div className="app-container">
+      <div className="editor-container"><div>
+        {(!isMobile || !showPreview) && (
+        <div className="editor-sidebar">
         <h2>Creative Resume Editor</h2>
         <label>Tagline</label>
 <input
@@ -643,8 +646,171 @@ Create Portfolio Link
 )}
 
         </div>)}
+        {(!isMobile || !showPreview) && (
+  <>
+    <div className="template-info-section">
+      <h2>About This Resume Template</h2>
+
+      <div className="template-info-grid">
+
+        <div className="info-card">
+          <h3>Template Name</h3>
+          <p>Creative Resume Template</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Created By</h3>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <img
+              src={menuIcon}
+              alt="creator"
+              style={{ height: "50px", width: "50px" }}
+            />
+            <p>@ElevateMe</p>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Author</h3>
+          <p>Designed by</p>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              marginTop: "10px"
+            }}
+          >
+            <img
+              src={menuIcon1}
+              alt="author"
+              style={{
+                height: "50px",
+                width: "50px",
+                borderRadius: "50%"
+              }}
+            />
+
+            <a
+              href="https://yaganti-spandana.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#1d4ed8", fontWeight: "600" }}
+            >
+              SPANDANA YAGANTI
+            </a>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Version</h3>
+          <p>Version 1.0</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Language</h3>
+          <p>English</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Category</h3>
+          <p>Creative / Design / Portfolio Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Best For</h3>
+          <p>
+            UI/UX Designers, Graphic Designers, Content Creators,
+            Artists, Freelancers
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Design Style</h3>
+          <p>Modern, Creative, Portfolio Focused</p>
+        </div>
+
+        <div className="info-card">
+          <h3>ATS Friendly</h3>
+          <p>Yes ✓ With Creative Layout Balance</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Sections Included</h3>
+          <p>
+            Photo, Tagline, Contact, Social Links, Skills, Experience,
+            Education, Projects, Certifications, Languages
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Special Features</h3>
+          <p>
+            Profile Photo Upload, Social Media Links,
+            Portfolio Showcase
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Page Format</h3>
+          <p>A4 • One Page / Multi Page Support</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Download Format</h3>
+          <p>PDF Export Available</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Customization</h3>
+          <p>
+            Edit content, upload profile photo,
+            add social links, create portfolio
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Generate a professional portfolio website instantly
+            from resume data.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Recruiter Benefits</h3>
+          <p>
+            Recruiters can view projects, creative work,
+            portfolio links, and skills in one place.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Compatibility</h3>
+          <p>
+            Mobile Friendly • Desktop Friendly • Shareable Anywhere
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Last Updated</h3>
+          <p>May 2026</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Tags</h3>
+          <p>
+            Creative Resume, Designer Resume,
+            Portfolio Resume, Freelancer Resume
+          </p>
+        </div>
+
+      </div>
+    </div>
+</>)}</div>
         {(!isMobile || (isMobile && showPreview)) && (
-      <div className="creative-editor-preview" >
+      <div className="editor-preview-wrapper" >
         <div className="resume-measure" ref={measureRef}>
 <div className="resume-content">
 <ResumeInner />
@@ -706,7 +872,7 @@ Back To Editor
 )}
 
       </div>
-    <Footer /></>
+    </div><Footer /></>
   );
 };
 

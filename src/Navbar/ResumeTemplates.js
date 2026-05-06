@@ -50,6 +50,12 @@ import atsexperienced_portfolio from "../images/atsexperienced_resume_template/a
 import headinghighlightprofessional1 from "../images/headinghighlightprofessional_resume_template/headinghighlightprofessional1.png";
 import headinghighlightprofessional2 from "../images/headinghighlightprofessional_resume_template/headinghighlightprofessional2.png";
 import headinghighlightprofessional_portfolio from "../images/headinghighlightprofessional_resume_template/headinghighlightprofessional_portfolio.mp4"
+import twosidedexperienced1 from "../images/twosidedexperienced_resume_template/twosidedexperienced1.png";
+import twosidedexperienced2 from "../images/twosidedexperienced_resume_template/twosidedexperienced2.png";
+import twosidedexperienced_portfolio from "../images/twosidedexperienced_resume_template/twosidedexperienced_portfolio.mp4";
+import premiumfresher1 from "../images/premiumfresher_resume_template/premiumfresher1.png";
+import premiumfresher2 from "../images/premiumfresher_resume_template/premiumfresher2.png";
+import premiumfresher_portfolio from "../images/premiumfresher_resume_template/premiumfresher_portfolio.mp4";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -62,7 +68,7 @@ const templates = [
     dname: "Basic Resume",
     category: "Basic",
     images: [simpleSample1, simpleSample2],
-    video: simpleportfolio
+    video: simpleportfolio,
   },
   {
     id: "atsprofessional",
@@ -113,6 +119,14 @@ const templates = [
     category: "Fresher",
   },
   {
+    id: "premiumfresher",
+    name: "Premium Fresher Resume",
+    dname: "Premium Fresher Resume",
+    category: "Premium",
+    images: [premiumfresher1,premiumfresher2],
+    video: premiumfresher_portfolio
+  },
+  {
     id: "Black_and_Gold",
     name: "Black and Gold Modern Resume",
     dname: "Black and Gold Modern Resume",
@@ -120,6 +134,7 @@ const templates = [
     images: [black_gold],
     video: blackgoldportfolio
   },
+  
   {
     id: "border_highlight",
     name: "Heading Highlighted Resume",
@@ -183,6 +198,14 @@ const templates = [
     category: "Fresher",
     images: [internship1, internship2],
     video: internshipportfolio
+  },
+  {
+    id: "twosidedexperienced",
+    name: "Experienced Resume",
+    dname: "Experienced Resume",
+    category: "Experienced",
+    images: [twosidedexperienced1, twosidedexperienced2],
+    video: twosidedexperienced_portfolio
   },
   {
     id: "yellowbasic",

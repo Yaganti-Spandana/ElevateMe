@@ -6,6 +6,8 @@ import "../css/Black_&_GoldResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // A4 height in px
 const useGA = () => {
   useEffect(() => {
@@ -397,7 +399,7 @@ ReactGA.event({
   return (
     <><Navbar/>
     <div className="app-container">
-      <div className="editor-container">
+      <div className="editor-container"><div>
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           {/* Sidebar editor content */}
@@ -539,7 +541,222 @@ Create Portfolio Link
   </button>
 )}
         </div>)}
+{(!isMobile || !showPreview) && (
+  <>
+    <div className="template-info-section">
+      <h2>About This Resume Template</h2>
 
+      <div className="template-info-grid">
+
+        <div className="info-card">
+          <h3>Template Name</h3>
+          <p>Black & Gold Executive Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Created By</h3>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <img
+              src={menuIcon}
+              alt="logo"
+              style={{ height: "50px", width: "50px" }}
+            />
+            <p>@ElevateMe</p>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Author</h3>
+
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <img
+              src={menuIcon1}
+              alt="author"
+              style={{
+                height: "50px",
+                width: "50px",
+                borderRadius: "15px"
+              }}
+            />
+
+            <a
+              href="https://yaganti-spandana.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color:"rgb(26, 116, 206)" }}
+            >
+              SPANDANA YAGANTI
+            </a>
+          </div>
+
+          <p style={{ marginTop: "10px" }}>
+            Designed for professionals, executives, and premium job seekers.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Version</h3>
+          <p>Version 1.0</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Language</h3>
+          <p>English</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Category</h3>
+          <p>Professional / Experienced / Executive</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Best For</h3>
+          <p>
+            Corporate Jobs, Senior Roles, Management Positions,
+            Premium Applications
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Design Style</h3>
+          <p>Luxury, Elegant, Premium, Professional</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Color Theme</h3>
+          <p>Black • Gold • Executive Style</p>
+        </div>
+
+        <div className="info-card">
+          <h3>ATS Friendly</h3>
+          <p>Yes ✓ Optimized for Applicant Tracking Systems</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Sections Included</h3>
+          <p>
+            Profile Photo, Name, Job Title, Summary, Contact,
+            Skills, Languages, Tools, Experience,
+            Education, Projects, Certifications
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Contact Fields</h3>
+          <p>
+            Email, Phone Number, LinkedIn, Address
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Experience Fields</h3>
+          <p>
+            Job Role, Company Name, Duration, Description
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Education Fields</h3>
+          <p>
+            Degree, Institution, Passing Year
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Projects Fields</h3>
+          <p>
+            Project Title, Project Description
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Skill Fields</h3>
+          <p>
+            Technical Skills, Languages, Tools & Technologies
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Page Format</h3>
+          <p>A4 • Single Page / Multi Page Support</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Download Format</h3>
+          <p>PDF Export Available</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Customization</h3>
+          <p>
+            Upload Photo, Edit Content, Add Sections,
+            Remove Sections, Create Portfolio
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Ideal Roles</h3>
+          <p>
+            Software Engineer, Product Manager,
+            Business Analyst, HR Manager,
+            Marketing Manager, Designers
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Generate a live portfolio website instantly
+            using your resume data.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Features</h3>
+          <p>
+            Showcase projects, experience, skills,
+            education, and certifications online.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Share Portfolio</h3>
+          <p>
+            Share your portfolio link with recruiters,
+            companies, and social media.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Compatibility</h3>
+          <p>
+            Mobile Friendly • Desktop Friendly • Share Anywhere
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Recruiter Benefits</h3>
+          <p>
+            Helps recruiters quickly evaluate experience,
+            projects, skills, and achievements.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Last Updated</h3>
+          <p>May 2026</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Tags</h3>
+          <p>
+            Executive Resume, Professional Resume,
+            ATS Resume, Premium Resume, Corporate Resume
+          </p>
+        </div>
+
+      </div>
+    </div></>)}</div>
         {/* Preview */}
         {(!isMobile || (isMobile && showPreview)) && (
         <div className="editor-preview-wrapper">

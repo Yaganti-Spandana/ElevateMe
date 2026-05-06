@@ -137,17 +137,22 @@ body{
 .demo-video-box {
   max-width: 700px;
   margin: auto;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ⭐ 3 per row */
+  gap: 30px;
   border-radius: 15px;
   overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 
   box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
 .demo-video-box video {
   width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
+  border-radius: 15px;
 }
 
 /* CTA */

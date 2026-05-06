@@ -270,6 +270,11 @@ twosidedsimple: {
       institution: "Sri Chaitanya Junior College",
       year: "2014 – 2016",
     },
+    {
+      degree: "10th standard",
+      institution: "Sri Chaitanya School",
+      year: "2013 – 2014",
+    },
   ],
 
   certifications: [
@@ -470,6 +475,7 @@ experienced: {
       details:
         "Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Operating Systems, Web Development."
     }
+    
   ],
 
   projects: [
@@ -481,6 +487,106 @@ experienced: {
         "Developed a dynamic resume builder with customizable templates, real-time preview, and PDF download functionality. Implemented form-based editing and responsive UI for seamless user experience."
     },
   ],
+
+  skills: [
+    "React",
+    "JavaScript (ES6+)",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "HTML5",
+    "CSS3",
+    "Git & GitHub",
+    "REST APIs",
+    "Responsive Web Design"
+  ],
+
+  certifications: [
+  "AWS Certified Cloud Practitioner",
+    "Google Data Analytics Professional Certificate",
+    "Meta Front-End Developer Professional Certificate"
+  
+],
+
+  achievements: [
+    "Employee of the Month – Tech Solutions Pvt Ltd (Aug 2023)",
+    "Top 5 Finalist – National Level Coding Hackathon (2020)",
+    "Successfully delivered 3 major client projects before deadlines."
+  ],
+
+  languages: [
+    "English (Professional)",
+    "Hindi (Fluent)",
+    "Telugu (Native)"
+  ],
+
+  interests: [
+    "Open Source Contributions",
+    "Technical Blogging on Web Development",
+    "UI/UX Design and Modern Web Interfaces",
+    "Learning new JavaScript frameworks"
+  ]
+},
+twosidedexperienced: {
+  common: {
+    name: "Rahul Sharma",
+    title: "Software Engineer",
+    email: "rahul.sharma.dev@gmail.com",
+    phone: "+91 9876xxxxxx",
+    linkedin: "linkedin.com/in/rahul-sharma-dev",
+    github: "github.com/rahulsharma-dev",
+    portfolio: "rahulsharma.dev",
+    location: "Hyderabad, India",
+    summary:
+      "Full Stack Developer with 3+ years of experience building scalable web applications using React, Node.js, and MongoDB. Experienced in designing responsive UI, developing REST APIs, and optimizing application performance. Passionate about clean code, reusable components, and delivering high-quality user experiences."
+  },
+
+  experience: [
+    {
+      role: "Software Engineer",
+      company: "Tech Solutions Pvt Ltd",
+      location: "Hyderabad, India",
+      duration: "Jan 2023 – Present",
+      desc:
+        "Developed scalable React-based applications serving 10k+ users. Implemented reusable UI components and optimized performance using lazy loading and code splitting. Collaborated with backend teams to integrate REST APIs and improved application speed by 30%. Participated in code reviews and Agile sprint planning."
+    },
+  ],
+
+  education: [
+    {
+      degree: "B.Tech in Computer Science",
+      institution: "Jawaharlal Nehru Technological University (JNTU)",
+      year: "2017 – 2021",
+      cgpa: "8.4 / 10",
+      details:
+        "Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Operating Systems, Web Development."
+    },
+    {
+      degree: "Intermediate",
+      institution: "Sri Chaitanya",
+      year: "2015 – 2017",
+      cgpa: "8.4 / 10",
+      details:
+        "Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Operating Systems, Web Development."
+    }
+  ],
+
+  projects: [
+  {
+    title: "Resume Builder Web Application",
+    tech: "React, Node.js, HTML, CSS, jsPDF",
+    link: "github.com/rahulsharma/resume-builder",
+    desc:
+      "Developed a dynamic resume builder with customizable templates, real-time preview, and PDF download functionality. Implemented form-based editing and responsive UI for seamless user experience."
+  },
+  {
+    title: "E-Commerce Dashboard System",
+    tech: "React, Express.js, MongoDB, Chart.js, REST APIs",
+    link: "github.com/rahulsharma/ecommerce-dashboard",
+    desc:
+      "Built a full-stack admin dashboard for e-commerce management with product tracking, sales analytics, inventory monitoring, and customer insights. Integrated REST APIs, implemented secure authentication, and optimized dashboard performance for real-time data visualization."
+  }
+],
 
   skills: [
     "React",
@@ -1141,6 +1247,71 @@ creative: {
     },
   ],
 },
+premiumfresher: {
+  common: {
+    name: "Mariana Anderson",
+    title: "Marketing Manager",
+    summary:
+  "Results-driven Marketing Manager with 5+ years of experience leading high-impact digital marketing initiatives and brand growth strategies. Proven track record of increasing customer engagement, optimizing campaign performance, and driving revenue through data-driven decision making. Adept at managing cross-functional teams, executing multi-channel campaigns, and leveraging analytics tools to identify growth opportunities. ",
+
+    photo: "",
+
+    contact: {
+      email: "hello@reallygreatsite.com",
+      phone: "123-456-xxxx",
+      linkedin: "linkedin.com/in/mariana",
+      address: "Any City, Any Country",
+    },
+
+    skills: ["UI/UX", "Visual Design", "Wireframes", "Storyboards"],
+    languages: ["English", "Spanish","Telugu"],
+    tools: ["Figma", "VS Code", "Git"],
+  },
+
+  experience: [
+  {
+    role: "Marketing Manager",
+    company: "Ginyard International",
+    duration: "2022 – Present",
+    location: "New York, USA",
+    desc:
+      "Spearheaded end-to-end marketing strategies across digital, social media, and paid advertising channels. Led a high-performing team to execute data-driven campaigns that significantly improved brand visibility, customer acquisition, and conversion rates.",
+
+    highlights: [
+      "Boosted website traffic by 42% through SEO and content optimization strategies",
+      "Increased lead conversion rate by 28% via targeted marketing funnels",
+      "Managed $250K annual advertising budget with improved ROI",
+      "Launched 5+ multi-channel campaigns reaching over 1M users",
+    ],
+  },
+
+ 
+],
+
+  projects: [
+    {
+      title: "Brand Campaign",
+      desc: "Executed multi-channel brand campaign.",
+    },
+    {
+      title: "Product Campaign",
+      desc: "Executed multi-channel brand campaign.",
+    },
+    {
+      title: "Brand Campaign",
+      desc: "Executed multi-channel brand campaign.",
+    },
+    
+  ],
+
+  education: [
+    {
+      degree: "Bachelor of Business Management",
+      institution: "Borcelle University",
+      year: "2021",
+    },
+  ],
+},
 green_and_yellow: {
   common: {
     name: "THARUN KAMAN",
@@ -1682,7 +1853,7 @@ headinghighlightprofessional: {
     "English (Professional)",
     "Hindi (Native)"
   ]
-}
+},
 }
 
 export default resumeData;

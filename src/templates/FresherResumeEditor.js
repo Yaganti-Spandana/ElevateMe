@@ -6,8 +6,9 @@ import jsPDF from "jspdf";
 import "../css/FresherResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
-
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
@@ -288,7 +289,7 @@ const updateAchievement = createUpdater(setAchievements);
     <div className="photo-placeholder4">Photo</div>
   )}
 </div><div className="f11">
-        <h1 className="heading4">{common.name}</h1>
+        <h1 className="heading4" style={{marginTop:"0px",marginBottom:"0px"}}>{common.name}</h1>
         <h2 className="subheading4">{common.title}</h2>
         <div className="contact4">
           {common.contact?.email || "Not Provided"} {"<-|"}<br></br>{common.contact?.phone || "Not Provided"}{"<-|"} <br></br>
@@ -300,7 +301,7 @@ const updateAchievement = createUpdater(setAchievements);
       {common.summary && (
         <section className="section-block4">
           <h3 className="section-heading4">Professional Summary</h3>
-          <p className="summary4">{common.summary}</p>
+          <p className="summary4" style={{fontSize:"12px",marginTop:"0px"}}>{common.summary}</p>
         </section>
       )}
 
@@ -310,7 +311,7 @@ const updateAchievement = createUpdater(setAchievements);
 
     <div className="skills4">
       {common.skills.map((skill, index) => (
-        <span key={index} className="skill-item4">
+        <span key={index} className="skill-item4" style={{fontSize:"12px"}}>
           {skill}
         </span>
       ))}
@@ -325,8 +326,8 @@ const updateAchievement = createUpdater(setAchievements);
           {experience.map((exp, idx) => (
             <div key={idx} className="pdf-section">
               <div className="exp4">
-              <strong className="role4">{exp.role}</strong> <p className="company4"> @{exp.company}</p> 
-              </div><br></br><p className="duration4">({exp.duration})</p><p>{exp.desc}</p>
+              <strong className="role4" style={{fontSize:"13px"}}>{exp.role}</strong> <p className="company4" style={{margin:"0px"}}> @{exp.company}</p> 
+              </div><br></br><p className="duration4">({exp.duration})</p><p style={{fontSize:"12px"}}>{exp.desc}</p>
             </div>
           ))}
         </section>
@@ -336,7 +337,7 @@ const updateAchievement = createUpdater(setAchievements);
   <section className="section-block4">
     <h3 className="section-heading4">Education</h3>
 
-    <table className="table4">
+    <table className="table4" style={{fontSize:"12px"}}>
       <thead>
         <tr>
           <th>DEGREE</th>
@@ -453,8 +454,9 @@ ReactGA.event({
   return (
     <>
     <Navbar/>
-    <div className="fresher-editor-container">
-      {(!isMobile || !showPreview) && (
+    <div className="app-container">
+      <div className="fresher-editor-container"><div>
+        {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           <h2>Fresher Resume Editor</h2>
           <label>Full Name</label> 
@@ -600,13 +602,132 @@ Create Portfolio Link
   </button>
 )}
         </div>)}
+{(!isMobile || !showPreview) && (
+  <>
+      <div className="template-info-section">
+      <h2>About This Resume Template</h2>
 
-        {(!isMobile || (isMobile && showPreview)) && (
+      <div className="template-info-grid">
 
-      <div className="fresher-editor-preview">
-        {/* hidden measure */}
+        <div className="info-card">
+          <h3>Template Name</h3>
+          <p>Fresher Professional Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Created By</h3>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <img
+              src={menuIcon}
+              alt="creator"
+              style={{ height: "50px", width: "50px" }}
+            />
+            <p>@ElevateMe</p>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Author</h3>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <img
+              src={menuIcon1}
+              alt="author"
+              style={{
+                height: "50px",
+                width: "50px",
+                borderRadius: "50%"
+              }}
+            />
+            <a
+              href="https://yaganti-spandana.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#1d4ed8",
+                textDecoration: "none"
+              }}
+            >
+              SPANDANA YAGANTI
+            </a>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Version</h3>
+          <p>Version 1.0</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Category</h3>
+          <p>Fresher / Graduate Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Best For</h3>
+          <p>
+            Campus Placements, Internships,
+            Entry-Level Jobs, Graduate Hiring
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Design Style</h3>
+          <p>
+            Modern, Professional, ATS Friendly
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Sections Included</h3>
+          <p>
+            Summary, Skills, Education,
+            Projects, Certifications,
+            Achievements, Languages
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Special Features</h3>
+          <p>
+            Profile Photo, PDF Download,
+            Portfolio Generator, Mobile Preview
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Features</h3>
+          <p>
+            Generate a shareable online portfolio
+            directly from resume data.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Ideal Roles</h3>
+          <p>
+            Software Engineer, Frontend Developer,
+            Data Analyst, Product Associate
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Page Format</h3>
+          <p>A4 • Multi Page Support</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Last Updated</h3>
+          <p>May 2026</p>
+        </div>
+
+      </div>
+</div>
+</>)}</div>
+         {(!isMobile || (isMobile && showPreview)) && (
+<div className="editor-preview-wrapper">
+{/* hidden measure */}
 <div className="resume-measure" ref={measureRef}>
-<div className="resume-content4">
+<div className="resume-content">
 <ResumeInner />
 </div>
 </div>
@@ -664,8 +785,8 @@ Back To Editor
 </div>
 
 )}
-    </div><Footer/>
-    </>
+    </div>
+        </div><Footer /></>
   );
 };
 

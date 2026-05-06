@@ -6,6 +6,8 @@ import "../css/TwosidedResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // A4 height in px
 const useGA = () => {
   useEffect(() => {
@@ -381,7 +383,7 @@ ReactGA.event({
   return (
     <><Navbar/>
     <div className="app-container">
-      <div className="editor-container">
+      <div className="editor-container"><div>
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           {/* Sidebar editor content */}
@@ -523,7 +525,193 @@ Create Portfolio Link
   </button>
 )}
         </div>)}
+{(!isMobile || !showPreview) && (
+  <>
+    <div className="template-info-section">
+      <h2>About This Resume Template</h2>
 
+      <div className="template-info-grid">
+
+        <div className="info-card">
+          <h3>Template Name</h3>
+          <p>Two Sided Professional Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Created By</h3>
+          <div style={{display:"flex"}}>
+            <img
+              src={menuIcon}
+              alt="menu"
+              style={{height:"50px", width:"50px"}}
+            />
+            <p>@ElevateMe</p>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Author</h3>
+          <p>
+            Designed by
+            <div style={{display:"flex", paddingLeft:"20px"}}>
+              <img
+                src={menuIcon1}
+                alt="author"
+                style={{
+                  height:"50px",
+                  width:"50px",
+                  borderRadius:"20px"
+                }}
+              />
+
+              <a
+                href="https://yaganti-spandana.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color:"rgb(26, 116, 206)",
+                  marginTop:"15px"
+                }}
+              >
+                SPANDANA YAGANTI
+              </a>
+            </div>
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Version</h3>
+          <p>Version 1.0</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Language</h3>
+          <p>English</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Category</h3>
+          <p>Professional / Creative / Modern</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Best For</h3>
+          <p>
+            Designers, Developers, Corporate Roles,
+            Experienced Professionals
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Design Style</h3>
+          <p>Two Column • Modern • Elegant • Clean</p>
+        </div>
+
+        <div className="info-card">
+          <h3>ATS Friendly</h3>
+          <p>Yes ✓ Structured for ATS Compatibility</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Sections Included</h3>
+          <p>
+            Profile, Contact, Summary, Skills,
+            Experience, Projects, Education, Certifications
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Layout Type</h3>
+          <p>Two Column Resume Layout</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Page Format</h3>
+          <p>A4 • Multi Page Support</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Download Format</h3>
+          <p>PDF Export Available</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Customization</h3>
+          <p>
+            Edit photo, skills, projects, education,
+            experience, and personal details
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Ideal Roles</h3>
+          <p>
+            UI/UX Designer, Software Engineer,
+            Product Manager, Architect, Consultant
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Instantly convert your resume into a live portfolio website.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Features</h3>
+          <p>
+            Showcase projects, skills, experience,
+            education, and certifications online.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Share Portfolio</h3>
+          <p>
+            Generate a unique portfolio URL and share with recruiters.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio URL</h3>
+          <p>
+            Personalized portfolio link generated automatically.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Recruiter Benefits</h3>
+          <p>
+            Recruiters can quickly review skills,
+            experience, projects, and achievements.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Compatibility</h3>
+          <p>
+            Mobile Friendly • Desktop Friendly • Shareable Anywhere
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Last Updated</h3>
+          <p>May 2026</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Tags</h3>
+          <p>
+            Two Column Resume, Modern Resume,
+            Professional Resume, Portfolio Resume
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </>
+)}</div>
         {/* Preview */}
         {(!isMobile || (isMobile && showPreview)) && (
         <div className="editor-preview-wrapper">

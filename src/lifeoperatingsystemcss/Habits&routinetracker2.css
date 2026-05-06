@@ -1,0 +1,57 @@
+.lifehabit2_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/habits2_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  color: white;
+  margin-left: 180px;
+}
+.habit2_date-card{
+    color: #c97317;
+    font-size: 10px;
+    margin-left: 600px;
+}
+.habit2-container {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.stats2 {
+  background: #c97317;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-left: 10px;
+}
+.habit2_today{
+  background: #c97317;
+  color: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.habit2_today label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.habit2_notes {
+  background: #c97317;
+  color: white;
+  border-radius: 12px;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 50px 10px;
+}
+@media (max-width:768px){
+  .lifehabit2_pdf-page  {
+  margin-left: 500px;
+}
+}

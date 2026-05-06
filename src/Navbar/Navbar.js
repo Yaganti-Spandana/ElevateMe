@@ -9,7 +9,7 @@ const Navbar = () => {
   const [open,setOpen] = useState(false);
 
   return (
-    <>
+    <div className="nav">
     
       {/* RIGHT CORNER MENU ICON */}
       <div className="menu-icon" onClick={()=>setOpen(!open)}>
@@ -21,7 +21,7 @@ const Navbar = () => {
 
         <div className="navbar-logo">
           <Link to="/" className="lin">
-            <svg viewBox="0 0 300 300" width="100" height="100">
+            <svg viewBox="0 0 300 300" width="150" height="150">
               <image
                 href={logo}
                 x="0"
@@ -42,15 +42,16 @@ const Navbar = () => {
 
         <ul className="navbar-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/resumetemplates">Resume Templates</Link></li>
-          <li><Link to="/invitations">Invitations</Link></li>
+          <li><Link to="/resumetemplates" style={{fontSize:"14px"}}>🎓 Resume Templates</Link></li>
+          <li><Link to="/invitations" style={{fontSize:"14px"}}>🎉 Invitations</Link></li>
+          <li><Link to="/life" style={{fontSize:"14px"}}>🧠⚙️ Life Operating System</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
       </nav>
 
-    </>
+    </div>
   );
 };
 

@@ -6,6 +6,8 @@ import "../css/AtsprofessionalResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // correct preview height
 const useGA = () => {
   useEffect(() => {
@@ -350,7 +352,7 @@ const handleCreatePortfolio = () => {
   return (
     <><Navbar />
     <div className="app-container">
-      <div className="editor-container">
+      <div className="editor-container"><div>
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           <h2 style={{fontSize:"18px"}}>Ats Friendly Professional Resume Editor</h2>
@@ -570,6 +572,186 @@ Create Portfolio Link
 )}
 
         </div>)}
+        {(!isMobile || !showPreview) && (
+  <>
+        <div className="template-info-section">
+  <h2>About This Resume Template</h2>
+
+  <div className="template-info-grid">
+
+    <div className="info-card">
+      <h3>Template Name</h3>
+      <p>ATS Professional Resume</p>
+    </div>
+
+    <div className="info-card">
+  <h3>Created By</h3><div style={{display:"flex"}}>
+  <img src={menuIcon} alt="menu" style={{height:"50px",width:"50px"}}/>
+  <p>@ElevateMe</p></div>
+</div>
+
+<div className="info-card">
+  <h3>Template Author</h3>
+  <p>Designed by <div style={{display:"flex",paddingLeft:"20px"}}>
+  <img src={menuIcon1} alt="menu" style={{height:"50px",width:"50px",borderRadius:"20px"}}/>
+   <a
+            href="https://yaganti-spandana.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{color:"rgb(26, 116, 206)",marginTop:"15px"}}
+          >
+            SPANDANA YAGANTI
+          </a></div> for students and job seekers.</p>
+</div>
+
+    <div className="info-card">
+      <h3>Version</h3>
+      <p>Version 1.0</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Template Language</h3>
+      <p>English</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Category</h3>
+      <p>Professional / Experienced / Corporate</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Best For</h3>
+      <p>
+        Experienced Professionals, Mid-Level Roles,
+        Senior Engineers, Corporate Applications
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Design Style</h3>
+      <p>ATS Optimized, Professional, Clean Layout</p>
+    </div>
+
+    <div className="info-card">
+      <h3>ATS Friendly</h3>
+      <p>Yes ✓ Optimized for Applicant Tracking Systems</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Sections Included</h3>
+      <p>
+        Profile, Contact, Summary, Skills, Education,
+        Experience, Projects, Certifications,
+        Achievements, Languages
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Page Format</h3>
+      <p>A4 • One Page / Multi Page Support</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Download Format</h3>
+      <p>PDF Export Available</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Customization</h3>
+      <p>
+        Edit content, add sections,
+        update achievements, create portfolio link
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Ideal Roles</h3>
+      <p>
+        Software Engineer, Data Analyst,
+        Product Manager, Business Analyst,
+        Team Lead
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Portfolio Builder</h3>
+      <p>
+        Create a personal portfolio website instantly
+        from your resume data.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Portfolio Features</h3>
+      <p>
+        Showcase projects, skills, education,
+        achievements, and work experience.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Share Portfolio</h3>
+      <p>
+        Generate a unique portfolio link
+        for recruiters and companies.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Portfolio URL</h3>
+      <p>
+        Auto-generated personalized portfolio link.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Recruiter Benefits</h3>
+      <p>
+        Recruiters can review technical skills,
+        experience, projects, and achievements
+        in one place.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Portfolio Compatibility</h3>
+      <p>
+        Mobile Friendly • Desktop Friendly • Shareable Anywhere
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Professional Features</h3>
+      <p>
+        Supports achievements, certifications,
+        languages, and multi-role experience.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Industry Usage</h3>
+      <p>
+        IT, Finance, Consulting, Marketing,
+        Product, Operations
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Last Updated</h3>
+      <p>May 2026</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Tags</h3>
+      <p>
+        ATS Resume, Professional Resume,
+        Corporate Resume, Experienced Resume
+      </p>
+    </div>
+
+  </div>
+</div></>
+)}</div>
         {(!isMobile || (isMobile && showPreview)) && (
 <div className="editor-preview-wrapper">
 {/* hidden measure */}

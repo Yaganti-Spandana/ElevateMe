@@ -1,0 +1,62 @@
+.premiumfresher_pdf-page {
+  width: 595px;
+  min-height: 842px; /* A4 size */
+  
+  background-image: url("../images/premiumfresher_resume_template/premiumfresher_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; /* fills entire page */
+
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+.premiumfresher_modern-left6 {
+  color: black;
+  padding: 28px 10px;
+  font-family: 'Roboto', sans-serif;
+ height: 783px; 
+  border-radius: 30px;
+}
+.premiumfresher_section-title6 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+}
+.premiumfresher_photo-placeholder {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  background-image: url("/src/images/atsfresher_resume_template/atsfresher1.png");
+  display: flex;
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; /* fills entire page */
+text-align: center;
+  position: relative;
+  color: #121010;
+}
+.premiumfresher_section-block { 
+        break-inside: avoid; 
+        page-break-inside: avoid; 
+        margin-bottom: 10px; 
+      } 
+
+@media (max-width:768px){
+.premiumfresher_pdf-page {
+width: 595px;
+min-height: 842px;
+background-image: url("../images/premiumfresher_resume_template/premiumfresher_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; /* fills entire page */
+
+  position: relative;
+box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+border-radius: 6px;
+margin: 0;
+margin-bottom: 24PX;
+}
+}

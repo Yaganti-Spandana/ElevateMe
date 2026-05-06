@@ -7,6 +7,8 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import '../css/ModernResumeEditor.css'
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const A4_HEIGHT_PX = 842; // A4 height in px
 const useGA = () => {
   useEffect(() => {
@@ -400,7 +402,7 @@ ReactGA.event({
   return (
     <><Navbar/>
     <div className="app-container">
-      <div className="editor-container">
+      <div className="editor-container"><div>
         {(!isMobile || !showPreview) && (
         <div className="editor-sidebar">
           {/* Sidebar editor content */}
@@ -542,7 +544,166 @@ Create Portfolio Link
   </button>
 )}
         </div>)}
+{(!isMobile || !showPreview) && (
+  <>
+  <div className="template-info-section">
+  <h2>About This Resume Template</h2>
 
+  <div className="template-info-grid">
+
+    <div className="info-card">
+      <h3>Template Name</h3>
+      <p>Modern Resume Template</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Created By</h3>
+      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+        <img
+          src={menuIcon}
+          alt="logo"
+          style={{ height: "50px", width: "50px" }}
+        />
+        <p>@ElevateMe</p>
+      </div>
+    </div>
+
+    <div className="info-card">
+      <h3>Template Author</h3>
+      <p>Designed by</p>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "10px",
+          marginTop: "10px",
+        }}
+      >
+        <img
+          src={menuIcon1}
+          alt="author"
+          style={{
+            height: "50px",
+            width: "50px",
+            borderRadius: "50%",
+          }}
+        />
+
+        <a
+          href="https://yaganti-spandana.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#1a74ce", fontWeight: "600" }}
+        >
+          SPANDANA YAGANTI
+        </a>
+      </div>
+    </div>
+
+    <div className="info-card">
+      <h3>Version</h3>
+      <p>Version 1.0</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Language</h3>
+      <p>English</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Category</h3>
+      <p>Professional / Modern / ATS Resume</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Best For</h3>
+      <p>
+        Software Engineers, Developers, Designers, Analysts,
+        Business Professionals
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Design Style</h3>
+      <p>Modern • Clean • Professional</p>
+    </div>
+
+    <div className="info-card">
+      <h3>ATS Friendly</h3>
+      <p>Yes ✓ Fully ATS Optimized</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Sections Included</h3>
+      <p>
+        Profile Photo, Contact, Summary, Skills,
+        Languages, Tools, Experience, Projects, Education
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Page Format</h3>
+      <p>A4 • Single / Multi Page Support</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Download Format</h3>
+      <p>PDF Export Available</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Customization</h3>
+      <p>
+        Edit profile, upload photo, add sections,
+        reorder content, create portfolio
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Portfolio Builder</h3>
+      <p>
+        Generate a live portfolio website instantly
+        using your resume data.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Portfolio Features</h3>
+      <p>
+        Showcase projects, skills, experience,
+        education, and achievements online.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Share Portfolio</h3>
+      <p>
+        Share your personalized portfolio link
+        with recruiters and hiring managers.
+      </p>
+    </div>
+
+    <div className="info-card">
+      <h3>Compatibility</h3>
+      <p>Mobile Friendly • Desktop Friendly</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Last Updated</h3>
+      <p>May 2026</p>
+    </div>
+
+    <div className="info-card">
+      <h3>Tags</h3>
+      <p>
+        Modern Resume, ATS Resume, Professional Resume,
+        Job Resume, Portfolio Resume
+      </p>
+    </div>
+
+  </div>
+</div></>)}</div>
         {/* Preview */}
         {(!isMobile || (isMobile && showPreview)) && (
         <div className="editor-preview-wrapper">

@@ -6,6 +6,8 @@ import "../css/ExperiencedResumeEditor.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 import ReactGA from 'react-ga4';
+import menuIcon from "../images/logo.png";
+import menuIcon1 from "../images/logo1.jpeg";
 const useGA = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -212,21 +214,21 @@ const USABLE_PAGE_HEIGHT =
 
       <div className="header-block3">
         <div className="wrap">
-        <h1>{common.name}</h1><h3 className="gap3">{common.title}</h3><div className="semi-circle"></div></div>
+        <h1 className="experienced_h1">{common.name}</h1><h3 className="gap3">{common.title}</h3><div className="semi-circle"></div></div>
         <div className="wrap3"><div className="wrap4">
-        <p>{common.email}</p>  <p>{common.phone}</p></div>
+        <p className="experienced_P">{common.email}</p>  <p className="experienced_P">{common.phone}</p></div>
         <div className="wrap4">
         
-          <p>{common.linkedin}</p> <p> {common.github}</p>  </div><div className="wrap4"><p>{common.portfolio}</p>
+          <p className="experienced_P">{common.linkedin}</p> <p> {common.github}</p>  </div><div className="wrap4"><p className="experienced_P">{common.portfolio}</p>
         
-        <p>{common.location}</p></div></div>
-        <p>{common.summary}</p>
+        <p className="experienced_P">{common.location}</p></div></div>
+        <p className="experienced_P">{common.summary}</p>
 
       </div>
 
       <div className="section-block">
 
-        <h3>Experience</h3>
+        <h3 className="experienced_h3">Experience</h3>
 
         {experience.map((exp, i) => (
 
@@ -234,22 +236,22 @@ const USABLE_PAGE_HEIGHT =
 
             <strong>{exp.role}</strong> — {exp.company}
 
-            <p style={{fontSize:"15px"}}>
+            <p style={{fontSize:"15px"}} className="experienced_P">
               {exp.location} | {exp.startDate} - {exp.endDate}
             </p>
 
-            <p>{exp.desc}</p>
+            <p className="experienced_P">{exp.desc}</p>
 
             {exp.teamSize && (
-              <p>Team Size: {exp.teamSize}</p>
+              <p className="experienced_P">Team Size: {exp.teamSize}</p>
             )}
 
             {exp.technologies && (
-              <p>Tech: {exp.technologies}</p>
+              <p className="experienced_P">Tech: {exp.technologies}</p>
             )}
 
             {exp.achievements && (
-              <p>Achievements: {exp.achievements}</p>
+              <p className="experienced_P">Achievements: {exp.achievements}</p>
             )}
 
           </div>
@@ -260,11 +262,11 @@ const USABLE_PAGE_HEIGHT =
 
       <div className="section-block">
 
-        <h3>Education</h3>
+        <h3 className="experienced_h3">Education</h3>
 
         {education.map((edu, i) => (
           <div key={i}>
-            <p style={{marginLeft:"5px",fontSize:"20px"}}>{edu.degree}</p><div style={{display:"flex"}}> <p style={{marginLeft:"5px",fontSize:"18px"}}>{edu.institution}</p> -<p style={{textAlign:"right",fontSize:"15px"}}>({edu.year})</p></div>
+            <p style={{marginLeft:"5px"}} className="experienced_P1">{edu.degree}</p><div> <p  className="experienced_P1" style={{marginLeft:"5px"}}>{edu.institution}</p><p  className="experienced_P1" >({edu.year})</p></div>
           </div>
         ))}
 
@@ -272,12 +274,12 @@ const USABLE_PAGE_HEIGHT =
 
       <div className="section-block">
 
-        <h3>Projects</h3>
+        <h3 className="experienced_h3">Projects</h3>
 
         {projects.map((proj, i) => (
           <div key={i}>
             <strong>{proj.title}</strong>
-            <p>{proj.desc}</p>
+            <p className="experienced_P">{proj.desc}</p>
           </div>
         ))}
 
@@ -285,13 +287,13 @@ const USABLE_PAGE_HEIGHT =
 
       <div className="section-block">
 
-        <h3>Skills</h3>
-        <p>{skills.join(", ")}</p>
+        <h3 className="experienced_h3">Skills</h3>
+        <p className="experienced_P">{skills.join(", ")}</p>
 
       </div>
       <div className="section-block">
 
-<h3>Achievements</h3>
+<h3 className="experienced_h3">Achievements</h3>
 
 <ul>
 {achievements.map((ach, i) => (
@@ -302,14 +304,14 @@ const USABLE_PAGE_HEIGHT =
 </div>
 <div className="section-block">
 
-<h3>Languages</h3>
+<h3 className="experienced_h3">Languages</h3>
 
-<p>{languages.join(", ")}</p>
+<p className="experienced_P">{languages.join(", ")}</p>
 
 </div>
 <div className="section-block">
 
-<h3>Interests</h3>
+<h3 className="experienced_h3">Interests</h3>
 
 <ul>
 {interests.map((ach, i) => (
@@ -321,7 +323,7 @@ const USABLE_PAGE_HEIGHT =
 
       <div className="section-block">
 
-        <h3>Certifications</h3>
+        <h3 className="experienced_h3">Certifications</h3>
 
         <ul>
           {certifications.map((cert, i) => (
@@ -378,12 +380,10 @@ const USABLE_PAGE_HEIGHT =
 };
   return (
 <><Navbar/>
-    <div className="experienced-editor-container">
-
-      {/* ================= SIDEBAR ================= */}
-
-      {(!isMobile || !showPreview) && (
-      <div className="experienced-editor-sidebar"> 
+<div className="app-container">
+      <div className="editor-container"><div>
+        {(!isMobile || !showPreview) && (
+        <div className="editor-sidebar">
       <h2>Experienced Resume Editor</h2> 
       <label>Name</label> 
       <input value={common.name} 
@@ -542,10 +542,191 @@ Create Portfolio Link
 )}
 
         </div>)}
+        {(!isMobile || !showPreview) && (
+  <>
+    <div className="template-info-section">
+      <h2>About This Resume Template</h2>
 
-      {/* ================= PREVIEW ================= */}
-      {(!isMobile || (isMobile && showPreview)) && (
-      <div className="experienced-editor-preview">
+      <div className="template-info-grid">
+
+        <div className="info-card">
+          <h3>Template Name</h3>
+          <p>Experienced Professional Resume</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Created By</h3>
+          <div style={{ display: "flex" }}>
+            <img
+              src={menuIcon}
+              alt="menu"
+              style={{ height: "50px", width: "50px" }}
+            />
+            <p>@ElevateMe</p>
+          </div>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Author</h3>
+          <p>
+            Designed by
+            <div style={{ display: "flex", paddingLeft: "20px" }}>
+              <img
+                src={menuIcon1}
+                alt="author"
+                style={{
+                  height: "50px",
+                  width: "50px",
+                  borderRadius: "20px"
+                }}
+              />
+
+              <a
+                href="https://yaganti-spandana.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "rgb(26, 116, 206)",
+                  marginTop: "15px"
+                }}
+              >
+                SPANDANA YAGANTI
+              </a>
+            </div>
+            for professionals and experienced job seekers.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Version</h3>
+          <p>Version 1.0</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Template Language</h3>
+          <p>English</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Category</h3>
+          <p>Experienced / Mid-Level / Senior Professional</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Best For</h3>
+          <p>
+            Job Switches, Promotions, Leadership Roles, Senior Hiring
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Design Style</h3>
+          <p>Modern, Executive, Professional</p>
+        </div>
+
+        <div className="info-card">
+          <h3>ATS Friendly</h3>
+          <p>Yes ✓ Optimized for Applicant Tracking Systems</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Sections Included</h3>
+          <p>
+            Profile, Contact, Summary, Experience, Education,
+            Projects, Skills, Certifications, Achievements,
+            Languages, Interests
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Page Format</h3>
+          <p>A4 • Multi Page Support</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Download Format</h3>
+          <p>PDF Export Available</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Customization</h3>
+          <p>
+            Edit all sections, add achievements, create portfolio link
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Ideal Roles</h3>
+          <p>
+            Software Engineer, Team Lead, Project Manager,
+            Product Manager, Data Engineer, Senior Developer
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Instantly generate a professional portfolio website from
+            your resume data.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Features</h3>
+          <p>
+            Showcase experience, leadership, projects, skills,
+            certifications, and career achievements.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Share Portfolio</h3>
+          <p>
+            Generate a shareable portfolio link for recruiters,
+            clients, and hiring managers.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio URL</h3>
+          <p>
+            Personalized portfolio link generated automatically.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Recruiter Benefits</h3>
+          <p>
+            Recruiters can review your projects, experience,
+            leadership, and achievements in one place.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Portfolio Compatibility</h3>
+          <p>
+            Mobile Friendly • Desktop Friendly • Share Anywhere
+          </p>
+        </div>
+
+        <div className="info-card">
+          <h3>Last Updated</h3>
+          <p>May 2026</p>
+        </div>
+
+        <div className="info-card">
+          <h3>Tags</h3>
+          <p>
+            Experienced Resume, Professional Resume,
+            Leadership Resume, ATS Resume, Career Switch Resume
+          </p>
+        </div>
+
+      </div>
+</div></>
+)}</div>
+        {(!isMobile || (isMobile && showPreview)) && (
+      <div className="editor-preview-wrapper">
 
         {/* invisible measure */}
         <div className="resume-measure3" ref={measureRef}>
@@ -553,6 +734,7 @@ Create Portfolio Link
 <ResumeInner />
 </div>
 </div>
+
 
 {/* preview pages */}
 
@@ -608,7 +790,7 @@ Back To Editor
 
 )}
 
-    </div>
+    </div></div>
 <Footer/></>
   );
 

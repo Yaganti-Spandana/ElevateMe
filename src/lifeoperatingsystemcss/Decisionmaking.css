@@ -1,0 +1,253 @@
+.decision_app-container { display: flex; flex-direction: column; min-height: 100vh;font-family: 'Roboto',sans-serif; } 
+.decision_editor-container { 
+  display: flex; 
+  gap: 24px; 
+  padding: 24px; 
+  height: auto !important;
+  font-family:'Poppins', sans-serif; 
+  box-sizing: border-box; 
+  margin: 20px 0; 
+  background: #f3f4f6;
+  overflow: auto; } 
+  .decision_editor-sidebar { flex: 0.8; background: #b2c2d6 !important; 
+    padding: 24px; 
+    border-radius: 14px; 
+    overflow-y: auto; 
+    height: 450px !important; 
+    min-width: 0; 
+    color: rgb(26, 116, 206) !important ; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25); 
+  } 
+.decision_editor-sidebar h2, .decision_editor-sidebar h3 { 
+  font-weight: 600; 
+  color: rgb(26, 116, 206) !important ; 
+  margin-bottom: 5px; 
+} 
+ .decision_editor-sidebar input, .decision_editor-sidebar textarea { 
+  width: 90%; 
+  margin-bottom: 12px; 
+  padding: 10px; 
+  border-radius: 8px; 
+  border: 1px solid #fff; 
+  font-size: 14px;
+  background: #b2c2d6 !important; 
+  color: black !important; 
+  outline: none; 
+} 
+.lifedecisionmaking_editor-preview-wrapper {
+  flex: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+   height: 500px !important;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 0px 0;
+}
+.lifedecisionmaking_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/decisionmaking_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+  margin-left: 150px;
+}
+.decision_resume-content {
+  width: 100%;
+  padding: 28px;
+  box-sizing: border-box;
+}
+@media screen { .decision_resume-content { column-width: auto; /* single page */ } } 
+
+
+
+/* ================= PREVIEW ================= */
+
+
+/* MAIN decision_card */
+.decision-preview {
+  width: 800;
+    height: 540;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 20px;
+}
+
+.tag {
+  background: #6b7280;
+  color: #8b1b3b;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.header h2 {
+  margin: 10px 0 5px;
+  color: #8b1b3b;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* GRID */
+.decision_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.decision-grid{
+    display:flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+/* decision_card */
+.decision_card {
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  padding:70px 15px;
+  border: 1px solid #e5e7eb;
+  margin-top: 150px;
+  margin-left: 70px;
+  font-size: 12px;
+  text-align: center;
+}
+.decision_factors_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-top: 150px;
+  margin-left: 0px;
+  font-size: 12px;
+  padding: 10px;
+
+}
+.decision_pros_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  margin-top: 0px;
+  margin-left: 70px;
+}
+.decision_decision_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  margin-top: 150px;
+  margin-right: 70px;
+}
+.decision_nextstep_card{
+  background: #8b1b3b;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 5px;
+  border: 1px solid #e5e7eb;
+  margin-top: 0px;
+  margin-right: 70px;
+  margin-left: 0px;
+}
+
+.decision_card h4 {
+  margin-bottom: 0px;
+}
+
+/* WIDE decision_card */
+
+/* FACTORS */
+.factor-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* TOTAL SCORE */
+.total {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* PROS & CONS */
+.pros-cons {
+  display: flex;
+  gap: 20px;
+}
+
+.pros-cons ul {
+  padding-left: 18px;
+  margin-top: 6px;
+}
+
+.pros-cons li {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* DECISION BOX */
+.decision-box {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #8b1b3b;
+}
+
+.decision-box strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+
+@media (max-width:1000px){
+.decision_app-container{
+  height: auto !important;
+}
+.decision_editor-container{
+flex-direction:column;
+height:auto !important;
+width:100% !important;
+}
+.decision_editor-sidebar{
+width:90%;
+height:700px !important;
+}
+}
+@media (max-width:768px){
+.decision_app-container{
+  height: auto !important;
+}
+.decision_editor-container{
+flex-direction:column;
+height:auto !important;
+width:100% !important;
+}
+.decision_editor-sidebar{
+width:90%;
+height:700px !important;
+}
+.lifedecisionmaking_pdf-page {
+  margin-left: 500px;
+}
+}

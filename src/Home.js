@@ -56,6 +56,9 @@ import productlaunch_invitation1 from "./images/product_lauch/productlaunch_invi
 import internship1 from "./images/internship_resume_template/internship1.png";
 import internship2 from "./images/internship_resume_template/internship2.png";
 import internshipportfolio from "./images/internship_resume_template/internship.mp4"
+import premiumfresher1 from "./images/premiumfresher_resume_template/premiumfresher1.png";
+import premiumfresher2 from "./images/premiumfresher_resume_template/premiumfresher2.png";
+import premiumfresher_portfolio from "./images/premiumfresher_resume_template/premiumfresher_portfolio.mp4";
 import musicevent_invitation1 from "./images/music_event/musicevent_invitation1.png";
 import career1 from "./images/careerchange_resume_template/career1.png";
 import career2 from "./images/careerchange_resume_template/career2.png";
@@ -66,6 +69,9 @@ import atsprofessional_portfolio from "./images/atsprofessional_resume_template/
 import headinghighlightprofessional1 from "./images/headinghighlightprofessional_resume_template/headinghighlightprofessional1.png";
 import headinghighlightprofessional2 from "./images/headinghighlightprofessional_resume_template/headinghighlightprofessional2.png";
 import headinghighlightprofessional_portfolio from "./images/headinghighlightprofessional_resume_template/headinghighlightprofessional_portfolio.mp4"
+import twosidedexperienced1 from "./images/twosidedexperienced_resume_template/twosidedexperienced1.png";
+import twosidedexperienced2 from "./images/twosidedexperienced_resume_template/twosidedexperienced2.png";
+import twosidedexperienced_portfolio from "./images/twosidedexperienced_resume_template/twosidedexperienced_portfolio.mp4";
 import wedding_invitation1 from "./images/wedding1/wedding_invitation1.png";
 import cricketsports_invitation from "./images/cricket_sports/cricketsports_invitation.png";
 import seminar_invitation from "./images/seminar/seminar_invitation.png";
@@ -88,8 +94,27 @@ import ugadi_invitation1 from "./images/ugadi/ugadi_invitation1.png";
 import ugadi_invitation2 from "./images/ugadi/ugadi_invitation2.png";
 import firstbirthday_invitation1 from "./images/firstbirthday/firstbirthday_invitation1.png"; 
 import firstbirthday_invitation2 from "./images/firstbirthday/firstbirthday_invitation2.png";
+import lifedashboard from "./images/lifedashboard/lifedashboard.png";
+import decisionmaking from "./images/lifedashboard/decisionmaking.png";
+import weeklyplanner from "./images/lifedashboard/weeklyplanner.png";
+import goalssystem from "./images/lifedashboard/goalssystem.png";
+import habits from "./images/lifedashboard/habits.png"
+import financeoverview from "./images/lifedashboard/financeoverview.png"
+import lifedashboard1 from "./images/lifedashboard/lifedashboard1.png";
+import decisionmaking1 from "./images/lifedashboard/decisionmaking1.png";
+import weeklyplanner1 from "./images/lifedashboard/weeklyplanner1.png";
+import goalssystem1 from "./images/lifedashboard/goalssystem1.png"
+import habits1 from "./images/lifedashboard/habits1.png"
+import financeoverview1 from "./images/lifedashboard/financeoverview1.png"
+import lifedashboard2 from "./images/lifedashboard/lifedashboard2.png";
+import decisionmaking2 from "./images/lifedashboard/decisionmaking2.png";
+import weeklyplanner2 from "./images/lifedashboard/weeklyplanner2.png";
+import goalssystem2 from "./images/lifedashboard/goalssystem2.png"
+import habits2 from "./images/lifedashboard/habits2.png"
+import financeoverview2 from "./images/lifedashboard/financeoverview2.png"
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
+import invitations from "./images/invitations.mp4";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Navbar/Footer";
 
@@ -100,299 +125,487 @@ const templates = [
     name: "Simple Resume",
     dname: "Simple Resume",
     images: [simpleSample1, simpleSample2], // ⭐ two images here
-    video: simpleportfolio
+    video: simpleportfolio,
+    category: "🎓 Resumes",
   },
   {
     id: "techfest",
     name: "Tech Fest Invitation",
     dname: "Tech Fest Invitation",
-    images: [techfest_invitation], 
+    images: [techfest_invitation],
+    category: "🎉 Invitations",
+  },
+  {
+    id: "lifedashboard",
+    name: "Life Dashboard",
+    dname: "Life Dashboard",
+    category: "🧠⚙️ Life Operating System",
+    images: [lifedashboard],
   },
   {
     id: "atsfresher",
     name: "Ats Fresher Resume",
     dname: "Ats Fresher Resume",
     images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
-    video: atsfresher_portfolio
+    video: atsfresher_portfolio,
+    category: "🎓 Resumes",
   },
   {
     id: "culturalfestival",
     name: "Cultural Festival Invitation",
     dname: "Cultural Festival Invitation",
-    images: [culturalfestival_invitation], 
+    images: [culturalfestival_invitation],
+    category: "🎉 Invitations",
+  },
+  {
+    id: "decisionmaking",
+    name: "Decision Making",
+    dname: "Decision Making",
+    category: "🧠⚙️ Life Operating System",
+    images: [decisionmaking],
   },
   {
     id: "ugadi",
     name: "Ugadi Invitation",
     dname: "Ugadi Invitation",
     images: [ugadi_invitation1,ugadi_invitation2], 
+    category: "🎉 Invitations",
   },
   {
     id: "atsprofessional",
     name: "Ats Professional Resume",
     dname: "Ats Professional Change Resume",
     images: [atsprofessional1, atsprofessional2], // ⭐ two images here
-    video: atsprofessional_portfolio
+    video: atsprofessional_portfolio,
+    category: "🎓 Resumes",
+  },
+  {
+    id: "weeklyplanner",
+    name: "Weekly Life Planner",
+    dname: "Weekly Life Planner",
+    category:"🧠⚙️ Life Operating System",
+    images: [weeklyplanner],
   },
   {
     id: "sankranti1",
     name: "Sankranti/Pongal Invitation",
     dname: "Sankranti/Pongal Invitation",
     images: [sankranti1,sankranti2], 
+    category: "🎉 Invitations",
   },
   {
     id: "atsexperienced",
     name: "Ats Friendly Experienced Resume",
     dname: "Ats Friendly Experienced Resume",
     images: [atsexperienced_resume_template1, atsexperienced_resume_template2], // ⭐ two images here
-    video: atsexperienced_portfolio
+    video: atsexperienced_portfolio,
+    category: "🎓 Resumes",
+  },
+   {
+    id: "goalssystem",
+    name: "Goals System",
+    dname: "Goals System",
+    category:"🧠⚙️ Life Operating System",
+    images: [goalssystem],
   },
   {
     id: "twosidedsimple",
     name: "Maroon Full Stack Web Developer Resume",
     dname: "Maroon Basic Full Stack Web Developer Two sided Simple Resume",
     images: [twosidedsimple_invitation1,twosidedsimple_invitation2], // ⭐ two images here
-    video: twosidedsimple_portfolio
+    video: twosidedsimple_portfolio,
+    category: "🎓 Resumes",
   },
   {
     id: "collegefest",
     name: "College Fest Invitation",
     dname: "College Fest Invitation",
     images: [collegefest1,collegefest2,collegefest3], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "habits_routinetracker",
+    name: "Habits & Routine Tracker",
+    dname: "Habits & Routine Tracker",
+    category: "🧠⚙️ Life Operating System",
+    images: [habits],
   },
   {
     id: "headinghighlightprofessional",
     name: "Heading Highlight Professional Resume",
     dname: "Heading Highlight Professional Resume",
     images: [headinghighlightprofessional1, headinghighlightprofessional2], // ⭐ two images here
-    video: headinghighlightprofessional_portfolio
+    video: headinghighlightprofessional_portfolio,
+    category: "🎓 Resumes",
   },
   {
     id: "fashionshow",
     name: "Fashion Show Invitation",
     dname: "Fashion Show Invitation",
     images: [fashionshow_invitation1,fashionshow_invitation2], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "financeoverview",
+    name: "Finance Overview",
+    dname: "Finance Overview",
+    category: "🧠⚙️ Life Operating System",
+    images: [financeoverview],
   },
   {
     id: "cricketsports",
     name: "Cricket Sports Invitation",
     dname: "Cricket Sports Invitation",
-    images: [cricketsports_invitation], 
+    images: [cricketsports_invitation],
+    category: "🎉 Invitations",
   },
   {
     id: "headinghighlightfresher",
     name: "Heading Highlight Fresher Resume",
     dname: "Heading Highlight Fresher Resume",
     images: [headinghighlightfresher1, headinghighlightfresher2,headinghighlightfresher3], // ⭐ two images here
-    video: headinghighlightfresher_portfolio
+    video: headinghighlightfresher_portfolio,
+    category: "🎓 Resumes",
+  },
+{
+    id: "lifedashboard1",
+    name: "Life Dashboard",
+    dname: "Life Dashboard",
+    category: "🧠⚙️ Life Operating System",
+    images: [lifedashboard1],
   },
   {
     id: "seminar",
     name: "Seminar Invitation",
     dname: "Seminar Invitation",
-    images: [seminar_invitation], 
+    images: [seminar_invitation],
+    category: "🎉 Invitations",
   },
   { 
     id: "Black_and_Gold",
     name: "Black and Gold Modern Resume", 
     dname: "Black and Gold Modern Resume", 
     images: [black_gold],
-    video: blackgoldportfolio 
+    video: blackgoldportfolio,
+    category: "🎓 Resumes", 
+  },
+  {
+    id: "decisionmaking1",
+    name: "Decision Making",
+    dname: "Decision Making",
+    category: "🧠⚙️ Life Operating System",
+    images: [decisionmaking1],
   },
   {
     id: "graduation",
     name: "Graduation Invitation",
     dname: "Graduation Invitation",
-    images: [graduation_invitation], 
+    images: [graduation_invitation],
+    category: "🎉 Invitations",
   },
   {
     id: "border_highlight",
     name: "Border Hightlighted Resume",
     dname: "Border Hightlighted Resume",
     images: [border1, border2], // ⭐ two images here
-    video: borderportfolio
+    video: borderportfolio,
+    category: "🎓 Resumes",
+  },
+  {
+    id: "weeklyplanner1",
+    name: "Weekly Life Planner",
+    dname: "Weekly Life Planner",
+    category: "🧠⚙️ Life Operating System",
+    images: [weeklyplanner1],
   },
   {
     id: "babyannouncement",
     name: "Baby Announcement Event Invitation",
     dname: "Baby Announcement Event Invitation",
-    images: [babyannouncement_invitation], 
+    images: [babyannouncement_invitation],
+    category: "🎉 Invitations",
   },
   {
     id: "internship",
     name: "Internship Resume",
     dname: "Internship Resume",
     images: [internship1, internship2], // ⭐ two images here
-    video: internshipportfolio
+    video: internshipportfolio,
+    category: "🎓 Resumes",
+  },
+  {
+    id: "goalssystem1",
+    name: "Goals System",
+    dname: "Goals System",
+    category: "🧠⚙️ Life Operating System",
+    images: [goalssystem1],
   },
   { 
     id: "experienced", 
     name: "Experienced Resume",
     dname: "Experienced Resume", 
     images: [experience1, experience2],
-    video: experiencedportfolio 
+    video: experiencedportfolio,
+    category: "🎓 Resumes", 
   },
   {
     id: "kittyparty1",
     name: "Kitty Party Invitation",
     dname: "Kitty Party Invitation",
     images: [kittyparty1], 
+    category: "🎉 Invitations",
+  },{
+    id: "habits_routinetracker1",
+    name: "Habits & Routine Tracker",
+    dname: "Habits & Routine Tracker",
+    category: "🧠⚙️ Life Operating System",
+    images: [habits1],
   },
   {
     id: "yellowbasic",
     name: "Yellow Basic Resume",
     dname: "Yellow Basic Resume",
     images: [yellowbasic1, yellowbasic2], // ⭐ two images here
-    video: yellowbasic_portfolio
+    video: yellowbasic_portfolio,
+    category: "🎓 Resumes",
   },
   {
     id: "cradle",
     name: "Cradle Ceremony Invitation",
     dname: "Cradle Ceremony Invitation",
-    images: [cradle_invitation], 
+    images: [cradle_invitation],
+    category: "🎉 Invitations",
+  },
+   {
+    id: "financeoverview1",
+    name: "Finance Overview",
+    dname: "Finance Overview",
+    category: "🧠⚙️ Life Operating System",
+    images: [financeoverview1],
   },
   {
     id: "career",
     name: "Career Change Resume",
     dname: "Career Change Resume",
     images: [career1, career2], // ⭐ two images here
-    video: careerportfolio
+    video: careerportfolio,
+    category: "🎓 Resumes",
   },
   {
     id: "officeparty",
     name: "Office Party Invitation",
     dname: "Office Party Invitation",
     images: [officeparty_invitation1,officeparty_invitation2], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "lifedashboard2",
+    name: "Wellness + Lifestyle Theme Life Dashboard",
+    dname: "Wellness + Lifestyle Theme Life Dashboard",
+    category: "🧠⚙️ Life Operating System",
+    images: [lifedashboard2],
   },
   { 
     id: "modern", 
     name: "Modern Resume",
     dname: "Modern Resume", 
     images: [modernSample],
-    video:modernportfolio 
+    video:modernportfolio,
+    category: "🎓 Resumes", 
   },
   {
     id: "firstbirthday",
     name: "First Birthday Invitation",
     dname: "First Birthday Invitation",
     images: [firstbirthday_invitation1,firstbirthday_invitation2], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "decisionmaking2",
+    name: "Wellness + Lifestyle Theme Decision Making",
+    dname: "Wellness + Lifestyle Theme Decision Making",
+    category: "🧠⚙️ Life Operating System",
+    images: [decisionmaking2],
   },
   {
     id: "jobfair",
     name: "Job Fair Invitation",
     dname: "Job Fair Invitation",
-    images: [jobfair_invitation], 
+    images: [jobfair_invitation],
+    category: "🎉 Invitations",
   },
   { 
     id: "fresher",
     name: "Fresher Resume", 
     dname: "Fresher Resume", 
     images: [fresher1, fresher2],
-    video: fresherportfolio 
+    video: fresherportfolio,
+    category: "🎓 Resumes", 
+  },
+  {
+    id: "weeklyplanner2",
+    name: "Wellness + Lifestyle Theme Weekly Life Planner",
+    dname: "Wellness + Lifestyle Theme Weekly Life Planner",
+    category: "🧠⚙️ Life Operating System",
+    images: [weeklyplanner2],
   },
   {
     id: "christmas",
     name: "Christmas Invitation",
     dname: "Christmas Invitation",
-    images: [christmas_invitation], 
+    images: [christmas_invitation],
+    category: "🎉 Invitations",
   },
   {
     id: "green_and_yellow",
     name: "Green and Yellow Experienced Template",
     dname: "Green and Yellow Experienced Template",
     images: [green_yellow1, green_yellow2], // ⭐ two images here
-    video: greenyellowportfolio
+    video: greenyellowportfolio,
+    category: "🎓 Resumes",
+  },
+  {
+    id: "goalssystem2",
+    name: "Wellness + Lifestyle Theme Goals System",
+    dname: "Wellness + Lifestyle Theme Goals System",
+    category: "🧠⚙️ Life Operating System",
+    images: [goalssystem2],
   },
   {
     id: "birthday1",
     name: "Birthday Invitation",
     dname: "Birthday Invitation",
-    images: [birthday_invitation1], 
+    images: [birthday_invitation1],
+    category: "🎉 Invitations", 
   },
   { 
     id: "creative",
     name: "Creative Resume", 
     dname: "Creative Resume", 
     images: [creative1, creative2],
-    video: creativeportfolio 
+    video: creativeportfolio,
+    category: "🎓 Resumes", 
+  },
+  {
+    id: "habits_routinetracker2",
+    name: "Wellness + Lifestyle Theme Habits & Routine Tracker",
+    dname: "Wellness + Lifestyle Theme Habits & Routine Tracker",
+    category: "🧠⚙️ Life Operating System",
+    images: [habits2],
   },
   {
     id: "productlaunch1",
     name: "Product Launch Invitation",
     dname: "Product Launch Invitation",
     images: [productlaunch_invitation1], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "twosidedexperienced",
+    name: "Experienced Resume",
+    dname: "Experienced Resume",
+    category: "🎓 Resumes",
+    images: [twosidedexperienced1, twosidedexperienced2],
+    video: twosidedexperienced_portfolio
+  },
+  {
+    id: "financeoverview2",
+    name: "Wellness + Lifestyle Theme Finance Overview",
+    dname: "Wellness + Lifestyle Theme Finance Overview",
+    category: "🧠⚙️ Life Operating System",
+    images: [financeoverview2],
   },
   {
     id: "engagement1",
     name: "Engagement Invitation",
     dname: "Engagement Invitation",
     images: [engagement_invitation1], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "premiumfresher",
+    name: "Premium Fresher Resume",
+    dname: "Premium Fresher Resume",
+    category: "🎓 Resumes",
+    images: [premiumfresher1,premiumfresher2],
+    video: premiumfresher_portfolio
   },
   {
     id: "musicevent1",
     name: "Music Event Invitation",
     dname: "Music Event Invitation",
     images: [musicevent_invitation1], 
+    category: "🎉 Invitations",
   },
   {
     id: "gruhapravesham1",
     name: "Gruhapravesham Invitation",
     dname: "Gruhapravesham House Warming Invitation",
     images: [gruha_pravesham1], 
+    category: "🎉 Invitations",
   },
   {
     id: "wedding1",
     name: "Wedding Invitation",
     dname: "Wedding Invitation",
     images: [invitation1], 
+    category: "🎉 Invitations",
   },
   {
     id: "mickymousebirthday",
     name: "Birthday Invitation",
     dname: "Micky Mouse Theme Birthday Invitation",
     images: [micky_mouse_birthday], 
+    category: "🎉 Invitations",
   },
   {
     id: "namingceremony1",
     name: "Naming Ceremony Invitation",
     dname: "Lord Krishna Naming Ceremony Invitation",
     images: [namingceremony_invitation1], 
+    category: "🎉 Invitations",
   },
   {
     id: "farewell",
     name: "Farewell Invitation",
     dname: "Farewell Invitation",
     images: [farewell_invitation1,farewell_invitation2], 
+    category: "🎉 Invitations",
   },
   {
     id: "collagebirthday",
     name: "Birthday Invitation",
     dname: "Photo Collage Birthday Invitation",
-    images: [collage_invitation], 
+    images: [collage_invitation],
+    category: "🎉 Invitations",
   },
   {
     id: "wedding2",
     name: "Wedding Invitation",
     dname: "Venkateswara swamy theme Wedding Invitation",
     images: [wedding_invitation1], 
+    category: "🎉 Invitations",
   },
   {
     id: "haldi1",
     name: "Haldi Invitation",
     dname: "Haldi Invitation",
     images: [haldi_invitation1], 
+    category: "🎉 Invitations",
   },
   {
     id: "diwali1",
     name: "Diwali Invitation",
     dname: "Diwali Invitation",
     images: [diwali_invitation1], 
+    category: "🎉 Invitations",
   },
   {
     id: "unicornbirthday",
     name: "Birthday Invitation",
     dname: "Unicorn Theme Birthday Invitation",
-    images: [unicorn_invitation], 
+    images: [unicorn_invitation],
+    category: "🎉 Invitations",
   },
 ];
 
@@ -408,9 +621,18 @@ const Home = () => {
   const [imageIndex, setImageIndex] = useState({});
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(12);
-const filteredTemplates = templates.filter((tpl)=>
-    tpl.dname.toLowerCase().includes(search.toLowerCase())
-  );
+  const [category, setCategory] = useState("All");
+const categories = ["All", "🎓 Resumes", "🎉 Invitations","🧠⚙️ Life Operating System"];
+const filteredTemplates = templates.filter((tpl) => {
+  const matchesSearch = tpl.dname
+    .toLowerCase()
+    .includes(search.toLowerCase());
+
+  const matchesCategory =
+    category === "All" || tpl.category === category;
+
+  return matchesSearch && matchesCategory;
+});
   useEffect(() => {
   const interval = setInterval(() => {
     setImageIndex((prev) => {
@@ -452,19 +674,32 @@ const [slideIndex, setSlideIndex] = useState(0);
   return (
   <div className="page-wrapper">
     <Navbar />
-    <div className="search-bar-container">
-</div>
 {/* SEARCH BAR */}
       <div className="search-bar-container">
-        <input
-          type="text"
-          placeholder="Search resume templates..."
-          className="template-search"
-          value={search}
-          onChange={(e)=>setSearch(e.target.value)}
-        />
+        <div className="filters-bar">
+  <input
+    type="text"
+    placeholder="Search templates..."
+    className="template-search"
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
+
+  <select
+    value={category}
+    onChange={(e) => setCategory(e.target.value)}
+    className="category-select"
+  >
+    {categories.map((cat) => (
+      <option key={cat} value={cat}>
+        {cat}
+      </option>
+    ))}
+  </select>
+</div>
       </div>
-      <h1 className="home-title1">Available:{search ? filteredTemplates.length : templates.length} templates. More will be added soon.
+      <h1 className="home-title1" style={{marginTop:"-30px"}}>
+  Available: {filteredTemplates.length} templates. More will be added soon.
 </h1>
 
       {/* Canva Style Results */}
@@ -513,7 +748,7 @@ const [slideIndex, setSlideIndex] = useState(0);
 </p>
 
     <div className="templates-grid">
-  {templates.slice(0, visibleCount).map((tpl) => {
+  {filteredTemplates.slice(0, visibleCount).map((tpl) => {
   const currentIndex = imageIndex[tpl.id] ?? 0;
   const currentImage = tpl.images[currentIndex];
 
@@ -608,8 +843,14 @@ const [slideIndex, setSlideIndex] = useState(0);
       loop 
       playsInline 
     />
+    <video 
+      src={invitations} 
+      autoPlay 
+      muted 
+      loop 
+      playsInline 
+    />
   </div>
-
 </section>
 
 <section className="popular-section">

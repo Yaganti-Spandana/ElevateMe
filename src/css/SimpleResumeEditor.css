@@ -289,6 +289,59 @@ body{
 display:block;
 background-color: #2563eb !important;
 }
+/* Template Info Section */
+.template-info-section {
+  margin: 40px 24px;
+  padding: 10px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.template-info-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(26, 116, 206);
+}
+
+.template-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.info-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  border-left: 4px solid rgb(26, 116, 206);
+  font-size: 10px !important;
+}
+
+.info-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: rgb(26, 116, 206);
+}
+
+@media (max-width: 768px) {
+  .template-info-section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .template-info-section h2 {
+    font-size: 22px;
+  }
+}
 
 .pdf-export .no-print{
 display:none !important;

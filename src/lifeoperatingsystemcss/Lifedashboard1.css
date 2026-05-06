@@ -1,0 +1,65 @@
+.lifedashboard1_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/lifedashboard1_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+  margin-left: 230px;
+}
+.dashboard1_card-plans {
+  background: #2e6467;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:20px 10px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  color: #fcfafc;
+  margin-left: 10px;
+}
+.dashboard1_card-goals {
+  background: #2e6467;
+  padding:0px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  flex: 1;
+  color: #fcfafc;
+  margin-left: 100px;
+  margin-right: -25px;
+}
+.dashboard1_card-notes {
+  background: #2e6467;
+  padding: 0px 15px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  flex: 1.1;
+  color: #fcfafc;
+  margin-right: 10px;
+  margin-left: 340px;
+}
+.dashboard1_card-finance {
+  background: #2e6467;
+  padding:0px 10px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  flex: 1.1;
+  color: #fcfafc;
+  margin-right: 180px;
+  margin-left: -20px;
+}
+.dashboard1_row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width:768px){
+.lifedashboard1_pdf-page {
+  margin-left: 500px;
+}
+}

@@ -73,6 +73,30 @@ import HeadinghighlightprofessionalResumeEditor from "./templates/Headinghighlig
 import HeadinghighlightprofessionalPortfolioPage from "./portfolios/HeadinghighlightprofessionalPortfolioPage";
 import HeadinghighlightfresherresumeEditor from "./templates/HeadinghighlightfresherResumeEditor";
 import HeadinghighlightfresherPortfolioPage from "./portfolios/HeadinghighlightfresherPortfolioPage";
+import Lifeoperatingsystem from "./Navbar/Lifeoperatingsystem";
+import Lifedashboard from "./lifeoperatingsystem/Lifedashboard";
+import Decisionmaking from "./lifeoperatingsystem/Decisionmaking";
+import Weeklyplanner from "./lifeoperatingsystem/Weeklylifeplanner";
+import Goalssystem from "./lifeoperatingsystem/Goalssystem";
+import HabitsRoutinetracker from "./lifeoperatingsystem/Habit&routinetracker";
+import Financeoverview from "./lifeoperatingsystem/Finanaceoverview";
+import Lifedashboard1 from "./lifeoperatingsystem/Lifedashboard1";
+import Decisionmaking1 from "./lifeoperatingsystem/Decisionmaking1";
+import Weeklyplanner1 from "./lifeoperatingsystem/Weeklylifeplanner1";
+import Goalssystem1 from "./lifeoperatingsystem/Goalssystem1";
+import HabitsRoutinetracker1 from "./lifeoperatingsystem/Habit&routinetracker1";
+import Financeoverview1 from "./lifeoperatingsystem/Finanaceoverview1";
+import Lifedashboard2 from "./lifeoperatingsystem/Lifedashboard2";
+import Decisionmaking2 from "./lifeoperatingsystem/Decisionmaking2";
+import Weeklyplanner2 from "./lifeoperatingsystem/Weeklylifeplanner2";
+import Goalssystem2 from "./lifeoperatingsystem/Goalssystem2";
+import HabitsRoutinetracker2 from "./lifeoperatingsystem/Habit&routinetracker2";
+import Financeoverview2 from "./lifeoperatingsystem/Finanaceoverview2";
+import TwosidedexperiencedResumeEditor from "./templates/TwosidedexperiencedResumeEditor";
+import TwosidedexperiencedPortfolioPage from "./portfolios/TwosidedexperiencedPortfolioPage";
+import PremiumfresherResumeEditor from "./templates/PremiumfresherResumeEditor";
+import PremiumfresherportfolioPage from "./portfolios/PremiumfresherPortfolioPage";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   useGA();
@@ -80,6 +104,7 @@ function App() {
     <>
     
     <Router>
+      <ScrollToTop/>
       <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/about" element={<About/>} />
@@ -88,6 +113,7 @@ function App() {
 <Route path="/terms" element={<Terms/>} />
 <Route path="/resumetemplates" element={<ResumeTemplates/>} />
 <Route path="/invitations" element={<Invitations/>} />
+<Route path="/life" element={<Lifeoperatingsystem/>} />
 
 
 
@@ -99,8 +125,10 @@ function App() {
 <Route path="/editor/fresher" element={<FresherResumeEditor />} />
 <Route path="/editor/modern" element={<ModernResumeEditor />} />
 <Route path="/editor/experienced" element={<ExperiencedResumeEditor />} />
+<Route path="/editor/twosidedexperienced" element={<TwosidedexperiencedResumeEditor/>} />
 <Route path="/editor/creative" element={<CreativeResumeEditor />} />
 <Route path="/editor/Black_and_Gold" element={<BlackGoldResumeEditor/>} />
+<Route path="/editor/premiumfresher" element={<PremiumfresherResumeEditor/>} />
 <Route path="/editor/green_and_yellow" element={<GreenYellowResumeEditor/>} />
 <Route path="/editor/internship" element={<InternshipResumeEditor/>} />
 <Route path="/editor/career" element={<CareerChangeResumeEditor/>} />
@@ -119,8 +147,10 @@ function App() {
 <Route path="/portfolio/modern/:username" element={<ModernTemplatePortfolioPage/>} />
 <Route path="/portfolio/fresher/:username" element={<FresherTemplatePortfolioPage/>} />
 <Route path="/portfolio/experienced/:username" element={<ExperiencedTemplatePortfolioPage/>} />
+<Route path="/portfolio/twosidedexperienced/:username" element={<TwosidedexperiencedPortfolioPage/>} />
 <Route path="/portfolio/creative/:username" element={<CreativeTemplatePortfolioPage/>} />
 <Route path="/portfolio/Black_and_Gold/:username" element={<BlackGoldResumefolioPage/>} />
+<Route path="/portfolio/premiumfresher/:username" element={<PremiumfresherportfolioPage/>} />
 <Route path="/portfolio/green_and_yellow/:username" element={<GreenYellowPortfolioPage/>} />
 <Route path="/portfolio/internship/:username" element={<InternshipPortfolioPage/>} />
 <Route path="/portfolio/career/:username" element={<CareerChangePortfolioPage/>} />
@@ -163,6 +193,29 @@ function App() {
 <Route path="/editor/christmas" element={<ChristmasInvitationEditor/>} />
 <Route path="/editor/ugadi" element={<UgadiInvitationEditor/>} />
 <Route path="/editor/firstbirthday" element={<FirstbirthdayInvitationEditor/>} />
+
+
+<Route path="/editor/lifedashboard" element={<Lifedashboard/>} />
+<Route path="/editor/lifedashboard1" element={<Lifedashboard1/>} />
+<Route path="/editor/lifedashboard2" element={<Lifedashboard2/>} />
+<Route path="/editor/decisionmaking" element={<Decisionmaking/>} />
+<Route path="/editor/decisionmaking1" element={<Decisionmaking1/>} />
+<Route path="/editor/decisionmaking2" element={<Decisionmaking2/>} />
+<Route path="/editor/weeklyplanner" element={<Weeklyplanner/>} />
+<Route path="/editor/weeklyplanner1" element={<Weeklyplanner1/>} />
+<Route path="/editor/weeklyplanner2" element={<Weeklyplanner2/>} />
+<Route path="/editor/goalssystem" element={<Goalssystem/>} />
+<Route path="/editor/goalssystem1" element={<Goalssystem1/>} />
+<Route path="/editor/goalssystem2" element={<Goalssystem2/>} />
+<Route path="/editor/habits_routinetracker" element={<HabitsRoutinetracker/>} />
+<Route path="/editor/habits_routinetracker1" element={<HabitsRoutinetracker1/>} />
+<Route path="/editor/habits_routinetracker2" element={<HabitsRoutinetracker2/>} />
+<Route path="/editor/financeoverview" element={<Financeoverview/>} />
+<Route path="/editor/financeoverview1" element={<Financeoverview1/>} />
+<Route path="/editor/financeoverview2" element={<Financeoverview2/>} />
+
+
+
       </Routes>
     </Router>
     </>

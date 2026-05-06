@@ -1,0 +1,55 @@
+.lifeweeklyplanner2_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/weeklyplanner2_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  margin-bottom: 24PX;   /* smaller clean gap */
+  margin-left: 175px;
+  color: black;
+}
+.weeklyplanner2_grid {
+  display: flex;
+}
+.weeklyplanner2_priorities_card {
+  background: rgb(83, 15, 102);
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;margin-left: 130px;
+}
+.weeklyplanner2_schedule_card {
+  background: rgb(83, 15, 102);
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;margin-left: 30px;
+}
+.weeklyplanner2_habit_card {
+  background: rgb(83, 15, 102);
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;margin-left: 160px;
+}
+.weeklyplanner2_reflection_card {
+  background: rgb(83, 15, 102);
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;;margin-left: 30px;
+}
+.weeklyplanner2date-card{
+    color: rgb(83, 15, 102);
+}
+.weekly2_header{
+  font-size: 13px;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+@media (max-width:768px){
+.lifeweeklyplanner2_pdf-page {
+  margin-left: 500px;
+}
+}

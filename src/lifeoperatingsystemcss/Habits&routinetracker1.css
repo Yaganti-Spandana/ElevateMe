@@ -1,0 +1,77 @@
+.lifehabit1_pdf-page {
+  width: 800;
+    height: 540;
+  background-image: url("../images/lifedashboard/habits1_background.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no repeating */
+  min-height: 100vh;     
+  position: relative;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  color: white;
+  margin-left: 50px;
+}
+.habits1_resume-content {
+   display: grid;
+  grid-template-columns: repeat(2, 250px); /* 2 columns */
+  column-gap: 230px; /* horizontal gap between left and right */
+  row-gap: 20px;    /* vertical gap */
+  justify-content: center;
+}
+.habits1_grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.habit1_dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  margin: auto;
+  cursor: pointer;
+}
+
+.habit1_dot.active {
+  background: #22c55e;
+  border-color: #22c55e;
+}
+.habit1_today{
+  background: #c97317;
+  color: white;
+  border-radius: 12px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 22px;
+}
+.habit1_notes {
+  background: #c97317;
+  color: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.habit1_today h4,
+.habit1_notes h4 {
+  margin-bottom: 8px;
+}
+
+/* CHECKBOX */
+.habit1_today label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.habit1_display{
+  margin-left: 10px;
+}
+@media (max-width:768px){
+  .lifehabit1_pdf-page  {
+  margin-left: 400px;
+}
+}
