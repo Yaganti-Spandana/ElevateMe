@@ -230,9 +230,8 @@ const circumference = 2 * Math.PI * radius;
 
         <div className="finance_pdf-page" ref={financeRef}>
           <div className="finance_resume-content">
-
           <h3>{}</h3>
-  <p style={{color:"#dfb552",fontSize:"15px",marginLeft:"500px"}}>{formattedDate}</p>
+  <p style={{color:"#dfb552",fontSize:"15px",marginLeft:"520px",marginTop:"20px"}}>{formattedDate}</p>
 
           <div className="finance_finance-grid">
             <div className="finance_l1">Income <h4>${data.income}</h4></div>
@@ -317,8 +316,7 @@ const circumference = 2 * Math.PI * radius;
           </div>
         </div>
       </div>
-      </div>
-    </div>
+      </div></div>
   );
 };
 
