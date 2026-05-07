@@ -337,13 +337,11 @@ const weekDays = getWeekDays(selectedWeekStart);
                 <div className="dashboard">
 
           {/* HEADER */}
-          <div className="weekly_header">
-            <div>
+          <div className="weekly1_header">
               <div className="weeklyplannerdate-card">
   <strong>
     {weekDays[0].date} - {weekDays[6].date}
   </strong>
-</div>
             </div>
             <div style={{color:"rgb(83, 15, 102)",display:"flex",marginLeft:"500px",fontSize:"13px",marginTop:"-20px"}}>
               <span style={{color:"rgb(83, 15, 102)"}}>Focus Theme:</span>
@@ -358,7 +356,7 @@ const weekDays = getWeekDays(selectedWeekStart);
             <div className="weeklyplanner1_priorities_card">
               <h4>Top 3 Priorities</h4>
               {data.priorities.map((p, i) => (
-                <p key={i} style={{fontSize:"15px"}}>{i+1}. {p}</p>
+                <p key={i} style={{fontSize:"12px"}}>{i+1}. {p}</p>
               ))}
             </div>
             
@@ -366,15 +364,15 @@ const weekDays = getWeekDays(selectedWeekStart);
               <h4 style={{fontSize:"12px"}}>Weekly Schedule</h4>
             <table  style={{backgroundColor:"rgb(83, 15, 102)",fontSize:"10px"}}>
             {data.schedule_days.map((day, i) => (
-      <th key={i} style={{color:"white"}}>{day}</th>
+      <th key={i} style={{color:"white",fontSize:"8px"}} >{day}</th>
     ))}
             <tbody>
   {data.schedule.map((row, i) => (
     <tr key={i}>
-      <td>{row.label}</td>
+      <td style={{fontSize:"8px"}}>{row.label}</td>
 
       {row.days.map((cell, j) => (
-        <td key={j}>{cell}</td>
+        <td key={j} style={{fontSize:"8px"}}>{cell}</td>
       ))}
     </tr>
   ))}
@@ -412,12 +410,12 @@ const weekDays = getWeekDays(selectedWeekStart);
             <div className="weeklyplanner1_reflection_card">
   <h4>Weekly Goals</h4>
 
-  <p>
-    <b>Goal 1:</b> {data.weeklyGoals.goal1}
+  <p style={{fontSize:"12px"}} >
+    <b style={{fontSize:"12px"}}>Goal 1:</b> {data.weeklyGoals.goal1}
   </p>
 
-  <p>
-    <b>Goal 2:</b> {data.weeklyGoals.goal2}
+  <p style={{fontSize:"12px"}}>
+    <b style={{fontSize:"12px"}}>Goal 2:</b> {data.weeklyGoals.goal2}
   </p>
 </div>
 

@@ -5,7 +5,6 @@
   background-size: cover;        /* fills screen */
   background-position: center;   /* keeps image centered */
   background-repeat: no-repeat;  /* no repeating */
-  min-height: 100vh;     
   position: relative;
   box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   border-radius: 6px;
@@ -60,6 +59,6 @@
 
 @media (max-width:768px){
 .lifedashboard1_pdf-page {
-  margin-left: 500px;
+  margin-left: 100px;
 }
 }

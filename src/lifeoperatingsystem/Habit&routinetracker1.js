@@ -219,25 +219,25 @@ const weekDays = getWeekDays(selectedWeekStart);
   </strong>
 </div>
 
-            <table style={{marginTop:"10px",fontSize:"10px",marginLeft:"10px",width:"200px"}}>
+            <table style={{marginTop:"10px",fontSize:"10px",marginLeft:"10px",width:"200px"}} className="habits_table">
               <thead>
-                <tr>
-                  <th>Habit</th>
+                <tr className="habits_border">
+                  <th className="habits_border">Habit</th>
                   {["M","T","W","T","F","S","S"].map(d => (
-                    <th key={d}>{d}</th>
+                    <th key={d} className="habits_border">{d}</th>
                   ))}
                 </tr>
               </thead>
 
               <tbody>
                 {data.habits.map((h, i) => (
-                  <tr key={i}>
-                    <td style={{fontSize:"10px"}}>{h.name}</td>
+                  <tr key={i} className="habits_border">
+                    <td style={{fontSize:"10px"}} className="habits_border">{h.name}</td>
 
                     {h.days.map((d, j) => (
-                      <td key={j}>
+                      <td key={j} className="habits_border">
                         <div
-                          className={d ? "habit1_dot active" : "habit1_dot"}
+                          className={d ? "dot active" : "dot"}
                           onClick={() => toggleDay(i, j)}
                         />
                       </td>
