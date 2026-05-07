@@ -4,13 +4,22 @@
   background-image: url("../images/lifedashboard/habits2_background.png");
   background-size: cover;        /* fills screen */
   background-position: center;   /* keeps image centered */
-  background-repeat: no-repeat;  /* no repeating */
-  min-height: 100vh;     
+  background-repeat: no-repeat;  /* no repeating */   
   position: relative;
   box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   border-radius: 6px;
   color: white;
   margin-left: 180px;
+  padding-top: 80px;
+}
+.habits2_resume-content {
+   display: grid;
+  grid-template-columns: repeat(2, 250px); /* 2 columns */
+  column-gap: 230px; /* horizontal gap between left and right */
+  row-gap: 20px;    /* vertical gap */
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 90px;
 }
 .habit2_date-card{
     color: #c97317;
@@ -36,6 +45,7 @@
   padding: 16px;
   margin-left: 100px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .habit2_today label {
   display: block;
@@ -48,6 +58,7 @@
   border-radius: 12px;
   margin-left: 5px;
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 50px 10px;
 }
 @media (max-width:768px){

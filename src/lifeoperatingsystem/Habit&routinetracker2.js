@@ -211,7 +211,7 @@ const weekDays = getWeekDays(selectedWeekStart);
       <div className="lifedashboard_editor-preview-wrapper">
 
         <div className="lifehabit2_pdf-page" ref={habitRef}>
-          <div className="habits_resume-content">
+          <div className="habits2_resume-content">
             <div className="dashboard">
             <h3>{}</h3>
             <div className="habit2_date-card">
@@ -220,23 +220,23 @@ const weekDays = getWeekDays(selectedWeekStart);
   </strong>
 </div>
 <div className="habit2-container">
-            <table style={{marginTop:"10px",fontSize:"10px",marginLeft:"50px"}}>
+            <table style={{marginTop:"0px",fontSize:"10px",marginLeft:"50px"}} className="habits_table">
               <thead>
-                <tr>
-                  <th style={{fontSize:"10px"}}>Habit</th>
+                <tr className="habits_border">
+                  <th className="habits_border">Habit</th>
                   {["M","T","W","T","F","S","S"].map(d => (
-                    <th key={d} style={{fontSize:"10px"}}>{d}</th>
+                    <th key={d} className="habits_border">{d}</th>
                   ))}
                 </tr>
               </thead>
 
               <tbody>
                 {data.habits.map((h, i) => (
-                  <tr key={i}>
-                    <td style={{fontSize:"10px"}}>{h.name}</td>
+                  <tr key={i} className="habits_border">
+                    <td style={{fontSize:"10px"}} className="habits_border">{h.name}</td>
 
                     {h.days.map((d, j) => (
-                      <td key={j}>
+                      <td key={j} className="habits_border">
                         <div
                           className={d ? "dot active" : "dot"}
                           onClick={() => toggleDay(i, j)}
