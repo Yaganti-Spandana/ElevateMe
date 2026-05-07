@@ -229,7 +229,7 @@ const circumference = 2 * Math.PI * radius;
       <div className="finance_editor-preview-wrapper">
 
         <div className="finance2_pdf-page" ref={financeRef}>
-          <div className="finance_resume-content">
+          <div className="finance2_resume-content">
             <div className="dashboard">
 
           <h3>{}</h3>
