@@ -46,7 +46,7 @@
   border-radius: 6px;
   margin-bottom: 24PX;   /* smaller clean gap */
   color: white;
-  margin-left: 250px;
+  margin-left: 198px;
 }
 .goalsystem_editor-preview-wrapper {
   flex: 1.7;
@@ -195,6 +195,6 @@ width:90%;
 height:700px !important;
 }
 .goalsystem_pdf-page {
-  margin-left: 485px;
+  margin-left: 530px;
 }
 }
