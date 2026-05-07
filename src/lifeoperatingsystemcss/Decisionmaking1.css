@@ -50,11 +50,11 @@
   background: #8b1b3b;
   color: white;
   border-radius: 10px;
-  padding:0px 15px;
+  padding:0px 0px;
   border: 1px solid #e5e7eb;
   margin-top: 10px;
-  margin-left: 325px;
-  margin-right: -200px;
+  margin-left: 335px;
+  margin-right: -340px !important;
 }
 .decision1_pros-cons {
   display: flex;
@@ -97,6 +97,6 @@
 }
 @media (max-width:768px){
 .lifedecisionmaking1_pdf-page {
-  margin-left: 500px;
+  margin-left: 550px;
 }
 }
