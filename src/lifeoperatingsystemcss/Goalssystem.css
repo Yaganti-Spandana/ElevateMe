@@ -40,8 +40,7 @@
   background-image: url("../images/lifedashboard/goalsystem_background.png");
   background-size: cover;        /* fills screen */
   background-position: center;   /* keeps image centered */
-  background-repeat: no-repeat;  /* no repeating */
-  min-height: 100vh;     
+  background-repeat: no-repeat;  /* no repeating */ 
   position: relative;
   box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   border-radius: 6px;

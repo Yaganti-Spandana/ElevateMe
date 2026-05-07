@@ -202,7 +202,7 @@ border: 2px solid rgb(63, 5, 5);
   justify-content: space-between;
   align-items: flex-start;
 }
-.table4 tr,td,th{
+.table4_border{
   border: 3px solid rgb(106, 7, 7) !important;
 }
 .table4 {

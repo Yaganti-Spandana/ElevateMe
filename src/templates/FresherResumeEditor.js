@@ -338,20 +338,20 @@ const updateAchievement = createUpdater(setAchievements);
     <h3 className="section-heading4">Education</h3>
 
     <table className="table4" style={{fontSize:"12px"}}>
-      <thead>
-        <tr>
-          <th>DEGREE</th>
-          <th>INSTITUTION</th>
-          <th>YEAR</th>
+      <thead >
+        <tr className="table4_border">
+          <th className="table4_border">DEGREE</th>
+          <th className="table4_border">INSTITUTION</th>
+          <th className="table4_border">YEAR</th>
         </tr>
       </thead>
 
       <tbody>
         {education.map((edu, idx) => (
-          <tr key={idx}>
-            <td><strong>{edu.degree}</strong></td>
-            <td>{edu.institution}</td>
-            <td>{edu.year}</td>
+          <tr key={idx} className="table4_border">
+            <td className="table4_border"><strong>{edu.degree}</strong></td>
+            <td className="table4_border">{edu.institution}</td>
+            <td className="table4_border">{edu.year}</td>
           </tr>
         ))}
       </tbody>
