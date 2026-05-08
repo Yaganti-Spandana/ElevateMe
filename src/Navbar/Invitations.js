@@ -38,12 +38,17 @@ import ugadi_invitation1 from "../images/ugadi/ugadi_invitation1.png";
 import ugadi_invitation2 from "../images/ugadi/ugadi_invitation2.png";
 import firstbirthday_invitation1 from "../images/firstbirthday/firstbirthday_invitation1.png"; 
 import firstbirthday_invitation2 from "../images/firstbirthday/firstbirthday_invitation2.png";
+import wedding2_invitation from "../images/wedding2/wedding2_invitation.png";
+import mehandi_invitation from "../images/mehandi/mehandi_invitation.png";
+import networkingevent_invitation from "../images/networkingevent/networkingevent_invitation.png";
+import artexhibition_invitation from "../images/artexhibition/artexhibition_invitation.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
 
 import "../Home.css";
 const templates = [
+  
   {
     id: "techfest",
     name: "Tech Fest Invitation",
@@ -157,6 +162,27 @@ const templates = [
     categories: ["Festivals & Religious"],
   },
   {
+    id: "artexhibition",
+    name: "Art Exhibition Invitation",
+    dname: "Art Exhibition Event Invitation",
+    images: [artexhibition_invitation], 
+    categories: ["Education & Student Events"]
+  },
+   {
+    id: "networkingevent",
+    name: "Networking Event Invitation",
+    dname: "Networking Event Invitation",
+    images: [networkingevent_invitation], 
+    categories: ["Education & Student Events"]
+  },
+  {
+    id: "mehandi",
+    name: "Mehandi Invitation",
+    dname: "Mehandi Invitation",
+    images: [mehandi_invitation], 
+    categories: ["Wedding & Pre-Wedding"]
+  },
+  {
     id: "wedding1",
     name: "Wedding Invitation",
     dname: "Wedding Invitation",
@@ -218,6 +244,13 @@ const templates = [
     dname: "Photo Collage Birthday Invitation",
     categories: ["Personal Celebrations"],
     images: [collage_invitation], 
+  },
+  {
+    id: "temple_wedding",
+    name: "Wedding Invitation",
+    dname: "Wedding Invitation",
+    images: [wedding2_invitation], 
+    categories: ["Wedding & Pre-Wedding"]
   },
   {
     id: "unicornbirthday",

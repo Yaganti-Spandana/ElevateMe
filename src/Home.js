@@ -112,6 +112,10 @@ import weeklyplanner2 from "./images/lifedashboard/weeklyplanner2.png";
 import goalssystem2 from "./images/lifedashboard/goalssystem2.png"
 import habits2 from "./images/lifedashboard/habits2.png"
 import financeoverview2 from "./images/lifedashboard/financeoverview2.png"
+import wedding2_invitation from "./images/wedding2/wedding2_invitation.png";
+import mehandi_invitation from "./images/mehandi/mehandi_invitation.png";
+import networkingevent_invitation from "./images/networkingevent/networkingevent_invitation.png";
+import artexhibition_invitation from "./images/artexhibition/artexhibition_invitation.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -538,6 +542,27 @@ const templates = [
     category: "🎉 Invitations",
   },
   {
+    id: "artexhibition",
+    name: "Art Exhibition Invitation",
+    dname: "Art Exhibition Event Invitation",
+    images: [artexhibition_invitation], 
+    category: "🎉 Invitations",
+  },
+   {
+    id: "networkingevent",
+    name: "Networking Event Invitation",
+    dname: "Networking Event Invitation",
+    images: [networkingevent_invitation], 
+    category: "🎉 Invitations",
+  },
+  {
+    id: "mehandi",
+    name: "Mehandi Invitation",
+    dname: "Mehandi Invitation",
+    images: [mehandi_invitation], 
+    category: "🎉 Invitations",
+  },
+  {
     id: "gruhapravesham1",
     name: "Gruhapravesham Invitation",
     dname: "Gruhapravesham House Warming Invitation",
@@ -557,6 +582,13 @@ const templates = [
     dname: "Micky Mouse Theme Birthday Invitation",
     images: [micky_mouse_birthday], 
     category: "🎉 Invitations",
+  },
+  {
+    id: "wedding2",
+    name: "Wedding Invitation",
+    dname: "Venkateswara swamy theme Wedding Invitation",
+    category: "🎉 Invitations",
+    images: [wedding_invitation1], 
   },
   {
     id: "namingceremony1",
@@ -580,10 +612,10 @@ const templates = [
     category: "🎉 Invitations",
   },
   {
-    id: "wedding2",
+    id: "temple_wedding",
     name: "Wedding Invitation",
-    dname: "Venkateswara swamy theme Wedding Invitation",
-    images: [wedding_invitation1], 
+    dname: "Wedding Invitation",
+    images: [wedding2_invitation], 
     category: "🎉 Invitations",
   },
   {

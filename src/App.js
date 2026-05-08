@@ -97,6 +97,10 @@ import TwosidedexperiencedPortfolioPage from "./portfolios/TwosidedexperiencedPo
 import PremiumfresherResumeEditor from "./templates/PremiumfresherResumeEditor";
 import PremiumfresherportfolioPage from "./portfolios/PremiumfresherPortfolioPage";
 import ScrollToTop from "./ScrollToTop";
+import Wedding1InvitationEditor from "./invitations/Wedding1InvitationEditor";
+import MehandiInvitationEditor from "./invitations/MehandiInvitationEditor";
+import NetworkingeventInvitationEditor from "./invitations/NetworkingeventInvitationEditor";
+import ArtexhibitionInvitationEditor from "./invitations/ArtexhibitionInvitationEditor";
 
 function App() {
   useGA();
@@ -193,6 +197,10 @@ function App() {
 <Route path="/editor/christmas" element={<ChristmasInvitationEditor/>} />
 <Route path="/editor/ugadi" element={<UgadiInvitationEditor/>} />
 <Route path="/editor/firstbirthday" element={<FirstbirthdayInvitationEditor/>} />
+<Route path="/editor/temple_wedding" element={<Wedding1InvitationEditor/>} />
+<Route path="/editor/mehandi" element={<MehandiInvitationEditor/>} />
+<Route path="/editor/networkingevent" element={<NetworkingeventInvitationEditor/>} />
+<Route path="/editor/artexhibition" element={<ArtexhibitionInvitationEditor/>} />
 
 
 <Route path="/editor/lifedashboard" element={<Lifedashboard/>} />
