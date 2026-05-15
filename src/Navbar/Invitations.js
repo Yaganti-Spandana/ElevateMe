@@ -80,168 +80,6 @@ import Footer from "../Navbar/Footer";
 import "../Home.css";
 const templates = [
   {
-    id: "kidsentertainmentevents",
-    name: "Kids Entertainment Events Invitation",
-    dname: "Kids Entertainment Events Invitation",
-    images: [kidsentertainmentevents_invitation], 
-    categories: ["Entertainment & Public Events"]
-  },
-  {
-    id: "theatredrama",
-    name: "Theatre & Drama Invitation",
-    dname: "Theatre & Drama Invitation",
-    images: [theatredrama_invitation], 
-    categories: ["Entertainment & Public Events"]
-  },
-  {
-    id: "concert",
-    name: "Concert Invitation",
-    dname: "Concert Invitation",
-    images: [concert_invitation], 
-    categories: ["Entertainment & Public Events"]
-  },
-  {
-    id: "leadershiptraining",
-    name: "Leadership Training Invitation",
-    dname: "Leadership Training Invitation",
-    images: [leadershiptraining_invitation1,leadershiptraining_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "skilldevelopmentsessions",
-    name: "Skill Development Sessions Invitation",
-    dname: "Skill Development Sessions Invitation",
-    images: [skilldevelopmentsessions_invitation1,skilldevelopmentsessions_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "corporatetrainingprograms",
-    name: "Corporate Training Programs Invitation",
-    dname: "Corporate Training Programs Invitation",
-    images: [corporatetrainingprograms_invitation1,corporatetrainingprograms_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "guestspeakersessions",
-    name: "Guest Speaker Sessions Invitation",
-    dname: "Guest Speaker Sessions Invitation",
-    images: [guestspeakersessions_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "paneldiscussions",
-    name: "Panel Discussions Invitation",
-    dname: "Panel Discussions Invitation",
-    images: [paneldiscussions_invitation1,paneldiscussions_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "conferences",
-    name: "Conferences Invitation",
-    dname: "Conferences Invitation",
-    images: [conferences_invitation1,conferences_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "executivegatherings",
-    name: "Executive Gatherings Invitation",
-    dname: "Executive Gatherings Invitation",
-    images: [executivegatherings_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "industryroundtables",
-    name: "Industry Roundtables Invitation",
-    dname: "Industry Roundtables Invitation",
-    images: [industryroundtables_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "leadershipmeetups",
-    name: "Leadership Meetups Invitation",
-    dname: "Leadership Meetups Invitation",
-    images: [leadershipmeetups_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "bussinessmixers",
-    name: "Bussiness Mixers Invitation",
-    dname: "Bussiness Mixers Invitation",
-    images: [bussinessmixers_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "employeeappreciationevent",
-    name: "Employee Appreciation Event Invitation",
-    dname: "Employee Appreciation Event Invitation",
-    images: [employeeappreciationevent_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "teamachievementevent",
-    name: "Team Achievement Event Invitation",
-    dname: "Team Achievement Event Invitation",
-    images: [teamachievementevent_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "successcelebration",
-    name: "Success Celebration Invitation",
-    dname: "Success Celebration Invitation",
-    images: [successcelebration_invitation1,successcelebration_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "officeopeningceremony",
-    name: "Office Opening Ceremony Invitation",
-    dname: "Office Opening Ceremony Invitation",
-    images: [officeopeningceremony_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "companyanniversary",
-    name: "Company Anniversary Invitation",
-    dname: "Company Anniversary Invitation",
-    images: [companyanniversary_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "strategymeeting",
-    name: "Strategy Meeting Invitation",
-    dname: "Strategy Meeting Invitation",
-    images: [strategymeeting_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "shareholdersmeeting",
-    name: "Share Holders Meeting Invitation",
-    dname: "Share Holders Meeting Invitation",
-    images: [shakeholdersmeeting_invitation1,shakeholdersmeeting_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "Annualgeneralmeeting",
-    name: "Annual General Meeting Invitation",
-    dname: "Annual General Meeting Invitation",
-    images: [Annualgeneralmeeting_invitation1,Annualgeneralmeeting_invitation2], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "boardmeeting",
-    name: "Board Meeting Invitation",
-    dname: "Board Meeting Invitation",
-    images: [boardmeeting_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  {
-    id: "bussinessmeeting",
-    name: "Bussiness Meeting Invitation",
-    dname: "Bussiness Meeting Invitation",
-    images: [bussinessmeeting_invitation], 
-    categories: ["Corporate & Professional"]
-  },
-  
-  {
     id: "techfest",
     name: "Tech Fest Invitation",
     dname: "Tech Fest Invitation",
@@ -444,6 +282,168 @@ const templates = [
     images: [wedding2_invitation], 
     categories: ["Wedding & Pre-Wedding"]
   },
+  {
+    id: "kidsentertainmentevents",
+    name: "Kids Entertainment Events Invitation",
+    dname: "Kids Entertainment Events Invitation",
+    images: [kidsentertainmentevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "theatredrama",
+    name: "Theatre & Drama Invitation",
+    dname: "Theatre & Drama Invitation",
+    images: [theatredrama_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "concert",
+    name: "Concert Invitation",
+    dname: "Concert Invitation",
+    images: [concert_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "leadershiptraining",
+    name: "Leadership Training Invitation",
+    dname: "Leadership Training Invitation",
+    images: [leadershiptraining_invitation1,leadershiptraining_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "skilldevelopmentsessions",
+    name: "Skill Development Sessions Invitation",
+    dname: "Skill Development Sessions Invitation",
+    images: [skilldevelopmentsessions_invitation1,skilldevelopmentsessions_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "corporatetrainingprograms",
+    name: "Corporate Training Programs Invitation",
+    dname: "Corporate Training Programs Invitation",
+    images: [corporatetrainingprograms_invitation1,corporatetrainingprograms_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "guestspeakersessions",
+    name: "Guest Speaker Sessions Invitation",
+    dname: "Guest Speaker Sessions Invitation",
+    images: [guestspeakersessions_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "paneldiscussions",
+    name: "Panel Discussions Invitation",
+    dname: "Panel Discussions Invitation",
+    images: [paneldiscussions_invitation1,paneldiscussions_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "conferences",
+    name: "Conferences Invitation",
+    dname: "Conferences Invitation",
+    images: [conferences_invitation1,conferences_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "executivegatherings",
+    name: "Executive Gatherings Invitation",
+    dname: "Executive Gatherings Invitation",
+    images: [executivegatherings_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "industryroundtables",
+    name: "Industry Roundtables Invitation",
+    dname: "Industry Roundtables Invitation",
+    images: [industryroundtables_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "leadershipmeetups",
+    name: "Leadership Meetups Invitation",
+    dname: "Leadership Meetups Invitation",
+    images: [leadershipmeetups_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "bussinessmixers",
+    name: "Bussiness Mixers Invitation",
+    dname: "Bussiness Mixers Invitation",
+    images: [bussinessmixers_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "employeeappreciationevent",
+    name: "Employee Appreciation Event Invitation",
+    dname: "Employee Appreciation Event Invitation",
+    images: [employeeappreciationevent_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "teamachievementevent",
+    name: "Team Achievement Event Invitation",
+    dname: "Team Achievement Event Invitation",
+    images: [teamachievementevent_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "successcelebration",
+    name: "Success Celebration Invitation",
+    dname: "Success Celebration Invitation",
+    images: [successcelebration_invitation1,successcelebration_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "officeopeningceremony",
+    name: "Office Opening Ceremony Invitation",
+    dname: "Office Opening Ceremony Invitation",
+    images: [officeopeningceremony_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "companyanniversary",
+    name: "Company Anniversary Invitation",
+    dname: "Company Anniversary Invitation",
+    images: [companyanniversary_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "strategymeeting",
+    name: "Strategy Meeting Invitation",
+    dname: "Strategy Meeting Invitation",
+    images: [strategymeeting_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "shareholdersmeeting",
+    name: "Share Holders Meeting Invitation",
+    dname: "Share Holders Meeting Invitation",
+    images: [shakeholdersmeeting_invitation1,shakeholdersmeeting_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "Annualgeneralmeeting",
+    name: "Annual General Meeting Invitation",
+    dname: "Annual General Meeting Invitation",
+    images: [Annualgeneralmeeting_invitation1,Annualgeneralmeeting_invitation2], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "boardmeeting",
+    name: "Board Meeting Invitation",
+    dname: "Board Meeting Invitation",
+    images: [boardmeeting_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  {
+    id: "bussinessmeeting",
+    name: "Bussiness Meeting Invitation",
+    dname: "Bussiness Meeting Invitation",
+    images: [bussinessmeeting_invitation], 
+    categories: ["Corporate & Professional"]
+  },
+  
   {
     id: "unicornbirthday",
     name: "Birthday Invitation",
