@@ -101,6 +101,29 @@ import Wedding1InvitationEditor from "./invitations/Wedding1InvitationEditor";
 import MehandiInvitationEditor from "./invitations/MehandiInvitationEditor";
 import NetworkingeventInvitationEditor from "./invitations/NetworkingeventInvitationEditor";
 import ArtexhibitionInvitationEditor from "./invitations/ArtexhibitionInvitationEditor";
+import BussinessmeetingInvitationEditor from "./invitations/BussinessmeetingInvitationEditor";
+import BoardmeetingInvitationEditor from "./invitations/BoardmeetingInvitationEditor";
+import AnnualgeneralmeetingInvitationEditor from "./invitations/AnnualgeneralmeetingInvitationEditor";
+import ShareholdersmeetingInvitationEditor from "./invitations/ShareholdermeetingInvitation";
+import StrategymeetingeventInvitationEditor from "./invitations/StrategymeetingInvitationEditor";
+import CompanyanniversaryInvitationEditor from "./invitations/CompanyanniversaryInvitationEditor";
+import OfficeopeningceremonyeventInvitationEditor from "./invitations/OfficeopeningceremonyInvitationEditor";
+import SuccesscelebrationInvitationEditor from "./invitations/SuccesscelebrationInvitationEditor";
+import TeamachievementeventInvitationEditor from "./invitations/TeamachievementeventInvitationEditor";
+import EmployeeappreciationeventInvitationEditor from "./invitations/EmployeeappreciationeventInvitationEditor";
+import BussinessmixersInvitationEditor from "./invitations/BussinessmixersInviationEditor";
+import LeadershipmeetupsInvitationEditor from "./invitations/LeadershipmeetupsInvitationEditor";
+import IndustryroundtableseventInvitationEditor from "./invitations/IndustryroundtablesInvitationEditor";
+import ExecutivegatheringsInvitationEditor from "./invitations/ExecutivegatheringsInvitationEditor";
+import ConferencesInvitationEditor from "./invitations/ConferencesInvitationEditor";
+import PaneldiscussionsInvitationEditor from "./invitations/PaneldiscussionsInvitationEditor";
+import GuestspeakersessionseventInvitationEditor from "./invitations/GuestspeakersessionsInvitationEditor";
+import CorporatetrainingprogramsInvitationEditor from "./invitations/CorporatetrainingprogramsInvitationEditor";
+import SkilldevelopmentsessionsInvitationEditor from "./invitations/SkilldevelopmentsessionsInvitationEditor";
+import LeadershiptrainingInvitationEditor from "./invitations/LeadershiptrainingInvitationEditor";
+import ConcertInvitationEditor from "./invitations/ConcertInvitationEditor";
+import TheatredramaInvitationEditor from "./invitations/TheatredramaInvitationEditor";
+import KidsentertainmenteventsInvitationEditor from "./invitations/KidsentertainmenteventsInvitationEditor";
 
 function App() {
   useGA();
@@ -201,6 +224,29 @@ function App() {
 <Route path="/editor/mehandi" element={<MehandiInvitationEditor/>} />
 <Route path="/editor/networkingevent" element={<NetworkingeventInvitationEditor/>} />
 <Route path="/editor/artexhibition" element={<ArtexhibitionInvitationEditor/>} />
+<Route path="/editor/bussinessmeeting" element={<BussinessmeetingInvitationEditor/>} />
+<Route path="/editor/boardmeeting" element={<BoardmeetingInvitationEditor/>} />
+<Route path="/editor/Annualgeneralmeeting" element={<AnnualgeneralmeetingInvitationEditor/>} />
+<Route path="/editor/shareholdersmeeting" element={<ShareholdersmeetingInvitationEditor/>} />
+<Route path="/editor/strategymeeting" element={<StrategymeetingeventInvitationEditor/>} />
+<Route path="/editor/companyanniversary" element={<CompanyanniversaryInvitationEditor/>} />
+<Route path="/editor/officeopeningceremony" element={<OfficeopeningceremonyeventInvitationEditor/>} />
+<Route path="/editor/successcelebration" element={<SuccesscelebrationInvitationEditor/>} />
+<Route path="/editor/teamachievementevent" element={<TeamachievementeventInvitationEditor/>} />
+<Route path="/editor/employeeappreciationevent" element={<EmployeeappreciationeventInvitationEditor/>} />
+<Route path="/editor/bussinessmixers" element={<BussinessmixersInvitationEditor/>} />
+<Route path="/editor/leadershipmeetups" element={<LeadershipmeetupsInvitationEditor/>} />
+<Route path="/editor/industryroundtables" element={<IndustryroundtableseventInvitationEditor/>} />
+<Route path="/editor/executivegatherings" element={<ExecutivegatheringsInvitationEditor/>} />
+<Route path="/editor/conferences" element={<ConferencesInvitationEditor/>} />
+<Route path="/editor/paneldiscussions" element={<PaneldiscussionsInvitationEditor/>} />
+<Route path="/editor/guestspeakersessions" element={<GuestspeakersessionseventInvitationEditor/>} />
+<Route path="/editor/corporatetrainingprograms" element={<CorporatetrainingprogramsInvitationEditor/>} />
+<Route path="/editor/skilldevelopmentsessions" element={<SkilldevelopmentsessionsInvitationEditor/>} />
+<Route path="/editor/leadershiptraining" element={<LeadershiptrainingInvitationEditor/>} />
+<Route path="/editor/concert" element={<ConcertInvitationEditor/>} />
+<Route path="/editor/theatredrama" element={<TheatredramaInvitationEditor/>} />
+<Route path="/editor/kidsentertainmentevents" element={<KidsentertainmenteventsInvitationEditor/>} />
 
 
 <Route path="/editor/lifedashboard" element={<Lifedashboard/>} />

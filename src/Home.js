@@ -116,6 +116,37 @@ import wedding2_invitation from "./images/wedding2/wedding2_invitation.png";
 import mehandi_invitation from "./images/mehandi/mehandi_invitation.png";
 import networkingevent_invitation from "./images/networkingevent/networkingevent_invitation.png";
 import artexhibition_invitation from "./images/artexhibition/artexhibition_invitation.png";
+import bussinessmeeting_invitation from "./images/bussinessmeeting/bussinessmeeting_invitation.png";
+import boardmeeting_invitation from "./images/boardmeeting/boardmeeting_invitation.png";
+import Annualgeneralmeeting_invitation1 from "./images/Annualgeneralmeeting/Annualgeneralmeeting_invitation1.png";
+import Annualgeneralmeeting_invitation2 from "./images/Annualgeneralmeeting/Annualgeneralmeeting_invitation2.png";
+import shakeholdersmeeting_invitation1 from "./images/shakeholdersmeeting/shakeholdersmeeting_invitation1.png";
+import shakeholdersmeeting_invitation2 from "./images/shakeholdersmeeting/shakeholdersmeeting_invitation2.png";
+import strategymeeting_invitation from "./images/strategymeeting/strategymeeting_invitation.png";
+import companyanniversary_invitation from "./images/companyanniversary/companyanniversary_invitation.png";
+import officeopeningceremony_invitation from "./images/officeopeningceremony/officeopeningceremony_invitation.png";
+import successcelebration_invitation1 from "./images/successcelebration/successcelebration_invitation1.png";
+import successcelebration_invitation2 from "./images/successcelebration/successcelebration_invitation2.png";
+import teamachievementevent_invitation from "./images/teamachievementevent/teamachievementevent_invitation.png";
+import employeeappreciationevent_invitation from "./images/employeeappreciationevent/employeeappreciationevent_invitation.png";
+import bussinessmixers_invitation from "./images/bussinessmixers/bussinessmixers_invitation.png";
+import leadershipmeetups_invitation from "./images/leadershipmeetups/leadershipmeetups_invitation.png";
+import industryroundtables_invitation from "./images/industryroundtables/industryroundtables_invitation.png";
+import executivegatherings_invitation from "./images/executivegatherings/executivegatherings_invitation.png";
+import conferences_invitation1 from "./images/conferences/conferences_invitation1.png";
+import conferences_invitation2 from "./images/conferences/conferences_invitation2.png";
+import paneldiscussions_invitation1 from "./images/paneldiscussions/paneldiscussions_invitation1.png";
+import paneldiscussions_invitation2 from "./images/paneldiscussions/paneldiscussions_invitation2.png";
+import guestspeakersessions_invitation from "./images/guestspeakersessions/guestspeakersessions_invitation.png";
+import corporatetrainingprograms_invitation1 from "./images/corporatetrainingprograms/corporatetrainingprograms_invitation1.png";
+import corporatetrainingprograms_invitation2 from "./images/corporatetrainingprograms/corporatetrainingprograms_invitation2.png";
+import skilldevelopmentsessions_invitation1 from "./images/skilldevelopmentsessions/skilldevelopmentsessions_invitation1.png";
+import skilldevelopmentsessions_invitation2 from "./images/skilldevelopmentsessions/skilldevelopmentsessions_invitation2.png";
+import leadershiptraining_invitation1 from "./images/leadershiptraining/leadershiptraining_invitation1.png";
+import leadershiptraining_invitation2 from "./images/leadershiptraining/leadershiptraining_invitation2.png";
+import concert_invitation from "./images/concert/concert_invitation.png";
+import theatredrama_invitation from "./images/theatredrama/theatredrama_invitation.png";
+import kidsentertainmentevents_invitation from "./images/kidsentertainmentevents/kidsentertainmentevents_invitation.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -540,6 +571,167 @@ const templates = [
     dname: "Music Event Invitation",
     images: [musicevent_invitation1], 
     category: "🎉 Invitations",
+  },
+  {
+    id: "kidsentertainmentevents",
+    name: "Kids Entertainment Events Invitation",
+    dname: "Kids Entertainment Events Invitation",
+    images: [kidsentertainmentevents_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "theatredrama",
+    name: "Theatre & Drama Invitation",
+    dname: "Theatre & Drama Invitation",
+    images: [theatredrama_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "concert",
+    name: "Concert Invitation",
+    dname: "Concert Invitation",
+    images: [concert_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "leadershiptraining",
+    name: "Leadership Training Invitation",
+    dname: "Leadership Training Invitation",
+    images: [leadershiptraining_invitation1,leadershiptraining_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "skilldevelopmentsessions",
+    name: "Skill Development Sessions Invitation",
+    dname: "Skill Development Sessions Invitation",
+    images: [skilldevelopmentsessions_invitation1,skilldevelopmentsessions_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "corporatetrainingprograms",
+    name: "Corporate Training Programs Invitation",
+    dname: "Corporate Training Programs Invitation",
+    images: [corporatetrainingprograms_invitation1,corporatetrainingprograms_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "guestspeakersessions",
+    name: "Guest Speaker Sessions Invitation",
+    dname: "Guest Speaker Sessions Invitation",
+    images: [guestspeakersessions_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "paneldiscussions",
+    name: "Panel Discussions Invitation",
+    dname: "Panel Discussions Invitation",
+    images: [paneldiscussions_invitation1,paneldiscussions_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "conferences",
+    name: "Conferences Invitation",
+    dname: "Conferences Invitation",
+    images: [conferences_invitation1,conferences_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "executivegatherings",
+    name: "Executive Gatherings Invitation",
+    dname: "Executive Gatherings Invitation",
+    images: [executivegatherings_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "industryroundtables",
+    name: "Industry Roundtables Invitation",
+    dname: "Industry Roundtables Invitation",
+    images: [industryroundtables_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "leadershipmeetups",
+    name: "Leadership Meetups Invitation",
+    dname: "Leadership Meetups Invitation",
+    images: [leadershipmeetups_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "bussinessmixers",
+    name: "Bussiness Mixers Invitation",
+    dname: "Bussiness Mixers Invitation",
+    images: [bussinessmixers_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "employeeappreciationevent",
+    name: "Employee Appreciation Event Invitation",
+    dname: "Employee Appreciation Event Invitation",
+    images: [employeeappreciationevent_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "teamachievementevent",
+    name: "Team Achievement Event Invitation",
+    dname: "Team Achievement Event Invitation",
+    images: [teamachievementevent_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "successcelebration",
+    name: "Success Celebration Invitation",
+    dname: "Success Celebration Invitation",
+    images: [successcelebration_invitation1,successcelebration_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "officeopeningceremony",
+    name: "Office Opening Ceremony Invitation",
+    dname: "Office Opening Ceremony Invitation",
+    images: [officeopeningceremony_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "companyanniversary",
+    name: "Company Anniversary Invitation",
+    dname: "Company Anniversary Invitation",
+    images: [companyanniversary_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "strategymeeting",
+    name: "Strategy Meeting Invitation",
+    dname: "Strategy Meeting Invitation",
+    images: [strategymeeting_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "shareholdersmeeting",
+    name: "Share Holders Meeting Invitation",
+    dname: "Share Holders Meeting Invitation",
+    images: [shakeholdersmeeting_invitation1,shakeholdersmeeting_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "Annualgeneralmeeting",
+    name: "Annual General Meeting Invitation",
+    dname: "Annual General Meeting Invitation",
+    images: [Annualgeneralmeeting_invitation1,Annualgeneralmeeting_invitation2], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "boardmeeting",
+    name: "Board Meeting Invitation",
+    dname: "Board Meeting Invitation",
+    images: [boardmeeting_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
+    id: "bussinessmeeting",
+    name: "Bussiness Meeting Invitation",
+    dname: "Bussiness Meeting Invitation",
+    images: [bussinessmeeting_invitation], 
+    category: "🎉 Invitations"
   },
   {
     id: "artexhibition",
