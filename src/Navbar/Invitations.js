@@ -73,6 +73,32 @@ import leadershiptraining_invitation2 from "../images/leadershiptraining/leaders
 import concert_invitation from "../images/concert/concert_invitation.png";
 import theatredrama_invitation from "../images/theatredrama/theatredrama_invitation.png";
 import kidsentertainmentevents_invitation from "../images/kidsentertainmentevents/kidsentertainmentevents_invitation.png";
+import carnival_invitation from "../images/carnival/carnival_invitation.png";
+import funfairevents_invitation from "../images/funfairevents/funfairevents_invitation.png";
+import communityculturalevents_invitation from "../images/communityculturalevents/communityculturalevents_invitation.png";
+import moviescreenings_invitation from "../images/moviescreenings/moviescreenings_invitation.png";
+import gamingevents_invitation from "../images/gamingevents/gamingevents_invitation.png";
+import esportstournaments_invitation from "../images/esportstournaments/esportstournaments_invitation.png";
+import contentcreatorevents_invitation from "../images/contentcreatorevents/contentcreatorevents_invitation.png";
+import awardnights_invitation from "../images/awardnights/awardnights_invitation.png";
+import charityentertainmentshows_invitation from "../images/charityentertainmentshows/charityentertainmentshows_invitation.png";
+import publiclaunchevents_invitation from "../images/publiclaunchevents/publiclaunchevents_invitation.png";
+import grandopeningevents_invitation from "../images/grandopeningevents/grandopeningevents_invitation.png";
+import satyanarayanapooja_invitation from "../images/satyanarayanapooja/satyanarayanapooja_invitation.png";
+import gruhapravesham_invitation from "../images/gruhapravesham/gruhapravesham_invitation.png";
+import namingceremony1_invitation from "../images/naming_ceremony/namingceremony1_invitation.png";
+import annaprasana_invitation1 from "../images/annaprasana/annaprasana_invitation1.png";
+import annaprasana_invitation2 from "../images/annaprasana/annaprasana_invitation2.png";
+import upanayanam_invitation from "../images/upanayanam/upanayanam_invitation.png";
+import aksharabhyasam_invitation from "../images/aksharabhyasam/aksharabhyasam_invitation.png";
+import eid_invitation from "../images/eid/eid_invitation.png";
+import ramadaniftar_invitation from "../images/ramadaniftar/ramadaniftar_invitation.png";
+import nikah_invitation from "../images/nikah/nikah_invitation.png";
+import miladevents_invitation from "../images/miladevents/miladevents_invitation.png";
+import christmas1_invitation from "../images/christmas/christmas1_invitation.png";
+import churchevents_invitation from "../images/churchevents/churchevents_invitation.png";
+import baptism_invitation from "../images/baptism/baptism_invitation.png";
+import eastergatherings_invitation from "../images/eastergatherings/eastergatherings_invitation.png";
 import SearchResults from "../Navbar/SearchResults";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Navbar/Footer";
@@ -443,7 +469,181 @@ const templates = [
     images: [bussinessmeeting_invitation], 
     categories: ["Corporate & Professional"]
   },
-  
+  {
+    id: "grandopeningevents",
+    name: "Grand Opening Events Invitation",
+    dname: "Grand Opening Events Invitation",
+    images: [grandopeningevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "publiclaunchevents",
+    name: "Public Launch Events Invitation",
+    dname: "Public Launch Events Invitation",
+    images: [publiclaunchevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "charityentertainmentshows",
+    name: "Charity Entertainment Shows Invitation",
+    dname: "Charity Entertainment Shows Invitation",
+    images: [charityentertainmentshows_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "awardnights",
+    name: "Award Nights Invitation",
+    dname: "Award Nights Invitation",
+    images: [awardnights_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "contentcreatorevents",
+    name: "Content Creator Events Invitation",
+    dname: "Content Creator Events Invitation",
+    images: [contentcreatorevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "esportstournaments",
+    name: "Esports Tournaments Invitation",
+    dname: "Esports Tournaments Invitation",
+    images: [esportstournaments_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+   {
+    id: "gamingevents",
+    name: "Gaming Events Invitation",
+    dname: "Gaming Events Invitation",
+    images: [gamingevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "moviescreenings",
+    name: "Movie Screenings Invitation",
+    dname: "Movie Screenings Invitation",
+    images: [moviescreenings_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "communityculturalevents",
+    name: "Community Cultural Events Invitation",
+    dname: "Community Cultural Events Invitation",
+    images: [communityculturalevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "funfairevents",
+    name: "Fun Fair Events Invitation",
+    dname: "Fun Fair Events Invitation",
+    images: [funfairevents_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "carnival",
+    name: "Carnival Invitation",
+    dname: "Carnival Invitation",
+    images: [carnival_invitation], 
+    categories: ["Entertainment & Public Events"]
+  },
+  {
+    id: "eastergatherings",
+    name: "Easter Gatherings Invitation",
+    dname: "Easter Gatherings Invitation",
+    images: [eastergatherings_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "baptism",
+    name: "Baptism Invitation",
+    dname: "Baptism Invitation",
+    images: [baptism_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "churchevents",
+    name: "Church Prayer Gathering Invitation",
+    dname: "Church Prayer Gathering Invitation",
+    images: [churchevents_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "christmas1",
+    name: "Christmas Invitation",
+    dname: "Christmas Invitation",
+    images: [christmas1_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "miladevents",
+    name: "Milad Events Invitation",
+    dname: "Milad Events Invitation",
+    images: [miladevents_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "nikah",
+    name: "Nikah Invitation",
+    dname: "Nikah Invitation",
+    images: [nikah_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "ramadaniftar",
+    name: "Ramadan Iftar Invitation",
+    dname: "Ramadan Iftar Invitation",
+    images: [ramadaniftar_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "eid",
+    name: "Eid Invitation",
+    dname: "Eid Invitation",
+    images: [eid_invitation], 
+    categories: ["Festivals & Religious"]
+  },
+  {
+    id: "aksharabhyasam",
+    name: "Aksharabhyasam Ceremony Invitation",
+    dname: "Aksharabhyasam Ceremony Invitation",
+    images: [aksharabhyasam_invitation], 
+    categories: ["Festivals & Religious","Baby & Family"]
+  },
+  {
+    id: "upanayanam",
+    name: "Upanayanam Ceremony Invitation",
+    dname: "Upanayanam Ceremony Invitation",
+    images: [upanayanam_invitation], 
+    categories: ["Festivals & Religious","Baby & Family"]
+  },
+  {
+    id: "annaprasana",
+    name: "Annprasana Ceremony Invitation",
+    dname: "Annprasana/Feeding Ceremony Invitation",
+    images: [annaprasana_invitation1,annaprasana_invitation2], 
+    categories: ["Festivals & Religious","Baby & Family"]
+  },
+  {
+    id: "namingceremony_1",
+    name: "Naming Ceremony Invitation",
+    dname: "Naming Ceremony Invitation",
+    images: [namingceremony1_invitation], 
+    categories: ["Festivals & Religious","Baby & Family"]
+  },
+  {
+    id: "gruhapravesham_1",
+    name: "Gruhapravesham Invitation",
+    dname: "Gruhapravesham Invitation",
+    images: [gruhapravesham_invitation], 
+    categories: ["Festivals & Religious","Personal Celebrations"]
+  },
+  {
+    id: "satyanarayanapooja",
+    name: "Satyanarayana Pooja Invitation",
+    dname: "Satyanarayana Pooja Invitation",
+    images: [satyanarayanapooja_invitation], 
+    categories: ["Festivals & Religious"]
+  },
   {
     id: "unicornbirthday",
     name: "Birthday Invitation",

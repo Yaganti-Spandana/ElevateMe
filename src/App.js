@@ -124,6 +124,31 @@ import LeadershiptrainingInvitationEditor from "./invitations/Leadershiptraining
 import ConcertInvitationEditor from "./invitations/ConcertInvitationEditor";
 import TheatredramaInvitationEditor from "./invitations/TheatredramaInvitationEditor";
 import KidsentertainmenteventsInvitationEditor from "./invitations/KidsentertainmenteventsInvitationEditor";
+import CarnivalInvitationEditor from "./invitations/CarnivalInvitationEditor";
+import FunfaireventsInvitationEditor from "./invitations/FunfaireventsInvitationEditor";
+import CommunityculturaleventsInvitationEditor from "./invitations/CommunityculturaleventsInvitationEditor";
+import MoviescreeningsInvitationEditor from "./invitations/MoviescreeningsInvitationEditor";
+import GamingeventsInvitationEditor from "./invitations/GamingeventsInvitationEdidor";
+import EsportstournamentsInvitationEditor from "./invitations/EsportstournamnetsInvitationEditor";
+import ContentcreatoreventsInvitationEditor from "./invitations/ContentcreatoreventsInvitationEditor";
+import AwardnightsInvitationEditor from "./invitations/AwardnightsInvitationEditor";
+import CharityentertainmentshowsInvitationEditor from "./invitations/CharityentertainmentshowsInvitationEditor";
+import PubliclauncheventsInvitationEditor from "./invitations/PubliclauncheventsInvitationEditor";
+import GrandopeningeventsInvitationEditor from "./invitations/GrandopeningeventsInvitationEditor";
+import SatyanarayanapoojaInvitationEditor from "./invitations/SatyanarayanapoojaInvitationEditor";
+import Gruhapravesham1InvitationEditor from "./invitations/Gruhapravesham1InvitationEditor";
+import Namingceremony1InvitationEditor from "./invitations/Namingceremony1InvitationEditor";
+import AnnaprasanaInvitationEditor from "./invitations/AnnaprasanaInvitationEditor";
+import UpanayanamInvitationEditor from "./invitations/upanayanamInvitationEditor";
+import AksharabhyasamInvitationEditor from "./invitations/AksharabhyasamInvitationEditor";
+import EidInvitationEditor from "./invitations/EidInvitationEditor";
+import RamadaniftarInvitationEditor from "./invitations/RamadaniftarInvitationEditor";
+import NikahInvitationEditor from "./invitations/NikahInvitationEditor";
+import MiladeventsInvitationEditor from "./invitations/MiladeventsInvitationEditor";
+import Christmas1InvitationEditor from "./invitations/Christmas1InvitationEditor";
+import ChurcheventsInvitationEditor from "./invitations/ChurcheventsInvitationEditor";
+import BaptismInvitationEditor from "./invitations/BaptismInvitationEditor";
+import EastergatheringsInvitationEditor from "./invitations/EastergatheringsInvitationEditor";
 
 function App() {
   useGA();
@@ -247,6 +272,31 @@ function App() {
 <Route path="/editor/concert" element={<ConcertInvitationEditor/>} />
 <Route path="/editor/theatredrama" element={<TheatredramaInvitationEditor/>} />
 <Route path="/editor/kidsentertainmentevents" element={<KidsentertainmenteventsInvitationEditor/>} />
+<Route path="/editor/carnival" element={<CarnivalInvitationEditor/>} />
+<Route path="/editor/funfairevents" element={<FunfaireventsInvitationEditor/>} />
+<Route path="/editor/communityculturalevents" element={<CommunityculturaleventsInvitationEditor/>} />
+<Route path="/editor/moviescreenings" element={<MoviescreeningsInvitationEditor/>} />
+<Route path="/editor/gamingevents" element={<GamingeventsInvitationEditor/>} />
+<Route path="/editor/esportstournaments" element={<EsportstournamentsInvitationEditor/>} />
+<Route path="/editor/contentcreatorevents" element={<ContentcreatoreventsInvitationEditor/>} />
+<Route path="/editor/awardnights" element={<AwardnightsInvitationEditor/>} />
+<Route path="/editor/charityentertainmentshows" element={<CharityentertainmentshowsInvitationEditor/>} />
+<Route path="/editor/publiclaunchevents" element={<PubliclauncheventsInvitationEditor/>} />
+<Route path="/editor/grandopeningevents" element={<GrandopeningeventsInvitationEditor/>} />
+<Route path="/editor/satyanarayanapooja" element={<SatyanarayanapoojaInvitationEditor/>} />
+<Route path="/editor/gruhapravesham_1" element={<Gruhapravesham1InvitationEditor/>} />
+<Route path="/editor/namingceremony_1" element={<Namingceremony1InvitationEditor/>} />
+<Route path="/editor/annaprasana" element={<AnnaprasanaInvitationEditor/>} />
+<Route path="/editor/upanayanam" element={<UpanayanamInvitationEditor/>} />
+<Route path="/editor/aksharabhyasam" element={<AksharabhyasamInvitationEditor/>} />
+<Route path="/editor/eid" element={<EidInvitationEditor/>} />
+<Route path="/editor/ramadaniftar" element={<RamadaniftarInvitationEditor/>} />
+<Route path="/editor/nikah" element={<NikahInvitationEditor/>} />
+<Route path="/editor/miladevents" element={<MiladeventsInvitationEditor/>} />
+<Route path="/editor/christmas1" element={<Christmas1InvitationEditor/>} />
+<Route path="/editor/churchevents" element={<ChurcheventsInvitationEditor/>} />
+<Route path="/editor/baptism" element={<BaptismInvitationEditor/>} />
+<Route path="/editor/eastergatherings" element={<EastergatheringsInvitationEditor/>} />
 
 
 <Route path="/editor/lifedashboard" element={<Lifedashboard/>} />
