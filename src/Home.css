@@ -1074,3 +1074,130 @@ margin-left: 15px;
 
 
 }
+
+.course-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0PX 20px;
+}
+
+.course-container h1 {
+  text-align: center;
+  color: #e6f0ff;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+.course-container h4 {
+  text-align: center;
+  color: #e6f0ff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Notes Card */
+
+.notes-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  border-radius: 20px;
+
+  padding: 25px;
+  margin-bottom: 40px;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+
+  text-align: center;
+}
+
+.notes-card h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+
+  padding: 12px 24px;
+  border-radius: 30px;
+  width: 90% !important;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #00c6ff,
+    #0072ff
+  );
+
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+
+.video-section {
+  margin-top: 30px;
+}
+
+.video-title {
+  text-align: center;
+  color: #e6f0ff;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.video-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  border-radius: 20px;
+  padding: 15px;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.video-card h3 {
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .course-container h1 {
+    font-size: 28px;
+  }
+
+  .video-title {
+    font-size: 24px;
+  }
+  .download-btn{
+    font-size: 10px;
+    text-align: center;
+  }
+}

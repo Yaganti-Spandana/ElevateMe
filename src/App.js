@@ -124,6 +124,8 @@ import LeadershiptrainingInvitationEditor from "./invitations/Leadershiptraining
 import ConcertInvitationEditor from "./invitations/ConcertInvitationEditor";
 import TheatredramaInvitationEditor from "./invitations/TheatredramaInvitationEditor";
 import KidsentertainmenteventsInvitationEditor from "./invitations/KidsentertainmenteventsInvitationEditor";
+import Learningpaths from "./Navbar/Learningpaths";
+import Html from "./learningpaths/Html";
 
 function App() {
   useGA();
@@ -141,6 +143,7 @@ function App() {
 <Route path="/resumetemplates" element={<ResumeTemplates/>} />
 <Route path="/invitations" element={<Invitations/>} />
 <Route path="/life" element={<Lifeoperatingsystem/>} />
+<Route path="/learningpaths" element={<Learningpaths/>} />
 
 
 
@@ -249,6 +252,8 @@ function App() {
 <Route path="/editor/kidsentertainmentevents" element={<KidsentertainmenteventsInvitationEditor/>} />
 
 
+
+
 <Route path="/editor/lifedashboard" element={<Lifedashboard/>} />
 <Route path="/editor/lifedashboard1" element={<Lifedashboard1/>} />
 <Route path="/editor/lifedashboard2" element={<Lifedashboard2/>} />
@@ -266,9 +271,11 @@ function App() {
 <Route path="/editor/habits_routinetracker2" element={<HabitsRoutinetracker2/>} />
 <Route path="/editor/financeoverview" element={<Financeoverview/>} />
 <Route path="/editor/financeoverview1" element={<Financeoverview1/>} />
-<Route path="/editor/financeoverview2" element={<Financeoverview2/>} />
+<Route path="/editor/financeoverview2" element={<Financeoverview2/>} /> 
 
 
+<Route path="/learningpaths/:id" element={<Html/>} />
+<Route path="/editor/:id" element={<Html/>} />
 
       </Routes>
     </Router>

@@ -147,6 +147,8 @@ import leadershiptraining_invitation2 from "./images/leadershiptraining/leadersh
 import concert_invitation from "./images/concert/concert_invitation.png";
 import theatredrama_invitation from "./images/theatredrama/theatredrama_invitation.png";
 import kidsentertainmentevents_invitation from "./images/kidsentertainmentevents/kidsentertainmentevents_invitation.png";
+import htmlImg from "./images/learningpaths/html_logo.png";
+import htmlVideo from "./videos/html_intro.mp4";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -156,11 +158,27 @@ import Footer from "./Navbar/Footer";
 import "./Home.css";
 const templates = [
   {
+    id: "html",
+    name: "HTML",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
+    category: "🚀 learningpaths",
+    images: [htmlImg],
+    video: htmlVideo,
+  },
+  {
     id: "simple",
     name: "Simple Resume",
     dname: "Simple Resume",
     images: [simpleSample1, simpleSample2], // ⭐ two images here
     video: simpleportfolio,
+    category: "🎓 Resumes",
+  },
+  {
+    id: "atsfresher",
+    name: "Ats Fresher Resume",
+    dname: "Ats Fresher Resume",
+    images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
+    video: atsfresher_portfolio,
     category: "🎓 Resumes",
   },
   {
@@ -178,11 +196,11 @@ const templates = [
     images: [lifedashboard],
   },
   {
-    id: "atsfresher",
-    name: "Ats Fresher Resume",
-    dname: "Ats Fresher Resume",
-    images: [atsfresher_resume_template1, atsfresher_resume_template2], // ⭐ two images here
-    video: atsfresher_portfolio,
+    id: "atsprofessional",
+    name: "Ats Professional Resume",
+    dname: "Ats Professional Change Resume",
+    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
+    video: atsprofessional_portfolio,
     category: "🎓 Resumes",
   },
   {
@@ -205,14 +223,6 @@ const templates = [
     dname: "Ugadi Invitation",
     images: [ugadi_invitation1,ugadi_invitation2], 
     category: "🎉 Invitations",
-  },
-  {
-    id: "atsprofessional",
-    name: "Ats Professional Resume",
-    dname: "Ats Professional Change Resume",
-    images: [atsprofessional1, atsprofessional2], // ⭐ two images here
-    video: atsprofessional_portfolio,
-    category: "🎓 Resumes",
   },
   {
     id: "weeklyplanner",
@@ -622,6 +632,20 @@ const templates = [
     category: "🎉 Invitations"
   },
   {
+    id: "industryroundtables",
+    name: "Industry Roundtables Invitation",
+    dname: "Industry Roundtables Invitation",
+    images: [industryroundtables_invitation], 
+    category: "🎉 Invitations"
+  },
+   {
+    id: "teamachievementevent",
+    name: "Team Achievement Event Invitation",
+    dname: "Team Achievement Event Invitation",
+    images: [teamachievementevent_invitation], 
+    category: "🎉 Invitations"
+  },
+  {
     id: "paneldiscussions",
     name: "Panel Discussions Invitation",
     dname: "Panel Discussions Invitation",
@@ -643,13 +667,6 @@ const templates = [
     category: "🎉 Invitations"
   },
   {
-    id: "industryroundtables",
-    name: "Industry Roundtables Invitation",
-    dname: "Industry Roundtables Invitation",
-    images: [industryroundtables_invitation], 
-    category: "🎉 Invitations"
-  },
-  {
     id: "leadershipmeetups",
     name: "Leadership Meetups Invitation",
     dname: "Leadership Meetups Invitation",
@@ -668,13 +685,6 @@ const templates = [
     name: "Employee Appreciation Event Invitation",
     dname: "Employee Appreciation Event Invitation",
     images: [employeeappreciationevent_invitation], 
-    category: "🎉 Invitations"
-  },
-  {
-    id: "teamachievementevent",
-    name: "Team Achievement Event Invitation",
-    dname: "Team Achievement Event Invitation",
-    images: [teamachievementevent_invitation], 
     category: "🎉 Invitations"
   },
   {
@@ -846,7 +856,7 @@ const Home = () => {
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(12);
   const [category, setCategory] = useState("All");
-const categories = ["All", "🎓 Resumes", "🎉 Invitations","🧠⚙️ Life Operating System"];
+const categories = ["All", "🎓 Resumes", "🎉 Invitations","🧠⚙️ Life Operating System","🚀 learningpaths"];
 const filteredTemplates = templates.filter((tpl) => {
   const matchesSearch = tpl.dname
     .toLowerCase()

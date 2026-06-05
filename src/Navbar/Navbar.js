@@ -45,6 +45,7 @@ const Navbar = () => {
           <li><Link to="/resumetemplates" style={{fontSize:"14px"}}>🎓 Resume Templates</Link></li>
           <li><Link to="/invitations" style={{fontSize:"14px"}}>🎉 Invitations</Link></li>
           <li><Link to="/life" style={{fontSize:"14px"}}>🧠⚙️ Life Operating System</Link></li>
+          <li><Link to="/learningpaths" style={{fontSize:"14px"}}>🚀 Learning Paths</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
