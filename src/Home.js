@@ -175,6 +175,7 @@ import baptism_invitation from "./images/baptism/baptism_invitation.png";
 import eastergatherings_invitation from "./images/eastergatherings/eastergatherings_invitation.png";
 import htmlImg from "./images/learningpaths/html_logo.png";
 import htmlVideo from "./videos/html_intro.mp4";
+import html_basic_tags from "./videos/basic_tags.mp4";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -212,6 +213,14 @@ const templates = [
     dname: "Life Dashboard",
     category: "🧠⚙️ Life Operating System",
     images: [lifedashboard],
+  },
+  {
+    id: "html",
+    name: "HTML",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
+    category: "🚀 learningpaths",
+    images: [htmlImg],
+    video: html_basic_tags,
   },
   {
     id: "atsfresher",
