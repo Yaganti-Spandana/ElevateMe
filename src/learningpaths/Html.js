@@ -2,8 +2,10 @@ import { useParams } from "react-router-dom";
 
 import htmlbasics from "../notes/htmlbasics.pdf";
 import basictags_pdf from "../notes/basictags.pdf";
+import elementsattributes_pdf from "../notes/elements&attributes.pdf";
 import htmlIntro from "../videos/html_intro.mp4";
 import html_basic_tags from "../videos/basic_tags.mp4";
+import elementsattributes_video from "../videos/elements&attributes.mp4";
 
 import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -19,6 +21,11 @@ const learningpaths = {
       title: "Html Basic Tags",
       notes: basictags_pdf,
       videos: [html_basic_tags],
+    },
+    {
+      title: "Html Elements & Attributes",
+      notes: elementsattributes_pdf,
+      videos: [elementsattributes_video],
     },
   ],
 };
@@ -66,6 +73,7 @@ export default function Html() {
                   href={lesson.notes}
                   download
                   className="download-btn"
+                  style={{fontSize:"12px"}}
                 >
                   Download {lesson.title} PDF
                 </a>

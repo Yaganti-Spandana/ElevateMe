@@ -1118,7 +1118,7 @@ margin-left: 15px;
 
 .download-btn {
   display: inline-block;
-
+  font-size: "10px" !important;
   padding: 12px 24px;
   border-radius: 30px;
   width: 90% !important;
