@@ -3,9 +3,14 @@ import { useParams } from "react-router-dom";
 import htmlbasics from "../notes/htmlbasics.pdf";
 import basictags_pdf from "../notes/basictags.pdf";
 import elementsattributes_pdf from "../notes/elements&attributes.pdf";
+import headingsparagraph_pdf from "../notes/headingsparagraph.pdf";
+
+
+
 import htmlIntro from "../videos/html_intro.mp4";
 import html_basic_tags from "../videos/basic_tags.mp4";
 import elementsattributes_video from "../videos/elements&attributes.mp4";
+import headingsparagraph_video from "../videos/headingsparagraph.mp4";
 
 import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -13,19 +18,24 @@ import Navbar from "../Navbar/Navbar";
 const learningpaths = {
   html: [
     {
-      title: "Html Introduction",
+      title: "Introduction",
       notes: htmlbasics,
       videos: [htmlIntro],
     },
     {
-      title: "Html Basic Tags",
+      title: "Basic Tags",
       notes: basictags_pdf,
       videos: [html_basic_tags],
     },
     {
-      title: "Html Elements & Attributes",
+      title: "Elements & Attributes",
       notes: elementsattributes_pdf,
       videos: [elementsattributes_video],
+    },
+    {
+      title: "Headings & Paragraph Elements",
+      notes: headingsparagraph_pdf,
+      videos: [headingsparagraph_video],
     },
   ],
 };

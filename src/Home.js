@@ -177,6 +177,7 @@ import htmlImg from "./images/learningpaths/html_logo.png";
 import htmlVideo from "./videos/html_intro.mp4";
 import html_basic_tags from "./videos/basic_tags.mp4";
 import elementsattributes from "./videos/elements&attributes.mp4";
+import headingsparagraph from "./videos/headingsparagraph.mp4";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -187,7 +188,7 @@ import "./Home.css";
 const templates = [
   {
     id: "html",
-    name: "HTML",
+    name: "Introduction",
     dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
     category: "🚀 learningpaths",
     images: [htmlImg],
@@ -217,8 +218,8 @@ const templates = [
   },
   {
     id: "html",
-    name: "HTML",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
+    name: "Basic Tags",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Basic Tags",
     category: "🚀 learningpaths",
     images: [htmlImg],
     video: html_basic_tags,
@@ -247,8 +248,8 @@ const templates = [
   },
   {
     id: "html",
-    name: "HTML",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
+    name: "Elements & Attributes",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Elements & Attributes",
     category: "🚀 learningpaths",
     images: [htmlImg],
     video: elementsattributes,
@@ -274,6 +275,14 @@ const templates = [
     dname: "Weekly Life Planner",
     category:"🧠⚙️ Life Operating System",
     images: [weeklyplanner],
+  },
+  {
+    id: "html",
+    name: "Headings & Paragraph Elements",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Headings & Paragraph Elements",
+    category: "🚀 learningpaths",
+    images: [htmlImg],
+    video: headingsparagraph,
   },
   {
     id: "sankranti1",
