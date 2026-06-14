@@ -173,11 +173,16 @@ import christmas1_invitation from "./images/christmas/christmas1_invitation.png"
 import churchevents_invitation from "./images/churchevents/churchevents_invitation.png";
 import baptism_invitation from "./images/baptism/baptism_invitation.png";
 import eastergatherings_invitation from "./images/eastergatherings/eastergatherings_invitation.png";
-import htmlImg from "./images/learningpaths/html_logo.png";
 import htmlVideo from "./videos/html_intro.mp4";
+import introduction_poster from "./videos/intoduction_poster.png";
 import html_basic_tags from "./videos/basic_tags.mp4";
+import basictags_poster from "./videos/basictags_poster.png";
 import elementsattributes from "./videos/elements&attributes.mp4";
+import elementsattributes_poster from "./videos/elementsattributes_poster.png";
 import headingsparagraph from "./videos/headingsparagraph.mp4";
+import headingsparagraph_poster from "./videos/headingsparagraph_poster.png";
+import multimedia from "./videos/multimedia.mp4";
+import multimedia_poster from "./videos/multimedia_poster.jpeg";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -191,7 +196,7 @@ const templates = [
     name: "Introduction",
     dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
     category: "🚀 learningpaths",
-    images: [htmlImg],
+    images: [introduction_poster],
     video: htmlVideo,
   },
   {
@@ -221,7 +226,7 @@ const templates = [
     name: "Basic Tags",
     dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Basic Tags",
     category: "🚀 learningpaths",
-    images: [htmlImg],
+    images: [basictags_poster],
     video: html_basic_tags,
   },
   {
@@ -251,7 +256,7 @@ const templates = [
     name: "Elements & Attributes",
     dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Elements & Attributes",
     category: "🚀 learningpaths",
-    images: [htmlImg],
+    images: [elementsattributes_poster],
     video: elementsattributes,
   },
   {
@@ -281,7 +286,7 @@ const templates = [
     name: "Headings & Paragraph Elements",
     dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Headings & Paragraph Elements",
     category: "🚀 learningpaths",
-    images: [htmlImg],
+    images: [headingsparagraph_poster],
     video: headingsparagraph,
   },
   {
@@ -305,6 +310,14 @@ const templates = [
     dname: "Goals System",
     category:"🧠⚙️ Life Operating System",
     images: [goalssystem],
+  },
+  {
+    id: "html",
+    name: "Multimedia",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Multimedia",
+    category: "🚀 learningpaths",
+    images: [multimedia_poster],
+    video: multimedia,
   },
   {
     id: "twosidedsimple",
