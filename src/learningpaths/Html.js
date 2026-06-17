@@ -5,6 +5,7 @@ import basictags_pdf from "../notes/basictags.pdf";
 import elementsattributes_pdf from "../notes/elements&attributes.pdf";
 import headingsparagraph_pdf from "../notes/headingsparagraph.pdf";
 import multimedia_pdf from "../notes/multimedia.pdf";
+import lists_pdf from "../notes/lists.pdf";
 
 
 
@@ -18,6 +19,8 @@ import headingsparagraph_video from "../videos/headingsparagraph.mp4";
 import headingsparagraph_poster from "../videos/headingsparagraph_poster.png";
 import multimedia_video from "../videos/multimedia.mp4";
 import multimedia_poster from "../videos/multimedia_poster.jpeg";
+import lists_video from "../videos/lists.mp4";
+import lists_poster from "../videos/lists_poster.png";
 
 import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -53,6 +56,12 @@ const learningpaths = {
       notes: multimedia_pdf,
       videos: [multimedia_video],
       poster: multimedia_poster
+    },
+    {
+      title: "List Elements",
+      notes: lists_pdf,
+      videos: [lists_video],
+      poster: lists_poster
     },
   ],
 };

@@ -183,6 +183,8 @@ import headingsparagraph from "./videos/headingsparagraph.mp4";
 import headingsparagraph_poster from "./videos/headingsparagraph_poster.png";
 import multimedia from "./videos/multimedia.mp4";
 import multimedia_poster from "./videos/multimedia_poster.jpeg";
+import lists from "./videos/lists.mp4";
+import lists_poster from "./videos/lists_poster.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -340,6 +342,14 @@ const templates = [
     dname: "Habits & Routine Tracker",
     category: "🧠⚙️ Life Operating System",
     images: [habits],
+  },
+  {
+    id: "html",
+    name: "List Elements",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) List Elements",
+    category: "🚀 learningpaths",
+    images: [lists_poster],
+    video: lists,
   },
   {
     id: "headinghighlightprofessional",
