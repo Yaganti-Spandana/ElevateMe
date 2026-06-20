@@ -185,6 +185,8 @@ import multimedia from "./videos/multimedia.mp4";
 import multimedia_poster from "./videos/multimedia_poster.jpeg";
 import lists from "./videos/lists.mp4";
 import lists_poster from "./videos/lists_poster.png";
+import table from "./videos/table.mp4";
+import table_poster from "./videos/table_poster.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -372,6 +374,14 @@ const templates = [
     dname: "Finance Overview",
     category: "🧠⚙️ Life Operating System",
     images: [financeoverview],
+  },
+  {
+    id: "html",
+    name: "Table Elements",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Table Elements",
+    category: "🚀 learningpaths",
+    images: [table_poster],
+    video: table,
   },
   {
     id: "cricketsports",
