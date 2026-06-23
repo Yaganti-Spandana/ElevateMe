@@ -7,6 +7,7 @@ import headingsparagraph_pdf from "../notes/headingsparagraph.pdf";
 import multimedia_pdf from "../notes/multimedia.pdf";
 import lists_pdf from "../notes/lists.pdf";
 import table_pdf from "../notes/table.pdf";
+import form_pdf from "../notes/form.pdf";
 
 
 
@@ -24,6 +25,8 @@ import lists_video from "../videos/lists.mp4";
 import lists_poster from "../videos/lists_poster.png";
 import table_video from "../videos/table.mp4";
 import table_poster from "../videos/table_poster.png";
+import form1_video from "../videos/form1.mp4";
+import form1_poster from "../videos/form1_poster.png";
 
 import Footer from "../Navbar/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -71,6 +74,12 @@ const learningpaths = {
       notes: table_pdf,
       videos: [table_video],
       poster: table_poster
+    },
+    {
+      title: "Table Elements",
+      notes: form_pdf,
+      videos: [form1_video],
+      poster: form1_poster
     },
   ],
 };

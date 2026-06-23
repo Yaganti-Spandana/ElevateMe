@@ -187,6 +187,8 @@ import lists from "./videos/lists.mp4";
 import lists_poster from "./videos/lists_poster.png";
 import table from "./videos/table.mp4";
 import table_poster from "./videos/table_poster.png";
+import form1 from "./videos/form1.mp4";
+import form1_poster from "./videos/form1_poster.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
 import invitations from "./images/invitations.mp4";
@@ -404,6 +406,14 @@ const templates = [
     dname: "Life Dashboard",
     category: "🧠⚙️ Life Operating System",
     images: [lifedashboard1],
+  },
+  {
+    id: "html",
+    name: "Form Elements",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Form Elements",
+    category: "🚀 learningpaths",
+    images: [form1_poster],
+    video: form1,
   },
   {
     id: "seminar",
