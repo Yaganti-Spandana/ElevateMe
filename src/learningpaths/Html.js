@@ -26,6 +26,7 @@ import lists_poster from "../videos/lists_poster.png";
 import table_video from "../videos/table.mp4";
 import table_poster from "../videos/table_poster.png";
 import form1_video from "../videos/form1.mp4";
+import form2_video from "../videos/form2.mp4";
 import form1_poster from "../videos/form1_poster.png";
 
 import Footer from "../Navbar/Footer";
@@ -76,9 +77,15 @@ const learningpaths = {
       poster: table_poster
     },
     {
-      title: "Table Elements",
+      title: "Form Elements",
       notes: form_pdf,
       videos: [form1_video],
+      poster: form1_poster
+    },
+    {
+      title: "Form Elements",
+      notes: form_pdf,
+      videos: [form2_video],
       poster: form1_poster
     },
   ],

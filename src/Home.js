@@ -188,6 +188,7 @@ import lists_poster from "./videos/lists_poster.png";
 import table from "./videos/table.mp4";
 import table_poster from "./videos/table_poster.png";
 import form1 from "./videos/form1.mp4";
+import form2 from "./videos/form2.mp4";
 import form1_poster from "./videos/form1_poster.png";
 import SearchResults from "./Navbar/SearchResults";
 import resume_teplate from "./images/resume_templates.mp4";
@@ -429,6 +430,14 @@ const templates = [
     images: [black_gold],
     video: blackgoldportfolio,
     category: "🎓 Resumes", 
+  },
+  {
+    id: "html",
+    name: "Form Elements",
+    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Form Elements",
+    category: "🚀 learningpaths",
+    images: [form1_poster],
+    video: form2,
   },
   {
     id: "decisionmaking1",
