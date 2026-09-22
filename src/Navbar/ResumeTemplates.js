@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import simpleSample1 from "../images/simple_resume_template/simple1.png";
 import simpleSample2 from "../images/simple_resume_template/simple2.png";
+import simplesinglepageSample from "../images/simple_singlepage_resume_template/simplesinglepage.png";
+import simplesinglepageportfolio from "../images/simple_singlepage_resume_template/simplesinglepage.mp4";
 import simpleportfolio from "../images/simple_resume_template/simple.mp4";
 import twosidedsimple_invitation1 from "../images/twosidedsimple_resume_template/twosidedsimple_invitation1.png";
 import twosidedsimple_invitation2 from "../images/twosidedsimple_resume_template/twosidedsimple_invitation2.png";
@@ -214,6 +216,14 @@ const templates = [
     images: [yellowbasic1, yellowbasic2], // ⭐ two images here
     video: yellowbasic_portfolio,
     category: "Basic",
+  },
+  {
+    id: "simplesinglepage",
+    name: "Basic Single Page Resume",
+    dname: "Basic Single Page Resume",
+    category: "Basic",
+    images: [simplesinglepageSample],
+    video: simplesinglepageportfolio,
   },
 ];
 

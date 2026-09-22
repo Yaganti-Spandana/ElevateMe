@@ -1854,6 +1854,92 @@ headinghighlightprofessional: {
     "Hindi (Native)"
   ]
 },
+simplesinglepage: {
+  common: {
+    name: "Arjun Rao",
+    title: "Software Engineer",
+
+    summary:
+      "Innovative Software Engineer with 5+ years of experience building reliable and user-focused web applications using React, Python, Django, and modern web technologies. Experienced in developing scalable solutions, integrating APIs, optimizing application performance, and collaborating with cross-functional teams.",
+
+    contact: {
+      email: "arjun.rao@example.com",
+      phone: "+91 98765xxxxx",
+      linkedin: "linkedin.com/in/arjunrao",
+      github: "github.com/arjunrao",
+    },
+
+    skills: [
+      "JavaScript",
+      "React.js",
+      "Python",
+      "Django",
+      "REST APIs",
+      "PostgreSQL",
+      "MongoDB",
+      "HTML5",
+      "CSS3",
+      "Git",
+      "GitHub",
+    ],
+  },
+
+  experience: [
+    {
+      role: "Software Engineer",
+      company: "TechNova Solutions",
+      duration: "Mar 2022 – Present",
+      desc:
+        "Developed and maintained scalable web applications using React and Django. Improved application performance by optimizing API calls, database queries, and reusable frontend components. Integrated third-party services and REST APIs while working closely with product and QA teams to deliver reliable features within sprint timelines.",
+    },
+    {
+      role: "Web Developer",
+      company: "CloudBridge Technologies",
+      duration: "Jul 2020 – Feb 2022",
+      desc:
+        "Created responsive web applications using React, JavaScript, HTML, and CSS. Developed reusable UI components, integrated backend APIs, and implemented client-side form validation. Collaborated with designers and backend developers to deliver consistent and user-friendly interfaces.",
+    },
+  ],
+
+  projects: [
+    {
+      title: "Online Learning Management System",
+      desc:
+        "Built a full-stack learning platform using React and Django REST Framework. Implemented course browsing, video lessons, progress tracking, quizzes, user dashboards, and REST API integration. Designed the application with reusable components and responsive layouts for desktop and mobile devices.",
+    },
+    {
+      title: "Smart Inventory Management App",
+      desc:
+        "Developed an inventory management application for tracking products, stock levels, suppliers, and transactions. Implemented React-based dashboards, Django APIs, PostgreSQL database integration, search functionality, and automated stock-status updates.",
+    },
+    {
+      title: "Personal Finance Dashboard",
+      desc:
+        "Created a responsive finance dashboard that allows users to organize income, expenses, savings goals, and monthly budgets. Added interactive charts, category-based expense tracking, filtering options, and a clean dashboard interface using modern JavaScript and CSS.",
+    },
+  ],
+
+  education: [
+    {
+      degree: "Bachelor of Technology in Information Technology",
+      institution: "Andhra Institute of Technology",
+      year: "2015 – 2019",
+    },
+    {
+      degree: "Intermediate (MPC)",
+      institution: "Narayana Junior College",
+      year: "2013 – 2015",
+    },
+  ],
+
+  certifications: [
+    { name: "Microsoft Certified: Azure Fundamentals" },
+    { name: "Meta Back-End Developer Professional Certificate" },
+    { name: "Python Programming Certification – HackerRank" },
+    { name: "SQL Advanced Certification – HackerRank" },
+    { name: "JavaScript Certification – freeCodeCamp" },
+  ],
+},
 }
 
 export default resumeData;

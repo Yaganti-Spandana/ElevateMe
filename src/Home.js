@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import simpleSample1 from "./images/simple_resume_template/simple1.png";
 import simpleSample2 from "./images/simple_resume_template/simple2.png";
 import simpleportfolio from "./images/simple_resume_template/simple.mp4";
+import simplesinglepageSample from "./images/simple_singlepage_resume_template/simplesinglepage.png";
+import simplesinglepageportfolio from "./images/simple_singlepage_resume_template/simplesinglepage.mp4";
 import twosidedsimple_invitation1 from "./images/twosidedsimple_resume_template/twosidedsimple_invitation1.png";
 import twosidedsimple_invitation2 from "./images/twosidedsimple_resume_template/twosidedsimple_invitation2.png";
 import twosidedsimple_portfolio from "./images/twosidedsimple_resume_template/twosidedsimple_portfolio.mp4";
@@ -199,13 +201,14 @@ import Footer from "./Navbar/Footer";
 import "./Home.css";
 const templates = [
   {
-    id: "html",
-    name: "Introduction",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE)",
-    category: "🚀 learningpaths",
-    images: [introduction_poster],
-    video: htmlVideo,
-  },
+  id: "learning-html-introduction",
+  courseId: "html",
+  name: "Introduction",
+  dname: "Introduction",
+  category: "🚀 learningpaths",
+  images: [introduction_poster],
+  video: htmlVideo,
+},
   {
     id: "simple",
     name: "Simple Resume",
@@ -229,13 +232,14 @@ const templates = [
     images: [lifedashboard],
   },
   {
-    id: "html",
-    name: "Basic Tags",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Basic Tags",
-    category: "🚀 learningpaths",
-    images: [basictags_poster],
-    video: html_basic_tags,
-  },
+  id: "learning-html-basic-tags",
+  courseId: "html",
+  name: "Basic Tags",
+  dname: "Basic Tags",
+  category: "🚀 learningpaths",
+  images: [basictags_poster],
+  video: html_basic_tags,
+},
   {
     id: "atsfresher",
     name: "Ats Fresher Resume",
@@ -259,13 +263,14 @@ const templates = [
     images: [decisionmaking],
   },
   {
-    id: "html",
-    name: "Elements & Attributes",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Elements & Attributes",
-    category: "🚀 learningpaths",
-    images: [elementsattributes_poster],
-    video: elementsattributes,
-  },
+  id: "learning-html-elements-attributes",
+  courseId: "html",
+  name: "Elements & Attributes",
+  dname: "Elements & Attributes",
+  category: "🚀 learningpaths",
+  images: [elementsattributes_poster],
+  video: elementsattributes,
+},
   {
     id: "ugadi",
     name: "Ugadi Invitation",
@@ -289,13 +294,14 @@ const templates = [
     images: [weeklyplanner],
   },
   {
-    id: "html",
-    name: "Headings & Paragraph Elements",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Headings & Paragraph Elements",
-    category: "🚀 learningpaths",
-    images: [headingsparagraph_poster],
-    video: headingsparagraph,
-  },
+  id: "learning-html-headings-paragraphs",
+  courseId: "html",
+  name: "Headings & Paragraph Elements",
+  dname: "Headings & Paragraph Elements",
+  category: "🚀 learningpaths",
+  images: [headingsparagraph_poster],
+  video: headingsparagraph,
+},
   {
     id: "sankranti1",
     name: "Sankranti/Pongal Invitation",
@@ -319,13 +325,15 @@ const templates = [
     images: [goalssystem],
   },
   {
-    id: "html",
-    name: "Multimedia",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Multimedia",
-    category: "🚀 learningpaths",
-    images: [multimedia_poster],
-    video: multimedia,
-  },
+  id: "learning-html-multimedia",
+  courseId: "html",
+  name: "Multimedia Elements",
+  dname: "Multimedia Elements",
+  category: "🚀 learningpaths",
+  images: [multimedia_poster],
+  video: multimedia,
+},
+
   {
     id: "twosidedsimple",
     name: "Maroon Full Stack Web Developer Resume",
@@ -349,13 +357,14 @@ const templates = [
     images: [habits],
   },
   {
-    id: "html",
-    name: "List Elements",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) List Elements",
-    category: "🚀 learningpaths",
-    images: [lists_poster],
-    video: lists,
-  },
+  id: "learning-html-lists",
+  courseId: "html",
+  name: "List Elements",
+  dname: "List Elements",
+  category: "🚀 learningpaths",
+  images: [lists_poster],
+  video: lists,
+},
   {
     id: "headinghighlightprofessional",
     name: "Heading Highlight Professional Resume",
@@ -379,13 +388,14 @@ const templates = [
     images: [financeoverview],
   },
   {
-    id: "html",
-    name: "Table Elements",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Table Elements",
-    category: "🚀 learningpaths",
-    images: [table_poster],
-    video: table,
-  },
+  id: "learning-html-tables",
+  courseId: "html",
+  name: "Table Elements",
+  dname: "Table Elements",
+  category: "🚀 learningpaths",
+  images: [table_poster],
+  video: table,
+},
   {
     id: "cricketsports",
     name: "Cricket Sports Invitation",
@@ -409,13 +419,15 @@ const templates = [
     images: [lifedashboard1],
   },
   {
-    id: "html",
-    name: "Form Elements",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Form Elements",
-    category: "🚀 learningpaths",
-    images: [form1_poster],
-    video: form1,
-  },
+  id: "learning-html-form-part-one",
+  courseId: "html",
+  name: "Form Elements - Part 1",
+  dname: "Form Elements - Part 1",
+  category: "🚀 learningpaths",
+  images: [form1_poster],
+  video: form1,
+},
+
   {
     id: "seminar",
     name: "Seminar Invitation",
@@ -432,13 +444,14 @@ const templates = [
     category: "🎓 Resumes", 
   },
   {
-    id: "html",
-    name: "Form Elements",
-    dname: "HTML (HYPERTEXT MARKUP LANGUAGE) Form Elements",
-    category: "🚀 learningpaths",
-    images: [form1_poster],
-    video: form2,
-  },
+  id: "learning-html-form-part-two",
+  courseId: "html",
+  name: "Form Elements - Part 2",
+  dname: "Form Elements - Part 2",
+  category: "🚀 learningpaths",
+  images: [form1_poster],
+  video: form2,
+},
   {
     id: "decisionmaking1",
     name: "Decision Making",
@@ -1121,6 +1134,14 @@ const templates = [
     images: [unicorn_invitation],
     category: "🎉 Invitations",
   },
+  {
+    id: "simplesinglepage",
+    name: "Simple Single Page Resume",
+    dname: "Simple  Single Page Resume",
+    images: [simplesinglepageSample], // ⭐ two images here
+    video: simplesinglepageportfolio,
+    category: "🎓 Resumes",
+  },
 ];
 
 const getRandomTemplates = (arr, count) => {
@@ -1136,14 +1157,25 @@ const Home = () => {
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(12);
   const [category, setCategory] = useState("All");
-const categories = ["All", "🎓 Resumes", "🎉 Invitations","🧠⚙️ Life Operating System","🚀 learningpaths"];
+const categories = [
+  "All",
+  "🎓 Resumes",
+  "🎉 Invitations",
+  "🧠⚙️ Life Operating System",
+  "🚀 learningpaths",
+];
+
 const filteredTemplates = templates.filter((tpl) => {
-  const matchesSearch = tpl.dname
-    .toLowerCase()
-    .includes(search.toLowerCase());
+  const searchText = search.trim().toLowerCase();
+
+  const templateName = String(tpl.dname || "").toLowerCase();
+  const templateCategory = String(tpl.category || "").trim();
+
+  const matchesSearch = templateName.includes(searchText);
 
   const matchesCategory =
-    category === "All" || tpl.category === category;
+    category === "All" ||
+    templateCategory === category.trim();
 
   return matchesSearch && matchesCategory;
 });
@@ -1153,7 +1185,7 @@ const filteredTemplates = templates.filter((tpl) => {
       const updated = { ...prev };
 
       templates.forEach((tpl) => {
-        if (tpl.images.length > 1) {
+        if (tpl.images && tpl.images.length > 1) {
           updated[tpl.id] =
             ((updated[tpl.id] || 0) + 1) % tpl.images.length;
         }
@@ -1262,45 +1294,85 @@ const [slideIndex, setSlideIndex] = useState(0);
 </p>
 
     <div className="templates-grid">
-  {filteredTemplates.slice(0, visibleCount).map((tpl) => {
-  const currentIndex = imageIndex[tpl.id] ?? 0;
-  const currentImage = tpl.images[currentIndex];
+  {filteredTemplates
+    .slice(0, visibleCount)
+    .map((tpl) => {
+      const currentIndex = imageIndex[tpl.id] ?? 0;
 
-  return (
-    <div key={tpl.id} onClick={() => navigate(`/editor/${tpl.id}`)}>
-      <div className="grid-card">
+      const currentImage =
+        tpl.images?.[currentIndex] || tpl.image;
 
-    <div
-      className={`preview-container 
-        ${tpl.video ? "has-video" : ""} 
-        ${tpl.id.includes("invitation") || tpl.id.includes("haldi") || tpl.id.includes("naming") ? "invitation" : ""}
-      `}
-      onMouseEnter={() => tpl.video && setHoveredId(tpl.id)}
-      onMouseLeave={() => setHoveredId(null)}
-    >
-      {tpl.video && hoveredId === tpl.id ? (
-        <video className="preview-video" autoPlay muted loop playsInline>
-          <source src={tpl.video} type="video/mp4" />
-        </video>
-      ) : (
-        <img src={currentImage} alt={tpl.name} className="preview-image" />
-      )}
-    </div>
+      return (
+        <div
+          key={tpl.id}
+          className="template-card"
+          onClick={() => {
+            if (
+              tpl.category?.trim() ===
+              "🚀 learningpaths"
+            ) {
+              navigate(
+                `/learningpaths/${tpl.courseId}`
+              );
+            } else {
+              navigate(`/editor/${tpl.id}`);
+            }
+          }}
+        >
+          <div className="grid-card">
+            <div
+              className={`preview-container ${
+                tpl.video ? "has-video" : ""
+              } ${
+                tpl.id.includes("invitation") ||
+                tpl.id.includes("haldi") ||
+                tpl.id.includes("naming")
+                  ? "invitation"
+                  : ""
+              }`}
+              onMouseEnter={() =>
+                tpl.video && setHoveredId(tpl.id)
+              }
+              onMouseLeave={() =>
+                setHoveredId(null)
+              }
+            >
+              {tpl.video &&
+              hoveredId === tpl.id ? (
+                <video
+                  className="preview-video"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source
+                    src={tpl.video}
+                    type="video/mp4"
+                  />
+                </video>
+              ) : (
+                <img
+                  src={currentImage}
+                  alt={tpl.name}
+                  className="preview-image"
+                />
+              )}
+            </div>
 
-  <div className="card-content">
-    <p className="card-title">{tpl.name}</p>
-  </div>
+            <div className="card-content">
+              <p className="card-title">
+                {tpl.name}
+              </p>
+            </div>
+          </div>
 
-</div>
-
-      <div
-        className="temp"
-      >
-        Use This Template
-      </div>
-    </div>
-  );
-})}
+          <div className="temp">
+            Use This Template
+          </div>
+        </div>
+      );
+    })}
 </div>
   </div>
 </main>

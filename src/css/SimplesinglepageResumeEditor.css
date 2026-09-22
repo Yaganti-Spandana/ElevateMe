@@ -1,0 +1,45 @@
+
+
+.singlepage_contact{
+    font-size: 10px !important;
+}
+.singlepage_heading{
+    font-size: 15px;
+}
+.singlepage_subheading{
+    font-size: 13px;
+}
+.singlepage_header-block{
+    display: flex;
+    gap: 100px;
+}
+.singlepage_section-heading { 
+        font-size: 12px; 
+        font-family: 'Inter',sans-serif;
+        margin-top: -10px;
+        margin-bottom: -10px;
+      } 
+.singlepage_summary{
+    font-size: 10px;
+}
+.singlepage_skills-text { 
+        font-size: 11px; 
+        white-space: pre-wrap; 
+        font-family: 'Roboto',sans-serif;
+      } 
+.singlepage_pdf-section { 
+    break-inside: avoid; 
+    page-break-inside: avoid; 
+    font-size: 11px; 
+
+} 
+.singlepage_ed1{
+        display: flex;
+        font-size: 12px;
+        
+    }
+.singlepage_ed{
+        display: flex;
+        font-size: 11px;
+        margin-bottom: -10px;
+      }

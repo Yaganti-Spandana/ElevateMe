@@ -151,6 +151,8 @@ import BaptismInvitationEditor from "./invitations/BaptismInvitationEditor";
 import EastergatheringsInvitationEditor from "./invitations/EastergatheringsInvitationEditor";
 import Learningpaths from "./Navbar/Learningpaths";
 import Html from "./learningpaths/Html";
+import SimpleSinglePageResumeEditor from "./templates/SimplesinglepageResumeEditor";
+import SimplesinglepageTemplatePortfolioPage from "./portfolios/SimplesinglepageTemplatePortfolioPage";
 
 function App() {
   useGA();
@@ -192,6 +194,7 @@ function App() {
 <Route path="/editor/atsexperienced" element={<AtsexperiencedResumeEditor/>} />
 <Route path="/editor/headinghighlightprofessional" element={<HeadinghighlightprofessionalResumeEditor/>} />
 <Route path="/editor/headinghighlightfresher" element={<HeadinghighlightfresherresumeEditor/>} />
+<Route path="/editor/simplesinglepage" element={<SimpleSinglePageResumeEditor/>} />
 
 
 
@@ -215,6 +218,7 @@ function App() {
 <Route path="/portfolio/atsexperienced/:username" element={<AtsexperiencedPortfolioPage/>} />
 <Route path="/portfolio/headinghighlightprofessional/:username" element={<HeadinghighlightprofessionalPortfolioPage/>} />
 <Route path="/portfolio/headinghighlightfresher/:username" element={<HeadinghighlightfresherPortfolioPage/>} />
+<Route path="/portfolio/simplesinglepage/:username" element={<SimplesinglepageTemplatePortfolioPage/>} />
 
 
 
@@ -323,9 +327,7 @@ function App() {
 <Route path="/editor/financeoverview2" element={<Financeoverview2/>} /> 
 
 
-<Route path="/learningpaths/:id" element={<Html/>} />
-<Route path="/editor/:id" element={<Html/>} />
-
+<Route path="/learningpaths/:id" element={<Html />}/>
       </Routes>
     </Router>
     </>
