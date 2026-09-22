@@ -73,7 +73,7 @@ function SimpleTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px" , background: "#f5f5f5"}}
       >
         <h2>Skills</h2>
         <p>{data.common.skills.join(", ")}</p>
@@ -114,7 +114,7 @@ function SimpleTemplatePortfolioPage() {
         whileInView="visible"
         variants={sectionAnimation}
         transition={{ duration: 0.6 }}
-        style={{ padding: "60px 40px" }}
+        style={{ padding: "60px 40px" , background: "#f5f5f5"}}
       >
         <h2>Experience</h2>
 
